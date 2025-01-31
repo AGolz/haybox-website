@@ -4,9 +4,182 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HayBox – Переезды и Хранение</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Добро пожаловать в HayBox!</h1>
-  <p>Ваши переезды и хранение вещей, без стресса!</p>
+  <!-- 1. Шапка (Hero Section) -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <div class="container">
+        <!-- Логотип (замени путь к файлу на свой) -->
+        <img src="assets/images/logo.png" alt="HayBox logo" class="logo">
+        <h1>Вещи есть – места нет? HayBox спасет!</h1>
+        <p>Длительное хранение и переезды под ключ. Без суеты, без нервов, без головной боли.</p>
+        <a href="#contact" class="btn">Оставить заявку</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Блок "Как это работает" -->
+  <section id="how-it-works">
+    <div class="container">
+      <h2>Как это работает</h2>
+      <div class="steps">
+        <div class="step">
+          <img src="assets/images/step1.png" alt="Звонок">
+          <h3>Вы звоните / оставляете заявку</h3>
+          <p>Мы быстро свяжемся и подберем удобное решение.</p>
+        </div>
+        <div class="step">
+          <img src="assets/images/step2.png" alt="Упаковка">
+          <h3>Мы всё упакуем и перевезем</h3>
+          <p>Не нужно таскать коробки – просто наблюдайте, как исчезает хаос.</p>
+        </div>
+        <div class="step">
+          <img src="assets/images/step3.png" alt="Хранение">
+          <h3>Ваши вещи в надежном месте</h3>
+          <p>Охраняемый склад с климат-контролем. Вернем их по первому зову.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Блок "Почему HayBox?" -->
+  <section id="why-haybox">
+    <div class="container">
+      <h2>Почему HayBox?</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="assets/images/safe.png" alt="Безопасно">
+          <h3>Безопасно</h3>
+          <p>Камеры, охрана, страховка – всё под контролем.</p>
+        </div>
+        <div class="feature">
+          <img src="assets/images/clean.png" alt="Чисто и сухо">
+          <h3>Чисто и сухо</h3>
+          <p>Без сырости, плесени и запаха бабушкиного чулана.</p>
+        </div>
+        <div class="feature">
+          <img src="assets/images/flexible.png" alt="Гибкие тарифы">
+          <h3>Гибкие тарифы</h3>
+          <p>От месяца до нескольких лет – платите только за нужный срок.</p>
+        </div>
+        <div class="feature">
+          <img src="assets/images/delivery.png" alt="Доставка">
+          <h3>Доставка туда и обратно</h3>
+          <p>Не надо никуда ехать – мы всё заберем и вернем.</p>
+        </div>
+        <div class="feature">
+          <img src="assets/images/support.png" alt="Поддержка">
+          <h3>Поддержка 24/7</h3>
+          <p>Отвечаем на вопросы даже ночью (если вы вдруг вспомнили про велосипед в 3 утра).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Блок "Кому это нужно?" -->
+  <section id="for-whom">
+    <div class="container">
+      <h2>Кому это нужно?</h2>
+      <div class="audience">
+        <div class="audience-item">
+          <h3>Для тех, кто затеял ремонт</h3>
+          <p>Чтобы не спать на диване, обложившись коробками.</p>
+        </div>
+        <div class="audience-item">
+          <h3>Для тех, кто переезжает</h3>
+          <p>Если старая квартира уже сдана, а в новую пока не въехать.</p>
+        </div>
+        <div class="audience-item">
+          <h3>Для тех, кто хочет освободить место</h3>
+          <p>Балкон должен быть балконом, а не филиалом склада.</p>
+        </div>
+        <div class="audience-item">
+          <h3>Для компаний</h3>
+          <p>Архивы, сезонное оборудование, мебель – храним всё, кроме бухгалтерских долгов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Блок "Отзывы клиентов" -->
+  <section id="reviews">
+    <div class="container">
+      <h2>Отзывы клиентов</h2>
+      <div class="reviews-slider">
+        <div class="review">
+          <img src="assets/images/review1.jpg" alt="Клиент 1">
+          <p>"HayBox спас меня при переезде! Всё прошло гладко и быстро."</p>
+          <span>— Иван, Москва</span>
+        </div>
+        <div class="review">
+          <img src="assets/images/review2.jpg" alt="Клиент 2">
+          <p>"Хранение у HayBox – это спокойствие и порядок в доме."</p>
+          <span>— Мария, Санкт-Петербург</span>
+        </div>
+        <!-- Добавь дополнительные отзывы по необходимости -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Блок "Тарифы" -->
+  <section id="pricing">
+    <div class="container">
+      <h2>Тарифы</h2>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Мини</h3>
+          <p>Маленькие вещи, коробки</p>
+          <a href="#contact" class="btn">Узнать точную стоимость</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Стандарт</h3>
+          <p>Мебель, техника</p>
+          <a href="#contact" class="btn">Узнать точную стоимость</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Макси</h3>
+          <p>Хранение всей квартиры</p>
+          <a href="#contact" class="btn">Узнать точную стоимость</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Блок "Оставить заявку" -->
+  <section id="contact">
+    <div class="container">
+      <h2>Оставить заявку</h2>
+      <form action="#" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <input type="text" name="items" placeholder="Что хотите хранить? (коробки, мебель, техника и т.д.)" required>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- 8. Подвал (Footer) -->
+  <footer>
+    <div class="container">
+      <div class="footer-contacts">
+        <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+        <p>WhatsApp: <a href="#">ссылка</a></p>
+        <p>Telegram: <a href="#">ссылка</a></p>
+      </div>
+      <div class="footer-social">
+        <a href="#"><img src="assets/images/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="assets/images/tiktok.png" alt="TikTok"></a>
+        <a href="#"><img src="assets/images/youtube.png" alt="YouTube"></a>
+      </div>
+      <div class="footer-address">
+        <p>Адрес склада: ул. Примерная, 123, Город</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подключаем JavaScript -->
+  <script src="js/script.js"></script>
 </body>
 </html>

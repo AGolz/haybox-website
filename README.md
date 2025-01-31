@@ -1,7 +1,7 @@
 # HayBox – Moving and Storage
 
 Welcome to the repository of the one-page website for the **HayBox** service!  
-This project was created to demonstrate moving and storage services — quickly, conveniently, and with a sense of humor.
+This project was created to demonstrate moving and storage services — quickly and conveniently.
 
 ## About the project
 

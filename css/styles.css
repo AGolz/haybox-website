@@ -52,6 +52,13 @@ body {
   justify-content: center;
   text-align: center;
   padding-top: 40px;
+} 
+
+.hero-overlay img {
+  flex-shrink: 0;
+  flex-grow: 0;
+  align-self: center;
+}
 
 .hero .container {
   text-align: center;
@@ -59,11 +66,10 @@ body {
 
 .hero .logo {
   display: block;
-  max-width: 100px;
-  width: auto;
+  max-width: 200px;
   height: auto;
+  object-fit: contain;
   margin-bottom: 20px;
-  background: transparent;
 }
 
 .hero h1 {

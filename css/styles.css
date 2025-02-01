@@ -72,7 +72,6 @@ body {
 
 .hero {
   background: #f4ba2b url('../assets/images/header-overlay.jpg') no-repeat center center/cover;
-  background-blend-mode: overlay;
   color: #fff;
   height: 70vh;
   position: relative;

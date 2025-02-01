@@ -25,32 +25,33 @@ body {
 }
 
 .navbar {
-  background: #f6e7c6;
   padding: 10px 0;
+  background: transparent; /* Можно задать прозрачный фон, если нужно */
 }
 
 .nav-menu {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
   padding: 0;
 }
 
-.nav-menu li {
-  display: inline-block;
-}
-
 .nav-menu a {
+  display: inline-block;
+  background: #f7e7c6;
   color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .nav-menu a:hover {
-  text-decoration: underline;
+  background: #e65500;
 }
 
 .container {
@@ -106,12 +107,14 @@ body {
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #f7e7c6;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
   font-size: 1rem;
   margin-bottom: 20px;
+  color: #f7e7c6;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 

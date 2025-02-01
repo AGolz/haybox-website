@@ -42,7 +42,7 @@ body {
 .nav-menu a {
   display: inline-block;
   background: #f7e7c6;
-  color: #fff;
+  color: #f4ba2b;
   padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;
@@ -52,7 +52,7 @@ body {
 }
 
 .nav-menu a:hover {
-  background: #e65500;
+  background: #3d3d3f;
 }
 
 .container {

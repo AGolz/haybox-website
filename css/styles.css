@@ -153,6 +153,12 @@ body {
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover,
+.hero .btn:active {
+  background: #f4ba2b;
 }
 
 section {

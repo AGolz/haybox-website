@@ -73,7 +73,7 @@ body {
 .hero {
   background: #f4ba2b;
   color: #fff;
-  height: 80vh;
+  height: 60vh;
   position: relative;
   overflow: hidden;
   padding-top: 10px;
@@ -101,9 +101,6 @@ body {
 }
 
 .hero .container {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
   text-align: center;
 }
 

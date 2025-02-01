@@ -67,16 +67,16 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .hero {
   background: #f4ba2b;
   color: #fff;
-  height: 50vh;
+  height: 55vh;
   position: relative;
   overflow: hidden;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .hero-overlay {
@@ -116,7 +116,7 @@ body {
 
 .hero h1 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   color: #f7e7c6;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
@@ -125,7 +125,6 @@ body {
   font-size: 1rem;
   margin-bottom: 5px;
   color: #3d3d3f;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .hero .btn {

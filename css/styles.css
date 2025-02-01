@@ -1,4 +1,16 @@
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../assets/fonts/centurygothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('../assets/fonts/centurygothic_bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +18,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Century Gothic', sans-serif;
   line-height: 1.6;
   color: #333;
 }

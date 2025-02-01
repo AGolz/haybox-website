@@ -58,7 +58,10 @@ body {
 }
 
 .hero .logo {
+  display: block;
   max-width: 100px;
+  width: auto;
+  height: auto;
   margin-bottom: 20px;
   background: transparent;
 }

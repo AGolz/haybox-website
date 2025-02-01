@@ -24,11 +24,32 @@ body {
   color: #333;
 }
 
-.navbar {
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.hero {
+  background: rgba(244, 186, 43, 0.7) url('../assets/images/header-overlay.png') no-repeat center center/cover;
+  background-blend-mode: overlay;
+  color: #fff;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+.hero .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
   background: #f4ba2b;
   padding: 5px 0;
 }
-
 .nav-menu {
   list-style: none;
   display: flex;
@@ -61,23 +82,6 @@ body {
 
 .nav-menu a:hover {
   background: #f4ba2b;
-}
-
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-
-.hero {
-  background: rgba(244, 186, 43, 0.7) url('../assets/images/header-overlay.png') no-repeat center center/cover;
-  background-blend-mode: overlay;
-  color: #fff;
-  height: 70vh;
-  position: relative;
-  overflow: hidden;
-  padding-top: 5px;
 }
 
 .hero-overlay {

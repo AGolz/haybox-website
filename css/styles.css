@@ -50,6 +50,7 @@ body {
 .hero .logo {
   max-width: 150px;
   margin-bottom: 20px;
+  background: transparent;
 }
 
 .hero h1 {

@@ -27,7 +27,6 @@ body {
 .navbar {
   background: #f4ba2b;
   padding: 5px 0;
-  background: transparent;
 }
 
 .nav-menu {
@@ -42,7 +41,7 @@ body {
 .nav-menu a {
   display: inline-block;
   background: #f7e7c6;
-  color: #f4ba2b;
+  color: #ffffff;
   padding: 8px 16px;
   border-radius: 5px;
   text-decoration: none;

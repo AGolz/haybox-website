@@ -30,7 +30,7 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 /* STICKY BANNER */
@@ -69,7 +69,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 60px;
+  margin-top: 70px;
   padding: 10px 0;
   position: relative;
   z-index: 101;
@@ -153,7 +153,7 @@ body {
   align-items: center;
   gap: 20px;
   flex-wrap: nowrap;
-  margin-top: 150px;
+  margin-top: 180px;
 }
 
 .process-steps .arrow {
@@ -168,8 +168,55 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 120px;
   padding: 0 10px;
+}
+
+.service {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 480px;
+  text-align: center;
+  border: 3px solid #f4ba2b;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.advantage {
+  flex: 1 1 calc(33.333% - 10px);
+  background: #f4ba2b;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.service .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7e7c6;
+  color: #3d3d3f;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.service .btn:hover {
+  background: #f4ba2b;
 }
 
 @media (max-width: 768px) {

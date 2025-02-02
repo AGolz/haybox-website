@@ -130,6 +130,12 @@ body {
   text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.8);
 }
 
+.hero p {
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+  color: #ffffff !important;
+}
+
 .hero .btn {
   display: inline-flex;
   justify-content: center;
@@ -142,6 +148,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   transition: background 0.3s ease;
+  margin-top: 10px;
 }
 
 .hero .btn:hover,
@@ -219,8 +226,8 @@ section {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: #3d3d3f;
-  color: #f7e7c6;
+  background: #f7e7c6;
+  color: #3d3d3f;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;

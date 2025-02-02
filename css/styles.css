@@ -37,7 +37,7 @@ body {
   background: rgba(244, 186, 43, 0.7) url('../assets/images/header-overlay.png') no-repeat center center/cover;
   background-blend-mode: overlay;
   color: #fff;
-  height: 70vh;
+  height: 65vh;
   position: relative;
   overflow: hidden;
   padding-top: 5px;
@@ -51,7 +51,6 @@ body {
   z-index: 10;
   background: transparent;
   padding: 5px 0;
-  background: rgba(247, 231, 198, 0.9);
 }
 
 /* MENU */
@@ -92,7 +91,7 @@ body {
 
 /* HERO CONTENT */
 .hero-overlay {
-  z-index: 2;
+  z-index: 5;
   position: relative;
   background: transparent;
   height: 100%;
@@ -152,7 +151,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   transition: background 0.3s ease;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .hero .btn:hover,
@@ -249,7 +248,7 @@ section {
 /* MEDIA QUERIES */
 @media (max-width: 768px) {
   .hero .container {
-    padding: 10px;
+    padding-top: 120px;
   }
 
   .nav-menu {

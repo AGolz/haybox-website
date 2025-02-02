@@ -114,7 +114,7 @@ body {
 
 .hero .logo {
   display: block;
-  max-width: 180px;
+  max-width: 220px;
   height: auto;
   object-fit: contain;
   margin-bottom: 10px;
@@ -218,8 +218,6 @@ section {
   background: #f4ba2b;
   padding: 10px;
   border-radius: 5px;
-  font-size: 0.9rem;
-  border: 2px solid #3d3d3f;
 }
 
 .service .btn {

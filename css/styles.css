@@ -187,13 +187,13 @@ section {
 .process-steps .step {
   flex: 1;
   text-align: center;
-  min-width: 200px;
+  min-width: 220px;
 }
 
 .process-steps .arrow {
-  width: 120px;
+  width: 55px;
   height: auto;
-  max-height: 55px;
+  max-height: 40px;
 }
 
 .services {

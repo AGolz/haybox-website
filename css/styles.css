@@ -16,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 body {
@@ -38,7 +39,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: #f7e7c6;
+  background: rgba(244, 186, 43, 0.8);
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -49,7 +50,7 @@ body {
 }
 
 .sticky-banner .logo {
-  max-width: 150px;
+  max-width: 170px;
   height: auto;
 }
 
@@ -58,6 +59,46 @@ body {
   font-weight: bold;
   text-align: center;
   flex-grow: 1;
+  color: #fff;
+}
+
+/* NAVIGATION MENU */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 80px;
+  padding: 10px 0;
+  background: #f7e7c6;
+  position: relative;
+  z-index: 101;
+}
+
+.nav-menu li {
+  flex: 1;
+  display: flex;
+  text-align: center;
+}
+
+.nav-menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: #f7e7c6;
+  color: #3d3d3f;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background: #f4ba2b;
 }
 
 /* HERO */
@@ -73,7 +114,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .hero .logo {
@@ -112,7 +153,7 @@ body {
   align-items: center;
   gap: 20px;
   flex-wrap: nowrap;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 .process-steps .arrow {
@@ -120,78 +161,6 @@ body {
   height: auto;
   max-height: 60px;
   object-fit: contain;
-}
-
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 60px;
-  padding: 0 10px;
-}
-
-.service {
-  flex: 1 1 45%;
-  background: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  max-width: 480px;
-  text-align: center;
-  border: 3px solid #f4ba2b;
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.advantages {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: nowrap;
-  margin-bottom: 20px;
-}
-
-.advantage {
-  flex: 1 1 calc(33.333% - 10px);
-  background: #f4ba2b;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-menu li {
-  flex: 1;
-  display: flex;
-  text-align: center;
-}
-
-.nav-menu a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-  background: #f7e7c6;
-  color: #3d3d3f;
-  padding: 10px 18px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  white-space: nowrap;
-  transition: background 0.3s ease;
-}
-
-.nav-menu a:hover {
-  background: #f4ba2b;
 }
 
 @media (max-width: 768px) {
@@ -212,17 +181,17 @@ body {
   .sticky-banner .logo {
     margin-bottom: 5px;
   }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 480px) {
   .hero {
     height: auto;
     padding-bottom: 20px;
-  }
-
-  .services {
-    flex-direction: column;
-    align-items: center;
   }
 
   .sticky-banner {

@@ -180,7 +180,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
@@ -191,8 +191,9 @@ section {
 }
 
 .process-steps .arrow {
-  width: 50px;
+  width: 40px;
   height: auto;
+  max-height: 30px;
 }
 
 .process-steps .step img {

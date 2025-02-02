@@ -191,9 +191,9 @@ section {
 }
 
 .process-steps .arrow {
-  width: 70px;
+  width: 90px;
   height: auto;
-  max-height: 50px;
+  max-height: 70px;
 }
 
 .process-steps .step img {

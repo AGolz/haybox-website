@@ -106,8 +106,9 @@ body {
   background: rgba(244, 186, 43, 0.7) url('../assets/images/header-overlay.png') no-repeat center center/cover;
   background-blend-mode: overlay;
   color: #fff;
-  height: 60vh;
-  max-height: 450px;
+  height: auto;
+  min-height: 300px;
+  max-height: none;
   position: relative;
   overflow: hidden;
   padding-top: 5px;

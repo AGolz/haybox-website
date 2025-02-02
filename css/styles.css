@@ -23,6 +23,7 @@ body {
   line-height: 1.6;
   color: #333;
   background: #f7e7c6;
+  text-align: center;
 }
 
 .container {
@@ -90,6 +91,37 @@ body {
   background: #f4ba2b;
 }
 
+.hero .btn {
+  background: #3d3d3f;
+  color: #f7e7c6;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.hero .btn:hover {
+  background: #f4ba2b;
+  color: #3d3d3f;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.process-steps .step {
+  text-align: center;
+  min-width: 250px;
+}
+
 .process-steps .arrow {
   width: 60px;
   height: auto;
@@ -115,14 +147,29 @@ body {
   max-width: 480px;
   text-align: center;
   border: 3px solid #f4ba2b;
+  position: relative;
+}
+
+.advantages {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.advantage {
+  flex: 1;
+  background: #f4ba2b;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .service .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: #f7e7c6;
-  color: #3d3d3f;
+  background: #3d3d3f;
+  color: #f7e7c6;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -192,13 +239,6 @@ body {
   .hero .navbar {
     position: relative;
     z-index: 1;
-  }
-}
-
-.service .btn {
-    max-width: 90%;
-    display: block;
-    margin: 10px auto;
   }
 }
 

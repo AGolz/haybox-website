@@ -176,6 +176,10 @@ section {
   text-align: center;
 }
 
+#how-it-works h2 {
+  margin-bottom: 50px;
+}
+
 .process-steps {
   display: flex;
   justify-content: center;

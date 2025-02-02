@@ -197,7 +197,7 @@ section {
 .process-steps .arrow {
   width: 80px;
   height: auto;
-  max-height: 60px;
+  max-height: 50px;
 }
 
 .services {

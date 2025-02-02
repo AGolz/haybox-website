@@ -48,6 +48,11 @@ body {
   align-items: center;
 }
 
+.hero .logo {
+  max-width: 200px;
+  height: auto;
+}
+
 .hero .navbar {
   position: absolute;
   top: 0;
@@ -72,7 +77,7 @@ body {
   text-align: center;
 }
 
-.nav-menu a {
+.nav-menu a, .service .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +92,7 @@ body {
   white-space: nowrap;
 }
 
-.nav-menu a:hover {
+.nav-menu a:hover, .service .btn:hover {
   background: #f4ba2b;
 }
 
@@ -100,7 +105,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   transition: background 0.3s ease;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .hero .btn:hover {
@@ -113,8 +118,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  flex-wrap: nowrap;
+  margin-top: 50px;
 }
 
 .process-steps .step {
@@ -134,7 +139,7 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 80px;
   padding: 0 10px;
 }
 
@@ -148,6 +153,7 @@ body {
   text-align: center;
   border: 3px solid #f4ba2b;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .advantages {
@@ -155,6 +161,7 @@ body {
   justify-content: center;
   gap: 10px;
   flex-wrap: nowrap;
+  margin-bottom: 20px;
 }
 
 .advantage {
@@ -162,27 +169,6 @@ body {
   background: #f4ba2b;
   padding: 10px;
   border-radius: 5px;
-}
-
-.service .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background: #3d3d3f;
-  color: #f7e7c6;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: background 0.3s ease;
-  border: none;
-}
-
-.service .btn:hover,
-.service .btn:active {
-  background: #f4ba2b;
-  color: #3d3d3f;
 }
 
 @media (max-width: 768px) {

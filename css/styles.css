@@ -151,7 +151,6 @@ body {
   font-weight: bold;
   transition: background 0.3s ease;
   border: none;
-  margin-top: -15px;
 }
 
 .hero .btn:hover {

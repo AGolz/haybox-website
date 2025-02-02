@@ -58,7 +58,7 @@ body {
 .sticky-banner h1 {
   font-size: 1.5rem;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   flex-grow: 1;
   color: #fff;
 }
@@ -123,7 +123,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0px;
-  margin-top: -15px;
+  margin-top: -20px;
 }
 
 .hero .logo {
@@ -135,6 +135,7 @@ body {
 }
 
 .hero p {
+  margin-bottom: -15px;
   white-space: nowrap;
 }
 
@@ -151,7 +152,7 @@ body {
   font-weight: bold;
   transition: background 0.3s ease;
   border: none;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 
 .hero .btn:hover {

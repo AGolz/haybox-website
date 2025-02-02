@@ -39,23 +39,24 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(244, 186, 43, 0.8);
+  background: rgba(244, 186, 43, 0.6);
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  z-index: 100;
+  z-index: 102;
+  height: 50px;
 }
 
 .sticky-banner .logo {
-  max-width: 170px;
+  max-width: 150px;
   height: auto;
 }
 
 .sticky-banner h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
   flex-grow: 1;
@@ -68,9 +69,8 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-top: 80px;
+  margin-top: 50px;
   padding: 10px 0;
-  background: #f7e7c6;
   position: relative;
   z-index: 101;
 }
@@ -86,7 +86,7 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1;
-  background: #f7e7c6;
+  background: transparent;
   color: #3d3d3f;
   padding: 10px 18px;
   border-radius: 5px;
@@ -114,7 +114,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .hero .logo {
@@ -126,7 +126,7 @@ body {
   white-space: nowrap;
 }
 
-.hero .btn {
+.hero .btn, .service .btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +142,7 @@ body {
   border: none;
 }
 
-.hero .btn:hover {
+.hero .btn:hover, .service .btn:hover {
   background: #f4ba2b;
   color: #3d3d3f;
 }
@@ -163,6 +163,43 @@ body {
   object-fit: contain;
 }
 
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.service {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  max-width: 480px;
+  text-align: center;
+  border: 3px solid #f4ba2b;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.advantage {
+  flex: 1 1 calc(33.333% - 10px);
+  background: #f4ba2b;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 @media (max-width: 768px) {
   .hero {
     height: auto;
@@ -170,12 +207,13 @@ body {
   }
 
   .hero .container {
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   .sticky-banner {
     flex-direction: column;
     text-align: center;
+    height: auto;
   }
 
   .sticky-banner .logo {

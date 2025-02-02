@@ -124,7 +124,6 @@ body {
 }
 
 .hero p {
-  margin-top: 0px;
   white-space: nowrap;
 }
 
@@ -140,7 +139,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   transition: background 0.3s ease;
-  margin-top: 10px;
+  margin-top: 0px;
   border: none;
 }
 

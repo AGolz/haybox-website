@@ -335,11 +335,10 @@ body {
   margin-bottom: 40px;
 }
 
-/* Основной стиль блока */
 .feature {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
   margin-bottom: 40px;
   text-align: left;
@@ -347,7 +346,7 @@ body {
 }
 
 .feature img {
-  width: 140px; /* Размер изображений */
+  width: 140px;
   height: auto;
 }
 
@@ -356,17 +355,6 @@ body {
   max-width: 600px;
 }
 
-.feature h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.feature p {
-  font-size: 1rem;
-  color: #333;
-}
-
-/* Чередование блоков */
 .feature:nth-child(odd) {
   flex-direction: row;
 }
@@ -375,7 +363,6 @@ body {
   flex-direction: row-reverse;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
   .feature {
     flex-direction: column !important;

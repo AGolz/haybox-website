@@ -326,21 +326,25 @@ body {
   color: #3d3d3f;
 }
 
+/* Грид для двух колонок */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  gap: 40px; /* Расстояние между колонками */
+  justify-content: center;
+  align-items: start;
+}
+
+/* Блоки внутри колонок */
 .feature-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 15px;
-  margin-bottom: 50px;
 }
 
-/* Стили текста */
-.feature-text {
-  max-width: 600px;
-  text-align: center;
-}
-
+/* Фото */
 .feature-img {
   width: 250px;
   height: 250px;
@@ -353,6 +357,12 @@ body {
   object-fit: cover;
 }
 
+/* Текст */
+.feature-text {
+  max-width: 300px;
+  text-align: center;
+}
+
 /* Иконки */
 .feature-icon {
   width: 20px;
@@ -362,14 +372,10 @@ body {
   object-fit: contain;
 }
 
-/* Медиа-запрос для мобильных устройств */
+/* Медиа-запрос для мобильных */
 @media (max-width: 768px) {
-  .feature-item {
-    text-align: center;
-  }
-
-  .feature-text {
-    max-width: 100%;
+  .feature-grid {
+    grid-template-columns: 1fr; /* Одна колонка на мобилках */
   }
 
   .feature-img {

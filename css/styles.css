@@ -286,6 +286,16 @@ body {
   height: auto;
   margin-bottom: 10px;
 }
+.advantage h5 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.advantage p {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+}
 
 .service .btn {
   display: inline-flex;

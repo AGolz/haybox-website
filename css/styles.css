@@ -335,17 +335,19 @@ body {
   margin-bottom: 40px;
 }
 
+/* Основной стиль блока */
 .feature {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 40px;
   margin-bottom: 40px;
   text-align: left;
+  flex-wrap: wrap;
 }
 
 .feature img {
-  width: 120px;
+  width: 140px; /* Размер изображений */
   height: auto;
 }
 
@@ -364,18 +366,20 @@ body {
   color: #333;
 }
 
-.feature.reverse {
+/* Чередование блоков */
+.feature:nth-child(odd) {
+  flex-direction: row;
+}
+
+.feature:nth-child(even) {
   flex-direction: row-reverse;
 }
 
+/* Адаптивность */
 @media (max-width: 768px) {
   .feature {
-    flex-direction: column;
+    flex-direction: column !important;
     text-align: center;
-  }
-
-  .feature.reverse {
-    flex-direction: column;
   }
 
   .feature img {

@@ -259,8 +259,8 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start; 
+  justify-content: flex-start;
   text-align: center;
   min-height: 130px;
 }
@@ -269,6 +269,8 @@ body {
   width: 40px;
   height: auto;
   margin-bottom: 10px;
+  align-self: flex-start;
+  min-height: 130px;
 }
 
 .service .btn {

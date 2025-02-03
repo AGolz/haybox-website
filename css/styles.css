@@ -328,15 +328,17 @@ body {
 
 .feature-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 40px;
-  text-align: left;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 50px;
 }
 
-.feature-item:nth-child(even) {
-  flex-direction: row-reverse;
+/* Стили текста */
+.feature-text {
+  max-width: 600px;
+  text-align: center;
 }
 
 .feature-img {
@@ -351,17 +353,29 @@ body {
   object-fit: cover;
 }
 
-.feature-text {
-  flex: 1;
-  max-width: 600px;
-}
-
+/* Иконки */
 .feature-icon {
   width: 20px;
   height: 20px;
   margin-left: 10px;
   vertical-align: middle;
   object-fit: contain;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .feature-item {
+    text-align: center;
+  }
+
+  .feature-text {
+    max-width: 100%;
+  }
+
+  .feature-img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 #audience, #for-whom .audience {

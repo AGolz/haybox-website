@@ -350,11 +350,11 @@ body {
 
 /* Фото */
 .feature-img {
-  width: 280px;
-  height: 280px;
+  width: 290px;
+  height: 290px;
   border-radius: 50%;
   background: #fff;
-  padding: 5px;
+  padding: 3px;
   box-shadow: 
     5px 5px 15px rgba(0, 0, 0, 0.2),
     inset 0 0 10px rgba(0, 0, 0, 0.1);

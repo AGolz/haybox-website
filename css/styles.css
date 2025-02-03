@@ -270,7 +270,6 @@ body {
   height: auto;
   margin-bottom: 10px;
   align-self: flex-start;
-  min-height: 130px;
 }
 
 .service .btn {

@@ -206,9 +206,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: nowrap;
-  margin-top: 80px;
+  margin-top: 60px;
+  padding: 0 10px;
 }
 
 .process-steps .arrow {
@@ -223,7 +224,7 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 0 10px;
 }
 

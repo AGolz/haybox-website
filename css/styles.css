@@ -326,15 +326,6 @@ body {
   color: #3d3d3f;
 }
 
-#why-haybox {
-  text-align: center;
-  padding: 50px 0;
-}
-
-#why-haybox h2 {
-  margin-bottom: 40px;
-}
-
 .feature-item {
   display: flex;
   align-items: center;
@@ -344,19 +335,13 @@ body {
   text-align: left;
 }
 
-.feature {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
-  text-align: left;
-  flex-wrap: wrap;
+.feature-item:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
-.feature img {
-  width: 280px;
-  height: 280px;
+.feature-img {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background: #fff;
   padding: 5px;
@@ -364,7 +349,11 @@ body {
     5px 5px 15px rgba(0, 0, 0, 0.2),
     inset 0 0 10px rgba(0, 0, 0, 0.1);
   object-fit: cover;
-  display: block;
+}
+
+.feature-text {
+  flex: 1;
+  max-width: 600px;
 }
 
 .feature-icon {
@@ -374,32 +363,6 @@ body {
   vertical-align: middle;
   object-fit: contain;
 }
-
-.feature-text {
-  flex: 1;
-  max-width: 600px;
-}
-
-.feature:nth-child(odd) {
-  flex-direction: row;
-}
-
-.feature:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-
-@media (max-width: 768px) {
-  .feature {
-    flex-direction: column !important;
-    text-align: center;
-  }
-
-  .feature img {
-    width: 100px;
-  }
-}
-
 
 #audience, #for-whom .audience {
   display: flex;

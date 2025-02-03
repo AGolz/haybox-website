@@ -358,6 +358,17 @@ body {
   display: block;
 }
 
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  vertical-align: middle;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none; 
+  background: none;
+}
+
 .feature-text {
   flex: 1;
   max-width: 600px;
@@ -371,16 +382,6 @@ body {
   flex-direction: row-reverse;
 }
 
-.feature-icon {
-  width: 40px;
-  height: 40px;
-  margin-left: 10px;
-  vertical-align: middle;
-  /*object-fit: contain;*/
-  border-radius: 0;
-  box-shadow: none; 
-  background: none;
-}
 
 @media (max-width: 768px) {
   .feature {

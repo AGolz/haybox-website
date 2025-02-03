@@ -284,8 +284,6 @@ body {
   transition: background 0.3s ease;
   border: none;
   margin-top: 40px;
-  min-width: 180px;
-  max-width: 220px;
 }
 
 .service .btn:hover {

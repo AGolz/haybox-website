@@ -272,9 +272,6 @@ body {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  box-shadow: 
-    5px 5px 15px rgba(0, 0, 0, 0.2),
-    inset 0 0 10px rgba(0, 0, 0, 0.1);
   align-items: center;
   justify-content: flex-start;
   text-align: center;

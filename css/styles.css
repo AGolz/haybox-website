@@ -350,7 +350,7 @@ body {
   height: 180px;
   border-radius: 50%;
   background: #fff;
-  padding: 0px;
+  padding: 8px;
   box-shadow: 
     5px 5px 15px rgba(0, 0, 0, 0.2),
     inset 0 0 10px rgba(0, 0, 0, 0.1);

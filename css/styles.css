@@ -97,12 +97,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 150px;
+  padding-top: 100px;
   background: rgba(244, 186, 43, 0.7) url('../assets/images/header-overlay.png') no-repeat center center/cover;
   background-blend-mode: overlay;
   color: #fff;
   position: relative;
   overflow: hidden;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-overlay {
@@ -116,6 +123,7 @@ body {
   color: #fff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 215, 0, 0.7);
   white-space: nowrap;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {

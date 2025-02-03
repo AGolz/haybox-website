@@ -340,8 +340,8 @@ body {
 }
 
 .feature-img {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: #fff;
   padding: 5px;
@@ -357,8 +357,8 @@ body {
 }
 
 .feature-icon {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   margin-left: 10px;
   vertical-align: middle;
   object-fit: contain;

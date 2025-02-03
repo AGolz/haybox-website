@@ -326,11 +326,15 @@ body {
   color: #3d3d3f;
 }
 
+#why-haybox h2 {
+  margin-bottom: 60px;
+}
+
 /* Грид для двух колонок */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Две колонки */
-  gap: 40px; /* Расстояние между колонками */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
   justify-content: center;
   align-items: start;
 }
@@ -346,8 +350,8 @@ body {
 
 /* Фото */
 .feature-img {
-  width: 250px;
-  height: 250px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   background: #fff;
   padding: 5px;
@@ -375,7 +379,7 @@ body {
 /* Медиа-запрос для мобильных */
 @media (max-width: 768px) {
   .feature-grid {
-    grid-template-columns: 1fr; /* Одна колонка на мобилках */
+    grid-template-columns: 1fr;
   }
 
   .feature-img {

@@ -51,10 +51,9 @@ body {
 .sticky-banner .logo {
   max-width: 180px;
   height: auto;
-  margin-right: auto; /* Лого остается слева */
+  margin-right: auto;
 }
 
-/* Центрирование навигации */
 .navbar {
   flex-grow: 1;
   display: flex;
@@ -91,14 +90,14 @@ body {
   background: #f4ba2b;
 }
 
-/* HERO (Главный экран) */
+/* HERO */
 .hero {
-  height: 500px; /* Увеличиваем высоту */
+  height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Центрируем по вертикали */
+  justify-content: center;
   align-items: center;
-  padding-top: 150px; /* Смещаем контент ниже */
+  padding-top: 150px;
   background: rgba(244, 186, 43, 0.7) url('../assets/images/header-overlay.png') no-repeat center center/cover;
   background-blend-mode: overlay;
   color: #fff;
@@ -106,20 +105,17 @@ body {
   overflow: hidden;
 }
 
-/* Смещение контента в хедере ниже */
 .hero-overlay {
   text-align: center;
-  margin-top: 100px; /* Смещение вниз */
+  margin-top: 100px;
 }
 
-/* Подсветка текста h1 */
 .hero h1 {
   font-size: 2rem;
   font-weight: bold;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 215, 0, 0.7);
 }
 
-/* Опускание кнопки */
 .hero .btn {
   display: inline-flex;
   justify-content: center;
@@ -133,7 +129,7 @@ body {
   font-weight: bold;
   transition: background 0.3s ease;
   border: none;
-  margin-top: 20px; /* Двигаем кнопку ниже */
+  margin-top: 20px;
 }
 
 .hero .btn:hover {
@@ -148,7 +144,7 @@ body {
   }
 
   .hero-overlay {
-    margin-top: 50px; /* Чуть меньше отступ */
+    margin-top: 50px;
   }
 
   .sticky-banner {

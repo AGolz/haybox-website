@@ -339,15 +339,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
   margin-bottom: 40px;
   text-align: left;
   flex-wrap: wrap;
 }
 
 .feature img {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   background: #fff;
   padding: 5px;

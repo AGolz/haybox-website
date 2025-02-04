@@ -364,7 +364,7 @@ body {
 /* Текст */
 .feature-text {
   max-width: 300px;
-  text-align: center;
+  text-align: left;
 }
 
 /* Иконки */
@@ -374,6 +374,28 @@ body {
   margin-left: 10px;
   vertical-align: middle;
   object-fit: contain;
+}
+
+/* Список с галочками */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.checkmark {
+  color: #f4ba2b;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 8px;
 }
 
 /* Медиа-запрос для мобильных */

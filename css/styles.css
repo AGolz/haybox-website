@@ -410,15 +410,75 @@ body {
   }
 }
 
-#audience, #for-whom .audience {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#for-whom h2 {
+  margin-bottom: 60px;
 }
 
-#audience .audience-item, #for-whom .audience-item {
-  flex: 1 1 45%;
-  margin: 10px;
+/* Двухколоночная сетка */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Блоки */
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+/* Текст */
+.feature-text {
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Галочки и список */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+.feature-list li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.checkmark {
+  color: #f4ba2b;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 14px;
+}
+
+/* Иконки */
+.feature-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-icon {
+    width: 25px;
+    height: 25px;
+  }
 }
 
 #reviews .reviews-slider {

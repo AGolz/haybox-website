@@ -438,6 +438,15 @@ body {
   text-align: center;
 }
 
+/* Заголовок и иконка в одну строку */
+.feature-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
 /* Галочки и список */
 .feature-list {
   list-style: none;
@@ -464,8 +473,6 @@ body {
 .feature-icon {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
-  vertical-align: middle;
   object-fit: contain;
 }
 

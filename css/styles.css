@@ -529,13 +529,9 @@ body {
 /* Стили картинок-отзывов */
 .review-item img {
   width: 100%;
-  max-width: 280px;
+  max-width: 300px;
   object-fit: contain;
   background: transparent;
-  box-shadow: 
-    3px 3px 15px rgba(0, 0, 0, 0.2),
-    inset 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   padding: 5px;
 }
 

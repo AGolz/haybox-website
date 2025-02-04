@@ -497,7 +497,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* Сетка 3 отзыва сверху, 2 снизу */
+/* Сетка отзывов: 3 вверху, 2 внизу */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -506,10 +506,14 @@ body {
   align-items: start;
 }
 
-/* Отдельный стиль для последнего ряда */
-.reviews-grid .review-item:nth-child(4),
-.reviews-grid .review-item:nth-child(5) {
-  grid-column: span 1;
+/* Второй ряд: два отзыва по центру */
+.reviews-grid .centered {
+  grid-column: 2;
+}
+
+/* Отзывы из Telegram (шире) */
+.review-wide img {
+  max-width: 320px;
 }
 
 /* Карточки отзывов */
@@ -521,17 +525,22 @@ body {
   gap: 10px;
 }
 
+/* Имена клиентов */
 .review-item h3 {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* Стили картинок-отзывов */
+/* Картинки отзывов */
 .review-item img {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   object-fit: contain;
   background: transparent;
+  box-shadow: 
+    3px 3px 15px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   padding: 5px;
 }
 
@@ -539,6 +548,11 @@ body {
 @media (max-width: 768px) {
   .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews-grid .centered {
+    grid-column: span 2;
+    justify-self: center;
   }
 }
 

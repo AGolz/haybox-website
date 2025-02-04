@@ -380,22 +380,22 @@ body {
 .feature-list {
   list-style: none;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .feature-list li {
   display: flex;
   align-items: center;
   font-size: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   text-align: left;
 }
 
 .checkmark {
   color: #f4ba2b;
   font-weight: bold;
-  font-size: 18px;
-  margin-right: 8px;
+  font-size: 20px;
+  margin-right: 12px;
 }
 
 /* Медиа-запрос для мобильных */

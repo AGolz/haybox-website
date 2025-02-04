@@ -387,7 +387,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 16px;
-  margin-bottom: 14px;
+  margin-bottom: 19px;
   text-align: left;
 }
 
@@ -395,7 +395,7 @@ body {
   color: #f4ba2b;
   font-weight: bold;
   font-size: 20px;
-  margin-right: 12px;
+  margin-right: 20px;
 }
 
 /* Медиа-запрос для мобильных */

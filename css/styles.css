@@ -488,26 +488,72 @@ body {
   }
 }
 
-#reviews .reviews-slider {
-  display: flex;
-  overflow-x: auto;
-  gap: 20px;
-  padding: 20px 0;
-}
-
-#reviews .review {
-  flex: 0 0 auto;
-  width: 300px;
-  background: #f7f7f7;
-  padding: 20px;
-  border-radius: 5px;
+#reviews {
   text-align: center;
+  padding: 60px 0;
 }
 
-#reviews .review img {
-  max-width: 80px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+#reviews h2 {
+  margin-bottom: 40px;
+}
+
+/* Сетка 3 отзыва сверху, 2 снизу */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Отдельный стиль для последнего ряда */
+.reviews-grid .review-item:nth-child(4),
+.reviews-grid .review-item:nth-child(5) {
+  grid-column: span 1;
+}
+
+/* Карточки отзывов */
+.review-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.review-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Стили картинок-отзывов */
+.review-item img {
+  width: 100%;
+  max-width: 280px;
+  object-fit: contain;
+  background: transparent;
+  box-shadow: 
+    3px 3px 15px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-item img {
+    max-width: 200px;
+  }
 }
 
 #pricing .pricing-cards {

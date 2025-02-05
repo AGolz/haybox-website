@@ -564,6 +564,11 @@ body {
   }
 }
 
+/* Отступ после заголовка */
+#pricing h2 {
+  margin-bottom: 50px;
+}
+
 /* Вкладки */
 .tabs {
   display: flex;
@@ -576,9 +581,9 @@ body {
   background: transparent;
   color: #333;
   padding: 12px 24px;
-  border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
+  border: none;
   text-decoration: none;
   transition: background 0.3s ease;
 }
@@ -588,40 +593,21 @@ body {
   color: #f7e7c6;
 }
 
-/* Белые блоки */
-.pricing-wrapper {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  text-align: center;
-}
-
 /* Горизонтальные карточки */
 .pricing-grid {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .pricing-item {
   background: #f4ba2b;
-  padding: 15px;
+  padding: 20px;
   border-radius: 8px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  flex: 1 1 calc(30% - 20px);
-  text-align: center;
   white-space: nowrap;
-}
-
-/* Иконки */
-.icon {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
-  margin-right: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  flex: 1 1 calc(45% - 20px);
 }
 
 #contact .contact-form {

@@ -515,7 +515,7 @@ body {
   border: 2px solid #fff;
 }
 
-.review-name {
+.review p {
   font-weight: bold;
   font-size: 18px;
 }

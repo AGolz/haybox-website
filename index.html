@@ -389,9 +389,9 @@
 </section>
 <section id="contact">
   <div class="container">
+    <h2>Оставить заявку</h2>
     <div class="pricing-wrapper">
-      <h2>Оставить заявку</h2>
-      <form action="#" method="POST" class="contact-form">
+      <form action="#" method="POST" class="contact-form" onsubmit="return validateForm()">
         <!-- Поле Имя -->
         <label for="name">Имя:</label>
         <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
@@ -483,19 +483,6 @@
             <input type="checkbox" id="storage-delivery" name="storage-delivery">
             <label for="storage-delivery">Доставка</label>
           </div>
-
-          <!-- Выбор тарифа для хранения -->
-          <label for="storage-plan">Выберите тариф:</label>
-          <select id="storage-plan" name="storage-plan">
-            <option value="">Выберите тариф</option>
-            <option value="anahit-mini">Анаит Мини (до 2 коробок)</option>
-            <option value="anahit-optimum">Анаит Оптимум (до 5 коробок)</option>
-            <option value="anahit-maxi">Анаит Макси (до 10 коробок)</option>
-            <option value="anahit-grand">Анаит Гранд (до 15 коробок)</option>
-            <option value="asthik">Астхик (хранение мебели и техники)</option>
-            <option value="vahagn">Вахагн (хранение ценностей)</option>
-            <option value="aramazd">Арамазд (индивидуальные комнаты)</option>
-          </select>
         </div>
 
         <button type="submit" class="btn">Рассчитать стоимость</button>

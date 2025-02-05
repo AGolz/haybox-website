@@ -506,6 +506,16 @@ body {
   align-items: center;
 }
 
+/* Увеличенные отзывы Telegram */
+.review-large {
+  max-width: 400px !important; /* Остаются увеличенными */
+}
+
+/* Уменьшенные отзывы */
+.review-small {
+  max-width: 200px;
+}
+
 /* Второй ряд - центрирование */
 .review-center {
   grid-column: span 1;
@@ -518,29 +528,12 @@ body {
   grid-column: 1 / -1;
 }
 
-/* Центрируем второй ряд относительно страницы */
-.review-center:nth-child(4),
-.review-center:nth-child(5) {
-  grid-column: span 1;
-  justify-self: center;
-}
-
-/* ДОПОЛНИТЕЛЬНОЕ УСИЛЕННОЕ ЦЕНТРИРОВАНИЕ ВТОРОГО РЯДА */
 .review-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Центрируем второй ряд */
   gap: 40px;
   width: 100%;
-}
-
-/* Увеличенные отзывы Telegram */
-.review-large {
-  max-width: 400px !important; /* Увеличил еще больше */
-}
-
-/* Уменьшенные отзывы */
-.review-small {
-  max-width: 200px;
+  grid-column: 1 / -1; /* Весь ряд */
 }
 
 /* Медиа-запрос для мобильных */

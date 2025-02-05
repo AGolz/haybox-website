@@ -487,6 +487,7 @@ body {
     height: 25px;
   }
 }
+
 #reviews {
   text-align: center;
   padding: 50px 0;
@@ -499,7 +500,8 @@ body {
 /* Грид-контейнер для отзывов */
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 отзыва в первом ряду */
+  grid-template-columns: repeat(3, 1fr); /* Первый ряд: 3 отзыва */
+  grid-template-rows: auto auto; /* Два ряда */
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -507,11 +509,11 @@ body {
   margin: 0 auto;
 }
 
-/* Второй ряд с двумя отзывами */
+/* Второй ряд с двумя отзывами — центрируем */
 .reviews-grid .review:nth-child(4),
 .reviews-grid .review:nth-child(5) {
-  grid-column: span 1;
-  justify-self: center; /* Центрируем их относительно первого ряда */
+  grid-column: 2 / 3; /* Размещаем по центру */
+  justify-self: center;
 }
 
 /* Контейнер для каждого отзыва */
@@ -524,12 +526,12 @@ body {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-  max-width: 250px; /* Стандартный размер для всех отзывов */
+  max-width: 280px; /* Установил фиксированный размер */
 }
 
-/* Увеличенные отзывы только для Telegram */
+/* Увеличенные отзывы только для Telegram (но не огромные) */
 .review[data-source="telegram"] {
-  max-width: 320px; /* Делаем больше только tg_1 и tg_2 */
+  max-width: 320px;
 }
 
 /* Имя автора */

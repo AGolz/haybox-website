@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log("HayBox сайт загружен!");
 
-  /**
-   * Показываем нужное поле контактов в зависимости от выбора способа связи
-   */
   function toggleContactFields() {
     document.querySelectorAll(".contact-extra").forEach(field => field.style.display = "none");
 
@@ -17,32 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  /**
-   * Показываем чекбоксы в зависимости от выбранной услуги
-   */
   function toggleServiceFields() {
     const movingOptions = document.getElementById("moving-options");
     const storageOptions = document.getElementById("storage-options");
     const selectedService = document.getElementById("service").value;
-    const serviceLabel = document.getElementById("service-label"); // Заголовок "Выберите необходимые услуги"
+    const serviceLabel = document.getElementById("service-label");
 
     // Перед изменением скрываем оба блока
     movingOptions.style.display = "none";
     storageOptions.style.display = "none";
-    serviceLabel.style.display = "none"; // По умолчанию скрываем
+    serviceLabel.style.display = "none";
 
     if (selectedService === "moving") {
-      movingOptions.style.display = "flex"; // Чекбоксы переезда
-      serviceLabel.style.display = "block"; // Показываем заголовок
+      movingOptions.style.display = "flex"; // Показываем чекбоксы переезда
+      serviceLabel.style.display = "block";
     } else if (selectedService === "storage") {
-      storageOptions.style.display = "flex"; // Чекбоксы хранения
-      serviceLabel.style.display = "block"; // Показываем заголовок
+      storageOptions.style.display = "flex"; // Показываем чекбоксы хранения
+      serviceLabel.style.display = "block";
     }
   }
 
-  /**
-   * Валидация формы: запрещаем отправку, если не заполнены обязательные поля
-   */
   function validateForm(event) {
     const contactMethod = document.getElementById("contact-method").value;
     const telegram = document.getElementById("telegram").value.trim();
@@ -77,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return true;
   }
 
-  // Назначаем обработчики событий
   document.getElementById("contact-method").addEventListener("change", toggleContactFields);
   document.getElementById("service").addEventListener("change", toggleServiceFields);
   document.getElementById("contact-form").addEventListener("submit", validateForm);

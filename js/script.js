@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
    * Показываем нужное поле контактов в зависимости от выбора способа связи
    */
   function toggleContactFields() {
+    // Скрываем все дополнительные контактные поля
     document.querySelectorAll(".contact-extra").forEach(field => field.style.display = "none");
 
     const selectedMethod = document.getElementById("contact-method").value;

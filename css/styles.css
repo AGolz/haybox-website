@@ -577,13 +577,11 @@ body {
   color: #333;
   padding: 12px 24px;
   border-radius: 5px;
-  text-decoration: none;
   font-size: 1rem;
   font-weight: bold;
-  white-space: nowrap;
-  transition: background 0.3s ease;
   border: 2px solid #f4ba2b;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .tab-link:hover, .tab-link.active {
@@ -591,8 +589,8 @@ body {
   color: #fff;
 }
 
-/* Общий стиль белых блоков */
-.pricing-block {
+/* Большие белые блоки */
+.pricing-wrapper {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
@@ -601,29 +599,34 @@ body {
   text-align: center;
 }
 
-/* Карточки с услугами */
+/* Горизонтальное расположение желтых карточек */
 .pricing-grid {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
+/* Желтые карточки */
 .pricing-item {
-  flex: 1 1 calc(33.333% - 20px);
   background: #f4ba2b;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  flex: 1 1 calc(33.333% - 20px);
   text-align: center;
 }
 
+/* Адаптив для мобильных */
 @media (max-width: 768px) {
   .pricing-grid {
     flex-direction: column;
   }
-}
 
+  .pricing-item {
+    width: 100%;
+  }
+}
 #contact .contact-form {
   display: flex;
   flex-direction: column;

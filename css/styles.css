@@ -513,14 +513,18 @@ body {
   align-items: center;
 }
 
-/* Увеличенные отзывы Telegram */
+.review p {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
 .review-large {
   max-width: 400px !important;
 }
 
-/* Уменьшенные отзывы */
+
 .review-small {
-  max-width: 200px;
+  max-width: 300px;
 }
 
 /* Медиа-запрос для мобильных */

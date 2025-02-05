@@ -579,7 +579,7 @@ body {
 
 .tab-link {
   background: transparent;
-  color: #fff;
+  color: #3d3d3f;
   padding: 10px 18px;
   border-radius: 5px;
   text-decoration: none;
@@ -594,6 +594,7 @@ body {
 .tab-link.active,
 .tab-link:hover {
   background: #3d3d3f;
+  color: #333;
 }
 
 /* --- Белые блоки, которые растягиваются под содержимое --- */
@@ -607,6 +608,14 @@ body {
   min-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+
+h3 .icon {
+  width: 24px; /* Ширина иконки */
+  height: 24px; /* Высота иконки */
+  margin-right: 10px; /* Отступ справа от текста */
+  vertical-align: middle; /* Выравнивание по центру с текстом */
+  object-fit: contain;
 }
 
 /* --- Грид для желтых карточек внутри белого блока (горизонтальное расположение) --- */

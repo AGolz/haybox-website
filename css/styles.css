@@ -604,7 +604,7 @@ body {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   width: 100%;
-  max-width: 2500px;
+  min-width: 2500px;
   margin-left: auto;
   margin-right: auto;
 }

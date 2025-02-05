@@ -716,38 +716,26 @@ h3 .icon {
   }
 }
 
-/* --- Белый блок формы (уменьшенный размер) --- */
-.contact-wrapper {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  width: 60%;
-  min-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* --- Заголовок вынесен за пределы формы --- */
-#contact h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 /* --- Контейнер формы (прижимаем к левой стороне) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Теперь прижаты к левой стороне */
+  align-items: flex-start; /* Прижаты к левой стороне */
   gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 /* --- Поля формы в одну строку с названиями --- */
 .contact-row {
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -802,33 +790,6 @@ h3 .icon {
   background: #f4ba2b;
   color: #3d3d3f;
 }
-
-/* --- Медиа-запрос для мобильных --- */
-@media (max-width: 768px) {
-  .contact-wrapper {
-    width: 90%;
-    min-width: auto;
-  }
-
-  .contact-form {
-    align-items: center;
-  }
-
-  .contact-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact-form input,
-  .contact-form select {
-    width: 100%;
-  }
-
-  .checkbox-group {
-    justify-content: flex-start;
-  }
-}
-
 footer {
   background: #333;
   color: #fff;

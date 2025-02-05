@@ -717,14 +717,14 @@ h3 .icon {
 }
 
 
-/* --- Контейнер формы (прижимаем к левой стороне) --- */
+/* --- Контейнер формы (уменьшенный размер, прижат к левому краю) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Прижаты к левой стороне */
+  align-items: flex-start;
   gap: 15px;
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   padding: 30px;
   background: #fff;
   border-radius: 10px;
@@ -740,10 +740,10 @@ h3 .icon {
   width: 100%;
 }
 
-/* --- Поля ввода и селекты --- */
+/* --- Поля ввода и селекты (уже не растянуты на всю ширину) --- */
 .contact-form input,
 .contact-form select {
-  width: 250px;
+  width: 230px;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -756,7 +756,7 @@ h3 .icon {
   display: none;
 }
 
-/* --- Чекбоксы в одну строку (изначально скрыты) --- */
+/* --- Чекбоксы в одну строку --- */
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
@@ -791,6 +791,7 @@ h3 .icon {
   background: #f4ba2b;
   color: #3d3d3f;
 }
+
 
 footer {
   background: #333;

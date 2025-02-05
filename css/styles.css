@@ -499,6 +499,13 @@ body {
   margin-top: 40px;
 }
 
+.review-second-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
 /* Общий стиль отзывов */
 .review {
   display: flex;
@@ -516,15 +523,6 @@ body {
   max-width: 200px;
 }
 
-.review-second-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  gap: 40px;
-  width: 100%;
-  margin-top: 20px;
-}
-
 /* Медиа-запрос для мобильных */
 @media (max-width: 768px) {
   .reviews-grid {
@@ -532,8 +530,8 @@ body {
   }
 
   .review-second-row {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 

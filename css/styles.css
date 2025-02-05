@@ -491,7 +491,7 @@ body {
 /* Грид с отзывами */
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 колонки в первом ряду */
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-items: center;
   align-items: start;
@@ -508,7 +508,7 @@ body {
 
 /* Увеличенные отзывы Telegram */
 .review-large {
-  max-width: 400px !important; /* Остаются увеличенными */
+  max-width: 400px !important;
 }
 
 /* Уменьшенные отзывы */
@@ -516,12 +516,13 @@ body {
   max-width: 200px;
 }
 
-.review-row {
-  display: flex;
+.review-second-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 40px;
   width: 100%;
-  grid-column: 1 / -1;
+  margin-top: 20px;
 }
 
 /* Медиа-запрос для мобильных */
@@ -530,10 +531,9 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .review-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  .review-second-row {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 

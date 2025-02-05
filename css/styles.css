@@ -627,8 +627,7 @@ body {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   flex: 1 1 280px;
   min-width: 160px;
-  align-items: flex-start;
-  text-align: flex-start;
+  text-align: centr;
   white-space: normal;
   word-wrap: break-word;
   display: flex;

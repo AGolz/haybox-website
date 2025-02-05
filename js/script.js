@@ -23,29 +23,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   function toggleContactFields() {
-  document.getElementById("telegram-field").classList.add("hidden");
-  document.getElementById("whatsapp-field").classList.add("hidden");
-  document.getElementById("phone-field").classList.add("hidden");
+  document.querySelectorAll(".contact-extra").forEach(field => field.style.display = "none");
 
   const selectedMethod = document.getElementById("contact-method").value;
   if (selectedMethod === "telegram") {
-    document.getElementById("telegram-field").classList.remove("hidden");
+    document.getElementById("telegram-field").style.display = "block";
   } else if (selectedMethod === "whatsapp") {
-    document.getElementById("whatsapp-field").classList.remove("hidden");
+    document.getElementById("whatsapp-field").style.display = "block";
   } else if (selectedMethod === "phone") {
-    document.getElementById("phone-field").classList.remove("hidden");
+    document.getElementById("phone-field").style.display = "block";
   }
 }
 
 function toggleServiceFields() {
-  document.getElementById("moving-options").classList.add("hidden");
-  document.getElementById("storage-options").classList.add("hidden");
+  document.querySelectorAll(".service-extra").forEach(field => field.style.display = "none");
 
   const selectedService = document.getElementById("service").value;
   if (selectedService === "moving") {
-    document.getElementById("moving-options").classList.remove("hidden");
+    document.getElementById("moving-options").style.display = "block";
   } else if (selectedService === "storage") {
-    document.getElementById("storage-options").classList.remove("hidden");
+    document.getElementById("storage-options").style.display = "block";
   }
 }
 

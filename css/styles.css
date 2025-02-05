@@ -610,6 +610,28 @@ body {
   margin-right: auto;
 }
 
+.pricing-wrapper .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #3d3d3f;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  border: none;
+}
+
+.pricing-wrapper .btn:hover {
+  background: #f4ba2b;
+  color: #3d3d3f;
+}
+
 h3 .icon {
   width: 24px;
   height: 24px;

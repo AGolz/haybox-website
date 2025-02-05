@@ -611,9 +611,9 @@ body {
 }
 
 h3 .icon {
-  width: 28px;
-  height: 28px;
-  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
   vertical-align: middle;
   object-fit: contain;
 }
@@ -650,8 +650,9 @@ h3 .icon {
 }
 
 .pricing-icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
   vertical-align: middle;
   object-fit: contain;
 }

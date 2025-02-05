@@ -569,22 +569,34 @@ body {
   margin-bottom: 50px;
 }
 
-/* Отображаем только активную вкладку */
-.tab-content {
-  display: none;
+/* Стили для кнопок вкладок (такие же, как в верхнем меню) */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
-.tab-content.active {
-  display: block;
+.tab-link {
+  background: transparent;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: background 0.3s ease;
+  border: none; /* Убираем рамку */
+  cursor: pointer;
 }
 
-/* Позволяет перенос строк внутри желтых карточек */
-.pricing-item {
-  white-space: normal;
-  word-wrap: break-word;
+.tab-link.active,
+.tab-link:hover {
+  background: #3d3d3f;
 }
 
-/* Большие белые блоки */
+/* Белый блок */
 .pricing-wrapper {
   background: #fff;
   padding: 30px;
@@ -593,7 +605,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* Все желтые карточки расположены в одном горизонтальном ряду */
+/* Размещаем желтые карточки горизонтально */
 .pricing-grid {
   display: flex;
   flex-wrap: nowrap;
@@ -608,7 +620,16 @@ body {
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   flex: 1 1 auto;
+  white-space: normal; /* Позволяет перенос строк внутри карточки */
+  word-wrap: break-word;
 }
+
+/* Заголовки h4: запрет переноса и отступ перед текстом */
+.pricing-item h4 {
+  white-space: nowrap;
+  margin-bottom: 10px; /* Отступ перед основным текстом */
+}
+
 #contact .contact-form {
   display: flex;
   flex-direction: column;

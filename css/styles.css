@@ -569,7 +569,7 @@ body {
   margin-bottom: 50px;
 }
 
-/* Стили для кнопок вкладок (такие же, как в верхнем меню) */
+/* --- Вкладки: стилизуем кнопки, как в верхнем меню --- */
 .tabs {
   display: flex;
   justify-content: center;
@@ -587,7 +587,7 @@ body {
   font-weight: bold;
   white-space: nowrap;
   transition: background 0.3s ease;
-  border: none; /* Убираем рамку */
+  border: none;
   cursor: pointer;
 }
 
@@ -596,38 +596,75 @@ body {
   background: #3d3d3f;
 }
 
-/* Белый блок */
+/* --- Белые блоки, которые растягиваются под содержимое --- */
 .pricing-wrapper {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Размещаем желтые карточки горизонтально */
+/* --- Грид для желтых карточек внутри белого блока (горизонтальное расположение) --- */
 .pricing-grid {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
   justify-content: center;
+  align-items: stretch; /* Равная высота карточек */
 }
 
-/* Желтые карточки */
+/* --- Желтые карточки --- */
 .pricing-item {
   background: #f4ba2b;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  flex: 1 1 auto;
-  white-space: normal; /* Позволяет перенос строк внутри карточки */
+  flex: 1 1 280px;
+  max-width: 400px;
+  text-align: center;
+  white-space: normal;
   word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Заголовки h4: запрет переноса и отступ перед текстом */
+/* --- Заголовки в желтых карточках: без переноса и с отступом перед текстом --- */
 .pricing-item h4 {
   white-space: nowrap;
-  margin-bottom: 10px; /* Отступ перед основным текстом */
+  margin-bottom: 10px;
+}
+
+/* --- Уменьшенный шрифт для лучшей читаемости --- */
+.pricing-item p {
+  font-size: 0.9rem;
+}
+
+/* --- По умолчанию скрываем все вкладки, кроме первой --- */
+.tab-content {
+  display: none;
+}
+
+/* --- Активная вкладка (которая открыта) --- */
+.tab-content.active {
+  display: block;
+}
+
+/* --- Медиа-запрос для адаптации на мобильных устройствах --- */
+@media (max-width: 768px) {
+  .pricing-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .pricing-item {
+    max-width: 90%;
+  }
 }
 
 #contact .contact-form {

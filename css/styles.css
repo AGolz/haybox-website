@@ -716,7 +716,6 @@ h3 .icon {
   }
 }
 
-
 /* --- Контейнер формы (уменьшенный размер, прижат к левому краю) --- */
 .contact-form {
   display: flex;
@@ -751,12 +750,14 @@ h3 .icon {
 }
 
 /* --- Блоки с дополнительными полями (изначально скрыты) --- */
-.contact-extra,
-.service-extra {
+.contact-extra {
   display: none;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 
-/* --- Чекбоксы в одну строку --- */
+/* --- Чекбоксы в одну строку (изначально скрыты) --- */
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
@@ -791,7 +792,6 @@ h3 .icon {
   background: #f4ba2b;
   color: #3d3d3f;
 }
-
 
 footer {
   background: #333;

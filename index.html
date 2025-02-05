@@ -280,110 +280,138 @@
     </div>
 
   </div>
-  <section id="pricing">
+<section id="pricing">
   <div class="container">
     <h2>Тарифы</h2>
 
-    <!-- Вкладки -->
-    <div class="tabs">
-      <button class="tab-link active" onclick="openTab(event, 'moving')">Переезды под ключ</button>
-      <button class="tab-link" onclick="openTab(event, 'storage')">Услуги хранения</button>
+    <!-- Переключатель вкладок -->
+    <div class="tab-buttons">
+      <button class="tab-link" onclick="openTab(event, 'moving')">Переезды</button>
+      <button class="tab-link" onclick="openTab(event, 'storage')">Хранение</button>
+      <button class="tab-link" onclick="openTab(event, 'discounts')">Акции</button>
     </div>
 
-    <!-- Вкладка Переезды под ключ -->
-    <div id="moving" class="tab-content active">
-      <h3>Упаковка вещей</h3>
-      <div class="pricing-card">
-        <p><strong>Упаковщик</strong> (минимальный заказ – 2 часа) – 8000 ֏</p>
-        <p>Каждый следующий час – 3500 ֏</p>
-        <p><strong>Бригада упаковщиков</strong> (3 человека, 2 часа) – 21000 ֏</p>
-        <p>Каждый следующий час – 9000 ֏</p>
-      </div>
+    <!-- Блок с прайсами -->
+    <div id="moving" class="tab-content">
+      <div class="pricing-box">
+        <h3>Переезды под ключ</h3>
 
-      <h3>Упаковочные материалы</h3>
-      <div class="pricing-card">
-        <p><strong>Коробки 60×40×40</strong>: Новые – 1400 ֏ | Б/у – 1100 ֏</p>
-        <p><strong>Пупырчатая плёнка</strong> – 1000 ֏/метр</p>
-        <p><strong>Стрейч-плёнка</strong> – 3000 ֏/рулон</p>
-        <p><strong>Маркировка коробок</strong> – бесплатно</p>
-        <p><strong>Разборка и сборка мебели</strong> – 7000 - 10 000 ֏ за предмет</p>
-      </div>
+        <div class="pricing-category">
+          <h4>Упаковка вещей</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>Упаковщик (2 часа) – 8000 ֏</p>
+              <p>Каждый следующий час – 3500 ֏</p>
+            </div>
+            <div class="pricing-item">
+              <p>Бригада упаковщиков (3 чел, 2 часа) – 21000 ֏</p>
+              <p>Каждый следующий час – 9000 ֏</p>
+            </div>
+          </div>
+        </div>
 
-      <h3>Услуги грузчиков</h3>
-      <div class="pricing-card">
-        <p><strong>Грузчик</strong> – 11 000 ֏ за смену</p>
-        <p><strong>Бригада (4 человека)</strong> – 40 000 ֏</p>
-        <p><strong>Вызов грузового авто</strong> – от 4500 ֏</p>
-        <p><strong>Вывоз мусора</strong> – от 8000 ֏</p>
-        <p><strong>Подъем/спуск без лифта</strong> – 1000 ֏ этаж</p>
-      </div>
+        <div class="pricing-category">
+          <h4>Упаковочные материалы</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>Коробки 60×40×40</p>
+              <p>Новые – 1400 ֏ | Б/у – 1100 ֏</p>
+            </div>
+            <div class="pricing-item">
+              <p>Пупырчатая пленка – 1000 ֏/метр</p>
+              <p>Стрейч-пленка – 3000 ֏/рулон</p>
+            </div>
+          </div>
+        </div>
 
-      <h3>Расстановка мебели и вещей</h3>
-      <div class="pricing-card">
-        <p><strong>1 грузчик</strong> – 4000 ֏/час</p>
-        <p><strong>Бригада (3 человека)</strong> – 9000 ֏/час</p>
+        <div class="pricing-category">
+          <h4>Услуги грузчиков</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>Грузчик – 11 000 ֏/смена</p>
+              <p>Бригада (4 чел) – 40 000 ֏</p>
+            </div>
+            <div class="pricing-item">
+              <p>Вызов грузового авто от 4500 ֏</p>
+              <p>Вывоз мусора от 8000 ֏</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Вкладка Услуги хранения -->
     <div id="storage" class="tab-content">
-      <h3>Анаит — базовое хранение</h3>
-      <div class="pricing-card">
-        <p><strong>Мини</strong> (до 2 коробок) – 8000 ֏/месяц</p>
-        <p><strong>Оптимум</strong> (до 5 коробок) – 20000 ֏/месяц</p>
-        <p><strong>Макси</strong> (до 10 коробок) – 38000 ֏/месяц</p>
-        <p><strong>Гранд</strong> (до 15 коробок) – 58000 ֏/месяц</p>
-      </div>
+      <div class="pricing-box">
+        <h3>Услуги хранения</h3>
 
-      <h3>Астхик — хранение мебели и техники</h3>
-      <div class="pricing-card">
-        <p>От 3 м² – <strong>от 25 000 ֏/месяц</strong></p>
-      </div>
+        <div class="pricing-category">
+          <h4>Анаит – базовое хранение</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>Мини (до 2 коробок) – 8000 ֏ / мес</p>
+              <p>Оптимум (до 5 коробок) – 20000 ֏ / мес</p>
+            </div>
+            <div class="pricing-item">
+              <p>Макси (до 10 коробок) – 38000 ֏ / мес</p>
+              <p>Гранд (до 15 коробок) – 58000 ֏ / мес</p>
+            </div>
+          </div>
+        </div>
 
-      <h3>Вахагн — хранение ценностей</h3>
-      <div class="pricing-card">
-        <p>От 5 м² – <strong>от 40 000 ֏/месяц</strong></p>
-      </div>
+        <div class="pricing-category">
+          <h4>Астхик – хранение мебели</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>От 3 м² – от 25 000 ֏ / мес</p>
+            </div>
+          </div>
+        </div>
 
-      <h3>Арамазд — индивидуальные комнаты</h3>
-      <div class="pricing-card">
-        <p>Максимальный уровень безопасности: <br> Климат-контроль, усиленная охрана.</p>
-        <p><strong>Цена договорная</strong></p>
+        <div class="pricing-category">
+          <h4>Арамазд – индивидуальные комнаты</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>Отдельные комнаты, климат-контроль, охрана</p>
+              <p>Цена договорная</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- Скидки -->
-    <div class="discounts">
-      <h3>Дисконтная программа</h3>
-      <div class="discount-card">
-        <h4>Дар Астхик</h4>
-        <p>20% на первый месяц хранения при оплате от 3-х месяцев.</p>
-      </div>
+    <div id="discounts" class="tab-content">
+      <div class="pricing-box">
+        <h3>Акции и скидки</h3>
 
-      <div class="discount-card">
-        <h4>Путь Вахагна</h4>
-        <p>При оплате за 6 месяцев – скидка 10%.</p>
-        <p>При оплате за 12 месяцев – скидка 15%.</p>
-        <p>Бесплатная упаковка при хранении от 6 месяцев.</p>
-        <p>Бесплатная доставка при оплате за 12 месяцев.</p>
-      </div>
+        <div class="pricing-category">
+          <h4>Дар Астхик</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>20% на первый месяц хранения при оплате от 3-х месяцев.</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="discount-card">
-        <h4>Щедрость Арамазда</h4>
-        <p>Приведи друга и получи 50% на следующий месяц хранения или 10% на переезд!</p>
-      </div>
+        <div class="pricing-category">
+          <h4>Щедрость Арамазда</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>Приведи друга и получи 50% на следующий месяц хранения или 10% на переезд.</p>
+            </div>
+          </div>
+        </div>
 
-      <div class="discount-card">
-        <h4>Сезонная защита Анаит</h4>
-        <p>Летняя скидка -15% на хранение зимнего инвентаря.</p>
-        <p>Зимняя скидка -15% на хранение летнего инвентаря.</p>
-      </div>
-
-      <div class="discount-card">
-        <h4>Семейный Ванан</h4>
-        <p>Если несколько членов семьи хранят вещи, они получают -15% скидку.</p>
+        <div class="pricing-category">
+          <h4>Семейный Ванан</h4>
+          <div class="pricing-services">
+            <div class="pricing-item">
+              <p>Семьи получают -15% скидку на хранение.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
   </div>
 </section>
   <section id="contact">

@@ -488,11 +488,11 @@ body {
   }
 }
 
-/* Грид для отзывов */
+/* Грид с отзывами */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 40px;
   justify-items: center;
   align-items: start;
   text-align: center;
@@ -506,12 +506,20 @@ body {
   align-items: center;
 }
 
-/* Второй ряд: теперь он идеально центрирован */
-.second-row {
-  grid-column: span 2;
-  display: flex;
-  justify-content: center;
-  gap: 60px; /* Отступ между Евой и Саввой */
+/* Центрирование второго ряда */
+.review-center {
+  grid-column: span 1;
+}
+
+/* Размещаем второй ряд ровно по центру */
+.review-center:nth-child(4) {
+  margin-right: auto;
+  margin-left: calc(50% - 170px);
+}
+
+.review-center:nth-child(5) {
+  margin-left: auto;
+  margin-right: calc(50% - 170px);
 }
 
 /* Размеры отзывов */
@@ -525,7 +533,7 @@ body {
 
 /* Увеличенные отзывы Telegram */
 .review-large {
-  max-width: 320px; /* Только для tg_1.png и tg_2.png */
+  max-width: 350px; /* Теперь tg_1 и tg_2 ещё больше */
 }
 
 /* Уменьшенные отзывы */
@@ -539,7 +547,7 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .second-row {
+  .review-center {
     grid-column: auto;
     flex-direction: column;
     align-items: center;

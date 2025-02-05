@@ -594,7 +594,7 @@ body {
 .tab-link.active,
 .tab-link:hover {
   background: #3d3d3f;
-  color: #333;
+  color: #fff;
 }
 
 /* --- Белые блоки, которые растягиваются под содержимое --- */
@@ -611,10 +611,10 @@ body {
 }
 
 h3 .icon {
-  width: 24px; /* Ширина иконки */
-  height: 24px; /* Высота иконки */
-  margin-right: 10px; /* Отступ справа от текста */
-  vertical-align: middle; /* Выравнивание по центру с текстом */
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
   object-fit: contain;
 }
 

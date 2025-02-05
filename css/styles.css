@@ -655,6 +655,7 @@ h3 .icon {
   margin-right: 10%;
   vertical-align: middle;
   object-fit: contain;
+  flex-shrink: 0; 
 }
 
 /* --- Заголовки в желтых карточках: без переноса и с отступом перед текстом --- */
@@ -662,6 +663,7 @@ h3 .icon {
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  gap: 12px;
 }
 
 /* --- Уменьшенный шрифт для лучшей читаемости --- */

@@ -392,7 +392,7 @@
     <h2>Оставить заявку</h2>
     <div class="pricing-wrapper">
       <form action="#" method="POST" class="contact-form" onsubmit="return validateForm()">
-        <!-- Поле Имя -->
+        
         <label for="name">Имя:</label>
         <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
 
@@ -405,22 +405,22 @@
           <option value="phone">Телефон</option>
         </select>
 
-        <!-- Поля для контактов (скрыты по умолчанию) -->
-        <div id="telegram-field" class="hidden">
+        <!-- Поля для контактов -->
+        <div id="telegram-field" class="contact-extra">
           <label for="telegram">Ваш ник в Telegram:</label>
           <input type="text" id="telegram" name="telegram" placeholder="@username">
           <input type="checkbox" id="no-call-telegram" name="no-call-telegram">
           <label for="no-call-telegram">Не звонить</label>
         </div>
 
-        <div id="whatsapp-field" class="hidden">
+        <div id="whatsapp-field" class="contact-extra">
           <label for="whatsapp">Ваш ник в WhatsApp:</label>
           <input type="text" id="whatsapp" name="whatsapp" placeholder="@username">
           <input type="checkbox" id="no-call-whatsapp" name="no-call-whatsapp">
           <label for="no-call-whatsapp">Не звонить</label>
         </div>
 
-        <div id="phone-field" class="hidden">
+        <div id="phone-field" class="contact-extra">
           <label for="phone">Ваш номер телефона:</label>
           <input type="tel" id="phone" name="phone" placeholder="+374 (__) ___-____">
         </div>
@@ -433,8 +433,8 @@
           <option value="storage">Хранение</option>
         </select>
 
-        <!-- Чек-боксы для Переезда (скрыты по умолчанию) -->
-        <div id="moving-options" class="hidden">
+        <!-- Чек-боксы для Переезда -->
+        <div id="moving-options" class="service-extra">
           <label>Выберите необходимые услуги:</label>
           <div class="checkbox-group">
             <input type="checkbox" id="packing" name="packing">
@@ -460,12 +460,12 @@
 
             <input type="checkbox" id="stairs" name="stairs">
             <label for="stairs">Подъем/спуск без лифта</label>
-            <input type="number" id="stairs-floor" name="stairs-floor" placeholder="Количество этажей" min="1" max="50">
+            <input type="number" id="stairs-floor" name="stairs-floor" placeholder="Этажей" min="1" max="50">
           </div>
         </div>
 
-        <!-- Чек-боксы для Хранения (скрыты по умолчанию) -->
-        <div id="storage-options" class="hidden">
+        <!-- Чек-боксы для Хранения -->
+        <div id="storage-options" class="service-extra">
           <label>Выберите необходимые услуги:</label>
           <div class="checkbox-group">
             <input type="checkbox" id="storage-packing" name="storage-packing">

@@ -643,7 +643,27 @@ h3 .icon {
   flex-direction: column;
   justify-content: flex-start;
 }
+/* Общий стиль для картинок */
+.pricing-image {
+  display: block;
+  margin: 10px auto;
+}
 
+/* Уникальные стили для каждой картинки */
+.movers-image {
+  width: 120px;
+  height: auto;
+}
+
+.valuables-image {
+  width: 90px;
+  height: auto;
+}
+
+.asthik-image {
+  width: 100px;
+  height: auto;
+}
 /* --- Заголовки в желтых карточках: без переноса и с отступом перед текстом --- */
 .pricing-item h4 {
   white-space: normal;

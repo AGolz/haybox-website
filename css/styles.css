@@ -500,6 +500,26 @@ body {
   margin-top: 40px;
 }
 
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.review-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.review-name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .review-second-row {
   display: flex;
   justify-content: center;
@@ -513,11 +533,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.review p {
-  font-weight: bold;
-  font-size: 1.1rem;
 }
 
 .review-large {

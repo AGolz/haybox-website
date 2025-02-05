@@ -1,19 +1,20 @@
-function openTab(evt, tabName) {
-  let i, tabcontent, tablinks;
+document.addEventListener("DOMContentLoaded", function () {
+    // По умолчанию показываем первую вкладку и делаем активной первую кнопку
+    document.querySelectorAll(".tab-content").forEach(tab => tab.style.display = "none");
+    document.querySelector(".tab-content").style.display = "block";
+    document.querySelector(".tab-link").classList.add("active");
+});
 
-  // Скрываем все вкладки
-  tabcontent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+function openTab(tabName, element) {
+    // Скрываем все вкладки
+    document.querySelectorAll(".tab-content").forEach(tab => tab.style.display = "none");
+    
+    // Убираем класс active у всех кнопок
+    document.querySelectorAll(".tab-link").forEach(btn => btn.classList.remove("active"));
 
-  // Убираем активный класс у всех кнопок
-  tablinks = document.getElementsByClassName("tab-link");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active");
-  }
+    // Показываем нужную вкладку
+    document.getElementById(tabName).style.display = "block";
 
-  // Показываем выбранную вкладку и делаем кнопку активной
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.classList.add("active");
+    // Делаем активной нажатую кнопку
+    element.classList.add("active");
 }

@@ -564,7 +564,7 @@ body {
   }
 }
 
-/* Вкладки (как в верхнем меню) */
+/* Вкладки */
 .tabs {
   display: flex;
   justify-content: center;
@@ -579,17 +579,16 @@ body {
   border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
-  border: 2px solid #f4ba2b;
-  cursor: pointer;
+  text-decoration: none;
   transition: background 0.3s ease;
 }
 
 .tab-link:hover, .tab-link.active {
-  background: #f4ba2b;
-  color: #fff;
+  background: #3d3d3f;
+  color: #f7e7c6;
 }
 
-/* Большие белые блоки */
+/* Белые блоки */
 .pricing-wrapper {
   background: #fff;
   padding: 30px;
@@ -599,7 +598,7 @@ body {
   text-align: center;
 }
 
-/* Горизонтальное расположение желтых карточек */
+/* Горизонтальные карточки */
 .pricing-grid {
   display: flex;
   justify-content: space-around;
@@ -607,26 +606,24 @@ body {
   flex-wrap: wrap;
 }
 
-/* Желтые карточки */
 .pricing-item {
   background: #f4ba2b;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  flex: 1 1 calc(33.333% - 20px);
+  flex: 1 1 calc(30% - 20px);
   text-align: center;
+  white-space: nowrap;
 }
 
-/* Адаптив для мобильных */
-@media (max-width: 768px) {
-  .pricing-grid {
-    flex-direction: column;
-  }
-
-  .pricing-item {
-    width: 100%;
-  }
+/* Иконки */
+.icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
 }
+
 #contact .contact-form {
   display: flex;
   flex-direction: column;

@@ -506,34 +506,28 @@ body {
   align-items: center;
 }
 
-/* Центрирование второго ряда */
+/* Второй ряд - теперь центрируется ровно под первым! */
 .review-center {
   grid-column: span 1;
 }
 
-/* Размещаем второй ряд ровно по центру */
-.review-center:nth-child(4) {
-  margin-right: auto;
-  margin-left: calc(50% - 170px);
-}
-
-.review-center:nth-child(5) {
-  margin-left: auto;
-  margin-right: calc(50% - 170px);
-}
-
-/* Размеры отзывов */
-.review img {
+/* Новый способ центрирования второго ряда */
+.reviews-grid::after {
+  content: "";
   display: block;
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  object-fit: contain;
+  grid-column: 1 / -1;
+}
+
+/* Добавляем маргины, чтобы второй ряд был четко по центру */
+.review-center:nth-child(4),
+.review-center:nth-child(5) {
+  grid-column: span 1;
+  justify-self: center;
 }
 
 /* Увеличенные отзывы Telegram */
 .review-large {
-  max-width: 350px; /* Теперь tg_1 и tg_2 ещё больше */
+  max-width: 350px !important;
 }
 
 /* Уменьшенные отзывы */

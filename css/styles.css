@@ -525,8 +525,8 @@ body {
 }
 
 /* **Увеличенные отзывы Telegram для лучшей читабельности** */
-.review-wide img {
-  max-width: 500px; /* Увеличено еще больше */
+.review-large img {
+  max-width: 550px; /* Увеличено еще больше */
 }
 
 /* Картинки отзывов */
@@ -535,22 +535,43 @@ body {
   max-width: 320px;
   object-fit: contain;
   background: transparent;
+  box-shadow: 
+    3px 3px 15px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   padding: 5px;
 }
 
 /* Второй ряд центрирован относительно верхнего ряда */
 .review-center {
-  grid-column: span 2;
+  grid-column: span 1;
   justify-self: center;
 }
+
+/* **Фикс для второго ряда (Ева и Савва в одной линии и центрированы)** */
+.reviews-grid {
+  grid-template-areas:
+    "review1 review2 review3"
+    ". review4 review5 .";
+}
+
+.review-item:nth-child(1) { grid-area: review1; }
+.review-item:nth-child(2) { grid-area: review2; }
+.review-item:nth-child(3) { grid-area: review3; }
+.review-item:nth-child(4) { grid-area: review4; }
+.review-item:nth-child(5) { grid-area: review5; }
 
 /* Адаптация для мобильных */
 @media (max-width: 768px) {
   .reviews-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "review1 review2"
+      "review3 review4"
+      "review5 .";
   }
 
-  .review-wide img {
+  .review-large img {
     max-width: 450px;
   }
 
@@ -563,13 +584,19 @@ body {
 @media (max-width: 480px) {
   .reviews-grid {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "review1"
+      "review2"
+      "review3"
+      "review4"
+      "review5";
   }
 
   .review-item img {
     max-width: 260px;
   }
 
-  .review-wide img {
+  .review-large img {
     max-width: 400px;
   }
 }

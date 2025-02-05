@@ -627,23 +627,26 @@ body {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   flex: 1 1 280px;
   min-width: 160px;
-  text-align: center;
+  align-items: flex-start;
+  text-align: flex-start;
   white-space: normal;
   word-wrap: break-word;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* --- Заголовки в желтых карточках: без переноса и с отступом перед текстом --- */
 .pricing-item h4 {
-  white-space: nowrap;
-  margin-bottom: 10px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* --- Уменьшенный шрифт для лучшей читаемости --- */
 .pricing-item p {
   font-size: 0.9rem;
+  text-align: right;
 }
 
 /* --- По умолчанию скрываем все вкладки, кроме первой --- */

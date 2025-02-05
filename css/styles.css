@@ -504,18 +504,19 @@ body {
   gap: 30px;
   justify-content: center;
   align-items: start;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Второй ряд: центрируем Еву и Савву */
-.reviews-grid .review-item:nth-child(4),
-.reviews-grid .review-item:nth-child(5) {
+.reviews-grid .center-review {
   grid-column: span 1;
   justify-self: center;
 }
 
 /* Увеличенные отзывы Telegram */
 .review-wide img {
-  max-width: 350px;
+  max-width: 400px;
 }
 
 /* Карточки отзывов */
@@ -537,9 +538,13 @@ body {
 /* Картинки отзывов */
 .review-item img {
   width: 100%;
-  max-width: 280px;
+  max-width: 300px;
   object-fit: contain;
   background: transparent;
+  box-shadow: 
+    3px 3px 15px rgba(0, 0, 0, 0.2),
+    inset 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   padding: 5px;
 }
 
@@ -550,11 +555,10 @@ body {
   }
 
   .review-wide img {
-    max-width: 320px;
+    max-width: 360px;
   }
 
-  .reviews-grid .review-item:nth-child(4),
-  .reviews-grid .review-item:nth-child(5) {
+  .reviews-grid .center-review {
     grid-column: span 1;
     justify-self: center;
   }
@@ -566,7 +570,11 @@ body {
   }
 
   .review-item img {
-    max-width: 220px;
+    max-width: 240px;
+  }
+
+  .review-wide img {
+    max-width: 300px;
   }
 }
 

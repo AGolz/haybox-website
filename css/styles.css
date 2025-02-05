@@ -649,25 +649,11 @@ h3 .icon {
   margin: 10px auto;
 }
 
-/* Уникальные стили для каждой картинки */
-.movers-image {
-  width: 150px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-}
-
-.valuables-image {
-  width: 120px;
-  height: auto;
-  display: block;
-  margin-top: auto;
-  align-self: flex-end;
-}
-
-.asthik-image {
-  width: 130px; /* Увеличено */
-  height: auto;
+.pricing-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  object-fit: contain;
 }
 
 /* --- Заголовки в желтых карточках: без переноса и с отступом перед текстом --- */

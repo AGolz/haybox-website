@@ -488,116 +488,65 @@ body {
   }
 }
 
-#reviews {
+/* Секция отзывов */
+.reviews-section {
   text-align: center;
   padding: 60px 0;
 }
 
-#reviews h2 {
-  margin-bottom: 40px;
-}
-
-/* Грид отзывов: 3 в первом ряду, 2 во втором */
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  justify-content: center;
-  align-items: start;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Карточки отзывов */
-.review-item {
+.reviews-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  gap: 10px;
+  gap: 20px;
 }
 
-/* Имена клиентов */
-.review-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  white-space: nowrap;
+.reviews-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-/* **Увеличенные отзывы Telegram для лучшей читабельности** */
-.review-large img {
-  max-width: 550px; /* Увеличено еще больше */
-}
-
-/* Картинки отзывов */
-.review-item img {
-  width: 100%;
-  max-width: 320px;
-  object-fit: contain;
-  background: transparent;
-  box-shadow: 
-    3px 3px 15px rgba(0, 0, 0, 0.2),
-    inset 0 0 10px rgba(0, 0, 0, 0.1);
+/* Отдельный отзыв */
+.review {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
   border-radius: 10px;
-  padding: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Второй ряд центрирован относительно верхнего ряда */
-.review-center {
-  grid-column: span 1;
-  justify-self: center;
+/* Увеличение размеров Telegram отзывов */
+.review.tg {
+  max-width: 320px;
 }
 
-/* **Фикс для второго ряда (Ева и Савва в одной линии и центрированы)** */
-.reviews-grid {
-  grid-template-areas:
-    "review1 review2 review3"
-    ". review4 review5 .";
+/* Расположение отзывов */
+.reviews-row:first-child {
+  justify-content: center;
 }
 
-.review-item:nth-child(1) { grid-area: review1; }
-.review-item:nth-child(2) { grid-area: review2; }
-.review-item:nth-child(3) { grid-area: review3; }
-.review-item:nth-child(4) { grid-area: review4; }
-.review-item:nth-child(5) { grid-area: review5; }
+.reviews-row:last-child {
+  justify-content: center;
+  margin-top: 20px;
+}
 
-/* Адаптация для мобильных */
+/* Отзыв изображение */
+.review img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @media (max-width: 768px) {
-  .reviews-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "review1 review2"
-      "review3 review4"
-      "review5 .";
-  }
-
-  .review-large img {
-    max-width: 450px;
-  }
-
-  .reviews-grid .review-center {
-    grid-column: span 1;
-    justify-self: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .reviews-grid {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "review1"
-      "review2"
-      "review3"
-      "review4"
-      "review5";
-  }
-
-  .review-item img {
-    max-width: 260px;
-  }
-
-  .review-large img {
-    max-width: 400px;
+  .reviews-row {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

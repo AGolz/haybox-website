@@ -716,25 +716,43 @@ h3 .icon {
   }
 }
 
-#contact .contact-form {
+.hidden {
+  display: none;
+}
+
+.contact-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-#contact .contact-form input,
-#contact .contact-form button {
+.contact-form input,
+.contact-form select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-#contact .contact-form button {
-  background: #ff6600;
+.contact-form button {
+  background: #3d3d3f;
   color: #fff;
+  padding: 10px;
+  border-radius: 5px;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background: #f4ba2b;
+  color: #3d3d3f;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 footer {

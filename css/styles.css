@@ -488,6 +488,10 @@ body {
   }
 }
 
+#reviews h2 {
+  margin-bottom: 50px;
+}
+
 /* Грид с отзывами */
 .reviews-grid {
   display: grid;

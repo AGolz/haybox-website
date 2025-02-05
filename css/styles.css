@@ -564,24 +564,46 @@ body {
   }
 }
 
-#pricing .pricing-cards {
+.tabs {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-#pricing .pricing-card {
-  flex: 1 1 30%;
-  background: #f7f7f7;
+.tab-link {
+  background: #f4ba2b;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab-link.active, .tab-link:hover {
+  background: #333;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.pricing-card, .discount-card {
+  background: #fff;
   padding: 20px;
-  margin: 20px;
-  border-radius: 5px;
-  text-align: center;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
-#pricing .pricing-card .btn {
-  margin-top: 15px;
-  display: inline-block;
+.discounts {
+  margin-top: 40px;
+  text-align: center;
 }
 
 #contact .contact-form {

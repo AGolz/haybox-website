@@ -593,10 +593,18 @@ body {
   color: #f7e7c6;
 }
 
+/* Общий белый блок */
+.pricing-wrapper {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
 /* Горизонтальные карточки */
 .pricing-grid {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
   justify-content: center;
 }
@@ -607,7 +615,7 @@ body {
   border-radius: 8px;
   white-space: nowrap;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-  flex: 1 1 calc(45% - 20px);
+  flex: 1 1 auto;
 }
 
 #contact .contact-form {

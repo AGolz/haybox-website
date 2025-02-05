@@ -663,6 +663,8 @@ h3 .icon {
   white-space: normal;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  display: inline-flex;
+  align-items: center;
   gap: 12px;
 }
 

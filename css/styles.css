@@ -569,39 +569,31 @@ body {
   margin-bottom: 50px;
 }
 
-/* Вкладки */
-.tabs {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 30px;
+/* Отображаем только активную вкладку */
+.tab-content {
+  display: none;
 }
 
-.tab-link {
-  background: transparent;
-  color: #333;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  text-decoration: none;
-  transition: background 0.3s ease;
+.tab-content.active {
+  display: block;
 }
 
-.tab-link:hover, .tab-link.active {
-  background: #3d3d3f;
-  color: #f7e7c6;
+/* Позволяет перенос строк внутри желтых карточек */
+.pricing-item {
+  white-space: normal;
+  word-wrap: break-word;
 }
 
-/* Общий белый блок */
+/* Большие белые блоки */
 .pricing-wrapper {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
-/* Горизонтальные карточки */
+/* Все желтые карточки расположены в одном горизонтальном ряду */
 .pricing-grid {
   display: flex;
   flex-wrap: nowrap;
@@ -609,15 +601,14 @@ body {
   justify-content: center;
 }
 
+/* Желтые карточки */
 .pricing-item {
   background: #f4ba2b;
   padding: 20px;
   border-radius: 8px;
-  white-space: nowrap;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   flex: 1 1 auto;
 }
-
 #contact .contact-form {
   display: flex;
   flex-direction: column;

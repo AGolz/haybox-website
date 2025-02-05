@@ -491,7 +491,7 @@ body {
 /* Грид с отзывами */
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки в первом ряду */
   gap: 40px;
   justify-items: center;
   align-items: start;
@@ -516,24 +516,12 @@ body {
   max-width: 200px;
 }
 
-/* Второй ряд - центрирование */
-.review-center {
-  grid-column: span 1;
-}
-
-/* Новый способ центрирования второго ряда */
-.reviews-grid::after {
-  content: "";
-  display: block;
-  grid-column: 1 / -1;
-}
-
-.review-wrapper {
+.review-row {
   display: flex;
-  justify-content: center; /* Центрируем второй ряд */
+  justify-content: center;
   gap: 40px;
   width: 100%;
-  grid-column: 1 / -1; /* Весь ряд */
+  grid-column: 1 / -1;
 }
 
 /* Медиа-запрос для мобильных */
@@ -542,14 +530,10 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .review-wrapper {
+  .review-row {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-  }
-
-  .review-center {
-    grid-column: auto;
   }
 }
 

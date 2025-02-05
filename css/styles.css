@@ -488,64 +488,56 @@ body {
   }
 }
 
-/* Секция отзывов */
-.reviews-section {
+#reviews {
   text-align: center;
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
-.reviews-container {
+#reviews h2 {
+  margin-bottom: 50px;
+}
+
+/* Грид-контейнер для отзывов */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Второй ряд с двумя отзывами */
+.reviews-grid .review:nth-child(4),
+.reviews-grid .review:nth-child(5) {
+  grid-column: span 1;
+  justify-self: center; /* Центрируем */
+}
+
+/* Отзывы */
+.review {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-}
-
-.reviews-row {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* Отдельный отзыв */
-.review {
+  text-align: center;
   position: relative;
   background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  max-width: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 250px; /* Ограничиваем ширину для отзывов */
 }
 
-/* Увеличение размеров Telegram отзывов */
-.review.tg {
-  max-width: 320px;
+/* Индивидуальный размер для Telegram-отзывов */
+.review[data-source="telegram"] {
+  max-width: 320px; /* Делаем больше только отзывы tg_1 и tg_2 */
 }
 
-/* Расположение отзывов */
-.reviews-row:first-child {
-  justify-content: center;
-}
-
-.reviews-row:last-child {
-  justify-content: center;
-  margin-top: 20px;
-}
-
-/* Отзыв изображение */
-.review img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .reviews-row {
-    flex-direction: column;
-    align-items: center;
-  }
+/* Имя автора */
+.review h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 #pricing .pricing-cards {

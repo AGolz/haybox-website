@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
    * Показываем нужное поле контактов в зависимости от выбора способа связи
    */
   function toggleContactFields() {
-    // Скрываем все дополнительные контактные поля
     document.querySelectorAll(".contact-extra").forEach(field => field.style.display = "none");
 
     const selectedMethod = document.getElementById("contact-method").value;
@@ -25,15 +24,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const movingOptions = document.getElementById("moving-options");
     const storageOptions = document.getElementById("storage-options");
     const selectedService = document.getElementById("service").value;
+    const serviceLabel = document.getElementById("service-label"); // Заголовок "Выберите необходимые услуги"
 
-    // Скрываем оба блока перед показом нужного
+    // Перед изменением скрываем оба блока
     movingOptions.style.display = "none";
     storageOptions.style.display = "none";
+    serviceLabel.style.display = "none"; // По умолчанию скрываем
 
     if (selectedService === "moving") {
       movingOptions.style.display = "flex"; // Чекбоксы переезда
+      serviceLabel.style.display = "block"; // Показываем заголовок
     } else if (selectedService === "storage") {
       storageOptions.style.display = "flex"; // Чекбоксы хранения
+      serviceLabel.style.display = "block"; // Показываем заголовок
     }
   }
 
@@ -79,7 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("service").addEventListener("change", toggleServiceFields);
   document.getElementById("contact-form").addEventListener("submit", validateForm);
 
-  // Убедимся, что чекбоксы скрыты при загрузке страницы
+  // Скрываем чекбоксы и заголовок "Выберите необходимые услуги" при загрузке страницы
   document.getElementById("moving-options").style.display = "none";
   document.getElementById("storage-options").style.display = "none";
+  document.getElementById("service-label").style.display = "none";
 });

@@ -488,7 +488,7 @@ body {
   }
 }
 
-/* Общий контейнер отзывов */
+/* Грид для отзывов */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -499,31 +499,33 @@ body {
   margin-top: 40px;
 }
 
-/* Отзывы в два ряда */
+/* Общий стиль отзывов */
 .review {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Второй ряд – по центру */
+/* Второй ряд: теперь он идеально центрирован */
 .second-row {
-  grid-column: span 2; /* Делаем так, чтобы второй ряд был по центру */
-  justify-self: center;
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  gap: 60px; /* Отступ между Евой и Саввой */
 }
 
-/* Размер отзывов */
+/* Размеры отзывов */
 .review img {
   display: block;
   width: 100%;
-  max-width: 250px; /* Для всех отзывов, кроме телеграма */
+  max-width: 250px;
   height: auto;
   object-fit: contain;
 }
 
-/* Увеличенные отзывы из Telegram */
+/* Увеличенные отзывы Telegram */
 .review-large {
-  max-width: 100%;
+  max-width: 320px; /* Только для tg_1.png и tg_2.png */
 }
 
 /* Уменьшенные отзывы */
@@ -531,7 +533,7 @@ body {
   max-width: 200px;
 }
 
-/* Медиа-запрос для мобильных устройств */
+/* Медиа-запрос для мобильных */
 @media (max-width: 768px) {
   .reviews-grid {
     grid-template-columns: 1fr;
@@ -539,6 +541,9 @@ body {
 
   .second-row {
     grid-column: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 }
 

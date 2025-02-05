@@ -492,7 +492,7 @@ body {
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 60px;
   justify-items: center;
   align-items: start;
   text-align: center;
@@ -502,7 +502,7 @@ body {
 .review-second-row {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
   margin-top: 20px;
 }
 
@@ -519,7 +519,7 @@ body {
 }
 
 .review-large {
-  max-width: 400px !important;
+  max-width: 500px !important;
 }
 
 

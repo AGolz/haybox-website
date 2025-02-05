@@ -496,13 +496,14 @@ body {
   justify-items: center;
   align-items: start;
   text-align: center;
+  margin-left: -100px;
   margin-top: 40px;
 }
 
 .review-second-row {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 90px;
   margin-top: 20px;
   margin-left: 200px;
 }

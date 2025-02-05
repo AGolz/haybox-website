@@ -67,3 +67,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+function toggleContactFields() {
+  document.getElementById("telegram-field").classList.add("hidden");
+  document.getElementById("whatsapp-field").classList.add("hidden");
+  document.getElementById("phone-field").classList.add("hidden");
+
+  const selectedMethod = document.getElementById("contact-method").value;
+  if (selectedMethod === "telegram") {
+    document.getElementById("telegram-field").classList.remove("hidden");
+  } else if (selectedMethod === "whatsapp") {
+    document.getElementById("whatsapp-field").classList.remove("hidden");
+  } else if (selectedMethod === "phone") {
+    document.getElementById("phone-field").classList.remove("hidden");
+  }
+}
+
+function toggleServiceFields() {
+  document.getElementById("moving-options").classList.add("hidden");
+  document.getElementById("storage-options").classList.add("hidden");
+
+  const selectedService = document.getElementById("service").value;
+  if (selectedService === "moving") {
+    document.getElementById("moving-options").classList.remove("hidden");
+  } else if (selectedService === "storage") {
+    document.getElementById("storage-options").classList.remove("hidden");
+  }
+}

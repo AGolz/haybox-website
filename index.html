@@ -280,28 +280,91 @@
 
   </div>
 </section>
-  <section id="pricing">
-    <div class="container">
-      <h2>Тарифы</h2>
-      <div class="pricing-cards">
+<section id="pricing">
+  <div class="container">
+    <h2>Тарифы HayBox</h2>
+
+    <!-- Переключение между блоками -->
+    <div class="pricing-tabs">
+      <button class="tab active" onclick="showPricing('moving')">Переезды</button>
+      <button class="tab" onclick="showPricing('storage')">Хранение</button>
+    </div>
+
+    <!-- Тарифы Переезды -->
+    <div id="pricing-moving" class="pricing-content active">
+      <h3>Переезды под ключ</h3>
+      <div class="pricing-grid">
         <div class="pricing-card">
-          <h3>Мини</h3>
-          <p>Маленькие вещи, коробки</p>
-          <a href="#contact" class="btn">Узнать точную стоимость</a>
+          <h4>📦 Упаковка вещей</h4>
+          <p>Упаковщик (2 часа) – <strong>8000 ֏</strong></p>
+          <p>Бригада (3 чел, 2 часа) – <strong>21000 ֏</strong></p>
         </div>
         <div class="pricing-card">
-          <h3>Стандарт</h3>
-          <p>Мебель, техника</p>
-          <a href="#contact" class="btn">Узнать точную стоимость</a>
+          <h4>📦 Упаковочные материалы</h4>
+          <p>Коробки 60×40×40 – <strong>1400 ֏</strong> (новые), <strong>1100 ֏</strong> (б/у)</p>
+          <p>Пупырчатая пленка – <strong>1000 ֏/м</strong></p>
         </div>
         <div class="pricing-card">
-          <h3>Макси</h3>
-          <p>Хранение всей квартиры</p>
-          <a href="#contact" class="btn">Узнать точную стоимость</a>
+          <h4>🚛 Услуги грузчиков</h4>
+          <p>Грузчик – <strong>11000 ֏</strong> за смену</p>
+          <p>Бригада (4 чел) – <strong>40000 ֏</strong></p>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Тарифы Хранение -->
+    <div id="pricing-storage" class="pricing-content">
+      <h3>Услуги хранения</h3>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h4>📁 Анаит – Базовое хранение</h4>
+          <p>Мини – <strong>8000 ֏/мес</strong></p>
+          <p>Оптимум – <strong>20000 ֏/мес</strong></p>
+        </div>
+        <div class="pricing-card">
+          <h4>🛋 Астхик – Хранение мебели</h4>
+          <p>От <strong>25 000 ֏</strong> за 3 м²</p>
+        </div>
+        <div class="pricing-card">
+          <h4>🔒 Вахагн – Хранение ценностей</h4>
+          <p>От <strong>40 000 ֏</strong> за 5 м²</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Дисконтная программа -->
+    <h3>🎁 Дисконтная программа</h3>
+    <div class="discount-grid">
+      <div class="discount-card">20% на 1-й месяц при оплате 3 мес</div>
+      <div class="discount-card">Скидка 10% при оплате 6 мес</div>
+      <div class="discount-card">Скидка 15% при оплате 12 мес</div>
+      <div class="discount-card">Бесплатная доставка при оплате 12 мес</div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function showPricing(type) {
+    document.querySelectorAll('.pricing-content').forEach(el => el.classList.remove('active'));
+    document.querySelector(`#pricing-${type}`).classList.add('active');
+    document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+    document.querySelector(`.tab[onclick="showPricing('${type}')"]`).classList.add('active');
+  }
+</script>
+
+<style>
+  #pricing h2 { text-align: center; margin-bottom: 30px; }
+  .pricing-tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
+  .tab { padding: 10px 20px; cursor: pointer; border: none; background: #f4ba2b; font-weight: bold; }
+  .tab.active { background: #3d3d3f; color: white; }
+  .pricing-content { display: none; }
+  .pricing-content.active { display: block; }
+  .pricing-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+  .pricing-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); text-align: center; }
+  .discount-grid { display: flex; gap: 10px; overflow-x: auto; padding: 10px; white-space: nowrap; }
+  .discount-card { background: #3d3d3f; color: white; padding: 10px; border-radius: 5px; min-width: 200px; }
+</style>
+
   <section id="contact">
     <div class="container">
       <h2>Оставить заявку</h2>

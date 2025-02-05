@@ -604,7 +604,7 @@ body {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   width: 100%;
-  max-width: 1800px;
+  max-width: 2500px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -614,7 +614,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
-  min-width: 320px;
+  min-width: 500px;
   justify-content: center;
   align-items: stretch; /* Равная высота карточек */
 }
@@ -626,7 +626,7 @@ body {
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   flex: 1 1 280px;
-  max-width: 400px;
+  min-width: 460px;
   text-align: center;
   white-space: normal;
   word-wrap: break-word;

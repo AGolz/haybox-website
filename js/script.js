@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll(".contact-extra").forEach(field => field.style.display = "none");
 
     const selectedMethod = document.getElementById("contact-method").value;
+    if (!selectedMethod) return; // Проверяем, выбран ли метод
+
     document.getElementById("telegram").removeAttribute("required");
     document.getElementById("whatsapp").removeAttribute("required");
     document.getElementById("phone").removeAttribute("required");
@@ -32,10 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
     serviceLabel.style.display = "none";
 
     if (selectedService === "moving") {
-      movingOptions.style.display = "flex"; // Заменил block на flex
+      movingOptions.style.display = "flex";
       serviceLabel.style.display = "block";
     } else if (selectedService === "storage") {
-      storageOptions.style.display = "flex"; // Заменил block на flex
+      storageOptions.style.display = "flex";
       serviceLabel.style.display = "block";
     }
   }
@@ -80,9 +82,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById("contact-method").addEventListener("change", toggleContactFields);
   document.getElementById("service").addEventListener("change", toggleServiceFields);
-  document.getElementById("contact-form").addEventListener("submit", validateForm);
+  document.querySelector(".contact-form").addEventListener("submit", validateForm);
 
-  document.getElementById("moving-options").style.display = "none";
-  document.getElementById("storage-options").style.display = "none";
-  document.getElementById("service-label").style.display = "none";
+  toggleContactFields();
+  toggleServiceFields();
 });

@@ -91,3 +91,35 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("storage-options").style.display = "none";
   document.getElementById("service-label").style.display = "none";
 });
+
+document.querySelector("#contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Собираем данные из формы
+    const name = document.querySelector("#name").value;
+    const contactMethod = document.querySelector("#contact-method").value;
+    const contactValue = document.querySelector(`#${contactMethod}`).value;
+    const service = document.querySelector("#service").value;
+
+    let message = `📌 *Новая заявка!*\n\n`;
+    message += `👤 *Имя:* ${name}\n`;
+    message += `📞 *Контакт:* ${contactValue} (${contactMethod})\n`;
+    message += `🛠 *Услуга:* ${service}\n`;
+
+    // Отправка в Netlify API
+    fetch("/.netlify/functions/telegram", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert("✅ Заявка отправлена!");
+            document.querySelector("#contact-form").reset();
+        } else {
+            alert("❌ Ошибка отправки!");
+        }
+    })
+    .catch(error => console.error("Ошибка:", error));
+});

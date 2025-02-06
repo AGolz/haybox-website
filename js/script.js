@@ -91,3 +91,69 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("storage-options").style.display = "none";
   document.getElementById("service-label").style.display = "none";
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Остановить стандартную отправку формы
+
+        const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
+        const chatId = import.meta.env.VITE_CHAT_ID;
+        const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+        // Собираем данные из формы
+        const name = document.querySelector("#name").value;
+        const contactMethod = document.querySelector("#contact-method").value;
+        const contactValue = document.querySelector(`#${contactMethod}`).value;
+        const service = document.querySelector("#service").value;
+
+        let message = `📌 *Новая заявка!*\n\n`;
+        message += `👤 *Имя:* ${name}\n`;
+        message += `📞 *Контакт:* ${contactValue} (${contactMethod})\n`;
+        message += `🛠 *Услуга:* ${service}\n`;
+
+        // Добавляем дополнительные услуги
+        if (service === "moving") {
+            message += `\n🚚 *Доп. услуги для переезда:*\n`;
+            document.querySelectorAll("#moving-options input:checked").forEach((item) => {
+                message += `✅ ${item.parentElement.innerText.trim()}\n`;
+            });
+        }
+
+        if (service === "storage") {
+            message += `\n📦 *Доп. услуги для хранения:*\n`;
+            document.querySelectorAll("#storage-options input:checked").forEach((item) => {
+                message += `✅ ${item.parentElement.innerText.trim()}\n`;
+            });
+
+            // Если выбран тариф
+            const tariff = document.querySelector("#storage-tariff").value;
+            if (tariff) {
+                message += `💰 *Выбранный тариф:* ${tariff}\n`;
+            }
+        }
+
+        // Отправка данных в Telegram через fetch API
+        fetch(apiUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message,
+                parse_mode: "Markdown"
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.ok) {
+                alert("✅ Заявка успешно отправлена!");
+                document.querySelector(".contact-form").reset(); // Очистка формы
+            } else {
+                alert("❌ Ошибка при отправке. Попробуйте снова.");
+            }
+        })
+        .catch(error => {
+            alert("⚠ Ошибка сети! Проверьте подключение.");
+            console.error("Ошибка:", error);
+        });
+    });
+});

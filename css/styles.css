@@ -720,7 +720,7 @@ h3 .icon {
   margin-bottom: 10px;
 }
 
-/* --- Контейнер формы (немного увеличен) --- */
+/* --- Форма заявки --- */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -735,30 +735,19 @@ h3 .icon {
   margin: 0 auto;
 }
 
-/* --- Поля формы в одну строку с названиями --- */
-.contact-row {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  gap: 20px;
-  white-space: nowrap;
-}
-
-/* --- Поля ввода и выпадающие списки --- */
+/* --- Поля ввода --- */
 .contact-form input,
 .contact-form select {
   width: 200px;
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  text-align: left;
   font-size: 14px;
 }
 
 /* --- "Не звонить" (уменьшенный чекбокс) --- */
 .contact-extra {
-  display: none;
+  display: none; /* По умолчанию скрыто */
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -768,25 +757,18 @@ h3 .icon {
   display: flex;
   align-items: center;
   gap: 10px;
-  white-space: nowrap;
 }
 
-/* --- Уменьшаем чекбокс "Не звонить" --- */
-.contact-extra .no-call-group input[type="checkbox"] {
-  width: 14px; /* Чуть меньше размер квадрата */
-  height: 14px;
-}
-
-/* --- Чекбоксы (горизонтальное расположение) --- */
+/* --- Чекбоксы в одну линию --- */
 .checkbox-group {
-  display: none;
+  display: none; /* По умолчанию скрыто */
   flex-wrap: wrap;
   gap: 12px;
   justify-content: flex-start;
   max-width: 500px;
 }
 
-/* --- Чекбоксы перед текстом (ровно, не сверху) --- */
+/* --- Чекбоксы перед текстом --- */
 .checkbox-group label {
   display: flex;
   align-items: center;
@@ -795,94 +777,61 @@ h3 .icon {
   white-space: nowrap;
 }
 
-/* --- Чекбоксы ровно перед текстом --- */
 .checkbox-group input[type="checkbox"] {
   width: 14px;
   height: 14px;
   margin-right: 6px;
 }
 
-/* --- Заголовок "Выберите необходимые услуги" --- */
-#service-label {
-  display: none;
-  font-weight: bold;
-  margin-top: 12px;
-}
-
-/* --- Кнопка в центре --- */
-.contact-form button {
-  background: #3d3d3f;
-  color: #fff;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  margin: 20px auto 0;
-  display: block;
-}
-
-.contact-form button:hover {
-  background: #f4ba2b;
-  color: #3d3d3f;
-}
-
 /* --- Подвал (footer) --- */
 footer {
-    background: #333;
-    color: #fff;
-    padding: 8px 0; /* Компактный подвал */
-    text-align: center;
-    font-size: 14px; /* Одинаковый размер шрифта */
+  background: #333;
+  color: #fff;
+  padding: 8px 0;
+  text-align: center;
+  font-size: 14px;
 }
 
-/* --- Контейнер для всех элементов подвала --- */
 .footer-contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3px; /* Уменьшаем расстояние между пунктами */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
 }
 
-/* --- Ссылки (желтые, без подчеркивания) --- */
 .footer-contacts a {
-    color: #f4ba2b; /* Корпоративный желтый цвет */
-    text-decoration: none;
-    font-weight: bold;
+  color: #f4ba2b;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-contacts a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* --- Контейнер для соц. сетей (Выравнивание иконок и текста) --- */
 .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Отступ между ссылками */
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
 }
 
-/* --- Иконки соц. сетей (Исправленный размер) --- */
 .footer-links a {
-    display: flex;
-    align-items: center;
-    gap: 5px; /* Отступ между иконкой и текстом */
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .footer-links a img {
-    width: 16px; /* Нормальный размер иконок */
-    height: 16px;
+  width: 16px;
+  height: 16px;
 }
 
-/* --- Почта и телефон (единый стиль) --- */
 .footer-contacts p {
-    margin: 2px 0; /* Минимальные отступы */
+  margin: 2px 0;
 }
 
-/* --- Адрес (сокращаем отступ сверху) --- */
 .footer-address {
-    margin-top: 3px;
+  margin-top: 3px;
 }
+

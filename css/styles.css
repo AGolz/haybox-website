@@ -599,15 +599,12 @@ body {
 
 /* --- Белые блоки, которые растягиваются под содержимое --- */
 .pricing-wrapper {
-  background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 30px;
-  width: 100%;
-  min-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  width: auto;
+  min-width: unset;
+  margin: 0;
 }
 
 .pricing-wrapper .btn {
@@ -754,9 +751,8 @@ h3 .icon {
 
 /* --- "Не звонить" (теперь под полем @username) --- */
 .contact-extra {
-  display: none;
-  flex-direction: column; /* Теперь в столбик */
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   gap: 5px;
 }
 

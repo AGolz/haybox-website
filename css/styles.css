@@ -123,11 +123,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    min-width: 70px;
+    text-align: center;
   }
 
   .mobile-menu img {
     width: 24px;
-    height: auto;
+     height: 24px;
     object-fit: contain;
   }
 }

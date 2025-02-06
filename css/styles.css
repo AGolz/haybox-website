@@ -163,8 +163,8 @@ body {
   font-weight: bold;
   color: #3d3d3f;
   text-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.8), 
-    0 0 20px rgba(255, 215, 0, 0.7);
+    0 0 4px rgba(0, 0, 0, 0.8), 
+    0 0 8px rgba(0, 0, 0, 0.5); 
   white-space: nowrap;
   margin-bottom: 10px;
 }
@@ -174,8 +174,8 @@ body {
   color: #3d3d3f; 
   margin-bottom: 15px;
   text-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.8), 
-    0 0 20px rgba(255, 215, 0, 0.7);
+    0 0 4px rgba(0, 0, 0, 0.8), 
+    0 0 8px rgba(0, 0, 0, 0.5);
   white-space: nowrap;
 }
 
@@ -184,8 +184,8 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: #3d3d3f;
-  color: #f7e7c6;
+  background: #f4ba2b;
+  color: #3d3d3f;
   padding: 12px 24px;
   border-radius: 5px;
   text-decoration: none;
@@ -197,8 +197,8 @@ body {
 }
 
 .hero .btn:hover {
-  background: #f4ba2b;
-  color: #3d3d3f;
+  background: #3d3d3f;
+  color: #f7e7c6;
 }
 
 

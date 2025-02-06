@@ -716,13 +716,13 @@ h3 .icon {
   }
 }
 
-/* --- Контейнер формы (адаптивный размер, прижат к левому краю) --- */
+/* --- Контейнер формы (подстраивается по ширине контента) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
-  width: auto; /* Автоматическая ширина */
+  gap: 12px;
+  width: fit-content; /* Автоматическая ширина по контенту */
   max-width: 500px;
   padding: 20px;
   background: #fff;
@@ -737,10 +737,11 @@ h3 .icon {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  gap: 15px; /* Отступ между названием и полем */
+  gap: 12px;
+  white-space: nowrap; /* Убирает перенос строк */
 }
 
-/* --- Поля ввода и выпадающие списки --- */
+/* --- Поля ввода и выпадающие списки (уменьшенные) --- */
 .contact-form input,
 .contact-form select {
   width: 220px;
@@ -751,7 +752,7 @@ h3 .icon {
   font-size: 14px;
 }
 
-/* --- Дополнительные поля (изначально скрыты) --- */
+/* --- Блоки с дополнительными полями (изначально скрыты) --- */
 .contact-extra,
 .service-extra {
   display: none;
@@ -764,7 +765,7 @@ h3 .icon {
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   justify-content: flex-start;
   max-width: 500px;
 }
@@ -773,11 +774,11 @@ h3 .icon {
 .checkbox-group label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   font-size: 14px;
 }
 
-/* --- Уменьшаем чекбоксы до нормального размера --- */
+/* --- Чекбоксы уменьшены и выровнены --- */
 .checkbox-group input[type="checkbox"],
 .contact-extra input[type="checkbox"] {
   width: 16px;

@@ -803,19 +803,32 @@ h3 .icon {
 @media (max-width: 768px) {
   .pricing-wrapper {
     width: 95vw; /* Делаем ширину чуть меньше 100% */
-    max-width: 100%;
-    padding: 20px; /* Уменьшаем паддинги, чтобы текст не сжимался */
+    max-width: 100%; /* Чтобы не вылазил за экран */
+    padding: 15px; /* Уменьшаем внутренние отступы */
   }
+}
 
+@media (max-width: 768px) {
   .pricing-grid {
-    flex-direction: column; /* Вертикальное расположение тарифов */
+    flex-direction: column; /* Вертикальное расположение */
+    gap: 15px; /* Уменьшаем расстояние */
     align-items: center;
-    gap: 20px;
   }
 
   .pricing-item {
-    width: 100%; /* Каждая карточка занимает всю ширину */
-    max-width: 90%;
+    width: 100%;
+    max-width: 85%; /* Чуть сужаем карточки */
+    font-size: 0.85rem; /* Делаем шрифт меньше */
+    padding: 15px; /* Уменьшаем отступы */
+  }
+
+  .pricing-item h4 {
+    font-size: 1rem; /* Уменьшаем заголовки */
+  }
+
+  .pricing-icon {
+    width: 24px; /* Делаем иконки поменьше */
+    height: 24px;
   }
 }
 

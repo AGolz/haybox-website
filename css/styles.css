@@ -89,6 +89,41 @@ body {
 .nav-menu a:hover {
   background: #3d3d3f;
 }
+@media (max-width: 768px) {
+  .sticky-banner {
+    display: none; /* Убираем стандартное верхнее меню */
+  }
+
+  /* Фиксированное нижнее меню */
+  .mobile-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f4ba2b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  .mobile-menu a {
+    color: #3d3d3f;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-menu img {
+    width: 24px;
+    height: 24px;
+  }
+}
 
 /* HERO */
 .hero {
@@ -128,12 +163,6 @@ body {
   margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 1.5rem;
-  }
-}
-
 .hero p {
   white-space: nowrap;
   color: #fff; 
@@ -168,25 +197,23 @@ body {
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    padding-bottom: 20px;
+    padding: 50px 20px;
+    text-align: center;
   }
 
-  .hero-overlay {
-    margin-top: 50px;
+  .hero h1 {
+    font-size: 1.8rem;
+    white-space: normal; /* Разрешаем перенос текста */
   }
 
-  .sticky-banner {
-    height: 100px;
+  .hero p {
+    font-size: 1rem;
+    white-space: normal;
   }
 
-  .sticky-banner .logo {
-    max-width: 135px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
+  .hero .btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
   }
 }
 
@@ -324,6 +351,35 @@ body {
 .service .btn:hover {
   background: #f4ba2b;
   color: #3d3d3f;
+}
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantage {
+    width: 100%;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    max-width: 100%;
+  }
 }
 
 #why-haybox h2 {
@@ -828,6 +884,50 @@ h3 .icon {
   background: #f4ba2b;
   color: #3d3d3f;
 }
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+  }
+
+  .checkbox-group label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-contacts {
+    text-align: center;
+  }
+
+  .footer-address {
+    font-size: 12px;
+  }
+}
+
 
 
 /* --- Подвал (footer) --- */

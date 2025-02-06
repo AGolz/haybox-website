@@ -1,7 +1,5 @@
 [build]
-  functions = "netlify/functions"  # Указываем папку, где хранятся функции
+  functions = "netlify/functions"
 
-[[redirects]]
-  from = "/telegram"
-  to = "/.netlify/functions/telegram"
-  status = 200
+[functions]
+  node_bundler = "esbuild"

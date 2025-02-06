@@ -390,103 +390,99 @@
 <section id="contact">
   <div class="container">
     <h2>Оставить заявку</h2>
-    <div class="pricing-wrapper">
-      <form action="#" method="POST" class="contact-form" onsubmit="return validateForm();">
-        
-        <div class="contact-row">
-          <label for="name">Имя:</label>
-          <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-        </div>
+    
+    <form action="#" method="POST" class="contact-form" onsubmit="return validateForm();">
+      
+      <div class="contact-row">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+      </div>
 
-        <div class="contact-row">
-          <label for="contact-method">Предпочтительный способ связи:</label>
-          <select id="contact-method" name="contact-method" required>
-            <option value="">Выберите способ связи</option>
-            <option value="telegram">Telegram</option>
-            <option value="whatsapp">WhatsApp</option>
-            <option value="phone">Телефон</option>
+      <div class="contact-row">
+        <label for="contact-method">Предпочтительный способ связи:</label>
+        <select id="contact-method" name="contact-method" required>
+          <option value="">Выберите способ связи</option>
+          <option value="telegram">Telegram</option>
+          <option value="whatsapp">WhatsApp</option>
+          <option value="phone">Телефон</option>
+        </select>
+      </div>
+
+      <!-- Поля для контактов -->
+      <div id="telegram-field" class="contact-extra">
+        <label for="telegram">Ваш ник в Telegram:</label>
+        <input type="text" id="telegram" name="telegram" placeholder="@username">
+        <div class="no-call-group">
+          <input type="checkbox" id="no-call-telegram">
+          <label for="no-call-telegram">Не звонить</label>
+        </div>
+      </div>
+
+      <div id="whatsapp-field" class="contact-extra">
+        <label for="whatsapp">Ваш ник в WhatsApp:</label>
+        <input type="text" id="whatsapp" name="whatsapp" placeholder="@username">
+        <div class="no-call-group">
+          <input type="checkbox" id="no-call-whatsapp">
+          <label for="no-call-whatsapp">Не звонить</label>
+        </div>
+      </div>
+
+      <div id="phone-field" class="contact-extra">
+        <label for="phone">Ваш номер телефона:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+374 (__) ___-____">
+      </div>
+
+      <div class="contact-row">
+        <label for="service">Переезд или Хранение:</label>
+        <select id="service" name="service" required>
+          <option value="">Выберите услугу</option>
+          <option value="moving">Переезд</option>
+          <option value="storage">Хранение</option>
+        </select>
+      </div>
+
+      <label id="service-label">Выберите необходимые услуги:</label>
+
+      <!-- Чекбоксы в одну линию -->
+      <div id="moving-options" class="service-extra checkbox-group">
+        <label><input type="checkbox" id="packing" name="packing"> Упаковка</label>
+        <label><input type="checkbox" id="packing-materials" name="packing-materials"> Упаковочные материалы</label>
+        <label><input type="checkbox" id="assembly" name="assembly"> Разборка и сборка мебели</label>
+        <label><input type="checkbox" id="labeling" name="labeling"> Маркировка коробок</label>
+        <label><input type="checkbox" id="movers" name="movers"> Грузчики</label>
+        <label><input type="checkbox" id="truck" name="truck"> Грузовое авто</label>
+        <label><input type="checkbox" id="garbage" name="garbage"> Вывоз мусора</label>
+        <label><input type="checkbox" id="stairs" name="stairs"> Подъем/спуск без лифта</label>
+      </div>
+
+      <!-- Чекбоксы для Хранения -->
+      <div id="storage-options" class="service-extra checkbox-group">
+        <label><input type="checkbox" id="storage-packing" name="storage-packing"> Упаковка</label>
+        <label><input type="checkbox" id="storage-materials" name="storage-materials"> Упаковочные материалы</label>
+        <label><input type="checkbox" id="storage-assembly" name="storage-assembly"> Разборка и сборка мебели</label>
+        <label><input type="checkbox" id="storage-labeling" name="storage-labeling"> Маркировка коробок</label>
+        <label><input type="checkbox" id="storage-delivery" name="storage-delivery"> Доставка</label>
+
+        <!-- Выпадающий список с тарифами -->
+        <div class="tariff-group">
+          <label for="storage-tariff">Выбрать тариф:</label>
+          <select id="storage-tariff" name="storage-tariff">
+            <option value="">Выберите тариф</option>
+            <option value="anahit-mini">Анаит Мини (до 2 коробок)</option>
+            <option value="anahit-optimum">Анаит Оптимум (до 5 коробок)</option>
+            <option value="anahit-maxi">Анаит Макси (до 10 коробок)</option>
+            <option value="anahit-grand">Анаит Гранд (до 15 коробок)</option>
+            <option value="asthik">Астхик (хранение мебели и техники)</option>
+            <option value="vahagn">Вахагн (хранение ценностей)</option>
+            <option value="aramazd">Арамазд (индивидуальные комнаты)</option>
           </select>
         </div>
+      </div>
 
-        <!-- Поля для контактов -->
-        <div id="telegram-field" class="contact-extra">
-          <label for="telegram">Ваш ник в Telegram:</label>
-          <input type="text" id="telegram" name="telegram" placeholder="@username">
-          
-          <div class="no-call-group">
-            <input type="checkbox" id="no-call-telegram">
-            <label for="no-call-telegram">Не звонить</label>
-          </div>
-        </div>
-
-        <div id="whatsapp-field" class="contact-extra">
-          <label for="whatsapp">Ваш ник в WhatsApp:</label>
-          <input type="text" id="whatsapp" name="whatsapp" placeholder="@username">
-          
-          <div class="no-call-group">
-            <input type="checkbox" id="no-call-telegram">
-            <label for="no-call-telegram">Не звонить</label>
-          </div>
-        </div>
-
-        <div id="phone-field" class="contact-extra">
-          <label for="phone">Ваш номер телефона:</label>
-          <input type="tel" id="phone" name="phone" placeholder="+374 (__) ___-____">
-        </div>
-
-        <div class="contact-row">
-          <label for="service">Переезд или Хранение:</label>
-          <select id="service" name="service" required>
-            <option value="">Выберите услугу</option>
-            <option value="moving">Переезд</option>
-            <option value="storage">Хранение</option>
-          </select>
-        </div>
-
-        <label id="service-label">Выберите необходимые услуги:</label>
-
-        <!-- Чекбоксы в одну линию -->
-<div id="moving-options" class="service-extra checkbox-group">
-  <label><input type="checkbox" id="packing" name="packing"> Упаковка</label>
-  <label><input type="checkbox" id="packing-materials" name="packing-materials"> Упаковочные материалы</label>
-  <label><input type="checkbox" id="assembly" name="assembly"> Разборка и сборка мебели</label>
-  <label><input type="checkbox" id="labeling" name="labeling"> Маркировка коробок</label>
-  <label><input type="checkbox" id="movers" name="movers"> Грузчики</label>
-  <label><input type="checkbox" id="truck" name="truck"> Грузовое авто</label>
-  <label><input type="checkbox" id="garbage" name="garbage"> Вывоз мусора</label>
-  <label><input type="checkbox" id="stairs" name="stairs"> Подъем/спуск без лифта</label>
-</div>
-<!-- Чекбоксы для Хранения (исправленные) -->
-<div id="storage-options" class="service-extra checkbox-group">
-  <label><input type="checkbox" id="storage-packing" name="storage-packing"> Упаковка</label>
-  <label><input type="checkbox" id="storage-materials" name="storage-materials"> Упаковочные материалы</label>
-  <label><input type="checkbox" id="storage-assembly" name="storage-assembly"> Разборка и сборка мебели</label>
-  <label><input type="checkbox" id="storage-labeling" name="storage-labeling"> Маркировка коробок</label>
-  <label><input type="checkbox" id="storage-delivery" name="storage-delivery"> Доставка</label>
-
-  <!-- Выпадающий список с тарифами (с выравниванием) -->
-  <div class="tariff-group">
-    <label for="storage-tariff">Выбрать тариф:</label>
-    <select id="storage-tariff" name="storage-tariff">
-      <option value="">Выберите тариф</option>
-      <option value="anahit-mini">Анаит Мини (до 2 коробок)</option>
-      <option value="anahit-optimum">Анаит Оптимум (до 5 коробок)</option>
-      <option value="anahit-maxi">Анаит Макси (до 10 коробок)</option>
-      <option value="anahit-grand">Анаит Гранд (до 15 коробок)</option>
-      <option value="asthik">Астхик (хранение мебели и техники)</option>
-      <option value="vahagn">Вахагн (хранение ценностей)</option>
-      <option value="aramazd">Арамазд (индивидуальные комнаты)</option>
-    </select>
-  </div>
-</div>
-
-        <button type="submit">Рассчитать стоимость</button>
-      </form>
-    </div>
+      <button type="submit">Рассчитать стоимость</button>
+    </form>
   </div>
 </section>
-
-
   <footer>
     <div class="container">
       <div class="footer-contacts">

@@ -92,34 +92,114 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("service-label").style.display = "none";
 });
 
-document.querySelector("#contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("HayBox сайт загружен!");
 
-    // Собираем данные из формы
-    const name = document.querySelector("#name").value;
-    const contactMethod = document.querySelector("#contact-method").value;
-    const contactValue = document.querySelector(`#${contactMethod}`).value;
-    const service = document.querySelector("#service").value;
+    // Функция переключения полей контактов
+    function toggleContactFields() {
+        document.querySelectorAll(".contact-extra").forEach(field => field.style.display = "none");
 
-    let message = `📌 *Новая заявка!*\n\n`;
-    message += `👤 *Имя:* ${name}\n`;
-    message += `📞 *Контакт:* ${contactValue} (${contactMethod})\n`;
-    message += `🛠 *Услуга:* ${service}\n`;
+        const selectedMethod = document.getElementById("contact-method").value;
+        document.getElementById("telegram").removeAttribute("required");
+        document.getElementById("whatsapp").removeAttribute("required");
+        document.getElementById("phone").removeAttribute("required");
 
-    // Отправка в Netlify API
-    fetch("/.netlify/functions/telegram", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message }),
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert("✅ Заявка отправлена!");
-            document.querySelector("#contact-form").reset();
-        } else {
-            alert("❌ Ошибка отправки!");
+        if (selectedMethod === "telegram") {
+            document.getElementById("telegram-field").style.display = "flex";
+            document.getElementById("telegram").setAttribute("required", "true");
+        } else if (selectedMethod === "whatsapp") {
+            document.getElementById("whatsapp-field").style.display = "flex";
+            document.getElementById("whatsapp").setAttribute("required", "true");
+        } else if (selectedMethod === "phone") {
+            document.getElementById("phone-field").style.display = "flex";
+            document.getElementById("phone").setAttribute("required", "true");
         }
-    })
-    .catch(error => console.error("Ошибка:", error));
+    }
+
+    // Функция переключения доп. услуг
+    function toggleServiceFields() {
+        document.getElementById("moving-options").style.display = "none";
+        document.getElementById("storage-options").style.display = "none";
+        document.getElementById("service-label").style.display = "none";
+
+        const selectedService = document.getElementById("service").value;
+
+        if (selectedService === "moving") {
+            document.getElementById("moving-options").style.display = "block";
+            document.getElementById("service-label").style.display = "block";
+        } else if (selectedService === "storage") {
+            document.getElementById("storage-options").style.display = "block";
+            document.getElementById("service-label").style.display = "block";
+        }
+    }
+
+    // Функция отправки формы через Netlify Functions
+    async function sendToTelegram(event) {
+        event.preventDefault();
+
+        const form = document.getElementById("contact-form");
+        const formData = new FormData(form);
+
+        let message = `📌 *Новая заявка!*\n\n`;
+        message += `👤 *Имя:* ${formData.get("name")}\n`;
+        message += `📞 *Способ связи:* ${formData.get("contact-method")}\n`;
+        message += `🛠 *Услуга:* ${formData.get("service")}\n`;
+
+        // Контактные данные
+        if (formData.get("contact-method") === "telegram") {
+            message += `🔹 Telegram: ${formData.get("telegram")}\n`;
+        } else if (formData.get("contact-method") === "whatsapp") {
+            message += `🔹 WhatsApp: ${formData.get("whatsapp")}\n`;
+        } else if (formData.get("contact-method") === "phone") {
+            message += `📱 Телефон: ${formData.get("phone")}\n`;
+        }
+
+        // Доп. услуги для переезда
+        if (formData.get("service") === "moving") {
+            message += `\n🚚 *Доп. услуги для переезда:*\n`;
+            document.querySelectorAll("#moving-options input:checked").forEach(item => {
+                message += `✅ ${item.parentElement.innerText.trim()}\n`;
+            });
+        }
+
+        // Доп. услуги для хранения
+        if (formData.get("service") === "storage") {
+            message += `\n📦 *Доп. услуги для хранения:*\n`;
+            document.querySelectorAll("#storage-options input:checked").forEach(item => {
+                message += `✅ ${item.parentElement.innerText.trim()}\n`;
+            });
+
+            if (formData.get("storage-tariff")) {
+                message += `💰 *Выбранный тариф:* ${formData.get("storage-tariff")}\n`;
+            }
+        }
+
+        try {
+            const response = await fetch("/.netlify/functions/telegram", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text: message })
+            });
+
+            if (response.ok) {
+                alert("✅ Заявка успешно отправлена!");
+                form.reset();
+            } else {
+                alert("❌ Ошибка при отправке! Попробуйте позже.");
+            }
+        } catch (error) {
+            alert("❌ Ошибка соединения!");
+            console.error(error);
+        }
+    }
+
+    // Назначаем обработчики событий
+    document.getElementById("contact-method").addEventListener("change", toggleContactFields);
+    document.getElementById("service").addEventListener("change", toggleServiceFields);
+    document.getElementById("contact-form").addEventListener("submit", sendToTelegram);
+
+    // Скрываем чекбоксы при загрузке
+    document.getElementById("moving-options").style.display = "none";
+    document.getElementById("storage-options").style.display = "none";
+    document.getElementById("service-label").style.display = "none";
 });

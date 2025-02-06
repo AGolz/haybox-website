@@ -135,76 +135,79 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Функция отправки формы через Netlify Functions
     async function sendToTelegram(event) {
-        event.preventDefault();
+    event.preventDefault();
 
-        const form = document.getElementById("contact-form");
-        const formData = new FormData(form);
+    const form = document.getElementById("contact-form");
+    const formData = new FormData(form);
 
-        let message = `📌 *Новая заявка!*\n\n`;
-        message += `👤 *Имя:* ${formData.get("name")}\n`;
-        message += `📞 *Способ связи:* ${formData.get("contact-method")}\n`;
-        message += `🛠 *Услуга:* ${formData.get("service")}\n`;
+    // Функция для экранирования спецсимволов в Markdown Telegram
+    const escapeMarkdown = (text) => text.replace(/_/g, "\\_");
 
-        // Контактные данные
-        if (formData.get("contact-method") === "telegram") {
-            message += `🔹 Telegram: ${formData.get("telegram")}\n`;
-        } else if (formData.get("contact-method") === "whatsapp") {
-            message += `🔹 WhatsApp: ${formData.get("whatsapp")}\n`;
-        } else if (formData.get("contact-method") === "phone") {
-            message += `📱 Телефон: ${formData.get("phone")}\n`;
-        }
+    let message = `📌 *Новая заявка!*\n\n`;
+    message += `👤 *Имя:* ${escapeMarkdown(formData.get("name"))}\n`;
+    message += `📞 *Способ связи:* ${formData.get("contact-method")}\n`;
+    message += `🛠 *Услуга:* ${formData.get("service")}\n`;
 
-        // Определяем, выбрана ли галочка "Не звонить"
-        const noCallTelegram = document.getElementById("no-call-telegram").checked ? "Не звонить" : "";
-        const noCallWhatsApp = document.getElementById("no-call-whatsapp").checked ? "Не звонить" : "";
+    // Контактные данные
+    const contactMethod = formData.get("contact-method");
+    if (contactMethod === "telegram") {
+        message += `🔹 Telegram: ${escapeMarkdown(formData.get("telegram"))}\n`;
+    } else if (contactMethod === "whatsapp") {
+        message += `🔹 WhatsApp: ${escapeMarkdown(formData.get("whatsapp"))}\n`;
+    } else if (contactMethod === "phone") {
+        message += `📱 Телефон: ${formData.get("phone")}\n`;
+    }
 
-        // Добавляем в сообщение (в зависимости от метода связи)
-        if (contactMethod === "telegram" && noCallTelegram) {
+    // Определяем, выбрана ли галочка "Не звонить"
+    const noCallTelegram = document.getElementById("no-call-telegram").checked ? "Не звонить" : "";
+    const noCallWhatsApp = document.getElementById("no-call-whatsapp").checked ? "Не звонить" : "";
+
+    // Добавляем "Не звонить" в сообщение
+    if (contactMethod === "telegram" && noCallTelegram) {
         message += `🚫 *${noCallTelegram} в Telegram*\n`;
-        }
-        if (contactMethod === "whatsapp" && noCallWhatsApp) {
+    }
+    if (contactMethod === "whatsapp" && noCallWhatsApp) {
         message += `🚫 *${noCallWhatsApp} в WhatsApp*\n`;
-        }
+    }
 
-        // Доп. услуги для переезда
-        if (formData.get("service") === "moving") {
-            message += `\n🚚 *Доп. услуги для переезда:*\n`;
-            document.querySelectorAll("#moving-options input:checked").forEach(item => {
-                message += `✅ ${item.parentElement.innerText.trim()}\n`;
-            });
-        }
+    // Доп. услуги для переезда
+    if (formData.get("service") === "moving") {
+        message += `\n🚚 *Доп. услуги для переезда:*\n`;
+        document.querySelectorAll("#moving-options input:checked").forEach(item => {
+            message += `✅ ${escapeMarkdown(item.parentElement.innerText.trim())}\n`;
+        });
+    }
 
-        // Доп. услуги для хранения
-        if (formData.get("service") === "storage") {
-            message += `\n📦 *Доп. услуги для хранения:*\n`;
-            document.querySelectorAll("#storage-options input:checked").forEach(item => {
-                message += `✅ ${item.parentElement.innerText.trim()}\n`;
-            });
+    // Доп. услуги для хранения
+    if (formData.get("service") === "storage") {
+        message += `\n📦 *Доп. услуги для хранения:*\n`;
+        document.querySelectorAll("#storage-options input:checked").forEach(item => {
+            message += `✅ ${escapeMarkdown(item.parentElement.innerText.trim())}\n`;
+        });
 
-            if (formData.get("storage-tariff")) {
-                message += `💰 *Выбранный тариф:* ${formData.get("storage-tariff")}\n`;
-            }
-        }
-
-        try {
-            const response = await fetch("/.netlify/functions/telegram", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ text: message })
-            });
-
-            if (response.ok) {
-                alert("✅ Заявка успешно отправлена!");
-                form.reset();
-            } else {
-                alert("❌ Ошибка при отправке! Попробуйте позже.");
-            }
-        } catch (error) {
-            alert("❌ Ошибка соединения!");
-            console.error(error);
+        if (formData.get("storage-tariff")) {
+            message += `💰 *Выбранный тариф:* ${formData.get("storage-tariff")}\n`;
         }
     }
 
+    try {
+        const response = await fetch("/.netlify/functions/telegram", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text: message })
+        });
+
+        if (response.ok) {
+            alert("✅ Заявка успешно отправлена!");
+            form.reset();
+        } else {
+            alert("❌ Ошибка при отправке! Попробуйте позже.");
+        }
+    } catch (error) {
+        alert("❌ Ошибка соединения!");
+        console.error(error);
+    }
+}
     // Назначаем обработчики событий
     document.getElementById("contact-method").addEventListener("change", toggleContactFields);
     document.getElementById("service").addEventListener("change", toggleServiceFields);

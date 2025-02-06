@@ -716,6 +716,10 @@ h3 .icon {
   }
 }
 
+#contact h2 {
+  margin-bottom: 10px;
+}
+
 /* --- Контейнер формы (немного увеличен) --- */
 .contact-form {
   display: flex;

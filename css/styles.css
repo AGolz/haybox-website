@@ -556,6 +556,22 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .feature-title {
+    display: flex;
+    flex-direction: column; /* Делаем перенос на новую строку */
+    align-items: center;
+    text-align: center;
+    white-space: normal; /* Разрешаем перенос */
+    word-wrap: break-word; /* Переносим длинные слова */
+  }
+
+  .feature-title h3 {
+    font-size: 1rem; /* Чуть уменьшаем заголовки */
+    max-width: 90%; /* Чтобы не раздувались */
+  }
+}
+
 #reviews h2 {
   margin-bottom: 50px;
 }
@@ -799,49 +815,36 @@ h3 .icon {
   display: block;
 }
 
-/* --- Медиа-запрос для адаптации на мобильных устройствах --- */
 @media (max-width: 768px) {
   .pricing-wrapper {
-    width: 90vw; /* Делаем блоку нормальную ширину */
-    max-width: 100%; /* Чтобы не выходил за экран */
-    padding: 10px; /* Меньше отступов */
+    width: 95vw; /* Делаем нормальную ширину */
+    max-width: 100%;
+    padding: 15px; /* Уменьшаем отступы */
   }
 
-  .tabs {
-    flex-wrap: wrap; /* Позволяем кнопкам переноситься */
-    justify-content: center; /* Центрируем кнопки */
-    gap: 5px; /* Меньше отступ между кнопками */
-  }
-
-  .tab-link {
-    font-size: 0.8rem; /* Уменьшаем шрифт кнопок */
-    padding: 8px 12px; /* Делаем их компактнее */
-  }
-}
-
-@media (max-width: 768px) {
   .pricing-grid {
     flex-direction: column;
-    gap: 10px; /* Меньше отступ между карточками */
+    gap: 8px; /* Меньше отступ между карточками */
     align-items: center;
   }
 
   .pricing-item {
     width: 100%;
-    max-width: 80%; /* Делаем их компактными */
-    font-size: 0.8rem; /* Уменьшаем текст */
-    padding: 12px; /* Меньше отступов */
+    max-width: 90%; /* Делаем компактными */
+    font-size: 0.8rem; /* Меньше текст */
+    padding: 10px; /* Убираем лишний отступ */
   }
 
   .pricing-item h4 {
-    font-size: 0.9rem; /* Меньше заголовки */
+    font-size: 0.9rem; /* Чуть меньше заголовки */
   }
 
   .pricing-icon {
-    width: 22px; /* Меньше иконки */
-    height: 22px;
+    width: 20px; /* Сжимаем иконки */
+    height: 20px;
   }
 }
+
 
 #contact h2 {
   margin-bottom: 10px;

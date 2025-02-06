@@ -85,14 +85,9 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("contact-method").addEventListener("change", toggleContactFields);
     document.getElementById("service").addEventListener("change", toggleServiceFields);
 
-    // Скрываем чекбоксы и заголовок "Выберите необходимые услуги" при загрузке страницы
-    document.getElementById("moving-options").style.display = "none";
-    document.getElementById("storage-options").style.display = "none";
-    document.getElementById("service-label").style.display = "none";
-
-    // 📌 Telegram Bot Configuration
-    const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
-    const chatId = import.meta.env.VITE_CHAT_ID;
+    // 📌 Telegram Bot Configuration (указать вручную!)
+    const botToken = "ТВОЙ_БОТ_ТОКЕН"; // 🔥 Вставь сюда токен
+    const chatId = "ТВОЙ_CHAT_ID"; // 🔥 Вставь сюда ID чата
     const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
     // 📩 Отправка заявки в Telegram

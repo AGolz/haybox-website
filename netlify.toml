@@ -1,0 +1,7 @@
+[build]
+  functions = "netlify/functions"  # Указываем папку, где хранятся функции
+
+[[redirects]]
+  from = "/telegram"
+  to = "/.netlify/functions/telegram"
+  status = 200

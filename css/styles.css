@@ -716,75 +716,86 @@ h3 .icon {
   }
 }
 
-/* --- Контейнер формы (меньше, прижат к левому краю) --- */
+/* --- Контейнер формы (адаптивный размер, прижат к левому краю) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
-  width: 70%;
-  max-width: 300px;
-  padding: 25px;
+  gap: 15px;
+  width: auto; /* Автоматическая ширина */
+  max-width: 500px;
+  padding: 20px;
   background: #fff;
   border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
 
 /* --- Поля формы в одну строку с названиями --- */
 .contact-row {
   display: flex;
-  align-items: left;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
   width: 100%;
+  gap: 15px; /* Отступ между названием и полем */
 }
 
-/* --- Поля ввода и селекты --- */
+/* --- Поля ввода и выпадающие списки --- */
 .contact-form input,
 .contact-form select {
-  width: 250px;
-  padding: 8px;
+  width: 220px;
+  padding: 6px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: left;
+  font-size: 14px;
 }
 
-/* --- Блоки с дополнительными полями (изначально скрыты) --- */
+/* --- Дополнительные поля (изначально скрыты) --- */
 .contact-extra,
 .service-extra {
   display: none;
   flex-direction: row;
-  align-items: left;
+  align-items: center;
   gap: 10px;
 }
 
-/* --- Чекбоксы в одну строку (изначально скрыты) --- */
+/* --- Чекбоксы в одну линию (изначально скрыты) --- */
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
   justify-content: flex-start;
   max-width: 500px;
 }
 
-/* --- Чекбоксы (рядом с текстом) --- */
+/* --- Чекбоксы (ровно перед текстом) --- */
 .checkbox-group label {
   display: flex;
-  align-items: left;
-  gap: 5px;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* --- Уменьшаем чекбоксы до нормального размера --- */
+.checkbox-group input[type="checkbox"],
+.contact-extra input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
 }
 
 /* --- Заголовок "Выберите необходимые услуги" (по умолчанию скрыт) --- */
 #service-label {
   display: none;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
-/* --- Кнопка в центре --- */
+/* --- Кнопка (в центре, нормального размера) --- */
 .contact-form button {
   background: #3d3d3f;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 18px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;

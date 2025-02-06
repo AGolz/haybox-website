@@ -716,7 +716,7 @@ h3 .icon {
   }
 }
 
-/* --- Контейнер формы (по ширине контента, без лишних рамок) --- */
+/* --- Контейнер формы (компактный, без лишней рамки) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -729,6 +729,14 @@ h3 .icon {
   border-radius: 10px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+}
+
+/* --- Убираем лишнюю вторую белую рамку вокруг формы --- */
+.pricing-wrapper {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* --- Поля формы в одну строку с названиями --- */
@@ -752,41 +760,35 @@ h3 .icon {
   font-size: 14px;
 }
 
-/* --- Блоки с дополнительными полями (изначально скрыты) --- */
-.contact-extra,
-.service-extra {
+/* --- Поля с ником Telegram/WhatsApp и телефоном (на одной линии) --- */
+.contact-extra {
   display: none;
   flex-direction: row;
   align-items: center;
   gap: 10px;
-}
-
-/* --- Поля с ником Telegram/WhatsApp и телефоном (на одной линии) --- */
-.contact-extra label {
   white-space: nowrap; /* Убирает перенос */
 }
 
-/* --- Чекбоксы в одну строку (изначально скрыты) --- */
+/* --- Чекбоксы: убираем перенос, делаем их в одну линию! --- */
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   justify-content: flex-start;
   max-width: 500px;
 }
 
-/* --- Чекбоксы (ровно перед текстом, а не сверху) --- */
+/* --- Чекбоксы ровно перед текстом (горизонтально, не сверху) --- */
 .checkbox-group label {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   font-size: 14px;
   white-space: nowrap; /* Убирает перенос чекбоксов */
 }
 
-/* --- Чекбоксы уменьшены и выровнены --- */
-.checkbox-group input[type="checkbox"],
-.contact-extra input[type="checkbox"] {
+/* --- Уменьшаем чекбоксы до нормального размера --- */
+.checkbox-group input[type="checkbox"] {
   width: 16px;
   height: 16px;
 }
@@ -798,7 +800,7 @@ h3 .icon {
   margin-top: 10px;
 }
 
-/* --- Кнопка (в центре, нормального размера) --- */
+/* --- Кнопка в центре --- */
 .contact-form button {
   background: #3d3d3f;
   color: #fff;
@@ -809,7 +811,7 @@ h3 .icon {
   font-weight: bold;
   border: none;
   cursor: pointer;
-  margin: 20px auto 0; /* Центрирование */
+  margin: 20px auto 0;
   display: block;
 }
 

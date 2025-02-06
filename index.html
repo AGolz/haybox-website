@@ -408,6 +408,7 @@
           </select>
         </div>
 
+        <!-- Поля для контактов -->
         <div id="telegram-field" class="contact-extra">
           <label for="telegram">Ваш ник в Telegram:</label>
           <input type="text" id="telegram" name="telegram" placeholder="@username">
@@ -437,8 +438,63 @@
         </div>
 
         <label id="service-label">Выберите необходимые услуги:</label>
+
+        <!-- Чекбоксы для Переезда -->
         <div id="moving-options" class="service-extra checkbox-group">
-          <input type="checkbox"> <label>Упаковка</label>
+          <input type="checkbox" id="packing" name="packing">
+          <label for="packing">Упаковка</label>
+
+          <input type="checkbox" id="packing-materials" name="packing-materials">
+          <label for="packing-materials">Упаковочные материалы</label>
+
+          <input type="checkbox" id="assembly" name="assembly">
+          <label for="assembly">Разборка и сборка мебели</label>
+
+          <input type="checkbox" id="labeling" name="labeling">
+          <label for="labeling">Маркировка коробок</label>
+
+          <input type="checkbox" id="movers" name="movers">
+          <label for="movers">Грузчики</label>
+
+          <input type="checkbox" id="truck" name="truck">
+          <label for="truck">Грузовое авто</label>
+
+          <input type="checkbox" id="garbage" name="garbage">
+          <label for="garbage">Вывоз мусора</label>
+
+          <input type="checkbox" id="stairs" name="stairs">
+          <label for="stairs">Подъем/спуск без лифта</label>
+          <input type="number" id="stairs-floor" name="stairs-floor" placeholder="Этажей" min="1" max="50">
+        </div>
+
+        <!-- Чекбоксы для Хранения -->
+        <div id="storage-options" class="service-extra checkbox-group">
+          <input type="checkbox" id="storage-packing" name="storage-packing">
+          <label for="storage-packing">Упаковка</label>
+
+          <input type="checkbox" id="storage-materials" name="storage-materials">
+          <label for="storage-materials">Упаковочные материалы</label>
+
+          <input type="checkbox" id="storage-assembly" name="storage-assembly">
+          <label for="storage-assembly">Разборка и сборка мебели</label>
+
+          <input type="checkbox" id="storage-labeling" name="storage-labeling">
+          <label for="storage-labeling">Маркировка коробок</label>
+
+          <input type="checkbox" id="storage-delivery" name="storage-delivery">
+          <label for="storage-delivery">Доставка</label>
+
+          <label for="storage-tariff">Выбрать тариф:</label>
+          <select id="storage-tariff" name="storage-tariff">
+            <option value="">Выберите тариф</option>
+            <option value="anahit-mini">Анаит Мини (до 2 коробок)</option>
+            <option value="anahit-optimum">Анаит Оптимум (до 5 коробок)</option>
+            <option value="anahit-maxi">Анаит Макси (до 10 коробок)</option>
+            <option value="anahit-grand">Анаит Гранд (до 15 коробок)</option>
+            <option value="asthik">Астхик (хранение мебели и техники)</option>
+            <option value="vahagn">Вахагн (хранение ценностей)</option>
+            <option value="aramazd">Арамазд (индивидуальные комнаты)</option>
+          </select>
         </div>
 
         <button type="submit">Рассчитать стоимость</button>
@@ -446,6 +502,7 @@
     </div>
   </div>
 </section>
+
 
   <footer>
     <div class="container">

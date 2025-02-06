@@ -91,3 +91,64 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("storage-options").style.display = "none";
   document.getElementById("service-label").style.display = "none";
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("#contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Останавливаем стандартную отправку формы
+
+        const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN; // Бот API Token
+        const chatId = import.meta.env.VITE_CHAT_ID; // Твой Chat ID
+        const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+        const name = document.querySelector("#name").value;
+        const contactMethod = document.querySelector("#contact-method").value;
+        const contactValue = document.querySelector(`#${contactMethod}`).value;
+        const service = document.querySelector("#service").value;
+
+        let message = `📌 *Новая заявка!*\n\n`;
+        message += `👤 *Имя:* ${name}\n`;
+        message += `📞 *Контакт:* ${contactValue} (${contactMethod})\n`;
+        message += `🛠 *Услуга:* ${service}\n`;
+
+        if (service === "moving") {
+            message += `\n🚚 *Доп. услуги для переезда:*\n`;
+            document.querySelectorAll("#moving-options input:checked").forEach((item) => {
+                message += `✅ ${item.parentElement.innerText.trim()}\n`;
+            });
+        }
+
+        if (service === "storage") {
+            message += `\n📦 *Доп. услуги для хранения:*\n`;
+            document.querySelectorAll("#storage-options input:checked").forEach((item) => {
+                message += `✅ ${item.parentElement.innerText.trim()}\n`;
+            });
+
+            const tariff = document.querySelector("#storage-tariff").value;
+            if (tariff) {
+                message += `💰 *Выбранный тариф:* ${tariff}\n`;
+            }
+        }
+
+        fetch(apiUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message,
+                parse_mode: "Markdown"
+            })
+        })
+            .then(response => {
+                if (response.ok) {
+                    alert("✅ Заявка успешно отправлена!");
+                    document.querySelector("#contact-form").reset();
+                } else {
+                    alert("❌ Ошибка при отправке! Попробуйте позже.");
+                }
+            })
+            .catch(error => {
+                alert("❌ Ошибка соединения!");
+                console.error(error);
+            });
+    });
+});

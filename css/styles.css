@@ -251,6 +251,18 @@ body {
   object-fit: contain;
 }
 
+@media (max-width: 768px) {
+  .process-steps {
+    flex-direction: column; /* Делаем шаги вертикальными */
+    align-items: center;
+    gap: 30px;
+  }
+
+  .process-steps .arrow {
+    display: none; /* Скрываем стрелки между шагами */
+  }
+}
+
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -611,12 +623,34 @@ body {
 /* Медиа-запрос для мобильных */
 @media (max-width: 768px) {
   .reviews-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Один отзыв в ряд */
+    gap: 30px; /* Добавляем расстояние между отзывами */
+    margin-left: 0; /* Центрируем */
   }
 
   .review-second-row {
-    flex-direction: column;
+    flex-direction: column; /* Отзывы во втором ряду тоже вертикально */
+    gap: 30px;
+    margin-left: 0;
     align-items: center;
+  }
+
+  .review {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .review-avatar {
+    width: 70px; /* Чуть уменьшаем аватарки */
+    height: 70px;
+  }
+
+  .review-large {
+    max-width: 100%; /* Открываем картинку на всю ширину */
+  }
+
+  .review-small {
+    max-width: 90%;
   }
 }
 
@@ -763,12 +797,13 @@ h3 .icon {
 /* --- Медиа-запрос для адаптации на мобильных устройствах --- */
 @media (max-width: 768px) {
   .pricing-grid {
-    flex-direction: column;
+    flex-direction: column; /* Делаем тарифы вертикальными */
     align-items: center;
+    gap: 30px;
   }
-  
+
   .pricing-item {
-    max-width: 90%;
+    width: 90%;
   }
 }
 

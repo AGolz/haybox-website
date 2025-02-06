@@ -42,6 +42,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let errors = [];
 
+    // Проверяем, выбрал ли пользователь способ связи
+    if (!contactMethod) {
+      errors.push("Пожалуйста, выберите предпочтительный способ связи.");
+    }
+
     if (contactMethod === "telegram" && telegram === "") {
       errors.push("Пожалуйста, укажите ник в Telegram.");
     }
@@ -54,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
       errors.push("Пожалуйста, укажите номер телефона.");
     }
 
-    if (service === "") {
+    if (!service) {
       errors.push("Пожалуйста, выберите услугу (Переезд или Хранение).");
     }
 

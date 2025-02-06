@@ -720,7 +720,7 @@ h3 .icon {
   margin-bottom: 10px;
 }
 
-/* --- Контейнер формы (увеличен) --- */
+/* --- Контейнер формы (немного увеличен) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -735,13 +735,24 @@ h3 .icon {
   margin: 0 auto;
 }
 
-/* --- Поля ввода --- */
+/* --- Поля формы в одну строку с названиями --- */
+.contact-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+/* --- Поля ввода и выпадающие списки --- */
 .contact-form input,
 .contact-form select {
   width: 200px;
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  text-align: left;
   font-size: 14px;
 }
 
@@ -757,9 +768,16 @@ h3 .icon {
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
 }
 
-/* --- Чекбоксы в одну линию --- */
+/* --- Уменьшаем чекбокс "Не звонить" --- */
+.contact-extra .no-call-group input[type="checkbox"] {
+  width: 14px; /* Чуть меньше размер квадрата */
+  height: 14px;
+}
+
+/* --- Чекбоксы (горизонтальное расположение) --- */
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
@@ -768,7 +786,7 @@ h3 .icon {
   max-width: 500px;
 }
 
-/* --- Чекбоксы перед текстом --- */
+/* --- Чекбоксы перед текстом (ровно, не сверху) --- */
 .checkbox-group label {
   display: flex;
   align-items: center;
@@ -777,13 +795,21 @@ h3 .icon {
   white-space: nowrap;
 }
 
+/* --- Чекбоксы ровно перед текстом --- */
 .checkbox-group input[type="checkbox"] {
   width: 14px;
   height: 14px;
   margin-right: 6px;
 }
 
-/* --- КНОПКА: Исправлена выравнивание по центру --- */
+/* --- Заголовок "Выберите необходимые услуги" --- */
+#service-label {
+  display: none;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* --- Кнопка в центре --- */
 .contact-form button {
   background: #3d3d3f;
   color: #fff;
@@ -794,7 +820,7 @@ h3 .icon {
   font-weight: bold;
   border: none;
   cursor: pointer;
-  margin: 20px auto 0; /* Центрируем кнопку */
+  margin: 20px auto 0;
   display: block;
 }
 
@@ -802,6 +828,7 @@ h3 .icon {
   background: #f4ba2b;
   color: #3d3d3f;
 }
+
 
 /* --- Подвал (footer) --- */
 footer {

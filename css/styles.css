@@ -716,7 +716,7 @@ h3 .icon {
   }
 }
 
-/* --- Контейнер формы (компактный, без лишней рамки) --- */
+/* --- Контейнер формы (компактный, убираем двойную рамку) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -752,24 +752,26 @@ h3 .icon {
   font-size: 14px;
 }
 
-/* --- Блок "Не звонить" (на одной линии с чекбоксом) --- */
+/* --- "Не звонить" (теперь под полем @username) --- */
 .contact-extra {
   display: none;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  white-space: nowrap; /* Убирает перенос */
+  flex-direction: column; /* Теперь в столбик */
+  align-items: flex-start;
+  gap: 5px;
 }
 
-.contact-extra label {
-  margin-left: 5px; /* Добавляем отступ после чекбокса */
+.contact-extra .no-call-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
 }
 
 /* --- Чекбоксы: делаем их в одну линию (горизонтально!) --- */
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
   justify-content: flex-start;
   max-width: 500px;
 }

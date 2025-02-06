@@ -716,18 +716,18 @@ h3 .icon {
   }
 }
 
-/* --- Контейнер формы (компактный, убираем двойную рамку) --- */
+/* --- Контейнер формы (немного увеличен) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 16px; /* Увеличен отступ между строками */
   width: fit-content; /* Подстраивается под контент */
-  max-width: 500px;
-  padding: 20px;
+  max-width: 550px; /* Чуть увеличил ширину */
+  padding: 25px; /* Чуть больше отступов */
   background: #fff;
   border-radius: 10px;
-  box-shadow: none; /* Убираем вторую тень */
+  box-shadow: none; /* Оставляем только одну рамку */
   margin: 0 auto;
 }
 
@@ -737,73 +737,79 @@ h3 .icon {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  gap: 12px; /* Отступ между названием и полем */
-  white-space: nowrap; /* Убирает перенос строк */
+  gap: 15px; /* Увеличен отступ между названием и полем */
+  white-space: nowrap;
 }
 
-/* --- Поля ввода и выпадающие списки (уменьшенные) --- */
+/* --- Поля ввода и выпадающие списки --- */
 .contact-form input,
 .contact-form select {
-  width: 220px;
-  padding: 6px 10px;
+  width: 240px; /* Чуть больше ширина полей */
+  padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: left;
   font-size: 14px;
 }
 
-/* --- "Не звонить" (теперь под полем @username) --- */
+/* --- "Не звонить" (уменьшенный чекбокс) --- */
 .contact-extra {
   display: none;
-  flex-direction: column; /* Теперь в столбик */
+  flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
+  gap: 8px; /* Чуть больше отступов */
 }
 
 .contact-extra .no-call-group {
   display: flex;
-  align-items: centr;
-  gap: 5px;
+  align-items: center;
+  gap: 6px; /* Уменьшен отступ между чекбоксом и текстом */
   white-space: nowrap;
 }
 
-/* --- Чекбоксы: делаем их в одну линию (горизонтально!) --- */
+/* --- Уменьшаем чекбокс "Не звонить" --- */
+.contact-extra .no-call-group input[type="checkbox"] {
+  width: 14px; /* Чуть меньше размер квадрата */
+  height: 14px;
+}
+
+/* --- Чекбоксы (горизонтальное расположение) --- */
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px; /* Чуть больше пространства */
   justify-content: flex-start;
   max-width: 500px;
 }
 
-/* --- Чекбоксы ровно перед текстом (горизонтально, не сверху) --- */
+/* --- Чекбоксы перед текстом (ровно, не сверху) --- */
 .checkbox-group label {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px; /* Уменьшен отступ между чекбоксом и текстом */
   font-size: 14px;
-  white-space: nowrap; /* Убирает перенос чекбоксов */
+  white-space: nowrap;
 }
 
-/* --- Исправляем кривые отступы между чекбоксами и текстом --- */
+/* --- Чекбоксы ровно перед текстом --- */
 .checkbox-group input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px; /* Отступ между чекбоксом и текстом */
+  width: 14px; /* Уменьшен размер чекбоксов */
+  height: 14px;
+  margin-right: 6px;
 }
 
-/* --- Заголовок "Выберите необходимые услуги" (по умолчанию скрыт) --- */
+/* --- Заголовок "Выберите необходимые услуги" --- */
 #service-label {
   display: none;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* --- Кнопка в центре --- */
 .contact-form button {
   background: #3d3d3f;
   color: #fff;
-  padding: 10px 18px;
+  padding: 12px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;

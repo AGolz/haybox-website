@@ -833,20 +833,12 @@ h3 .icon {
 footer {
     background: #333;
     color: #fff;
-    padding: 8px 0; /* Уменьшаем высоту подвала */
+    padding: 8px 0; /* Компактный подвал */
     text-align: center;
-    font-size: 14px; /* Унифицированный размер шрифта */
+    font-size: 14px; /* Одинаковый размер шрифта */
 }
 
 /* --- Контейнер для всех элементов подвала --- */
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px; /* Уменьшаем расстояние между строками */
-}
-
-/* --- Контакты (почта и телефон) --- */
 .footer-contacts {
     display: flex;
     flex-direction: column;
@@ -857,33 +849,40 @@ footer {
 /* --- Ссылки (желтые, без подчеркивания) --- */
 .footer-contacts a {
     color: #f4ba2b; /* Корпоративный желтый цвет */
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
     font-weight: bold;
 }
 
 .footer-contacts a:hover {
-    text-decoration: underline; /* Можно добавить подчеркивание при наведении */
+    text-decoration: underline;
 }
 
-/* --- Контейнер для соц. сетей --- */
-.footer-social {
+/* --- Контейнер для соц. сетей (Выравнивание иконок и текста) --- */
+.footer-links {
     display: flex;
     justify-content: center;
-    gap: 12px; /* Расстояние между иконками */
+    gap: 20px; /* Отступ между ссылками */
+    align-items: center;
 }
 
-/* --- Иконки соц. сетей --- */
-.footer-social a img {
-    width: 10px; /* Уменьшенный размер иконок */
-    height: 10px;
+/* --- Иконки соц. сетей (Исправленный размер) --- */
+.footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Отступ между иконкой и текстом */
 }
 
-/* --- Почта и телефон (один стиль, меньше отступов) --- */
+.footer-links a img {
+    width: 16px; /* Нормальный размер иконок */
+    height: 16px;
+}
+
+/* --- Почта и телефон (единый стиль) --- */
 .footer-contacts p {
-    margin: 1px 0; /* Минимальные отступы между строками */
+    margin: 2px 0; /* Минимальные отступы */
 }
 
-/* --- Адрес (уменьшаем отступ сверху) --- */
+/* --- Адрес (сокращаем отступ сверху) --- */
 .footer-address {
     margin-top: 3px;
 }

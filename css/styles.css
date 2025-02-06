@@ -833,16 +833,17 @@ h3 .icon {
 footer {
     background: #333;
     color: #fff;
-    padding: 10px 0; /* Уменьшаем отступ сверху и снизу */
+    padding: 8px 0; /* Уменьшаем высоту подвала */
     text-align: center;
+    font-size: 14px; /* Унифицированный размер шрифта */
 }
 
-/* --- Контейнер для контактов и ссылок --- */
+/* --- Контейнер для всех элементов подвала --- */
 .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px; /* Уменьшаем расстояние между блоками */
+    gap: 5px; /* Уменьшаем расстояние между строками */
 }
 
 /* --- Контакты (почта и телефон) --- */
@@ -850,30 +851,39 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3px; /* Уменьшаем расстояние между строками */
+    gap: 3px; /* Уменьшаем расстояние между пунктами */
+}
+
+/* --- Ссылки (желтые, без подчеркивания) --- */
+.footer-contacts a {
+    color: #f4ba2b; /* Корпоративный желтый цвет */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold;
+}
+
+.footer-contacts a:hover {
+    text-decoration: underline; /* Можно добавить подчеркивание при наведении */
 }
 
 /* --- Контейнер для соц. сетей --- */
 .footer-social {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Расстояние между иконками */
+    gap: 12px; /* Расстояние между иконками */
 }
 
 /* --- Иконки соц. сетей --- */
 .footer-social a img {
-    width: 20px; /* Оптимальный размер иконок */
-    height: 20px;
+    width: 18px; /* Уменьшенный размер иконок */
+    height: 18px;
 }
 
-/* --- Почта и телефон --- */
+/* --- Почта и телефон (один стиль, меньше отступов) --- */
 .footer-contacts p {
-    margin: 2px 0; /* Убираем лишние отступы между строками */
-    font-size: 14px;
+    margin: 1px 0; /* Минимальные отступы между строками */
 }
 
-/* --- Адрес внизу --- */
+/* --- Адрес (уменьшаем отступ сверху) --- */
 .footer-address {
-    margin-top: 5px;
-    font-size: 13px;
+    margin-top: 3px;
 }

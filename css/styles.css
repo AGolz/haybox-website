@@ -998,23 +998,6 @@ h3 .icon {
   }
 }
 
-@media (max-width: 768px) {
-  .footer-links {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .footer-contacts {
-    text-align: center;
-  }
-
-  .footer-address {
-    font-size: 12px;
-  }
-}
-
-
-
 /* --- Подвал (footer) --- */
 footer {
   background: #333;
@@ -1065,5 +1048,20 @@ footer {
 
 .footer-address {
   margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-contacts {
+    text-align: center;
+  }
+
+  .footer-address {
+    font-size: 12px;
+  }
 }
 

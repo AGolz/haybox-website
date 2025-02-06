@@ -6,12 +6,19 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll(".contact-extra").forEach(field => field.style.display = "none");
 
     const selectedMethod = document.getElementById("contact-method").value;
+    document.getElementById("telegram").removeAttribute("required");
+    document.getElementById("whatsapp").removeAttribute("required");
+    document.getElementById("phone").removeAttribute("required");
+
     if (selectedMethod === "telegram") {
       document.getElementById("telegram-field").style.display = "flex";
+      document.getElementById("telegram").setAttribute("required", "true");
     } else if (selectedMethod === "whatsapp") {
       document.getElementById("whatsapp-field").style.display = "flex";
+      document.getElementById("whatsapp").setAttribute("required", "true");
     } else if (selectedMethod === "phone") {
       document.getElementById("phone-field").style.display = "flex";
+      document.getElementById("phone").setAttribute("required", "true");
     }
   }
 
@@ -22,18 +29,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const serviceLabel = document.getElementById("service-label");
     const selectedService = document.getElementById("service").value;
 
-    console.log("Выбрана услуга:", selectedService);
-
-    // Перед изменением скрываем оба блока
     movingOptions.style.display = "none";
     storageOptions.style.display = "none";
     serviceLabel.style.display = "none";
 
     if (selectedService === "moving") {
-      movingOptions.style.display = "block"; // Показываем чекбоксы переезда
+      movingOptions.style.display = "block";
       serviceLabel.style.display = "block";
     } else if (selectedService === "storage") {
-      storageOptions.style.display = "block"; // Показываем чекбоксы хранения
+      storageOptions.style.display = "block";
       serviceLabel.style.display = "block";
     }
   }
@@ -48,30 +52,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let errors = [];
 
-    // Проверяем, что выбрали способ связи
     if (!contactMethod) {
       errors.push("Пожалуйста, выберите предпочтительный способ связи.");
     }
 
-    // Проверяем, что введены данные в контактах
-    if (contactMethod === "@username" && telegram === "") {
+    if (contactMethod === "telegram" && !telegram) {
       errors.push("Пожалуйста, укажите ник в Telegram.");
     }
 
-    if (contactMethod === "@username" && whatsapp === "") {
+    if (contactMethod === "whatsapp" && !whatsapp) {
       errors.push("Пожалуйста, укажите ник в WhatsApp.");
     }
 
-    if (contactMethod === "+374 (__) ___-____" && phone === "") {
+    if (contactMethod === "phone" && !phone) {
       errors.push("Пожалуйста, укажите номер телефона.");
     }
 
-    // Проверяем, что выбрана услуга
     if (!service) {
       errors.push("Пожалуйста, выберите услугу (Переезд или Хранение).");
     }
 
-    // Блокируем отправку формы, если есть ошибки
     if (errors.length > 0) {
       alert(errors.join("\n"));
       event.preventDefault();

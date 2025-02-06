@@ -869,10 +869,10 @@ h3 .icon {
   gap: 20px;
   width: fit-content;
   max-width: 750px;
-  padding: 35px;
-  background: #fff;
+  padding: 35px !important;
+  background: #fff !important;
   border-radius: 10px;
-  box-shadow: none;
+  box-shadow: none !important;
   margin: 0 auto;
 }
 

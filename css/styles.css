@@ -681,14 +681,20 @@ body {
   }
 
   .review-header {
-    flex-direction: column; /* Имя и аватарка теперь в колонку */
+    flex-direction: flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
   }
 
   .review-avatar {
-    width: 60px; /* Делаем аватарки еще меньше */
-    height: 60px;
+    width: 50px; /* Делаем аватарки еще меньше */
+    height: 50px;
+  }
+  
+  .review p {
+    font-size: 14px;
+    max-width: 100px;
   }
 
   .review-large, .review-small {

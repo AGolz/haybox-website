@@ -720,7 +720,7 @@ h3 .icon {
   margin-bottom: 10px;
 }
 
-/* --- Форма заявки --- */
+/* --- Контейнер формы (увеличен) --- */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -747,7 +747,7 @@ h3 .icon {
 
 /* --- "Не звонить" (уменьшенный чекбокс) --- */
 .contact-extra {
-  display: none; /* По умолчанию скрыто */
+  display: none;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -761,7 +761,7 @@ h3 .icon {
 
 /* --- Чекбоксы в одну линию --- */
 .checkbox-group {
-  display: none; /* По умолчанию скрыто */
+  display: none;
   flex-wrap: wrap;
   gap: 12px;
   justify-content: flex-start;
@@ -781,6 +781,26 @@ h3 .icon {
   width: 14px;
   height: 14px;
   margin-right: 6px;
+}
+
+/* --- КНОПКА: Исправлена выравнивание по центру --- */
+.contact-form button {
+  background: #3d3d3f;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin: 20px auto 0; /* Центрируем кнопку */
+  display: block;
+}
+
+.contact-form button:hover {
+  background: #f4ba2b;
+  color: #3d3d3f;
 }
 
 /* --- Подвал (footer) --- */

@@ -86,8 +86,8 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("service").addEventListener("change", toggleServiceFields);
 
     // 📌 Telegram Bot Configuration (указать вручную!)
-    const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
-    const chatId = import.meta.env.VITE_CHAT_ID;
+    const botToken = 7840118270:AAGvK0shMvDJ4qYeC__fVf2CKUnQx0YNZTo;
+    const chatId = 7757820744;
     const apiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
 
     // 📩 Отправка заявки в Telegram

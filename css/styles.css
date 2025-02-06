@@ -817,30 +817,31 @@ h3 .icon {
 
 @media (max-width: 768px) {
   .pricing-wrapper {
-    width: 95vw; /* Делаем нормальную ширину */
+    width: 95vw;
     max-width: 100%;
-    padding: 15px; /* Уменьшаем отступы */
+    padding: 10px; /* Уменьшаем отступы */
   }
 
   .pricing-grid {
     flex-direction: column;
-    gap: 8px; /* Меньше отступ между карточками */
+    gap: 8px; /* Сокращаем отступы между карточками */
     align-items: center;
   }
 
   .pricing-item {
     width: 100%;
-    max-width: 90%; /* Делаем компактными */
+    max-width: 90%;
     font-size: 0.8rem; /* Меньше текст */
-    padding: 10px; /* Убираем лишний отступ */
+    padding: 8px; /* Убираем лишний отступ */
+    min-height: auto; /* Делаем карточки компактными */
   }
 
   .pricing-item h4 {
-    font-size: 0.9rem; /* Чуть меньше заголовки */
+    font-size: 0.9rem;
   }
 
   .pricing-icon {
-    width: 20px; /* Сжимаем иконки */
+    width: 20px;
     height: 20px;
   }
 }

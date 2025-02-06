@@ -831,39 +831,29 @@ h3 .icon {
 }
 
 @media (max-width: 768px) {
-  .tab-content {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px;
+  .container {
+    width: 95%; /* Контейнер теперь адаптивный */
+    max-width: 100%; /* Убираем ограничение в 1000px */
+    padding: 20px 10px; /* Уменьшаем внутренние отступы */
   }
 
-  /* Исправляем ширину родительского контейнера */
-  .pricing-container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-  }
-
-  /* Сужаем и центрируем белый блок */
   .pricing-wrapper {
-    width: 90%;
+    width: 100%;
     max-width: 420px; /* Ограничиваем ширину, чтобы не раздувался */
     padding: 10px;
     margin: 0 auto;
   }
 
   .pricing-grid {
-    flex-direction: column; /* Теперь карточки идут друг за другом */
+    flex-direction: column; /* Карточки теперь идут друг за другом */
     align-items: center;
   }
 
   .pricing-item {
-    width: 85%; /* Ограничил ширину, чтобы не выглядело громоздко */
+    width: 85%; /* Ограничиваем ширину карточек */
     max-width: 280px; /* Карточки теперь не огромные */
-    font-size: 0.9rem; /* Чуть уменьшил текст */
-    padding: 10px; /* Уменьшил пустые зоны внутри */
+    font-size: 0.9rem; /* Чуть уменьшаем текст */
+    padding: 10px; /* Уменьшаем пустые зоны внутри */
   }
 }
 

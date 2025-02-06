@@ -40,26 +40,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const phone = document.getElementById("phone").value.trim();
     const service = document.getElementById("service").value;
 
-    let errorMessage = "";
+    let errors = [];
 
     if (contactMethod === "telegram" && telegram === "") {
-      errorMessage = "Пожалуйста, укажите ник в Telegram.";
+      errors.push("Пожалуйста, укажите ник в Telegram.");
     }
 
     if (contactMethod === "whatsapp" && whatsapp === "") {
-      errorMessage = "Пожалуйста, укажите ник в WhatsApp.";
+      errors.push("Пожалуйста, укажите ник в WhatsApp.");
     }
 
     if (contactMethod === "phone" && phone === "") {
-      errorMessage = "Пожалуйста, укажите номер телефона.";
+      errors.push("Пожалуйста, укажите номер телефона.");
     }
 
     if (service === "") {
-      errorMessage = "Пожалуйста, выберите услугу (Переезд или Хранение).";
+      errors.push("Пожалуйста, выберите услугу (Переезд или Хранение).");
     }
 
-    if (errorMessage) {
-      alert(errorMessage);
+    if (errors.length > 0) {
+      alert(errors.join("\n")); // Выводим все ошибки в alert
       event.preventDefault();
       return false;
     }

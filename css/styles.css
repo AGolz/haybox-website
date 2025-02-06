@@ -754,8 +754,9 @@ h3 .icon {
 /* --- "Не звонить" (теперь под полем @username) --- */
 .contact-extra {
   display: flex;
+  flex-direction: row;
   align-items: left;
-  gap: 5px;
+  gap: 10px;
 }
 
 .contact-extra .no-call-group {

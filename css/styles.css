@@ -762,7 +762,7 @@ h3 .icon {
 
 .contact-extra .no-call-group {
   display: flex;
-  align-items: left;
+  align-items: centr;
   gap: 5px;
   white-space: nowrap;
 }

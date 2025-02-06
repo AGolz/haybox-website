@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".contact-form").addEventListener("submit", function(event) {
+    document.querySelector("#contact-form").addEventListener("submit", function(event) {
         event.preventDefault(); // Остановить стандартную отправку формы
 
         const botToken = import.meta.env.VITE_TELEGRAM_BOT_TOKEN;
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         message += `📞 *Контакт:* ${contactValue} (${contactMethod})\n`;
         message += `🛠 *Услуга:* ${service}\n`;
 
-        // Добавляем дополнительные услуги
+        // Доп. услуги
         if (service === "moving") {
             message += `\n🚚 *Доп. услуги для переезда:*\n`;
             document.querySelectorAll("#moving-options input:checked").forEach((item) => {
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        // Отправка данных в Telegram через fetch API
+        // Отправка данных в Telegram
         fetch(apiUrl, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -141,19 +141,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 text: message,
                 parse_mode: "Markdown"
             })
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.ok) {
-                alert("✅ Заявка успешно отправлена!");
-                document.querySelector(".contact-form").reset(); // Очистка формы
-            } else {
-                alert("❌ Ошибка при отправке. Попробуйте снова.");
-            }
-        })
-        .catch(error => {
-            alert("⚠ Ошибка сети! Проверьте подключение.");
-            console.error("Ошибка:", error);
+        }).then(response => {
+            alert("✅ Заявка отправлена!");
+            document.querySelector("#contact-form").reset();
+        }).catch(error => {
+            alert("❌ Ошибка при отправке!");
+            console.error(error);
         });
     });
 });

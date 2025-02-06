@@ -35,36 +35,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function validateForm(event) {
     const contactMethod = document.getElementById("contact-method").value;
-    const telegram = document.getElementById("telegram").value.trim();
-    const whatsapp = document.getElementById("whatsapp").value.trim();
-    const phone = document.getElementById("phone").value.trim();
+    const telegramField = document.getElementById("telegram");
+    const whatsappField = document.getElementById("whatsapp");
+    const phoneField = document.getElementById("phone");
     const service = document.getElementById("service").value;
 
     let errors = [];
 
-    // Проверяем, выбрал ли пользователь способ связи
+    // Проверка выбора способа связи
     if (!contactMethod) {
       errors.push("Пожалуйста, выберите предпочтительный способ связи.");
     }
 
-    if (contactMethod === "telegram" && telegram === "") {
+    // Проверка заполненности полей контакта (без учета плейсхолдера!)
+    if (contactMethod === "telegram" && telegramField.value.trim() === "") {
       errors.push("Пожалуйста, укажите ник в Telegram.");
     }
 
-    if (contactMethod === "whatsapp" && whatsapp === "") {
+    if (contactMethod === "whatsapp" && whatsappField.value.trim() === "") {
       errors.push("Пожалуйста, укажите ник в WhatsApp.");
     }
 
-    if (contactMethod === "phone" && phone === "") {
+    if (contactMethod === "phone" && phoneField.value.trim() === "") {
       errors.push("Пожалуйста, укажите номер телефона.");
     }
 
+    // Проверка выбора услуги
     if (!service) {
       errors.push("Пожалуйста, выберите услугу (Переезд или Хранение).");
     }
 
+    // Блокируем отправку формы, если есть ошибки
     if (errors.length > 0) {
-      alert(errors.join("\n")); // Выводим все ошибки в alert
+      alert(errors.join("\n")); // Вывод всех ошибок в alert
       event.preventDefault();
       return false;
     }
@@ -75,6 +78,12 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("contact-method").addEventListener("change", toggleContactFields);
   document.getElementById("service").addEventListener("change", toggleServiceFields);
   document.getElementById("contact-form").addEventListener("submit", validateForm);
+
+  document.getElementById("moving-options").style.display = "none";
+  document.getElementById("storage-options").style.display = "none";
+  document.getElementById("service-label").style.display = "none";
+});
+
 
   document.getElementById("moving-options").style.display = "none";
   document.getElementById("storage-options").style.display = "none";

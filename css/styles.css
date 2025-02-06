@@ -127,7 +127,8 @@ body {
 
   .mobile-menu img {
     width: 24px;
-    height: 24px;
+    height: auto;
+    object-fit: contain;
   }
 }
 
@@ -898,10 +899,10 @@ h3 .icon {
   gap: 20px;
   width: fit-content;
   max-width: 750px;
-  padding: 35px !important;
-  background: #fff !important;
+  padding: 50px 35px;
+  background: #fff;
   border-radius: 10px;
-  box-shadow: none !important;
+  box-shadow: none;
   margin: 0 auto;
 }
 

@@ -624,33 +624,38 @@ body {
 @media (max-width: 768px) {
   .reviews-grid {
     grid-template-columns: 1fr; /* Один отзыв в ряд */
-    gap: 30px; /* Добавляем расстояние между отзывами */
-    margin-left: 0; /* Центрируем */
+    gap: 20px; /* Чуть уменьшаем расстояние */
+    margin-left: 0; /* Убираем смещение */
+    padding: 0 10px; /* Делаем небольшие отступы */
   }
 
   .review-second-row {
-    flex-direction: column; /* Отзывы во втором ряду тоже вертикально */
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
     margin-left: 0;
     align-items: center;
   }
 
   .review {
     width: 100%;
-    max-width: 90%;
+    max-width: 95%; /* Чуть больше растягиваем на экране */
+  }
+
+  .review-header {
+    flex-direction: column; /* Имя и аватарка теперь в колонку */
+    align-items: center;
+    text-align: center;
   }
 
   .review-avatar {
-    width: 70px; /* Чуть уменьшаем аватарки */
-    height: 70px;
+    width: 60px; /* Делаем аватарки еще меньше */
+    height: 60px;
   }
 
-  .review-large {
-    max-width: 100%; /* Открываем картинку на всю ширину */
-  }
-
-  .review-small {
-    max-width: 90%;
+  .review-large, .review-small {
+    width: 100%; /* Делаем отзыв на всю ширину */
+    max-width: 100%; /* Изображения растягиваются по контейнеру */
+    height: auto;
   }
 }
 
@@ -796,14 +801,21 @@ h3 .icon {
 
 /* --- Медиа-запрос для адаптации на мобильных устройствах --- */
 @media (max-width: 768px) {
+  .pricing-wrapper {
+    width: 95vw; /* Делаем ширину чуть меньше 100% */
+    max-width: 100%;
+    padding: 20px; /* Уменьшаем паддинги, чтобы текст не сжимался */
+  }
+
   .pricing-grid {
-    flex-direction: column; /* Делаем тарифы вертикальными */
+    flex-direction: column; /* Вертикальное расположение тарифов */
     align-items: center;
-    gap: 30px;
+    gap: 20px;
   }
 
   .pricing-item {
-    width: 90%;
+    width: 100%; /* Каждая карточка занимает всю ширину */
+    max-width: 90%;
   }
 }
 

@@ -161,7 +161,7 @@ body {
 .hero h1 {
   font-size: 2rem;
   font-weight: bold;
-  color: #fff;
+  color: #3d3d3f;
   text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.8), 
     0 0 20px rgba(255, 215, 0, 0.7);
@@ -171,7 +171,7 @@ body {
 
 .hero p {
   white-space: nowrap;
-  color: #fff; 
+  color: #3d3d3f; 
   margin-bottom: 15px;
   text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.8), 
@@ -180,10 +180,27 @@ body {
 }
 
 
+.hero .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #3d3d3f;
+  color: #f7e7c6;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  border: none;
+  margin-top: 20px;
+}
+
 .hero .btn:hover {
   background: #f4ba2b;
   color: #3d3d3f;
 }
+
 
 @media (max-width: 768px) {
   .hero {

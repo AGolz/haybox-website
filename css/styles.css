@@ -762,8 +762,8 @@ h3 .icon {
 
 .contact-extra .no-call-group {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: left;
+  gap: 5px;
   white-space: nowrap;
 }
 

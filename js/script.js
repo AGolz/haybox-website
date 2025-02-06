@@ -20,16 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectedService = document.getElementById("service").value;
     const serviceLabel = document.getElementById("service-label");
 
-    // Перед изменением скрываем оба блока
     movingOptions.style.display = "none";
     storageOptions.style.display = "none";
     serviceLabel.style.display = "none";
 
     if (selectedService === "moving") {
-      movingOptions.style.display = "flex"; // Показываем чекбоксы переезда
+      movingOptions.style.display = "flex";
       serviceLabel.style.display = "block";
     } else if (selectedService === "storage") {
-      storageOptions.style.display = "flex"; // Показываем чекбоксы хранения
+      storageOptions.style.display = "flex";
       serviceLabel.style.display = "block";
     }
   }
@@ -41,26 +40,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const phone = document.getElementById("phone").value.trim();
     const service = document.getElementById("service").value;
 
+    let errorMessage = "";
+
     if (contactMethod === "telegram" && telegram === "") {
-      alert("Пожалуйста, укажите ник в Telegram.");
-      event.preventDefault();
-      return false;
+      errorMessage = "Пожалуйста, укажите ник в Telegram.";
     }
 
     if (contactMethod === "whatsapp" && whatsapp === "") {
-      alert("Пожалуйста, укажите ник в WhatsApp.");
-      event.preventDefault();
-      return false;
+      errorMessage = "Пожалуйста, укажите ник в WhatsApp.";
     }
 
     if (contactMethod === "phone" && phone === "") {
-      alert("Пожалуйста, укажите номер телефона.");
-      event.preventDefault();
-      return false;
+      errorMessage = "Пожалуйста, укажите номер телефона.";
     }
 
     if (service === "") {
-      alert("Пожалуйста, выберите услугу (Переезд или Хранение).");
+      errorMessage = "Пожалуйста, выберите услугу (Переезд или Хранение).";
+    }
+
+    if (errorMessage) {
+      alert(errorMessage);
       event.preventDefault();
       return false;
     }
@@ -72,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("service").addEventListener("change", toggleServiceFields);
   document.getElementById("contact-form").addEventListener("submit", validateForm);
 
-  // Скрываем чекбоксы и заголовок "Выберите необходимые услуги" при загрузке страницы
   document.getElementById("moving-options").style.display = "none";
   document.getElementById("storage-options").style.display = "none";
   document.getElementById("service-label").style.display = "none";

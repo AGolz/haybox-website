@@ -154,6 +154,18 @@ document.addEventListener("DOMContentLoaded", function () {
             message += `📱 Телефон: ${formData.get("phone")}\n`;
         }
 
+        // Определяем, выбрана ли галочка "Не звонить"
+        const noCallTelegram = document.getElementById("no-call-telegram").checked ? "Не звонить" : "";
+        const noCallWhatsApp = document.getElementById("no-call-whatsapp").checked ? "Не звонить" : "";
+
+        // Добавляем в сообщение (в зависимости от метода связи)
+        if (contactMethod === "telegram" && noCallTelegram) {
+        message += `🚫 *${noCallTelegram} в Telegram*\n`;
+        }
+        if (contactMethod === "whatsapp" && noCallWhatsApp) {
+        message += `🚫 *${noCallWhatsApp} в WhatsApp*\n`;
+        }
+
         // Доп. услуги для переезда
         if (formData.get("service") === "moving") {
             message += `\n🚚 *Доп. услуги для переезда:*\n`;

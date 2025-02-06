@@ -731,14 +731,6 @@ h3 .icon {
   margin: 0 auto;
 }
 
-/* --- Убираем лишнюю вторую белую рамку вокруг формы --- */
-.pricing-wrapper {
-  background: transparent;
-  box-shadow: none;
-  padding: 0;
-  margin: 0;
-}
-
 /* --- Поля формы в одну строку с названиями --- */
 .contact-row {
   display: flex;
@@ -760,16 +752,20 @@ h3 .icon {
   font-size: 14px;
 }
 
-/* --- Поля с ником Telegram/WhatsApp и телефоном (на одной линии) --- */
+/* --- Блок "Не звонить" (на одной линии с чекбоксом) --- */
 .contact-extra {
   display: none;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   white-space: nowrap; /* Убирает перенос */
 }
 
-/* --- Чекбоксы: убираем перенос, делаем их в одну линию! --- */
+.contact-extra label {
+  margin-left: 5px; /* Добавляем отступ после чекбокса */
+}
+
+/* --- Чекбоксы: делаем их в одну линию (горизонтально!) --- */
 .checkbox-group {
   display: none;
   flex-wrap: wrap;
@@ -787,10 +783,11 @@ h3 .icon {
   white-space: nowrap; /* Убирает перенос чекбоксов */
 }
 
-/* --- Уменьшаем чекбоксы до нормального размера --- */
+/* --- Исправляем кривые отступы между чекбоксами и текстом --- */
 .checkbox-group input[type="checkbox"] {
   width: 16px;
   height: 16px;
+  margin-right: 8px; /* Отступ между чекбоксом и текстом */
 }
 
 /* --- Заголовок "Выберите необходимые услуги" (по умолчанию скрыт) --- */

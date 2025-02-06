@@ -802,33 +802,44 @@ h3 .icon {
 /* --- Медиа-запрос для адаптации на мобильных устройствах --- */
 @media (max-width: 768px) {
   .pricing-wrapper {
-    width: 95vw; /* Делаем ширину чуть меньше 100% */
-    max-width: 100%; /* Чтобы не вылазил за экран */
-    padding: 15px; /* Уменьшаем внутренние отступы */
+    width: 90vw; /* Делаем блоку нормальную ширину */
+    max-width: 100%; /* Чтобы не выходил за экран */
+    padding: 10px; /* Меньше отступов */
+  }
+
+  .tabs {
+    flex-wrap: wrap; /* Позволяем кнопкам переноситься */
+    justify-content: center; /* Центрируем кнопки */
+    gap: 5px; /* Меньше отступ между кнопками */
+  }
+
+  .tab-link {
+    font-size: 0.8rem; /* Уменьшаем шрифт кнопок */
+    padding: 8px 12px; /* Делаем их компактнее */
   }
 }
 
 @media (max-width: 768px) {
   .pricing-grid {
-    flex-direction: column; /* Вертикальное расположение */
-    gap: 15px; /* Уменьшаем расстояние */
+    flex-direction: column;
+    gap: 10px; /* Меньше отступ между карточками */
     align-items: center;
   }
 
   .pricing-item {
     width: 100%;
-    max-width: 85%; /* Чуть сужаем карточки */
-    font-size: 0.85rem; /* Делаем шрифт меньше */
-    padding: 15px; /* Уменьшаем отступы */
+    max-width: 80%; /* Делаем их компактными */
+    font-size: 0.8rem; /* Уменьшаем текст */
+    padding: 12px; /* Меньше отступов */
   }
 
   .pricing-item h4 {
-    font-size: 1rem; /* Уменьшаем заголовки */
+    font-size: 0.9rem; /* Меньше заголовки */
   }
 
   .pricing-icon {
-    width: 24px; /* Делаем иконки поменьше */
-    height: 24px;
+    width: 22px; /* Меньше иконки */
+    height: 22px;
   }
 }
 

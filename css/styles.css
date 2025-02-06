@@ -664,6 +664,7 @@ h3 .icon {
   flex-direction: column;
   justify-content: flex-start;
 }
+
 /* Общий стиль для картинок */
 .pricing-image {
   display: block;
@@ -753,10 +754,10 @@ h3 .icon {
 
 /* --- "Не звонить" (теперь под полем @username) --- */
 .contact-extra {
-  display: flex;
-  flex-direction: row;
-  align-items: left;
-  gap: 10px;
+  display: none;
+  flex-direction: column; /* Теперь в столбик */
+  align-items: flex-start;
+  gap: 5px;
 }
 
 .contact-extra .no-call-group {

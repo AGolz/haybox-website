@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log("HayBox сайт загружен!");
 
-  // Показываем нужные поля контактов в зависимости от выбора способа связи
   function toggleContactFields() {
     document.querySelectorAll(".contact-extra").forEach(field => field.style.display = "none");
 
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
-  // Показываем чекбоксы в зависимости от выбора услуги
   function toggleServiceFields() {
     const movingOptions = document.getElementById("moving-options");
     const storageOptions = document.getElementById("storage-options");
@@ -34,15 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
     serviceLabel.style.display = "none";
 
     if (selectedService === "moving") {
-      movingOptions.style.display = "block";
+      movingOptions.style.display = "flex"; // Заменил block на flex
       serviceLabel.style.display = "block";
     } else if (selectedService === "storage") {
-      storageOptions.style.display = "block";
+      storageOptions.style.display = "flex"; // Заменил block на flex
       serviceLabel.style.display = "block";
     }
   }
 
-  // Валидация формы перед отправкой
   function validateForm(event) {
     const contactMethod = document.getElementById("contact-method").value;
     const telegram = document.getElementById("telegram").value.trim();
@@ -81,12 +78,10 @@ document.addEventListener('DOMContentLoaded', function() {
     return true;
   }
 
-  // Назначаем обработчики событий
   document.getElementById("contact-method").addEventListener("change", toggleContactFields);
   document.getElementById("service").addEventListener("change", toggleServiceFields);
   document.getElementById("contact-form").addEventListener("submit", validateForm);
 
-  // Скрываем чекбоксы и заголовок "Выберите необходимые услуги" при загрузке страницы
   document.getElementById("moving-options").style.display = "none";
   document.getElementById("storage-options").style.display = "none";
   document.getElementById("service-label").style.display = "none";

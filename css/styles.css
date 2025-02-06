@@ -831,11 +831,24 @@ h3 .icon {
 }
 
 @media (max-width: 768px) {
-  .pricing-wrapper {
-    width: 95%; /* Теперь белый блок не выходит за границы экрана */
-    max-width: 400px; /* Не шире, чем карточки */
-    padding: 10px; /* Уменьшил внутренний отступ */
+  .tab-content {
+    width: 100%; /* Ограничиваем по ширине экрана */
+    max-width: 450px; /* Не больше 450px, чтобы не раздувался */
     margin: 0 auto; /* Центрируем */
+    padding: 10px; /* Уменьшаем отступы */
+  }
+
+  .pricing-container {
+    width: 100%;
+    max-width: 450px; /* Теперь блок не будет шире карточек */
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .pricing-wrapper {
+    width: 100%;
+    max-width: 400px; /* Чуть меньше, чем родитель */
+    padding: 10px; /* Уменьшаем отступы */
   }
 
   .pricing-grid {

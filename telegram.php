@@ -1,7 +1,7 @@
 <?php
 
-$botToken = getenv('TELEGRAM_BOT_TOKEN');
-$chatId = getenv('CHAT_ID');
+$botToken = 'TELEGRAM_BOT_TOKEN';
+$chatId = 'CHAT_ID';
 
 $name = $_POST['name'];
 $contact_method = $_POST['contact-method'];

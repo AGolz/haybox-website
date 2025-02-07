@@ -1,6 +1,6 @@
 # HayBox – Moving and Storage
 
-<a href="haybox-am.com" target="_blank">haybox-am.com</a>
+<a href="haybox-am.com" target="_blank">haybox-am.com</a><br>
 Welcome to the repository of the one-page website for the **HayBox** service!  
 This project was created to demonstrate moving and storage services — quickly and conveniently.
 

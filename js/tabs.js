@@ -1,7 +1,3 @@
-ormatted with tabs:
-
-javascript
-Копировать
 function openTab(evt, tabName) {
 	let i, tabcontent, tablinks;
 

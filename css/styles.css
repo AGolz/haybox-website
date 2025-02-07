@@ -1050,13 +1050,9 @@ footer {
 	margin: 2px 0;
 }
 
-.footer-address {
-	margin-top: 40px;
-}
-
 .footer-credits {
 	font-size: 12px;
-	margin-top: 10px;
+	margin-top: 40px;
 }
 
 .footer-credits a {
@@ -1067,6 +1063,7 @@ footer {
 
 .footer-credits a:hover {
 	text-decoration: underline;
+	margin-top: 3px;
 }
 
 @media (max-width: 768px) {

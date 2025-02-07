@@ -1052,6 +1052,21 @@ footer {
 	margin-top: 3px;
 }
 
+.footer-credits {
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.footer-credits a {
+	color: #f4ba2b;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.footer-credits a:hover {
+	text-decoration: underline;
+}
+
 @media (max-width: 768px) {
 	.footer-links {
 		flex-wrap: wrap;

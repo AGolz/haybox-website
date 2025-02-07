@@ -1054,6 +1054,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 	font-size: 12px;
 	margin-top: 10px;
 }
@@ -1087,6 +1088,7 @@ footer {
 	.footer-address {
 		font-size: 12px;
 		margin-top: 10px;
+		ustify-content: center;
 	}
 	
 	footer {

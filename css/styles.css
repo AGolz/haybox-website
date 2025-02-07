@@ -1007,6 +1007,8 @@ footer {
 	padding: 8px 0;
 	text-align: center;
 	font-size: 14px;
+	position: relative;
+	z-index: 10;	
 }
 
 .footer-contacts {
@@ -1049,7 +1051,7 @@ footer {
 }
 
 .footer-address {
-	margin-top: 3px;
+	margin-top: 40px;
 }
 
 .footer-credits {
@@ -1079,5 +1081,10 @@ footer {
 
 	.footer-address {
 		font-size: 12px;
+		margin-top: 60px;
+	}
+	
+	footer {
+		padding-bottom: 80px;
 	}
 }

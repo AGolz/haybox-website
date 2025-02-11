@@ -1059,6 +1059,7 @@ footer {
 	margin-top: 10px;
 }
 
+/*
 .footer-credits {
 	font-size: 12px;
 	margin-top: 40px;
@@ -1069,6 +1070,7 @@ footer {
 	text-decoration: none;
 	font-size: 12px;
 }
+*/
 
 .footer-credits a:hover {
 	text-decoration: underline;

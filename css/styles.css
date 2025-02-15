@@ -89,42 +89,6 @@ body {
 	background: #3d3d3f;
 }
 
-.translate-container {
-  position: absolute;
-  top: 50%;
-  right: 20px; /* Отступ от правого края */
-  transform: translateY(-50%);
-}
-
-#language-switcher {
-  padding: 6px 10px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background: white;
-  cursor: pointer;
-}
-
-.mobile-translate {
-	display: none;
-}
-
-@media (max-width: 768px) {
-	.mobile-translate {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-	}
-	
-	#mobile-language-switcher {
-		padding: 5px;
-		font-size: 12px;
-		border-radius: 5px;
-		background: white;
-		cursor: pointer;
-	}
-}
-
 .mobile-menu {
 	display: none;
 }
@@ -166,6 +130,98 @@ body {
 		height: 24px;
 		object-fit: contain;
 	}
+}
+
+/* --- Кнопка переключения языка в веб-версии --- */
+.translate-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.lang-btn img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+#language-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    border-radius: 5px;
+    list-style: none;
+    padding: 8px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#language-menu li {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#language-menu li:hover {
+    background: #f4ba2b;
+}
+
+/* --- Кнопка в мобильной версии (в зоне хедера) --- */
+.mobile-translate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.mobile-translate .lang-btn {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#mobile-language-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: #fff;
+    border-radius: 5px;
+    list-style: none;
+    padding: 8px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#mobile-language-menu li {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#mobile-language-menu li:hover {
+    background: #f4ba2b;
 }
 
 .hero {

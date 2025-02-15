@@ -91,21 +91,35 @@
 					<option value="hy" data-icon="https://flagcdn.com/w40/am.png">Հայ</option>
 				</select>
 			</div>
+			<div class="translate-container">
+				<button class="lang-btn" onclick="toggleLanguageMenu()">
+					<img src="https://flagcdn.com/w40/ru.png" id="current-flag" alt="Язык">
+					<span id="current-lang">Рус</span>
+				</button>
+				<ul id="language-menu">
+					<li onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Рус</li>
+					<li onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="English"> Eng</li>
+					<li onclick="changeLanguage('hy')"><img src="https://flagcdn.com/w40/am.png" alt="Հայերեն"> Հայ</li>
+				</ul>
+			</div>
 		</nav>
 	</div>
 	<header class="hero">
 		<div class="hero-overlay">
 			<div class="container">
-				<h1>Храним ваши ценности, как Арарат хранит легенды</h1>
+				<h1 data-translate>Храним ваши ценности, как Арарат хранит легенды</h1>
 				<p style="font-weight: bold;">Длительное хранение и переезды под ключ в Ереване.<b><br>Без суеты, без нервов, без головной боли.</p>
 				<a href="#contact" class="btn">Оставить заявку</a>
 			</div>
 			<div class="mobile-translate">
-				<select id="mobile-language-switcher" onchange="translateSite(this.value)">
-					<option value="ru">🇷🇺</option>
-					<option value="en">🇬🇧</option>
-					<option value="hy">🇦🇲</option>
-				</select>
+				<button class="lang-btn" onclick="toggleLanguageMenu()">
+					<img src="https://flagcdn.com/w40/ru.png" id="mobile-current-flag" alt="Язык">
+				</button>
+				<ul id="mobile-language-menu">
+					<li onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"></li>
+					<li onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="English"></li>
+					<li onclick="changeLanguage('hy')"><img src="https://flagcdn.com/w40/am.png" alt="Հայերեն"></li>
+				</ul>
 			</div>
 		</div>
 	</header>

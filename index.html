@@ -71,13 +71,6 @@
 		<a href="#for-whom"><img src="assets/icons/packaging.png" alt="Кому это нужно"> Кому?</a>
 		<a href="#pricing"><img src="assets/icons/pricing.png" alt="Тарифы"> Тарифы</a>
 		<a href="#contact"><img src="assets/icons/storehouse.png" alt="Контакты"> Контакты</a>
-		<div class="mobile-translate">
-			<select id="mobile-language-switcher" onchange="translateSite(this.value)">
-				<option value="ru">🇷🇺</option>
-				<option value="en">🇬🇧</option>
-				<option value="hy">🇦🇲</option>
-			</select>
-		</div>
 	</div>
 	<div class="sticky-banner">
 		<img src="assets/images/logo_white.png" alt="HayBox logo" class="logo">
@@ -91,7 +84,13 @@
 					<li><a href="#pricing">Тарифы</a></li>
 					<li><a href="#contact">Контакты</a></li>
 				</ul>
-				<div id="language-switcher"></div>
+			</div>
+			<div class="translate-container">
+				<select id="language-switcher" onchange="translateSite(this.value)">
+					<option value="ru" data-icon="https://flagcdn.com/w40/ru.png">Рус</option>
+					<option value="en" data-icon="https://flagcdn.com/w40/gb.png">Eng</option>
+					<option value="hy" data-icon="https://flagcdn.com/w40/am.png">Հայ</option>
+				</select>
 			</div>
 		</nav>
 	</div>
@@ -102,8 +101,14 @@
 				<p style="font-weight: bold;">Длительное хранение и переезды под ключ в Ереване.<b><br>Без суеты, без нервов, без головной боли.</p>
 				<a href="#contact" class="btn">Оставить заявку</a>
 			</div>
+			<div class="mobile-translate">
+				<select id="mobile-language-switcher" onchange="translateSite(this.value)">
+					<option value="ru">🇷🇺</option>
+					<option value="en">🇬🇧</option>
+					<option value="hy">🇦🇲</option>
+				</select>
+			</div>
 		</div>
-		<div id="mobile-language-switcher"></div>
 	</header>
 
 	<section id="how-it-works">

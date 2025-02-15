@@ -21,6 +21,8 @@
 	<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 	<script src="js/script.js" defer></script>
 	<script src="js/tabs.js" defer></script>
+	<script src="js/translate.js"></script>
+	<script type="text/javascript" src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=yandexTranslate"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16870326579">
 		
 	</script>
@@ -56,10 +58,10 @@
 				form.addEventListener('submit', function(event) {
 					event.preventDefault();
 					form.submit();
-				});
-			}
-		};
-	</script>
+			});
+		}
+	};
+</script>
 </head>
   
 <body>
@@ -69,6 +71,13 @@
 		<a href="#for-whom"><img src="assets/icons/packaging.png" alt="Кому это нужно"> Кому?</a>
 		<a href="#pricing"><img src="assets/icons/pricing.png" alt="Тарифы"> Тарифы</a>
 		<a href="#contact"><img src="assets/icons/storehouse.png" alt="Контакты"> Контакты</a>
+		<div class="mobile-translate">
+			<select id="mobile-language-switcher" onchange="translateSite(this.value)">
+				<option value="ru">🇷🇺</option>
+				<option value="en">🇬🇧</option>
+				<option value="hy">🇦🇲</option>
+			</select>
+		</div>
 	</div>
 	<div class="sticky-banner">
 		<img src="assets/images/logo_white.png" alt="HayBox logo" class="logo">
@@ -82,6 +91,13 @@
 					<li><a href="#pricing">Тарифы</a></li>
 					<li><a href="#contact">Контакты</a></li>
 				</ul>
+			</div>
+			<div class="translate-container">
+				<select id="language-switcher" onchange="translateSite(this.value)">
+					<option value="ru">🇷🇺 Рус</option>
+					<option value="en">🇬🇧 Eng</option>
+					<option value="hy">🇦🇲 Հայ</option>
+				</select>
 			</div>
 		</nav>
 	</div>

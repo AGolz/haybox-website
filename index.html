@@ -64,31 +64,13 @@
 </head>
   
 <body>
-	<div class="mobile-menu">
-		<a href="#how-it-works"><img src="assets/icons/transportation.png" alt="Как это работает"> Как?</a>
-		<a href="#why-haybox"><img src="assets/icons/star.png" alt="Почему HayBox"> Почему?</a>
-		<a href="#for-whom"><img src="assets/icons/packaging.png" alt="Кому это нужно"> Кому?</a>
-		<a href="#pricing"><img src="assets/icons/pricing.png" alt="Тарифы"> Тарифы</a>
-		<a href="#contact"><img src="assets/icons/storehouse.png" alt="Контакты"> Контакты</a>
-	</div>
 	<div class="sticky-banner">
 		<img src="assets/images/logo_white.png" alt="HayBox logo" class="logo">
 		<nav class="navbar">
-			<div class="container">
-				<ul class="nav-menu">
-					<li><a href="#how-it-works">Как это работает</a></li>
-					<li><a href="#why-haybox">Почему HayBox?</a></li>
-					<li><a href="#for-whom">Кому это нужно?</a></li>
-					<li><a href="#reviews">Отзывы</a></li>
-					<li><a href="#pricing">Тарифы</a></li>
-					<li><a href="#contact">Контакты</a></li>
-				</ul>
-			</div>
 			<div class="translate-container">
 				<select id="language-switcher" onchange="translateSite(this.value)">
 					<option value="ru" data-icon="https://flagcdn.com/w40/ru.png">Рус</option>
 					<option value="en" data-icon="https://flagcdn.com/w40/gb.png">Eng</option>
-					<option value="hy" data-icon="https://flagcdn.com/w40/am.png">Հայ</option>
 				</select>
 			</div>
 			<div class="translate-container">
@@ -99,18 +81,29 @@
 				<ul id="language-menu">
 					<li onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Рус</li>
 					<li onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="English"> Eng</li>
-					<li onclick="changeLanguage('hy')"><img src="https://flagcdn.com/w40/am.png" alt="Հայերեն"> Հայ</li>
+				</ul>
+			</div>
+			<div class="mobile-menu">
+				<a href="#how-it-works"><img src="assets/icons/transportation.png" alt="Как это работает" data-translate> Как?</a>
+				<a href="#why-haybox"><img src="assets/icons/star.png" alt="Почему HayBox" data-translate> Почему?</a>
+				<a href="#for-whom"><img src="assets/icons/packaging.png" alt="Кому это нужно" data-translate> Кому?</a>
+				<a href="#pricing"><img src="assets/icons/pricing.png" alt="Тарифы" data-translate> Тарифы</a>
+				<a href="#contact"><img src="assets/icons/storehouse.png" alt="Контакты" data-translate> Контакты</a>
+			</div>
+			<div class="container">
+				<ul class="nav-menu">
+					<li><a href="#how-it-works"data-translate>Как это работает</a></li>
+					<li><a href="#why-haybox"data-translate>Почему HayBox?</a></li>
+					<li><a href="#for-whom"data-translate>Кому это нужно?</a></li>
+					<li><a href="#reviews"data-translate>Отзывы</a></li>
+					<li><a href="#pricing"data-translate>Тарифы</a></li>
+					<li><a href="#contact"data-translate>Контакты</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 	<header class="hero">
 		<div class="hero-overlay">
-			<div class="container">
-				<h1 data-translate>Храним ваши ценности, как Арарат хранит легенды</h1>
-				<p style="font-weight: bold;">Длительное хранение и переезды под ключ в Ереване.<b><br>Без суеты, без нервов, без головной боли.</p>
-				<a href="#contact" class="btn">Оставить заявку</a>
-			</div>
 			<div class="mobile-translate">
 				<button class="lang-btn" onclick="toggleLanguageMenu()">
 					<img src="https://flagcdn.com/w40/ru.png" id="mobile-current-flag" alt="Язык">
@@ -118,84 +111,88 @@
 				<ul id="mobile-language-menu">
 					<li onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"></li>
 					<li onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="English"></li>
-					<li onclick="changeLanguage('hy')"><img src="https://flagcdn.com/w40/am.png" alt="Հայերեն"></li>
 				</ul>
+			</div>
+			<div class="container">
+				<h1 data-translate>Храним ваши ценности, как Арарат хранит легенды</h1>
+				<p style="font-weight: bold;" data-translate>Длительное хранение и переезды под ключ в Ереване.<b><br>Без суеты, без нервов, без головной боли.</p>
+				<a href="#contact" class="btn" data-translate>Оставить заявку</a>
 			</div>
 		</div>
 	</header>
 
 	<section id="how-it-works">
 		<div class="container">
-			<h2>Как работают наши услуги по переезду и хранению?</h2>
+			<h2 data-translate>Как работают наши услуги по переезду и хранению?</h2>
 			<div class="process-steps">
 				<div class="step">
-					<h3>Вы оставляете заявку</h3>
-					<p>Звонок или онлайн – как удобнее!</p>
+					<h3 data-translate>Вы оставляете заявку</h3>
+					<p data-translate>Звонок или онлайн – как удобнее!</p>
 				</div>
 				<img src="assets/images/arrow.png" alt="Стрелка" class="arrow">
 				<div class="step">
-					<h3>Мы все организуем</h3>
-					<p>Подберем удобное время и транспорт.</p>
+					<h3 data-translate>Мы все организуем</h3>
+					<p data-translate>Подберем удобное время и транспорт.</p>
 				</div>
 				<img src="assets/images/arrow.png" alt="Стрелка" class="arrow">
 				<div class="step">
-					<h3>Выполняем работу</h3>
-					<p>Без лишних забот для вас.</p>
+					<h3 data-translate>Выполняем работу</h3>
+					<p data-translate>Без лишних забот для вас.</p>
 				</div>
 			</div>
 		</div>
 
 		<div class="services">
 			<div class="service service-moving">
-				<h3>Профессиональные услуги по переезду</h3>
-				<h4>Переезд без стресса? Легко!</h4>
-				<p>Переезды в Ереване, включая упаковку, транспортировку, расставление мебели на новом месте и даже разборку/сборку мебели. Все для вашего удобства!</p>
+				<h3 data-translate>Профессиональные услуги по переезду</h3>
+				<h4 data-translate>Переезд без стресса? Легко!</h4>
+				<p data-translate>Переезды в Ереване, включая упаковку, транспортировку, расставление мебели на новом месте и даже разборку/сборку мебели. Все для вашего удобства!</p>
 				<div class="advantages">
 					<div class="advantage">
 						<img src="assets/icons/screw.png" alt="Сборка" class="advantage-icon">
-						<h5>Сборка и разборка мебели</h5>
-						<p>Сэкономьте нервы – мы всё сделаем за вас.</p>
+						<h5 data-translate>Сборка и разборка мебели</h5>
+						<p data-translate>Сэкономьте нервы – мы всё сделаем за вас.</p>
 					</div>
 
 					<div class="advantage">
 						<img src="assets/icons/packaging.png" alt="Упаковка" class="advantage-icon">
-						<h5>Аккуратная упаковка</h5>
-						<p>Ваши вещи в целости и сохранности.</p>
+						<h5 data-translate>Аккуратная упаковка</h5>
+						<p data-translate>Ваши вещи в целости и сохранности.</p>
 					</div>
 
 					<div class="advantage">
 						<img src="assets/icons/transportation.png" alt="Транспортировка" class="advantage-icon">
-						<h5>Транспортировка без проблем</h5>
-						<p>Наши грузчики не исчезнут в день переезда!</p>
+						<h5 data-translate>Транспортировка без проблем</h5>
+						<p data-translate>Наши грузчики не исчезнут в день переезда!</p>
 					</div>
 				</div>
-				<a href="#contact" class="btn">Рассчитать стоимость переезда</a>
+				<a href="#contact" class="btn" data-translate>Рассчитать стоимость переезда</a>
 			</div>
 
 			<div class="service service-storage">
-				<h3>Безопасное хранение вещей в Ереване</h3>
-				<h4>Нет места? HayBox спасет!</h4>
-				<p>Охраняемые склады в Ереване для долгосрочного хранения, мебели, техники. Гибкие тарифы и надежная защита вашего имущества.</p>
+				<h3 data-translate>Безопасное хранение вещей в Ереване</h3>
+				<h4 data-translate>Нет места? HayBox спасет!</h4>
+				<p data-translate>Охраняемые склады в Ереване для долгосрочного хранения, мебели, техники. Гибкие тарифы и надежная защита вашего имущества.</p>
 				<div class="advantages">
 					<div class="advantage">
 						<img src="assets/icons/storehouse.png" alt="Склад" class="advantage-icon">
-						<h5>Охраняемый склад</h5>
-						<p>Камеры, сигнализация, доступ только по пропуску.</p>
+						<h5 data-translate>Охраняемый склад</h5>
+						<p data-translate>Камеры, сигнализация, доступ только по пропуску.</p>
 					</div>
 
 					<div class="advantage">
 						<img src="assets/icons/delivery.png" alt="Доставка" class="advantage-icon">
-						<h5>Доставка туда и обратно</h5>
-						<p>Заберем вещи у вас – привезем обратно, по первому зову.</p>
+						<h5 data-translate>Доставка туда и обратно</h5>
+						<p data-translate>Заберем вещи у вас – привезем обратно, по первому зову.</p>
 					</div>
 
 					<div class="advantage">
 						<img src="assets/icons/pricing.png" alt="Тарифы" class="advantage-icon">
-						<h5>Гибкие тарифы</h5>
-						<p>Вы платите только за нужное место и срок.</p>
+						<h5 data-translate>Гибкие тарифы</h5>
+						<p data-translate>Вы платите только за нужное место и срок.</p>
 					</div>
 				</div>
-				<a href="#contact" class="btn">Рассчитать стоимость хранения</a>
+				<a href="#contact" class="btn" data-translate>Рассчитать стоимость хранения</a>
 			</div>
 		</div>
 	</div>
@@ -203,7 +200,7 @@
 
 <section id="why-haybox">
 	<div class="container">
-		<h2>Почему HayBox?</h2>
+		<h2 data-translate>Почему HayBox?</h2>
 		<div class="feature-grid">
 			<div class="feature-item">
 				<picture>
@@ -213,8 +210,8 @@
 				<div class="feature-text">
 					<h3>Безопасно <img src="assets/icons/safely.png" alt="Безопасность" class="feature-icon"></h3>
 					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Камеры и охрана – всё под контролем.</li>
-						<li><span class="checkmark">✔</span> Аккуратная упаковка, надежные машины, профессиональные грузчики.</li>
+						<li data-translate><span class="checkmark">✔</span> Камеры и охрана – всё под контролем.</li>
+						<li data-translate><span class="checkmark">✔</span> Аккуратная упаковка, надежные машины, профессиональные грузчики.</li>
 					</ul>
 				</div>
 			</div>
@@ -225,10 +222,10 @@
 					<img src="assets/images/clean.jpg" alt="Безопасно" class="feature-img">
 				</picture>
 				<div class="feature-text">
-					<h3>Чисто и сухо <img src="assets/icons/clear.png" alt="Чисто" class="feature-icon"></h3>
+					<h3 data-translate>Чисто и сухо <img src="assets/icons/clear.png" alt="Чисто" class="feature-icon"></h3>
 					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Без сырости, плесени и запаха бабушкиного чулана.</li>
-						<li><span class="checkmark">✔</span> Чистые машины без грязи и пыли, упаковка для защиты от влаги.</li>
+						<li  data-translate><span class="checkmark">✔</span> Без сырости, плесени и запаха бабушкиного чулана.</li>
+						<li  data-translate><span class="checkmark">✔</span> Чистые машины без грязи и пыли, упаковка для защиты от влаги.</li>
 					</ul>
 				</div>
 			</div>
@@ -239,10 +236,10 @@
 					<img src="assets/images/flexible.jpg" alt="Безопасно" class="feature-img">
 				</picture>
 				<div class="feature-text">
-					<h3>Гибкие тарифы <img src="assets/icons/price.png" alt="Тарифы" class="feature-icon"></h3>
+					<h3 data-translate>Гибкие тарифы <img src="assets/icons/price.png" alt="Тарифы" class="feature-icon"></h3>
 					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> От месяца до нескольких лет – платите только за нужный срок.</li>
-						<li><span class="checkmark">✔</span> Мы подберем оптимальный тариф: от небольших перевозок до комплексного переезда с упаковкой, разборкой мебели и сборкой на новом месте.</li>
+						<li data-translate><span class="checkmark">✔</span> От месяца до нескольких лет – платите только за нужный срок.</li>
+						<li data-translate><span class="checkmark">✔</span> Мы подберем оптимальный тариф: от небольших перевозок до комплексного переезда с упаковкой, разборкой мебели и сборкой на новом месте.</li>
 					</ul>
 				</div>
 			</div>
@@ -253,10 +250,10 @@
 					<img src="assets/images/delivery.jpg" alt="Безопасно" class="feature-img">
 				</picture>
 				<div class="feature-text">
-					<h3>Доставка туда и обратно <img src="assets/icons/delivery.png" alt="Доставка" class="feature-icon"></h3>
+					<h3 data-translate>Доставка туда и обратно <img src="assets/icons/delivery.png" alt="Доставка" class="feature-icon"></h3>
 					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Не надо никуда ехать – мы всё заберем и вернем.</li>
-						<li><span class="checkmark">✔</span> Переезд без хлопот: погрузка, перевозка, разгрузка – всё сделаем за вас.</li>
+						<li data-translate><span class="checkmark">✔</span> Не надо никуда ехать – мы всё заберем и вернем.</li>
+						<li data-translate><span class="checkmark">✔</span> Переезд без хлопот: погрузка, перевозка, разгрузка – всё сделаем за вас.</li>
 					</ul>
 				</div>
 			</div>
@@ -266,17 +263,17 @@
 
 <section id="for-whom">
 	<div class="container">
-		<h2>Услуги для жителей Еревана и бизнеса: переезд и длительное хранение.</h2>
+		<h2 data-translate>Услуги для жителей Еревана и бизнеса: переезд и длительное хранение.</h2>
 		<div class="feature-grid">
 			<div class="feature-item">
 				<div class="feature-text">
 					<div class="feature-title">
-						<h3>Для тех, кто затеял ремонт</h3>
+						<h3 data-translate>Для тех, кто затеял ремонт</h3>
 						<img src="assets/icons/repair.png" alt="Ремонт" class="feature-icon">
 					</div>
 					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Чтобы не спать на диване, обложившись коробками.</li>
-						<li><span class="checkmark">✔</span> Чтобы не переживать, что краска капнет на диван или полки испачкаются пылью.</li>
+						<li data-translate><span class="checkmark">✔</span> Чтобы не спать на диване, обложившись коробками.</li>
+						<li data-translate><span class="checkmark">✔</span> Чтобы не переживать, что краска капнет на диван или полки испачкаются пылью.</li>
 					</ul>
 				</div>
 			</div>
@@ -284,12 +281,12 @@
 			<div class="feature-item">
 				<div class="feature-text">
 					<div class="feature-title">
-						<h3>Для тех, кто переезжает</h3>
+						<h3 data-translate>Для тех, кто переезжает</h3>
 						<img src="assets/icons/star.png" alt="Переезд" class="feature-icon">
 					</div>
 					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Если старая квартира уже сдана, а в новую пока не въехать.</li>
-						<li><span class="checkmark">✔</span> Если не хотите самостоятельно разбирать, перевозить и собирать мебель.</li>
+						<li data-translate><span class="checkmark">✔</span> Если старая квартира уже сдана, а в новую пока не въехать.</li>
+						<li data-translate><span class="checkmark">✔</span> Если не хотите самостоятельно разбирать, перевозить и собирать мебель.</li>
 					</ul>
 				</div>
 			</div>
@@ -297,12 +294,12 @@
 			<div class="feature-item">
 				<div class="feature-text">
 					<div class="feature-title">
-						<h3>Для тех, кто хочет освободить место</h3>
+						<h3 data-translate>Для тех, кто хочет освободить место</h3>
 						<img src="assets/icons/space.png" alt="Освобождение места" class="feature-icon">
 					</div>
 					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Балкон должен быть балконом, а не филиалом склада.</li>
-						<li><span class="checkmark">✔</span> Сезонные вещи можно сдавать на хранение, а не перетаскивать из шкафа в шкаф.</li>
+						<li data-translat><span class="checkmark">✔</span> Балкон должен быть балконом, а не филиалом склада.</li>
+						<li data-translat><span class="checkmark">✔</span> Сезонные вещи можно сдавать на хранение, а не перетаскивать из шкафа в шкаф.</li>
 					</ul>
 				</div>
 			</div>
@@ -310,12 +307,12 @@
 			<div class="feature-item">
 				<div class="feature-text">
 					<div class="feature-title">
-						<h3>Для компаний и бизнесов</h3>
+						<h3 data-translate>Для компаний и бизнесов</h3>
 						<img src="assets/icons/company.png" alt="Компании" class="feature-icon">
 					</div>
 					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Архивы, сезонное оборудование, мебель – храним всё, кроме бухгалтерских долгов.</li>
-						<li><span class="checkmark">✔</span> Если важно, чтобы технику, документы и мебель перевезли аккуратно и быстро.</li>
+						<li data-translat><span class="checkmark">✔</span> Архивы, сезонное оборудование, мебель – храним всё, кроме бухгалтерских долгов.</li>
+						<li data-translat><span class="checkmark">✔</span> Если важно, чтобы технику, документы и мебель перевезли аккуратно и быстро.</li>
 					</ul>
 				</div>
 			</div>
@@ -325,26 +322,26 @@
 
 <section id="reviews">
 	<div class="container">
-		<h2>Отзывы клиентов об услугах хранения и переезда</h2>
+		<h2 data-translate>Отзывы клиентов об услугах хранения и переезда</h2>
 		<div class="reviews-grid">
 			<div class="review">
 				<div class="review-header">
 					<img src="assets/avatars/sona.png" alt="Аватар Соны" class="review-avatar">
-					<p>Сона</p>
+					<p data-translate>Сона</p>
 				</div>
 				<img src="assets/reviews/tg_1.png" class="review-large">
 			</div>
 			<div class="review">
 				<div class="review-header">
 					<img src="assets/avatars/hayk.png" alt="Аватар Хайка" class="review-avatar">
-					<p>Хайк</p>
+					<p data-translate>Хайк</p>
 				</div>
 				<img src="assets/reviews/inst_2.png" class="review-small">
 			</div>
 			<div class="review">
 				<div class="review-header">
 					<img src="assets/avatars/denis.png" alt="Аватар Дениса" class="review-avatar">
-					<p>Денис</p>
+					<p data-translate>Денис</p>
 				</div>
 				<img src="assets/reviews/wp_1.png" class="review-small">
 			</div>
@@ -353,14 +350,14 @@
 			<div class="review">
 				<div class="review-header">
 					<img src="assets/avatars/eva.png" alt="Аватар Евы" class="review-avatar">
-					<p>Ева</p>
+					<p data-translate>Ева</p>
 				</div>
 				<img src="assets/reviews/inst_1.png" class="review-small">
 			</div>
 			<div class="review">
 				<div class="review-header">
 					<img src="assets/avatars/savva.png" alt="Аватар Саввы" class="review-avatar">
-					<p>Савва</p>
+					<p data-translate>Савва</p>
 				</div>
 				<img src="assets/reviews/tg_2.png" class="review-large">
 			</div>
@@ -370,65 +367,65 @@
 
 <section id="pricing">
 	<div class="container">
-		<h2>Тарифы</h2>
+		<h2 data-translate>Тарифы</h2>
 		<div class="tabs">
-			<button class="tab-link active" onclick="openTab(event, 'moving')">Переезды под ключ</button>
-			<button class="tab-link" onclick="openTab(event, 'storage')">Услуги хранения</button>
-			<button class="tab-link" onclick="openTab(event, 'discounts')">Акции</button>
+			<button class="tab-link active" onclick="openTab(event, 'moving')" data-translate>Переезды под ключ</button>
+			<button class="tab-link" onclick="openTab(event, 'storage')" data-translate>Услуги хранения</button>
+			<button class="tab-link" onclick="openTab(event, 'discounts')" data-translate>Акции</button>
 		</div>
 		<div id="moving" class="tab-content active">
 			<div class="pricing-wrapper">
 				<h3><img src="assets/icons/transportation.png" class="icon"> Переезд</h3><br>
 				<div class="pricing-grid">
 					<div class="pricing-item">
-						<h4>Услуги упаковки <img src="assets/icons/packaging_2.png" class="pricing-icon"></h4><br>
-						<p><b>Упаковка вещей</b></p>
-						<p>Упаковщик (2 часа) – <b>8000 ֏</b><br>Каждый следующий час – <b>3500 ֏</b></p>
-						<p>Бригада (3 человека, 2 часа) – <b>21000 ֏</b><br>Каждый следующий час – <b>9000 ֏</b></p><br>
-						<p><b>Упаковочные материалы</b></p>
-						<p>Коробки 60×40×40 – <b>Новые: 1400 ֏, Б/у: 1100 ֏</b></p>
-						<p>Пупырчатая пленка – <b>1000 ֏ за метр</b></p>
-						<p>Стрейч-пленка – <b>3000 ֏ за рулон</b></p>
-						<p>Маркировка коробок – <b>бесплатно</b></p><br>
-						<p><b>Разборка и сборка мебели</b></p>
-						<p>За предмет <b>от 7000 - 10 000 ֏</b></p>
+						<h4 data-translate>Услуги упаковки <img src="assets/icons/packaging_2.png" class="pricing-icon"></h4><br>
+						<p data-translate><b>Упаковка вещей</b></p>
+						<p data-translate>Упаковщик (2 часа) – <b>8000 ֏</b><br>Каждый следующий час – <b>3500 ֏</b></p>
+						<p data-translate>Бригада (3 человека, 2 часа) – <b>21000 ֏</b><br>Каждый следующий час – <b>9000 ֏</b></p><br>
+						<p data-translate><b>Упаковочные материалы</b></p>
+						<p data-translate>Коробки 60×40×40 – <b>Новые: 1400 ֏, Б/у: 1100 ֏</b></p>
+						<p data-translate>Пупырчатая пленка – <b>1000 ֏ за метр</b></p>
+						<p data-translate>Стрейч-пленка – <b>3000 ֏ за рулон</b></p>
+						<p data-translate>Маркировка коробок – <b>бесплатно</b></p><br>
+						<p data-translate><b>Разборка и сборка мебели</b></p>
+						<p data-translate>За предмет <b>от 7000 - 10 000 ֏</b></p>
 					</div>
 					<div class="pricing-item">
-						<h4>Услуги грузчиков <img src="assets/icons/movers.png" class="pricing-icon"></h4><br>
-						<p><b>Грузчики и транспорт</b></p>
-						<p>Грузчик – <b>11 000 ֏ за смену</b></p>
-						<p>Бригада (4 человека) – <b>40 000 ֏</b></p>
-						<p>Вызов грузового авто – <b>от 4500 ֏</b></p>
-						<p>Вывоз мусора – <b>от 8000 ֏</b></p>
-						<p>Подъем/спуск без лифта – <b>1000 ֏ этаж</b></p>
+						<h4 data-translate>Услуги грузчиков <img src="assets/icons/movers.png" class="pricing-icon"></h4><br>
+						<p data-translate><b>Грузчики и транспорт</b></p>
+						<p data-translate>Грузчик – <b>11 000 ֏ за смену</b></p>
+						<p data-translate>Бригада (4 человека) – <b>40 000 ֏</b></p>
+						<p data-translate>Вызов грузового авто – <b>от 4500 ֏</b></p>
+						<p data-translate>Вывоз мусора – <b>от 8000 ֏</b></p>
+						<p data-translate>Подъем/спуск без лифта – <b>1000 ֏ этаж</b></p>
 					</div>
 				</div>
-				<a href="#contact" class="btn">Рассчитать стоимость</a>
+				<a href="#contact" class="btn" data-translate>Рассчитать стоимость</a>
 			</div>
 		</div>
 
 		<div id="storage" class="tab-content">
 			<div class="pricing-wrapper">
-				<h3><img src="assets/icons/storehouse.png" class="icon"> Хранение</h3><br>
+				<h3 data-translate><img src="assets/icons/storehouse.png" class="icon"> Хранение</h3><br>
 				<div class="pricing-grid">
 					<div class="pricing-item">
-						<h4>Анаит<br />базовое хранение <br /><img src="assets/icons/basic.png" class="pricing-icon"></h4><br>
-						<p>Мини (до 2 коробок)<br><b>8000 ֏/мес</b></p>
-						<p>Оптимум (до 5 коробок)<br><b>20000 ֏/мес</b></p>
-						<p>Макси (до 10 коробок)<br><b>38000 ֏/мес</b></p>
-						<p>Гранд (до 15 коробок)<br><b>58000 ֏/мес</b></p>
+						<h4 data-translate>Анаит<br />базовое хранение <br /><img src="assets/icons/basic.png" class="pricing-icon"></h4><br>
+						<p data-translate>Мини (до 2 коробок)<br><b>8000 ֏/мес</b></p>
+						<p data-translate>Оптимум (до 5 коробок)<br><b>20000 ֏/мес</b></p>
+						<p data-translate>Макси (до 10 коробок)<br><b>38000 ֏/мес</b></p>
+						<p data-translate>Гранд (до 15 коробок)<br><b>58000 ֏/мес</b></p>
 					</div>
 					<div class="pricing-item">
-						<h4>Астхик<br>хранение мебели и техники <br /><img src="assets/icons/furniture.png" class="pricing-icon"></h4><br>
-						<p>От 3 м²<br><b>от 25 000 ֏/мес</b></p>
+						<h4 data-translate>Астхик<br>хранение мебели и техники <br /><img src="assets/icons/furniture.png" class="pricing-icon"></h4><br>
+						<p data-translate>От 3 м²<br><b>от 25 000 ֏/мес</b></p>
 					</div>
 					<div class="pricing-item">
-						<h4>Вахагн<br>хранение ценностей <br /><img src="assets/icons/values.png" class="pricing-icon"></h4><br>
-						<p>От 5 м²<br><b>от 40 000 ֏/мес</b></p>
+						<h4 data-translate>Вахагн<br>хранение ценностей <br /><img src="assets/icons/values.png" class="pricing-icon"></h4><br>
+						<p data-translate>От 5 м²<br><b>от 40 000 ֏/мес</b></p>
 					</div>
 					<div class="pricing-item">
-						<h4>Арамазд<br>индивидуальные комнаты <br /><img src="assets/icons/rooms.png" class="pricing-icon"></h4><br>
-						<p>Отдельные комнаты, климат-контроль, охрана.<br>Цена – <b>договорная</b></p>
+						<h4 data-translate>Арамазд<br>индивидуальные комнаты <br /><img src="assets/icons/rooms.png" class="pricing-icon"></h4><br>
+						<p  data-translate>Отдельные комнаты, климат-контроль, охрана.<br>Цена – <b>договорная</b></p>
 					</div>
 				</div>
 				<a href="#contact" class="btn">Рассчитать стоимость</a>
@@ -437,33 +434,33 @@
 
 		<div id="discounts" class="tab-content">
 			<div class="pricing-wrapper">
-				<h3><img src="assets/icons/pricing.png" class="icon"> Скидки и акции</h3><br>
+				<h3 data-translate><img src="assets/icons/pricing.png" class="icon"> Скидки и акции</h3><br>
 				<div class="pricing-grid">
 					<div class="pricing-item">
-						<h4>Дар Астхик <br /><img src="assets/icons/astghik.png" class="pricing-icon"></h4><br>
-						<p>20% на первый месяц хранения при оплате 3-х месяцев.</p>
+						<h4 data-translate>Дар Астхик <br /><img src="assets/icons/astghik.png" class="pricing-icon"></h4><br>
+						<p data-translate>20% на первый месяц хранения при оплате 3-х месяцев.</p>
 					</div>
 					<div class="pricing-item">
-						<h4>Путь Вахагна <br /><img src="assets/icons/way.png" class="pricing-icon"></h4><br>
-						<p>при хранении от 6 мес – скидка 10%, от 12 мес – скидка 15%</p><br />
-						<p>Бесплатная упаковка при хранении от 6 месяцев.</p><br />
-						<p>Бесплатная доставка при оплате за 12 месяцев.</p>
+						<h4 data-translate>Путь Вахагна <br /><img src="assets/icons/way.png" class="pricing-icon"></h4><br>
+						<p data-translate>при хранении от 6 мес – скидка 10%, от 12 мес – скидка 15%</p><br />
+						<p data-translate>Бесплатная упаковка при хранении от 6 месяцев.</p><br />
+						<p data-translate>Бесплатная доставка при оплате за 12 месяцев.</p>
 					</div>
 					<div class="pricing-item">
-						<h4>Щедрость Арамазда <br /><img src="assets/icons/generosity.png" class="pricing-icon"></h4><br>
-						<p>Приведи друга и получи:<br>50% скидку на следующий месяц хранения ИЛИ 10% на переезд!</p>
+						<h4 data-translate>Щедрость Арамазда <br /><img src="assets/icons/generosity.png" class="pricing-icon"></h4><br>
+						<p data-translate>Приведи друга и получи:<br>50% скидку на следующий месяц хранения ИЛИ 10% на переезд!</p>
 					</div>
 					<div class="pricing-item">
-						<h4>Сезонная защита Анаит <br /><img src="assets/icons/season.png" class="pricing-icon"></h4><br>
-						<p>Летняя скидка 15% на хранение лыж, сноубордов и зимней одежды.</p><br />
-						<p>Зимняя скидка 15% на хранение велосипедов, скейтов и летнего инвентаря.</p>
+						<h4 data-translate>Сезонная защита Анаит <br /><img src="assets/icons/season.png" class="pricing-icon"></h4><br>
+						<p data-translate>Летняя скидка 15% на хранение лыж, сноубордов и зимней одежды.</p><br />
+						<p data-translate>Зимняя скидка 15% на хранение велосипедов, скейтов и летнего инвентаря.</p>
 					</div>
 					<div class="pricing-item">
-						<h4>Семейный Ванан <br /><img src="assets/icons/family.png" class="pricing-icon"></h4><br>
-						<p>Если несколько членов семьи хранят вещи в HayBox, они получают 15% скидку на хранение.</p>
+						<h4 data-translate>Семейный Ванан <br /><img src="assets/icons/family.png" class="pricing-icon"></h4><br>
+						<p data-translate>Если несколько членов семьи хранят вещи в HayBox, они получают 15% скидку на хранение.</p>
 					</div>
 				</div>
-				<a href="#contact" class="btn">Рассчитать стоимость</a>
+				<a href="#contact" class="btn" data-translate>Рассчитать стоимость</a>
 			</div>
 		</div>
 	</div>
@@ -471,81 +468,81 @@
 
 <section id="contact">
 	<div class="container">
-		<h2>Оставить заявку</h2>
+		<h2 data-translate>Оставить заявку</h2>
 		<form id="contact-form" class="contact-form" method="POST" data-netlify="true">
 			<div class="contact-row">
-				<label for="name">Имя:</label>
+				<label for="name" data-translate>Имя:</label>
 				<input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
 			</div>
 			<div class="contact-row">
-				<label for="contact-method">Предпочтительный способ связи:</label>
+				<label for="contact-method" data-translate>Предпочтительный способ связи:</label>
 				<select id="contact-method" name="contact-method" required>
-					<option value="">Выберите способ связи</option>
+					<option value="" data-translate>Выберите способ связи</option>
 					<option value="telegram">Telegram</option>
 					<option value="whatsapp">WhatsApp</option>
-					<option value="phone">Телефон</option>
+					<option value="phone" data-translate>Телефон</option>
 				</select>
 			</div>
 			<div id="telegram-field" class="contact-extra">
-				<label for="telegram">Ваш ник в Telegram:</label>
+				<label for="telegram" data-translate>Ваш ник:</label>
 				<input type="text" id="telegram" name="telegram" placeholder="@username">
 				<div class="no-call-group">
 					<input type="checkbox" id="no-call-telegram">
-					<label for="no-call-telegram">Не звонить</label>
+					<label for="no-call-telegram" data-translate>Не звонить</label>
 				</div>
 			</div>
 			<div id="whatsapp-field" class="contact-extra">
-				<label for="whatsapp">Ваш ник в WhatsApp:</label>
+				<label for="whatsapp" data-translate>Ваш ник:</label>
 				<input type="text" id="whatsapp" name="whatsapp" placeholder="@username">
 				<div class="no-call-group">
 					<input type="checkbox" id="no-call-whatsapp">
-					<label for="no-call-whatsapp">Не звонить</label>
+					<label for="no-call-whatsapp" data-translate>Не звонить</label>
 				</div>
 			</div>
 			<div id="phone-field" class="contact-extra">
-				<label for="phone">Ваш номер телефона:</label>
+				<label for="phone" data-translate>Ваш номер телефона:</label>
 				<input type="tel" id="phone" name="phone" placeholder="+374 (__) ___-____">
 			</div>
 			<div class="contact-row">
-				<label for="service">Переезд или Хранение:</label>
+				<label for="service" data-translate>Переезд или Хранение:</label>
 				<select id="service" name="service" required>
-					<option value="">Выберите услугу</option>
-					<option value="moving">Переезд</option>
-					<option value="storage">Хранение</option>
+					<option value="" data-translate>Выберите услугу</option>
+					<option value="moving" data-translate>Переезд</option>
+					<option value="storage" data-translate>Хранение</option>
 				</select>
 			</div>
-			<label id="service-label">Выберите необходимые услуги:</label>
+			<label id="service-label" data-translate>Выберите необходимые услуги:</label>
 			<div id="moving-options" class="service-extra checkbox-group">
-				<label><input type="checkbox" id="packing" name="packing"> Упаковка</label>
-				<label><input type="checkbox" id="packing-materials" name="packing-materials"> Упаковочные материалы</label>
-				<label><input type="checkbox" id="assembly" name="assembly"> Разборка и сборка мебели</label>
-				<label><input type="checkbox" id="labeling" name="labeling"> Маркировка коробок</label>
-				<label><input type="checkbox" id="movers" name="movers"> Грузчики</label>
-				<label><input type="checkbox" id="truck" name="truck"> Грузовое авто</label>
-				<label><input type="checkbox" id="garbage" name="garbage"> Вывоз мусора</label>
-				<label><input type="checkbox" id="stairs" name="stairs"> Подъем/спуск без лифта</label>
+				<label data-translate><input type="checkbox" id="packing" name="packing"> Упаковка</label>
+				<label data-translate><input type="checkbox" id="packing-materials" name="packing-materials"> Упаковочные материалы</label>
+				<label data-translate><input type="checkbox" id="assembly" name="assembly"> Разборка и сборка мебели</label>
+				<label data-translate><input type="checkbox" id="labeling" name="labeling"> Маркировка коробок</label>
+				<label data-translate><input type="checkbox" id="movers" name="movers"> Грузчики</label>
+				<label data-translate><input type="checkbox" id="truck" name="truck"> Грузовое авто</label>
+				<label data-translate><input type="checkbox" id="garbage" name="garbage"> Вывоз мусора</label>
+				<label data-translate><input type="checkbox" id="stairs" name="stairs"> Подъем/спуск без лифта</label>
 			</div>
 			<div id="storage-options" class="service-extra checkbox-group">
-				<label><input type="checkbox" id="storage-packing" name="storage-packing"> Упаковка</label>
-				<label><input type="checkbox" id="storage-materials" name="storage-materials"> Упаковочные материалы</label>
-				<label><input type="checkbox" id="storage-assembly" name="storage-assembly"> Разборка и сборка мебели</label>
-				<label><input type="checkbox" id="storage-labeling" name="storage-labeling"> Маркировка коробок</label>
-				<label><input type="checkbox" id="storage-delivery" name="storage-delivery"> Доставка</label>
+				<label data-translate><input type="checkbox" id="storage-packing" name="storage-packing"> Упаковка</label>
+				<label data-translate><input type="checkbox" id="storage-materials" name="storage-materials"> Упаковочные материалы</label>
+				<label data-translate><input type="checkbox" id="storage-assembly" name="storage-assembly"> Разборка и сборка мебели</label>
+				<label data-translate><input type="checkbox" id="storage-labeling" name="storage-labeling"> Маркировка коробок</label>
+				<label data-translate><input type="checkbox" id="storage-delivery" name="storage-delivery"> Доставка</label>
 				<div class="tariff-group">
-					<label for="storage-tariff">Выбрать тариф:</label>
+					<label for="storage-tariff" data-translate>Выбрать тариф:</label>
 					<select id="storage-tariff" name="storage-tariff">
-						<option value="">Выберите тариф</option>
-						<option value="anahit-mini">Анаит Мини (до 2 коробок)</option>
-						<option value="anahit-optimum">Анаит Оптимум (до 5 коробок)</option>
-						<option value="anahit-maxi">Анаит Макси (до 10 коробок)</option>
-						<option value="anahit-grand">Анаит Гранд (до 15 коробок)</option>
-						<option value="asthik">Астхик (хранение мебели и техники)</option>
-						<option value="vahagn">Вахагн (хранение ценностей)</option>
-						<option value="aramazd">Арамазд (индивидуальные комнаты)</option>
+						<option value="" data-translate>Выберите тариф</option>
+						<option value="anahit-mini" data-translate>Анаит Мини (до 2 коробок)</option>
+						<option value="anahit-optimum" data-translate>Анаит Оптимум (до 5 коробок)</option>
+						<option value="anahit-maxi" data-translate>Анаит Макси (до 10 коробок)</option>
+						<option value="anahit-grand" data-translate>Анаит Гранд (до 15 коробок)</option>
+						<option value="asthik" data-translate>Астхик (хранение мебели и техники)</option>
+						<option value="vahagn" data-translate>Вахагн (хранение ценностей)</option>
+						<option value="aramazd" data-translate>Арамазд (индивидуальные комнаты)</option>
 					</select>
 				</div>
 			</div>
-			<button type="submit">Рассчитать стоимость</button>
+			<button type="submit" data-translate>Рассчитать стоимость</button>
 		</form>
 	</div>
 </section>
@@ -565,14 +562,14 @@
 				</a>
 			</div>
 			<p>Email: <a href="mailto:haybox.am@gmail.com">haybox.am@gmail.com</a></p>
-			<p>Телефон: <a href="tel:+37477229918">077 22 99 18</a></p>
+			<p data-translate>Телефон: <a href="tel:+37477229918">077 22 99 18</a></p>
 		</div>
 		<div class="footer-address">
-			<p>улица Даниела Варужана, 35, Ереван, Армения</p>
+			<p  data-translate>улица Даниела Варужана, 35, Ереван, Армения</p>
 		</div>
 		<!--
 		<p class="footer-credits">
-			<a href="https://github.com/AGolz" target="_blank">Разработка и оформление</a>
+			<a href="https://github.com/AGolz" target="_blank"  data-translate>Разработка и оформление</a>
 		</p>
 		-->
 	</div>

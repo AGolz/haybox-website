@@ -25,17 +25,11 @@ function translateSite(targetLang) {
 }
 
 function toggleLanguageMenu() {
-    const menu = document.getElementById("language-menu");
-    const mobileMenu = document.getElementById("mobile-language-menu");
-
-    if (menu) {
-        menu.style.display = menu.style.display === "block" ? "none" : "block";
-    }
-
-    if (mobileMenu) {
-        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
-    }
+    let menu = document.getElementById("language-menu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
 }
+
+
 
 function updateLanguageButton(lang) {
     const flagSrc = {
@@ -56,16 +50,16 @@ function updateLanguageButton(lang) {
 }
 
 function changeLanguage(lang) {
-    translateSite(lang);
-    
-    document.getElementById("current-flag").src = flagSrc[lang];
-    document.getElementById("mobile-current-flag").src = flagSrc[lang];
+    document.getElementById("current-lang").innerText = (lang === "en") ? "Eng" : "Рус";
+    document.getElementById("current-flag").src = (lang === "en") ? "https://flagcdn.com/w40/gb.png" : "https://flagcdn.com/w40/ru.png";
+
+    let items = document.querySelectorAll("#language-menu li");
+    items.forEach(item => {
+        item.classList.remove("active");
+        if (item.getAttribute("onclick").includes(lang)) {
+            item.classList.add("active");
+        }
+    });
 
     document.getElementById("language-menu").style.display = "none";
-    document.getElementById("mobile-language-menu").style.display = "none";
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    const savedLang = localStorage.getItem("selectedLanguage") || "ru";
-    translateSite(savedLang);
-});

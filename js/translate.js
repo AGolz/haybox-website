@@ -51,7 +51,8 @@ function updateLanguageButton(lang) {
         en: "Eng",
     };
 
-    document.getElementById("current-lang").innerText = langText[lang];
+    document.querySelectorAll("#language-menu li").forEach(li => li.classList.remove("selected"));
+    document.querySelector(`#language-menu li[onclick="changeLanguage('${lang}')"]`).classList.add("selected");    
 }
 
 function changeLanguage(lang) {

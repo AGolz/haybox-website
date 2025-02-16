@@ -64,43 +64,43 @@
 </head>
   
 <body>
-	<nav class="navbar">
-		<div class="mobile-menu">
-			<a href="#how-it-works"><img src="assets/icons/transportation.png" alt="Как это работает" data-translate> Как?</a>
-			<a href="#why-haybox"><img src="assets/icons/star.png" alt="Почему HayBox" data-translate> Почему?</a>
-			<a href="#for-whom"><img src="assets/icons/packaging.png" alt="Кому это нужно" data-translate> Кому?</a>
-			<a href="#pricing"><img src="assets/icons/pricing.png" alt="Тарифы" data-translate> Тарифы</a>
-			<a href="#contact"><img src="assets/icons/storehouse.png" alt="Контакты" data-translate> Контакты</a>
-		</div>
-		<div class="container">
-			<ul class="nav-menu">
-				<li><a href="#how-it-works"data-translate>Как это работает</a></li>
-				<li><a href="#why-haybox"data-translate>Почему HayBox?</a></li>
-				<li><a href="#for-whom"data-translate>Кому это нужно?</a></li>
-				<li><a href="#reviews"data-translate>Отзывы</a></li>
-				<li><a href="#pricing"data-translate>Тарифы</a></li>
-				<li><a href="#contact"data-translate>Контакты</a></li>
-			</ul>
-		</div>
-	</nav>
 	<div class="sticky-banner">
 		<img src="assets/images/logo_white.png" alt="HayBox logo" class="logo">
-		<div class="translate-container">
-			<select id="language-switcher" onchange="translateSite(this.value)">
-				<option value="ru" data-icon="https://flagcdn.com/w40/ru.png">Рус</option>
-				<option value="en" data-icon="https://flagcdn.com/w40/gb.png">Eng</option>
-			</select>
-		</div>
-		<div class="translate-container">
-			<button class="lang-btn" onclick="toggleLanguageMenu()">
-				<img src="https://flagcdn.com/w40/ru.png" id="current-flag" alt="Язык">
-				<span id="current-lang">Рус</span>
-			</button>
-			<ul id="language-menu">
-				<li onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Рус</li>
-				<li onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="English"> Eng</li>
-			</ul>
-		</div>
+		<nav class="navbar">
+			<div class="translate-container">
+				<select id="language-switcher" onchange="translateSite(this.value)">
+					<option value="ru" data-icon="https://flagcdn.com/w40/ru.png">Рус</option>
+					<option value="en" data-icon="https://flagcdn.com/w40/gb.png">Eng</option>
+				</select>
+			</div>
+			<div class="translate-container">
+				<button class="lang-btn" onclick="toggleLanguageMenu()">
+					<img src="https://flagcdn.com/w40/ru.png" id="current-flag" alt="Язык">
+					<span id="current-lang">Рус</span>
+				</button>
+				<ul id="language-menu">
+					<li onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Рус</li>
+					<li onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="English"> Eng</li>
+				</ul>
+			</div>
+			<div class="mobile-menu">
+				<a href="#how-it-works"><img src="assets/icons/transportation.png" alt="Как это работает" data-translate> Как?</a>
+				<a href="#why-haybox"><img src="assets/icons/star.png" alt="Почему HayBox" data-translate> Почему?</a>
+				<a href="#for-whom"><img src="assets/icons/packaging.png" alt="Кому это нужно" data-translate> Кому?</a>
+				<a href="#pricing"><img src="assets/icons/pricing.png" alt="Тарифы" data-translate> Тарифы</a>
+				<a href="#contact"><img src="assets/icons/storehouse.png" alt="Контакты" data-translate> Контакты</a>
+			</div>
+			<div class="container">
+				<ul class="nav-menu">
+					<li><a href="#how-it-works"data-translate>Как это работает</a></li>
+					<li><a href="#why-haybox"data-translate>Почему HayBox?</a></li>
+					<li><a href="#for-whom"data-translate>Кому это нужно?</a></li>
+					<li><a href="#reviews"data-translate>Отзывы</a></li>
+					<li><a href="#pricing"data-translate>Тарифы</a></li>
+					<li><a href="#contact"data-translate>Контакты</a></li>
+				</ul>
+			</div>
+		</nav>
 	</div>
 	<header class="hero">
 		<div class="hero-overlay">

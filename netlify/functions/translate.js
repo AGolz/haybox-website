@@ -1,4 +1,5 @@
 async function translateText(text, targetLang) {
+    console.log("API_KEY:", process.env.DEEPL_API);
     const response = await fetch("/.netlify/functions/translate", {
         method: "POST",
         headers: {

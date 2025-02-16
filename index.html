@@ -67,22 +67,6 @@
 	<div class="sticky-banner">
 		<img src="assets/images/logo_white.png" alt="HayBox logo" class="logo">
 		<nav class="navbar">
-			<div class="translate-container">
-				<select id="language-switcher" onchange="translateSite(this.value)">
-					<option value="ru" data-icon="https://flagcdn.com/w40/ru.png">Рус</option>
-					<option value="en" data-icon="https://flagcdn.com/w40/gb.png">Eng</option>
-				</select>
-			</div>
-			<div class="translate-container">
-				<button class="lang-btn" onclick="toggleLanguageMenu()">
-					<img src="https://flagcdn.com/w40/ru.png" id="current-flag" alt="Язык">
-					<span id="current-lang">Рус</span>
-				</button>
-				<ul id="language-menu">
-					<li onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Рус</li>
-					<li onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="English"> Eng</li>
-				</ul>
-			</div>
 			<div class="mobile-menu">
 				<a href="#how-it-works"><img src="assets/icons/transportation.png" alt="Как это работает" data-translate> Как?</a>
 				<a href="#why-haybox"><img src="assets/icons/star.png" alt="Почему HayBox" data-translate> Почему?</a>
@@ -98,6 +82,22 @@
 					<li><a href="#reviews"data-translate>Отзывы</a></li>
 					<li><a href="#pricing"data-translate>Тарифы</a></li>
 					<li><a href="#contact"data-translate>Контакты</a></li>
+				</ul>
+			</div>
+			<div class="translate-container">
+				<select id="language-switcher" onchange="translateSite(this.value)">
+					<option value="ru" data-icon="https://flagcdn.com/w40/ru.png">Рус</option>
+					<option value="en" data-icon="https://flagcdn.com/w40/gb.png">Eng</option>
+				</select>
+			</div>
+			<div class="translate-container">
+				<button class="lang-btn" onclick="toggleLanguageMenu()">
+					<img src="https://flagcdn.com/w40/ru.png" id="current-flag" alt="Язык">
+					<span id="current-lang">Рус</span>
+				</button>
+				<ul id="language-menu">
+					<li onclick="changeLanguage('ru')"><img src="https://flagcdn.com/w40/ru.png" alt="Русский"> Рус</li>
+					<li onclick="changeLanguage('en')"><img src="https://flagcdn.com/w40/gb.png" alt="English"> Eng</li>
 				</ul>
 			</div>
 		</nav>

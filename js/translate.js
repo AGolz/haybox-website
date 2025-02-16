@@ -41,7 +41,6 @@ function updateLanguageButton(lang) {
     const flagSrc = {
         ru: "https://flagcdn.com/w40/ru.png",
         en: "https://flagcdn.com/w40/gb.png",
-        hy: "https://flagcdn.com/w40/am.png"
     };
 
     document.getElementById("current-flag").src = flagSrc[lang];
@@ -50,7 +49,6 @@ function updateLanguageButton(lang) {
     const langText = {
         ru: "Рус",
         en: "Eng",
-        hy: "Հայ"
     };
 
     document.getElementById("current-lang").innerText = langText[lang];

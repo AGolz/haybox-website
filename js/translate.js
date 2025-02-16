@@ -26,7 +26,15 @@ function translateSite(targetLang) {
 
 function toggleLanguageMenu() {
     const menu = document.getElementById("language-menu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+    const mobileMenu = document.getElementById("mobile-language-menu");
+
+    if (menu) {
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+
+    if (mobileMenu) {
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+    }
 }
 
 function updateLanguageButton(lang) {
@@ -50,6 +58,10 @@ function updateLanguageButton(lang) {
 
 function changeLanguage(lang) {
     translateSite(lang);
+    
+    document.getElementById("current-flag").src = flagSrc[lang];
+    document.getElementById("mobile-current-flag").src = flagSrc[lang];
+
     document.getElementById("language-menu").style.display = "none";
     document.getElementById("mobile-language-menu").style.display = "none";
 }

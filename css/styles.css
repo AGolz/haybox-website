@@ -216,6 +216,36 @@ body {
     font-weight: bold;
 }
 
+#language-menu, #mobile-language-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 5px;
+    list-style: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#language-menu li, #mobile-language-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#language-menu li:hover, #mobile-language-menu li:hover {
+    background: #f4ba2b;
+}
+
+#language-menu li.active, #mobile-language-menu li.active {
+    background: #3d3d3f;
+    color: white;
+}
+
 @media (max-width: 768px) {
     .mobile-menu {
         display: flex !important;

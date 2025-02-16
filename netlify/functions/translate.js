@@ -44,3 +44,5 @@ exports.handler = async function (event) {
         };
     }
 };
+
+console.log("DEEPL_API_KEY:", process.env.DEEPL_API_KEY);

@@ -894,7 +894,7 @@ h3 .icon {
 .pricing-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
+	gap: 5px;
 	min-width: 200px;
 	justify-content: center;
 	align-items: stretch;
@@ -904,7 +904,7 @@ h3 .icon {
 	background: #f4ba2b;
 	padding: 30px;
 	border-radius: 8px;
-	gap: 10px;
+	gap: 15px;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 	flex: 1 1 280px;
 	min-width: 300px;

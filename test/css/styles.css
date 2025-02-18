@@ -734,6 +734,10 @@ body {
 }
 
 @media (max-width: 768px) {
+	.review-slider {
+		gap: 5px;
+	}
+	
 	.review-container {
         	width: 90%;
         	max-width: 550px;

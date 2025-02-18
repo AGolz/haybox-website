@@ -286,6 +286,7 @@ body {
     	}
 	
 	.hero-contacts {
+		flex-direction: column;
         	gap: 8px;
         	font-size: 12px;
         	padding: 5px 10px;

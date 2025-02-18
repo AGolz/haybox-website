@@ -723,23 +723,33 @@ body {
 }
 
 @media (max-width: 768px) {
+    	.review-slider {
+        	display: flex;
+        	align-items: center;
+        	justify-content: center;
+    	}
+
     	.review-container {
         	width: 90%;
         	max-width: 350px;
         	height: auto;
+        	min-height: auto;
+        	max-height: unset;
         	display: flex;
         	align-items: center;
         	justify-content: center;
         	padding: 10px;
         	border-radius: 15px;
         	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    	}
+        	overflow: visible;
+	}
 
     	.review-image {
         	width: 100%;
         	max-width: 100%;
         	height: auto;
-        	max-height: 100%;
+        	min-height: auto;
+        	max-height: unset;
         	object-fit: contain;
         	border-radius: 10px;
         	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);

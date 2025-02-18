@@ -702,7 +702,7 @@ body {
 .review-image.active {
     	opacity: 1;
     	transform: scale(1.05);
-    	position: relative;
+    	position: absolute;
 }
 
 .prev-btn, .next-btn {

@@ -681,6 +681,7 @@ body {
 .review-container {
     	width: 500px;
     	height: 330px;
+	min-height: 330px;
     	display: flex;
     	align-items: center;
     	justify-content: center;
@@ -703,6 +704,7 @@ body {
 
 .review-image.active {
     	opacity: 1;
+	transform-origin: center;
     	transform: scale(1.05);
 }
 
@@ -740,6 +742,7 @@ body {
     	.review-container {
         	width: 90%;
         	max-width: 350px;
+		min-height: 250px;
         	height: auto;
         	display: flex;
         	align-items: center;

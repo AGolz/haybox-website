@@ -725,17 +725,19 @@ body {
 @media (max-width: 768px) {
     	.review-container {
         	width: 90%;
-		height: 330px;
+        	height: auto;
+        	max-width: 350px;
+        	display: flex;
+        	align-items: center;
+        	justify-content: center;
+        	padding: 10px;
     	}
 
     	.review-image {
         	width: 100%;
         	height: auto;
-    	}
-
-    	.prev-btn, .next-btn {
-        	font-size: 24px;
-        	padding: 5px;
+        	object-fit: contain;
+        	max-height: 100%;
     	}
 }
 

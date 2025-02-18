@@ -1259,7 +1259,7 @@ footer {
 	.floating-buttons {
 		right: 10px;
         	top: 50%;
-        	transform: translateY(-50%);
+        	transform: none;
         	gap: 10px;
     	}
 

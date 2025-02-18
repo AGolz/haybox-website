@@ -1258,7 +1258,7 @@ footer {
 @media (max-width: 768px) {
 	.floating-buttons {
 		right: 10px;
-        	top: 10px;
+        	top: 20px;
         	transform: none;
 		flex-direction: column;
         	gap: 8px;

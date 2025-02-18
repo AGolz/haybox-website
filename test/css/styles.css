@@ -892,19 +892,13 @@ h3 .icon {
 }
 
 .pricing-grid {
-	display: grid;
+	display: flex;
+	flex-wrap: wrap;
 	grid-template-columns: repeat(2, 1fr);
-	flex-wrap: nowrap;
 	gap: 20px;
 	min-width: 200px;
 	justify-content: center;
 	align-items: stretch;
-}
-
-.pricing-grid .pricing-item:last-child {
-    grid-column: span 2;
-    justify-self: center;
-    max-width: 50%;
 }
 
 .pricing-item {
@@ -919,7 +913,13 @@ h3 .icon {
 	word-wrap: break-word;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-between;
+}
+
+.pricing-grid .pricing-item:last-child {
+    	grid-column: span 2;
+    	justify-self: center;
+    	max-width: 50%;
 }
 
 .pricing-image {

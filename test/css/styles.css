@@ -725,6 +725,7 @@ body {
 @media (max-width: 768px) {
     	.review-container {
         	width: 90%;
+		height: 330px;
     	}
 
     	.review-image {

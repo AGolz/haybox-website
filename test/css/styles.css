@@ -1260,7 +1260,7 @@ footer {
 		right: 10px;
         	top: 10px;
         	transform: none;
-		flex-direction: row;
+		flex-direction: column;
         	gap: 8px;
     	}
 

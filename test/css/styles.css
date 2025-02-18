@@ -1258,9 +1258,10 @@ footer {
 @media (max-width: 768px) {
 	.floating-buttons {
 		right: 10px;
-        	top: 20;
+        	top: 10px;
         	transform: none;
-        	gap: 10px;
+		flex-direction: row;
+        	gap: 8px;
     	}
 
     	.floating-button {
@@ -1276,5 +1277,8 @@ footer {
 
     	.chat-menu {
         	width: 120px;
+		top: 100%;
+		position: absolute;
+		right: 0;
     	}
 }

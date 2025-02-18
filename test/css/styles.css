@@ -689,6 +689,7 @@ body {
     	overflow: hidden;
     	border-radius: 15px;
     	background: transparent;
+	transition: height 0.5s ease;
 }
 
 .review-image {
@@ -702,6 +703,7 @@ body {
     	opacity: 0;
 	display: block;
     	transition: opacity 0.5s ease, transform 0.3s ease;
+	will-change: opacity, transform;
 }
 
 .review-image.active {
@@ -735,7 +737,7 @@ body {
 
 @media (max-width: 768px) {
 	#reviews h2 {
-    		margin-bottom: -10px;
+    		margin-bottom: -15px;
 	}
 	
 	.review-slider {
@@ -767,6 +769,7 @@ body {
         	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         	opacity: 0;
         	transition: opacity 0.5s ease, transform 0.3s ease;
+		will-change: opacity, transform;
     	}
 
     	.review-image.active {

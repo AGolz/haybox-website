@@ -699,6 +699,7 @@ body {
     	top: 0;
     	left: 0;
     	opacity: 0;
+	display: block;
     	transition: opacity 0.5s ease, transform 0.3s ease;
 }
 
@@ -732,14 +733,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    	.review-slider {
-        	display: flex;
-        	align-items: center;
-        	justify-content: center;
-		gap: 10px;
-    	}
-
-    	.review-container {
+	.review-container {
         	width: 90%;
         	max-width: 350px;
 		min-height: 150px;
@@ -767,7 +761,7 @@ body {
 
     	.review-image.active {
         	opacity: 1 !important;
-        	transform: scale(1.05);
+        	transform: none;
         	position: relative;
     	}
 	

@@ -892,7 +892,8 @@ h3 .icon {
 }
 
 .pricing-grid {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 	flex-wrap: nowrap;
 	gap: 20px;
 	min-width: 200px;
@@ -978,7 +979,7 @@ h3 .icon {
 	}
 
 	.pricing-grid {
-		flex-direction: column;
+		grid-template-columns: 1fr;
 		align-items: center;
 	}
 

@@ -575,6 +575,16 @@ body {
 	}
 }
 
+.lifted-img .feature-img {
+	transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+	.lifted-img .feature-img {
+		transform: translateY(-5px);
+    }
+}
+
 #for-whom h2 {
 	margin-bottom: 60px;
 }

@@ -680,6 +680,7 @@ body {
 
 .review-container {
     	width: 500px;
+	aspect-ratio: 3 / 2;
     	height: 330px;
     	display: flex;
     	align-items: center;
@@ -725,7 +726,7 @@ body {
 @media (max-width: 768px) {
     	.review-container {
         	width: 90%;
-		height: 250px;
+		aspect-ratio: 3 / 2;
     	}
 
     	.review-image {

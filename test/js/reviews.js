@@ -6,7 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showReview(index) {
         reviews.forEach((review, i) => {
-            review.classList.toggle("active", i === index);
+            if (i === index) {
+                review.style.opacity = "0"
+                setTimeout(() => {
+                    review.classList.add("active");
+                    review.style.opacity = "1";
+                }, 300);
+            } else {
+                review.classList.remove("active");
+            }
         });
     }
 

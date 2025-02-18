@@ -576,12 +576,12 @@ body {
 }
 
 .lifted-img .feature-img {
-	transform: translateY(-10px);
+	transform: translateY(-15px);
 }
 
 @media (max-width: 768px) {
 	.lifted-img .feature-img {
-		transform: translateY(-5px);
+		transform: translateY(-10px);
     }
 }
 

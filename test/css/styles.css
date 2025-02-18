@@ -688,7 +688,7 @@ body {
     	position: relative;
     	overflow: hidden;
     	border-radius: 15px;
-    	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    	background: transparent;
 }
 
 .review-image {
@@ -696,6 +696,7 @@ body {
     	height: 100%;
     	object-fit: contain;
     	position: absolute;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     	top: 0;
     	left: 0;
     	opacity: 0;
@@ -742,7 +743,7 @@ body {
         	align-items: center;
         	justify-content: center;
         	border-radius: 15px;
-        	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        	background: transparent;
         	overflow: visible;
     	}
 

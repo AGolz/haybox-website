@@ -226,6 +226,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #3d3d3f; /* Темный цвет */
 }
 
 .hero-links {
@@ -233,8 +236,13 @@ body {
     justify-content: center;
     gap: 15px;
     align-items: center;
+}
+
+.hero-contacts a {
     font-size: 12px;
-    color: #fff;
+    text-decoration: none;
+    color: #3d3d3f; /* Темный цвет */
+    white-space: nowrap;
 }
 
 .hero-links a {
@@ -243,19 +251,12 @@ body {
     gap: 5px;
     font-size: 12px;
     text-decoration: none;
-    color: #fff;
-    white-space: nowrap;
+    color: #3d3d3f; /* Темный цвет */
 }
 
 .hero-links a img {
     width: 14px;
     height: 14px;
-}
-
-.hero-links span {
-    font-size: 12px;
-    color: #fff;
-    margin-left: 10px;
 }
 
 @media (max-width: 768px) {

@@ -901,6 +901,12 @@ h3 .icon {
 	align-items: stretch;
 }
 
+.pricing-grid .pricing-item:last-child {
+    grid-column: span 2;
+    justify-self: center;
+    max-width: 50%;
+}
+
 .pricing-item {
 	background: #f4ba2b;
 	padding: 30px;

@@ -6,16 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showReview(index) {
         reviews.forEach((review, i) => {
-            if (i === index) {
-                review.style.opacity = "0"
-                setTimeout(() => {
-                    review.classList.add("active");
-                    review.style.opacity = "1";
-                }, 300);
-            } else {
-                review.classList.remove("active");
-            }
+            review.classList.remove("active");
+            review.style.opacity = "0"; // Сначала скрываем все
         });
+
+        setTimeout(() => {
+            reviews[index].classList.add("active");
+            reviews[index].style.opacity = "1"; // Затем показываем нужный
+        }, 50);
     }
 
     prevBtn.addEventListener("click", function () {
@@ -28,5 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
         showReview(currentIndex);
     });
 
-    showReview(currentIndex);
+    reviews[currentIndex].classList.add("active");
+    reviews[currentIndex].style.opacity = "1";
 });

@@ -215,6 +215,37 @@ body {
 	color: #f4ba2b;
 }
 
+.hero-contacts {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 12px;
+}
+
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.hero-links a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-links a img {
+    width: 14px;
+    height: 14px;
+}
+
 @media (max-width: 768px) {
 	.hero {
 		height: auto;

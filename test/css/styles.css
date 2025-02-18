@@ -222,7 +222,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -240,7 +240,7 @@ body {
 }
 
 .hero-contacts a {
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #3d3d3f;
     white-space: nowrap;
@@ -250,15 +250,15 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #3d3d3f;
     z-index: 2;
 }
 
 .hero-links a img {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     z-index: 2;
 }
 

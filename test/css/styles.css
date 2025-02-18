@@ -663,7 +663,7 @@ body {
 }
 
 #reviews {
-	text-align: center;
+    	text-align: center;
 }
 
 #reviews h2 {
@@ -686,23 +686,24 @@ body {
     	justify-content: center;
     	position: relative;
     	overflow: hidden;
+    	border-radius: 20px;
+    	box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .review-image {
-    	border-radius: 20px;
-    	box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
-    	transition: opacity 0.5s ease, transform 0.3s ease;
-    	opacity: 0;
-    	position: absolute;
     	width: 100%;
     	height: 100%;
     	object-fit: cover;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	opacity: 0;
+    	transition: opacity 0.5s ease, transform 0.3s ease;
 }
 
 .review-image.active {
     	opacity: 1;
     	transform: scale(1.05);
-    	position: absolute;
 }
 
 .prev-btn, .next-btn {
@@ -712,6 +713,7 @@ body {
     	cursor: pointer;
     	color: #3d3d3f;
     	transition: transform 0.2s ease;
+    	padding: 10px;
 }
 
 .prev-btn:hover, .next-btn:hover {
@@ -719,20 +721,20 @@ body {
 }
 
 @media (max-width: 768px) {
-	.review-container {
+    	.review-container {
         	width: 90%;
         	height: auto;
-    }
+    	}
 
-    .review-image {
+    	.review-image {
         	width: 100%;
         	height: auto;
-    }
+    	}
 
-    .prev-btn, .next-btn {
+    	.prev-btn, .next-btn {
         	font-size: 24px;
         	padding: 5px;
-    }
+    	}
 }
 
 #pricing h2 {

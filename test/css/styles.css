@@ -228,7 +228,8 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    color: #3d3d3f; /* Темный цвет */
+    color: #3d3d3f;
+    z-index: 2;
 }
 
 .hero-links {
@@ -251,12 +252,14 @@ body {
     gap: 5px;
     font-size: 12px;
     text-decoration: none;
-    color: #3d3d3f; /* Темный цвет */
+    color: #3d3d3f;
+    z-index: 2;
 }
 
 .hero-links a img {
     width: 14px;
     height: 14px;
+    z-index: 2;
 }
 
 @media (max-width: 768px) {

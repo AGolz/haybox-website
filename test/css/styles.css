@@ -857,7 +857,7 @@ body {
 	border-radius: 10px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 	width: 100%;
-	min-width: auto;
+	max-width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -898,12 +898,14 @@ h3 .icon {
 	gap: 5px;
 	min-width: 200px;
 	justify-content: center;
-	align-items: stretch;
+	align-items: start;
+	max-width: 850px;
+	margin: 0 auto;
 }
 
 .pricing-item {
 	background: #f4ba2b;
-	padding: 30px;
+	padding: 20px;
 	border-radius: 8px;
 	gap: 15px;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -913,8 +915,9 @@ h3 .icon {
 	min-height: 250px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+	align-items: flex-start;
+	justify-content: flex-start;
+	text-align: left;
 	height: 100%;
 }
 
@@ -944,7 +947,7 @@ h3 .icon {
 	white-space: normal;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	gap: 12px;
+	margin-bottom: 10px;
 }
 
 .pricing-item p {

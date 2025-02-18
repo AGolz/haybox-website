@@ -577,11 +577,15 @@ body {
 
 .lifted-img .feature-img {
 	transform: translateY(-15px);
+	object-fit: cover;
+	aspect-ratio: 1/1;
 }
 
 @media (max-width: 768px) {
 	.lifted-img .feature-img {
 		transform: translateY(-10px);
+		object-fit: cover;
+		aspect-ratio: 1/1;
     }
 }
 

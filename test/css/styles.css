@@ -207,6 +207,7 @@ body {
 	transition: background 0.3s ease;
 	border: none;
 	margin-top: 20px;
+	margin-bottom: 40px;
 	z-index: 2;
 }
 
@@ -217,17 +218,19 @@ body {
 
 .hero-contacts {
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     font-size: 12px;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
 .hero-links {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
     margin-bottom: 5px;
 }
@@ -235,10 +238,11 @@ body {
 .hero-links a {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 5px;
     font-size: 12px;
     text-decoration: none;
     color: #fff;
+    white-space: nowrap;
 }
 
 .hero-links a img {

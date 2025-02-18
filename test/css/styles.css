@@ -739,7 +739,7 @@ body {
     .review-image {
         width: 100%;
         height: auto;
-        max-height: 500px;
+        max-height: 250px;
         object-fit: contain;
         border-radius: 10px;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);

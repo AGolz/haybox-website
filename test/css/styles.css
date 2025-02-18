@@ -917,10 +917,11 @@ h3 .icon {
 	min-width: 280px;
 }
 
-.promotions-grid .promotion-item:nth-child(4) {
-    	grid-column: 1 / -1;
-    	justify-self: center;
-    	width: 50%;
+#discounts .pricing-grid .pricing-item:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 50%;
+    max-width: 400px;
 }
 
 .pricing-image {
@@ -990,7 +991,7 @@ h3 .icon {
 		align-items: center;
 	}
 	
-	.pricing-grid .pricing-item:nth-child(5),{
+	#discounts .pricing-grid .pricing-item:last-child {
 		grid-column: unset;
 	}
 

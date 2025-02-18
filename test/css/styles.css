@@ -734,8 +734,12 @@ body {
 }
 
 @media (max-width: 768px) {
+	#reviews h2 {
+    		margin-bottom: 20px;
+	}
+	
 	.review-slider {
-		gap: 5px;
+		gap: 10px;
 	}
 	
 	.review-container {

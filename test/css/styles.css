@@ -736,8 +736,8 @@ body {
 @media (max-width: 768px) {
 	.review-container {
         	width: 90%;
-        	max-width: 350px;
-		min-height: 150px;
+        	max-width: 550px;
+		min-height: 350px;
         	height: auto;
         	display: flex;
         	align-items: center;

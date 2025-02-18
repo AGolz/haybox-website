@@ -735,7 +735,7 @@ body {
 
 @media (max-width: 768px) {
 	#reviews h2 {
-    		margin-bottom: 10px;
+    		margin-bottom: -10px;
 	}
 	
 	.review-slider {

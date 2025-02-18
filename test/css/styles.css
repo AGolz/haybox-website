@@ -892,13 +892,14 @@ h3 .icon {
 }
 
 .pricing-grid {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
 	min-width: 200px;
 	justify-content: center;
-	align-items: stretch;
+	align-items: start;
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .pricing-item {
@@ -909,11 +910,11 @@ h3 .icon {
 	flex: 1 1 280px;
 	min-width: 160px;
 	text-align: center;
-	white-space: normal;
 	word-wrap: break-word;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
+	min-width: 280px;
 }
 
 .pricing-grid .pricing-item:last-child {
@@ -987,6 +988,10 @@ h3 .icon {
 	.pricing-grid {
 		grid-template-columns: 1fr;
 		align-items: center;
+	}
+	
+	.pricing-grid .pricing-item:last-child {
+        width: 100%;
 	}
 
 	.pricing-item {

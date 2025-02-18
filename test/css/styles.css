@@ -753,6 +753,7 @@ body {
         	border-radius: 15px;
         	background: transparent;
         	overflow: visible;
+		transition: height 0.5s ease;
     	}
 
     	.review-image {
@@ -770,7 +771,7 @@ body {
 
     	.review-image.active {
         	opacity: 1 !important;
-        	transform: none;
+        	transform: scale(1.05);
         	position: relative;
     	}
 	

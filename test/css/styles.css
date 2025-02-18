@@ -666,6 +666,9 @@ body {
 	text-align: center;
 }
 
+#reviews h2 {
+    margin-bottom: 70px;
+}
 .review-slider {
 	display: flex;
     	align-items: center;
@@ -685,9 +688,12 @@ body {
 
 .review-image {
     	max-width: 100%;
+	border-radius: 15px;
     	height: auto;
     	display: none;
     	transition: opacity 0.5s ease-in-out;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .review-image.active {

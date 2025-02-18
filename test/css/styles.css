@@ -680,26 +680,31 @@ body {
 
 .review-container {
     	width: 500px;
+    	height: 330px;
     	display: flex;
     	align-items: center;
     	justify-content: center;
     	position: relative;
     	overflow: hidden;
     	border-radius: 10px;
-    	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    	box-shadow: 
+		5px 5px 15px rgba(0, 0, 0, 0.2),
+		inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .review-image {
     	width: 100%;
-    	height: auto;
-    	max-height: 300px;
-    	object-fit: contain;
+    	height: 100%;
+    	object-fit: cover;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
     	opacity: 0;
     	transition: opacity 0.5s ease, transform 0.3s ease;
 }
 
 .review-image.active {
-    	opacity: 1 !important;
+    	opacity: 1;
     	transform: scale(1.05);
 }
 
@@ -755,7 +760,6 @@ body {
         	position: relative;
     	}
 }
-
 
 #pricing h2 {
 	margin-bottom: 50px;

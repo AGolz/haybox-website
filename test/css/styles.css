@@ -766,6 +766,15 @@ body {
         	transform: scale(1.05);
         	position: relative;
     	}
+	
+	.prev-btn, .next-btn {
+        	width: 80px;
+        	height: 80px;
+    	}
+
+    	.prev-btn img, .next-btn img {
+	        max-width: 70px;
+    	}
 }
 
 #pricing h2 {

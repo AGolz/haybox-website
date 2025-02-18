@@ -917,12 +917,10 @@ h3 .icon {
 	min-width: 280px;
 }
 
-.pricing-grid .pricing-item:nth-child(3) {
-	grid-column: 1;
-}
-
-.pricing-grid .pricing-item:nth-child(4) {
-    	grid-column: 2;
+.promotions-grid .promotion-item:nth-child(5) {
+    	grid-column: 1 / -1;
+    	justify-self: center;
+    	width: 50%;
 }
 
 .pricing-image {
@@ -992,8 +990,7 @@ h3 .icon {
 		align-items: center;
 	}
 	
-	.pricing-grid .pricing-item:nth-child(3),
-	.pricing-grid .pricing-item:nth-child(4) {
+	.pricing-grid .pricing-item:nth-child(5),{
 		grid-column: unset;
 	}
 

@@ -709,11 +709,20 @@ body {
 .prev-btn, .next-btn {
     	background: none;
     	border: none;
-    	font-size: 30px;
     	cursor: pointer;
-    	color: #3d3d3f;
     	transition: transform 0.2s ease;
     	padding: 10px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	width: 50px;
+    	height: 50px;
+}
+
+.prev-btn img, .next-btn img {
+    	width: 100%;
+    	height: auto;
+    	max-width: 40px;
 }
 
 .prev-btn:hover, .next-btn:hover {

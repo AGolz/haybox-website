@@ -908,20 +908,22 @@ h3 .icon {
 	border-radius: 8px;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 	flex: 1 1 280px;
-	min-width: 160px;
+	min-width: 300px;
+	max-width: 400px;
+	min-height: 250px;
 	text-align: center;
 	word-wrap: break-word;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	min-width: 280px;
 }
 
 #discounts .pricing-grid .pricing-item:last-child {
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: 50%;
-    max-width: 400px;
+    	grid-column: 1 / -1;
+    	justify-self: center;
+    	width: 50%;
+    	max-width: 400px;
+	min-height: 250px;
 }
 
 .pricing-image {
@@ -963,6 +965,7 @@ h3 .icon {
     	min-width: 100px;
     	text-align: right;
     	font-weight: bold;
+}
 
 .tab-content {
 	display: none;

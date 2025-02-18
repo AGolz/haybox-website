@@ -742,7 +742,7 @@ body {
     	.review-container {
         	width: 90%;
         	max-width: 350px;
-		min-height: 250px;
+		min-height: 150px;
         	height: auto;
         	display: flex;
         	align-items: center;

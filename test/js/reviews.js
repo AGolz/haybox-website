@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function showReview(index) {
         reviews.forEach((review, i) => {
             review.classList.remove("active");
-            review.style.opacity = "0"; // Сначала скрываем все
+            review.style.opacity = "0";
         });
 
         setTimeout(() => {
             reviews[index].classList.add("active");
-            reviews[index].style.opacity = "1"; // Затем показываем нужный
+            reviews[index].style.opacity = "1";
         }, 50);
     }
 
@@ -26,6 +26,5 @@ document.addEventListener("DOMContentLoaded", function () {
         showReview(currentIndex);
     });
 
-    reviews[currentIndex].classList.add("active");
-    reviews[currentIndex].style.opacity = "1";
+    showReview(currentIndex);
 });

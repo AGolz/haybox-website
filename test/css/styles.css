@@ -667,68 +667,55 @@ body {
 }
 
 #reviews h2 {
-    margin-bottom: 70px;
+    	margin-bottom: 70px;
 }
+
 .review-slider {
-	display: flex;
+    	display: flex;
     	align-items: center;
     	justify-content: center;
-    	gap: 20px;
     	position: relative;
+    	gap: 15px;
 }
 
 .review-container {
     	width: 500px;
-    	height: auto;
-    	overflow: hidden;
+    	height: 330px;
     	display: flex;
-    	justify-content: center;
     	align-items: center;
+    	justify-content: center;
+    	position: relative;
+    	overflow: hidden;
 }
 
 .review-image {
-    border-radius: 15px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.5s ease, transform 0.3s ease;
-    opacity: 0;
-    position: absolute;
+    	border-radius: 15px;
+    	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    	transition: opacity 0.5s ease, transform 0.3s ease;
+    	opacity: 0;
+    	position: absolute;
+    	width: 100%;
+    	height: 100%;
+    	object-fit: cover;
 }
 
 .review-image.active {
-    opacity: 1;
-    transform: scale(1.05);
-    position: relative;
+    	opacity: 1;
+    	transform: scale(1.05);
+    	position: relative;
 }
 
-.review-image:not(.active) {
-    opacity: 0;
-}
-
-button.prev-btn,
-button.next-btn {
+.prev-btn, .next-btn {
     	background: none;
     	border: none;
-    	font-size: 40px;
-    	font-weight: bold;
-    	color: #3d3d3f;
+    	font-size: 24px;
     	cursor: pointer;
-    	transition: color 0.3s ease;
+    	color: #3d3d3f;
+    	transition: transform 0.2s ease;
 }
 
-button.prev-btn:hover,
-button.next-btn:hover {
-    	color: #f4ba2b;
-}
-
-@media (max-width: 768px) {
-	.review-container {
-		width: 90%;
-	}
-
-    	button.prev-btn,
-    	button.next-btn {
-        	font-size: 30px;
-    	}
+.prev-btn:hover, .next-btn:hover {
+    	transform: scale(1.2);
 }
 
 #pricing h2 {

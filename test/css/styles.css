@@ -1050,7 +1050,10 @@ h3 .icon {
 	}
 
 	#discounts .pricing-grid .pricing-item:last-child {
-		grid-column: unset;
+		width: 100%;
+		max-width: 90%;
+		margin: 0 auto;
+		text-align: center;
 	}
 
 	.pricing-item {

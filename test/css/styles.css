@@ -879,11 +879,11 @@ body {
 
 .pricing-wrapper {
 	background: #fff;
-	padding: 10px;
+	padding: 5px;
 	border-radius: 10px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 	width: 100%;
-	max-width: 1000px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 

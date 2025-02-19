@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     const reviews = document.querySelectorAll(".review-image");
     const prevBtn = document.querySelector(".prev-btn");
     const nextBtn = document.querySelector(".next-btn");
     let currentIndex = 0;
 
     function showReview(index) {
-        reviews.forEach((review, i) => {
+        reviews.forEach((review) => {
             review.classList.remove("active");
             review.style.opacity = "0";
         });
@@ -16,15 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 50);
     }
 
-    prevBtn.addEventListener("click", function () {
+    prevBtn.addEventListener("click", () => {
         currentIndex = (currentIndex - 1 + reviews.length) % reviews.length;
         showReview(currentIndex);
     });
 
-    nextBtn.addEventListener("click", function () {
+    nextBtn.addEventListener("click", () => {
         currentIndex = (currentIndex + 1) % reviews.length;
         showReview(currentIndex);
     });
 
     showReview(currentIndex);
 });
+

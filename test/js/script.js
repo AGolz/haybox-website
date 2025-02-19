@@ -204,18 +204,20 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("service-label").style.display = "none";
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    	const langBtn = document.querySelector(".language-btn");
-    	const langMenu = document.querySelector(".language-menu");
+function toggleMenu(menuId) {
+    document.querySelectorAll('.contract-menu').forEach(menu => {
+        if (menu.id !== menuId) {
+            menu.classList.remove('visible');
+	}
+    });
+	const menu = document.getElementById(menuId);
+	menu.classList.toggle('visible');
+}
 
-    	langBtn.addEventListener("click", function(event) {
-		event.stopPropagation();
-		langMenu.classList.toggle("visible");
-	});
-	
-	document.addEventListener("click", function(event) {
-		if (!langBtn.contains(event.target) && !langMenu.contains(event.target)) {
-			langMenu.classList.remove("visible");
-		}
-	});
+document.addEventListener("click", function(event) {
+	if (!event.target.closest(".contract-wrapper")) {
+		document.querySelectorAll(".contract-menu").forEach(menu => {
+			menu.classList.remove("visible");
+		});
+	}
 });

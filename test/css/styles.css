@@ -860,28 +860,6 @@ body {
 	margin: 0 auto;
 }
 
-.pricing-wrapper .btn {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	background: #3d3d3f;
-	color: #f4ba2b;
-	padding: 8px 16px;
-	border-radius: 5px;
-	text-decoration: none;
-	margin-top: 40px;
-	margin-bottom: 20px;
-	font-size: 1rem;
-	font-weight: bold;
-	transition: background 0.3s ease;
-	border: none;
-}
-
-.pricing-wrapper .btn:hover {
-	background: #f4ba2b;
-	color: #3d3d3f;
-}
-
 h3 .icon {
 	width: 24px;
 	height: 24px;
@@ -1092,23 +1070,29 @@ h3 .icon {
 	margin-top: 12px;
 }
 
+.pricing-wrapper .btn,
 .contact-form button {
-	background: #3d3d3f;
-	color: #f4ba2b;
-	padding: 12px 20px;
-	border-radius: 5px;
-	text-decoration: none;
-	font-size: 1rem;
-	font-weight: bold;
-	border: none;
-	cursor: pointer;
-	margin: 20px auto 0;
-	display: block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #3d3d3f;
+    color: #f4ba2b;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto 0;
 }
 
+.pricing-wrapper .btn:hover,
 .contact-form button:hover {
-	background: #f4ba2b;
-	color: #3d3d3f;
+    background: #f4ba2b;
+    color: #3d3d3f;
 }
 
 @media (max-width: 768px) {

@@ -911,8 +911,8 @@ h3 .icon {
 	align-items: center;
 	justify-content: flex-start;
 	text-align: center;
-	height: 100%;
 	min-height: 280px;
+	height: 100%;
 }
 
 #discounts .pricing-grid .pricing-item:last-child {
@@ -930,8 +930,9 @@ h3 .icon {
 .pricing-icon {
 	width: 28px;
 	height: 28px;
-	margin-right: 10%;
-	text-align: center;
+	margin: 5px auto 10px auto;
+	display: block;
+	object-fit: contain;
 }
 
 .pricing-item h4 {
@@ -948,7 +949,7 @@ h3 .icon {
 	color: #3d3d3f;
     	align-items: center;
     	font-size: 0.9rem;
-	line-height: 1.4;
+	line-height: 1.2; 
     	margin-bottom: 5px;
 	flex-grow: 1;
 }

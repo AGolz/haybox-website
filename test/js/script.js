@@ -204,18 +204,18 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("service-label").style.display = "none";
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    	const phoneButton = document.querySelector(".btn");
-    	const phoneIcon = phoneButton.querySelector("img");
+document.addEventListener("DOMContentLoaded", function() {
+    	const langBtn = document.querySelector(".language-btn");
+    	const langMenu = document.querySelector(".language-menu");
 
-    	const defaultSrc = phoneIcon.src;
-    	const hoverSrc = "test/assets/icons/phone_icon_hover.png";
-
-    	phoneButton.addEventListener("mouseenter", function () {
-        	phoneIcon.src = hoverSrc;
-    	});
-
-    	phoneButton.addEventListener("mouseleave", function () {
-        	phoneIcon.src = defaultSrc;
-    	});
+    	langBtn.addEventListener("click", function(event) {
+		event.stopPropagation();
+		langMenu.classList.toggle("visible");
+	});
+	
+	document.addEventListener("click", function(event) {
+		if (!langBtn.contains(event.target) && !langMenu.contains(event.target)) {
+			langMenu.classList.remove("visible");
+		}
+	});
 });

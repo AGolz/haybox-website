@@ -203,3 +203,16 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("storage-options").style.display = "none";
 	document.getElementById("service-label").style.display = "none";
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	const phoneButton = document.querySelector(".btn");
+    	const phoneIcon = phoneButton.querySelector("img");
+
+    	phoneButton.addEventListener("mouseenter", function () {
+        	phoneIcon.src = "assets/icons/phone_icon_hover.png";
+    	});
+	
+	phoneButton.addEventListener("mouseleave", function () {
+		phoneIcon.src = "assets/icons/phone_icon.png";
+    });
+});

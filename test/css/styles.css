@@ -719,6 +719,7 @@ body {
     	justify-content: center;
     	position: relative;
     	gap: 40px;
+	touch-action: manipulation;
 }
 
 .review-container {
@@ -853,6 +854,7 @@ body {
 	transition: background 0.3s ease;
 	border: none;
 	cursor: pointer;
+	pointer-events: auto; 
 }
 
 .tab-link.active,

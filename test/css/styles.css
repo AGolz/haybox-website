@@ -841,6 +841,7 @@ body {
   justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .tab-link {
@@ -853,6 +854,7 @@ body {
   transition: background 0.3s ease;
   border: none;
   cursor: pointer;
+  padding: 8px 12px;
 }
 
 .tab-link.active,
@@ -863,23 +865,21 @@ body {
 
 @media (max-width: 768px) {
   .tabs {
-    display: flex;
-    justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
+    justify-content: center;
   }
 
   .tab-link {
-    padding: 6px 10px;
     font-size: 0.85rem;
+    padding: 6px 10px;
     min-width: auto;
   }
 }
 
 .pricing-wrapper {
   background: #fff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -887,29 +887,26 @@ body {
   margin: 0 auto;
 }
 
-h3 .icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  vertical-align: middle;
-  object-fit: contain;
-}
-
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  min-width: 200px;
   justify-content: center;
   align-items: start;
   max-width: 850px;
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
 
 .pricing-item {
   background: #f4ba2b;
-  padding: 30px;
+  padding: 25px;
   border-radius: 8px;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -921,6 +918,12 @@ h3 .icon {
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .pricing-item {
+    padding: 15px;
+  }
+}
+
 #discounts .pricing-grid .pricing-item:last-child {
   grid-column: 1 / -1;
   justify-self: center;
@@ -928,17 +931,11 @@ h3 .icon {
   max-width: 400px;
 }
 
-.pricing-image {
-  display: block;
-  margin: 10px auto;
-}
-
-.pricing-icon {
-  width: 28px;
-  height: 28px;
-  margin: 5px auto 15px auto;
-  display: block;
-  object-fit: contain;
+@media (max-width: 768px) {
+  #discounts .pricing-grid .pricing-item:last-child {
+    grid-column: unset;
+    width: 100%;
+  }
 }
 
 .pricing-item h4 {
@@ -955,20 +952,9 @@ h3 .icon {
   color: #3d3d3f;
   align-items: center;
   font-size: 0.9rem;
-  line-height: 1.4; 
+  line-height: 1.4;
   margin-bottom: 5px;
   flex-grow: 1;
-}
-
-.pricing-item p span {
-  flex-grow: 1;
-  text-align: left;
-}
-
-.pricing-item p b {
-  min-width: 100px;
-  text-align: right;
-  font-weight: bold;
 }
 
 .tab-content {
@@ -993,7 +979,8 @@ h3 .icon {
   cursor: pointer;
   transition: background 0.3s ease;
   gap: 10px;
-  margin-top: 20px; 
+  margin-top: 20px;
+  padding: 12px 16px;
 }
 
 .pricing-wrapper .btn img {
@@ -1002,22 +989,12 @@ h3 .icon {
   transition: opacity 0.2s ease-in-out;
 }
 
-.pricing-wrapper .btn:hover .phone-icon {
-  content: url("test/assets/icons/phone_icon_hover.png");
-}
-
 .pricing-wrapper .btn:hover {
   background: #f4ba2b;
   color: #3d3d3f;
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 95%;
-    max-width: 100%;
-    padding: 20px 10px;
-  }
-
   .pricing-wrapper {
     width: 100%;
     max-width: 420px;
@@ -1025,17 +1002,9 @@ h3 .icon {
     margin: 0 auto;
   }
 
-  #discounts .pricing-grid .pricing-item:last-child {
-    grid-column: unset;
-  }
-
   .pricing-item {
     font-size: 0.9rem;
     padding: 10px;
-  }
-
-  .pricing-item p {
-    text-align: left;
   }
 }
 

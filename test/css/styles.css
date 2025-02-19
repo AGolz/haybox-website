@@ -863,7 +863,6 @@ body {
 
 @media (max-width: 768px) {
 	.tabs {
-		display: flex;
 		justify-content: center;
 		gap: 5px;
 		flex-wrap: wrap;
@@ -874,7 +873,17 @@ body {
 		padding: 6px 10px;
 		font-size: 0.85rem;
 		min-width: auto;
+		cursor: pointer;
 	}
+	
+	.tab-content {
+		display: none;
+	}
+
+	.tab-content.active {
+		display: block;
+	}
+	
 }
 
 .pricing-wrapper {
@@ -1012,6 +1021,13 @@ h3 .icon {
 }
 
 @media (max-width: 768px) {
+	.pricing-grid {
+		grid-template-columns: 1fr;
+		gap: 10px;
+		max-width: 100%;
+		padding: 0 10px;
+	}
+	
 	.container {
 		width: 95%;
 		max-width: 100%;

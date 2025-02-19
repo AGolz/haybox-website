@@ -908,7 +908,7 @@ h3 .icon {
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: flex-start;
 	text-align: center;
 	min-height: 280px;
@@ -936,9 +936,8 @@ h3 .icon {
 }
 
 .pricing-item h4 {
-	margin: 0 0 10px 0;
-	font-size: 1.2rem;
 	text-align: center;
+	width: 100%;
 }
 
 .pricing-item p {
@@ -949,7 +948,7 @@ h3 .icon {
 	color: #3d3d3f;
     	align-items: center;
     	font-size: 0.9rem;
-	line-height: 1.2; 
+	line-height: 1.4; 
     	margin-bottom: 5px;
 	flex-grow: 1;
 }

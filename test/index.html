@@ -1,580 +1,547 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="HayBox – переезды и хранение в Ереване. Без суеты и нервов!">
-	<meta name="keywords" content="переезды, хранение, услуги хранения, перевозка вещей, склад, хранение вещей, Ереван, Армения, грузчики, коробки">
-	<meta property="og:title" content="HayBox – Переезды и Хранение">
-	<meta property="og:description" content="Переезды и хранение в Ереване. Надежно, быстро, удобно!">
-	<meta property="og:image" content="https://haybox-am.com/assets/images/preview.jpg">
-	<meta property="og:url" content="https://haybox-am.com">
-	<meta property="og:type" content="website">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="HayBox – Переезды и Хранение">
-	<meta name="twitter:description" content="Переезды и хранение в Ереване. Надежно, быстро, удобно!">
-	<meta name="twitter:image" content="https://haybox-am.com/assets/images/preview.jpg">
-	<meta name="facebook-domain-verification" content="kh7rk8s9pzsy2v33dn9yhjgmneped2">
-	<title>HayBox – Переезды и Хранение | Без стресса и забот</title>
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
-	<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
-	<script src="js/script.js" defer></script>
-	<script src="js/tabs.js" defer></script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16870326579">
-		
-	</script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-8GMRE764WB');
-		gtag('config', 'AW-16870326579');
-	</script>
-	<script>
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
-			gtag('event', 'ads_conversion_Begin_checkout_1', {
-				'event_category': 'Contact Form',
-				'event_label': 'Form Submission',
-				'name': document.getElementById('name').value,
-				'contact_method': document.getElementById('contact-method').value,
-				'service': document.getElementById('service').value,
-				'telegram': document.getElementById('telegram') ? document.getElementById('telegram').value : '',
-				'whatsapp': document.getElementById('whatsapp') ? document.getElementById('whatsapp').value : '',
-				'phone': document.getElementById('phone') ? document.getElementById('phone').value : '',
-				'packing': document.getElementById('packing').checked,
-				'packing_materials': document.getElementById('packing-materials').checked,
-				'assembly': document.getElementById('assembly').checked,
-				'movers': document.getElementById('movers').checked,
-				'truck': document.getElementById('truck').checked,
-				'storage_tariff': document.getElementById('storage-tariff') ? document.getElementById('storage-tariff').value : ''
-			});
-		});
-		window.onload = function() {
-			const form = document.getElementById('contact-form');
-			if (form && form.getAttribute('data-netlify') === 'true') {
-				form.addEventListener('submit', function(event) {
-					event.preventDefault();
-					form.submit();
-				});
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="HayBox – переезды и хранение в Ереване. Без суеты и нервов!">
+		<meta name="keywords" content="переезды, хранение, услуги хранения, перевозка вещей, склад, хранение вещей, Ереван, Армения, грузчики, коробки">
+		<meta property="og:title" content="HayBox – Переезды и Хранение">
+		<meta property="og:description" content="Переезды и хранение в Ереване. Надежно, быстро, удобно!">
+		<meta property="og:image" content="https://haybox-am.com/assets/images/preview.jpg">
+		<meta property="og:url" content="https://haybox-am.com">
+		<meta property="og:type" content="website">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="HayBox – Переезды и Хранение">
+		<meta name="twitter:description" content="Переезды и хранение в Ереване. Надежно, быстро, удобно!">
+		<meta name="twitter:image" content="https://haybox-am.com/assets/images/preview.jpg">
+		<meta name="facebook-domain-verification" content="kh7rk8s9pzsy2v33dn9yhjgmneped2">
+		<title>HayBox – Переезды и Хранение | Без стресса и забот</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon.png">
+		<link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+		<script src="js/script.js" defer></script>
+		<script src="js/tabs.js" defer></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16870326579"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+
+			function gtag() {
+				dataLayer.push(arguments);
 			}
-		};
-	</script>
-</head>
-<body>
-	<div class="mobile-menu">
-		<a href="#how-it-works"><img src="assets/icons/transportation.png" alt="Как это работает"> Как?</a>
-		<a href="#why-haybox"><img src="assets/icons/star.png" alt="Почему HayBox"> Почему?</a>
-		<a href="#for-whom"><img src="assets/icons/packaging.png" alt="Кому это нужно"> Кому?</a>
-		<a href="#pricing"><img src="assets/icons/pricing.png" alt="Тарифы"> Тарифы</a>
-		<a href="#contact"><img src="assets/icons/storehouse.png" alt="Контакты"> Контакты</a>
-	</div>
-	<div class="sticky-banner">
-		<img src="assets/images/logo_white.png" alt="HayBox logo" class="logo">
-		<nav class="navbar">
+			gtag('js', new Date());
+			gtag('config', 'G-8GMRE764WB');
+			gtag('config', 'AW-16870326579');
+		</script>
+		<script>
+			document.getElementById('contact-form').addEventListener('submit', function(event) {
+				gtag('event', 'ads_conversion_Begin_checkout_1', {
+					'event_category': 'Contact Form',
+					'event_label': 'Form Submission',
+					'name': document.getElementById('name').value,
+					'contact_method': document.getElementById('contact-method').value,
+					'service': document.getElementById('service').value,
+					'telegram': document.getElementById('telegram') ? document.getElementById('telegram').value : '',
+					'whatsapp': document.getElementById('whatsapp') ? document.getElementById('whatsapp').value : '',
+					'phone': document.getElementById('phone') ? document.getElementById('phone').value : '',
+					'packing': document.getElementById('packing').checked,
+					'packing_materials': document.getElementById('packing-materials').checked,
+					'assembly': document.getElementById('assembly').checked,
+					'movers': document.getElementById('movers').checked,
+					'truck': document.getElementById('truck').checked,
+					'storage_tariff': document.getElementById('storage-tariff') ? document.getElementById('storage-tariff').value : ''
+				});
+			});
+			window.onload = function() {
+				const form = document.getElementById('contact-form');
+				if (form && form.getAttribute('data-netlify') === 'true') {
+					form.addEventListener('submit', function(event) {
+						event.preventDefault();
+						form.submit();
+					});
+				}
+			};
+		</script>
+	</head>
+	<body>
+		<div class="mobile-menu">
+			<a href="#how-it-works">
+				<img src="assets/icons/transportation.png" alt="Как это работает"> Как? </a>
+			<a href="#why-haybox">
+				<img src="assets/icons/star.png" alt="Почему HayBox"> Почему? </a>
+			<a href="#for-whom">
+				<img src="assets/icons/packaging.png" alt="Кому это нужно"> Кому? </a>
+			<a href="#pricing">
+				<img src="assets/icons/pricing.png" alt="Тарифы"> Тарифы </a>
+			<a href="#contact">
+				<img src="assets/icons/storehouse.png" alt="Контакты"> Контакты </a>
+		</div>
+		<div class="sticky-banner">
+			<img src="assets/images/logo_white.png" alt="HayBox logo" class="logo">
+			<nav class="navbar">
+				<div class="container">
+					<ul class="nav-menu">
+						<li>
+							<a href="#how-it-works">Как это работает</a>
+						</li>
+						<li>
+							<a href="#why-haybox">Почему HayBox?</a>
+						</li>
+						<li>
+							<a href="#for-whom">Кому это нужно?</a>
+						</li>
+						<li>
+							<a href="#reviews">Отзывы</a>
+						</li>
+						<li>
+							<a href="#pricing">Тарифы</a>
+						</li>
+						<li>
+							<a href="#contact">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<header class="hero">
+			<div class="hero-overlay">
+				<div class="container">
+					<h1>Храним ваши ценности, как Арарат хранит легенды</h1>
+					<p style="font-weight: bold;">Длительное хранение и переезды под ключ в Ереване. <br>Без суеты, без нервов, без головной боли. </p>
+					<a href="#contact" class="btn">Оставить заявку</a>
+				</div>
+			</div>
+			<div class="hero-contacts">
+				<span>Email: <a href="mailto:haybox.am@gmail.com">haybox.am@gmail.com</a>
+				</span>
+				<div class="hero-links">
+					<a href="https://wa.me/37477229918" target="_blank">
+						<img src="assets/icons/wa_icon_hedr.png" alt="WhatsApp"> WhatsApp </a>
+					<a href="https://t.me/HayBox_am" target="_blank">
+						<img src="assets/icons/tg_icon_hedr.png" alt="Telegram"> Telegram </a>
+					<a href="https://www.instagram.com/haybox.am?igsh=cGk5ODIxMnBkYjU0&utm_source=qr" target="_blank">
+						<img src="assets/icons/inst_icon_hedr.png" alt="Instagram"> Instagram </a>
+				</div>
+				<span>Телефон: <a href="tel:+37477229918">077 22 99 18</a>
+				</span>
+			</div>
+		</header>
+		<section id="how-it-works">
 			<div class="container">
-				<ul class="nav-menu">
-					<li><a href="#how-it-works">Как это работает</a></li>
-					<li><a href="#why-haybox">Почему HayBox?</a></li>
-					<li><a href="#for-whom">Кому это нужно?</a></li>
-					<li><a href="#reviews">Отзывы</a></li>
-					<li><a href="#pricing">Тарифы</a></li>
-					<li><a href="#contact">Контакты</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<header class="hero">
-    		<div class="hero-overlay">
-        		<div class="container">
-            			<h1>Храним ваши ценности, как Арарат хранит легенды</h1>
-            			<p style="font-weight: bold;">Длительное хранение и переезды под ключ в Ереване.<br>Без суеты, без нервов, без головной боли.</p>
-            			<a href="#contact" class="btn">Оставить заявку</a>
-        		</div>
-    		</div>
-    		<div class="hero-contacts">
-        		<span>Email: <a href="mailto:haybox.am@gmail.com">haybox.am@gmail.com</a></span>
-        		<div class="hero-links">
-            			<a href="https://wa.me/37477229918" target="_blank">
-                			<img src="assets/icons/wa_icon_hedr.png" alt="WhatsApp"> WhatsApp
-            			</a>
-            			<a href="https://t.me/HayBox_am" target="_blank">
-                			<img src="assets/icons/tg_icon_hedr.png" alt="Telegram"> Telegram
-            			</a>
-            			<a href="https://www.instagram.com/haybox.am?igsh=cGk5ODIxMnBkYjU0&utm_source=qr" target="_blank">
-                			<img src="assets/icons/inst_icon_hedr.png" alt="Instagram"> Instagram
-            			</a>
-        		</div>
-        		<span>Телефон: <a href="tel:+37477229918">077 22 99 18</a></span>
-    		</div>
-	</header>
-
-	<section id="how-it-works">
-		<div class="container">
-			<h2>Как работают наши услуги по переезду и хранению?</h2>
-			<div class="process-steps">
-				<div class="step">
-					<h3>Вы оставляете заявку</h3>
-					<p>Звонок или онлайн – как удобнее!</p>
-				</div>
-				<img src="assets/images/arrow.png" alt="Стрелка" class="arrow">
-				<div class="step">
-					<h3>Мы все организуем</h3>
-					<p>Подберем удобное время и транспорт.</p>
-				</div>
-				<img src="assets/images/arrow.png" alt="Стрелка" class="arrow">
-				<div class="step">
-					<h3>Выполняем работу</h3>
-					<p>Без лишних забот для вас.</p>
+				<h2>Как работают наши услуги по переезду и хранению?</h2>
+				<div class="process-steps">
+					<div class="step">
+						<h3>Вы оставляете заявку</h3>
+						<p>Звонок или онлайн – как удобнее!</p>
+					</div>
+					<img src="assets/images/arrow.png" alt="Стрелка" class="arrow">
+					<div class="step">
+						<h3>Мы все организуем</h3>
+						<p>Подберем удобное время и транспорт.</p>
+					</div>
+					<img src="assets/images/arrow.png" alt="Стрелка" class="arrow">
+					<div class="step">
+						<h3>Выполняем работу</h3>
+						<p>Без лишних забот для вас.</p>
+					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="services">
-			<div class="service service-moving">
-				<h3>Профессиональные услуги по переезду</h3>
-				<h4>Переезд без стресса? Легко!</h4>
-				<p>Переезды в Ереване, включая упаковку, транспортировку, расставление мебели на новом месте и даже разборку/сборку мебели. Все для вашего удобства!</p>
-				<div class="advantages">
-					<div class="advantage">
-						<img src="assets/icons/screw.png" alt="Сборка" class="advantage-icon">
-						<h5>Сборка и разборка мебели</h5>
-						<p>Сэкономьте нервы – мы всё сделаем за вас.</p>
+			<div class="services">
+				<div class="service service-moving">
+					<h3>Профессиональные услуги по переезду</h3>
+					<h4>Переезд без стресса? Легко!</h4>
+					<p>Переезды в Ереване, включая упаковку, транспортировку, расставление мебели на новом месте и даже разборку/сборку мебели. Все для вашего удобства!</p>
+					<div class="advantages">
+						<div class="advantage">
+							<img src="assets/icons/screw.png" alt="Сборка" class="advantage-icon">
+							<h5>Сборка и разборка мебели</h5>
+							<p>Сэкономьте нервы – мы всё сделаем за вас.</p>
+						</div>
+						<div class="advantage">
+							<img src="assets/icons/packaging.png" alt="Упаковка" class="advantage-icon">
+							<h5>Аккуратная упаковка</h5>
+							<p>Ваши вещи в целости и сохранности.</p>
+						</div>
+						<div class="advantage">
+							<img src="assets/icons/transportation.png" alt="Транспортировка" class="advantage-icon">
+							<h5>Транспортировка без проблем</h5>
+							<p>Наши грузчики не исчезнут в день переезда!</p>
+						</div>
 					</div>
-
-					<div class="advantage">
-						<img src="assets/icons/packaging.png" alt="Упаковка" class="advantage-icon">
-						<h5>Аккуратная упаковка</h5>
-						<p>Ваши вещи в целости и сохранности.</p>
-					</div>
-
-					<div class="advantage">
-						<img src="assets/icons/transportation.png" alt="Транспортировка" class="advantage-icon">
-						<h5>Транспортировка без проблем</h5>
-						<p>Наши грузчики не исчезнут в день переезда!</p>
-					</div>
-				</div>
-				<div class="contract-wrapper">
-					<button class="btn contract-btn" onclick="toggleMenu('contract-moving-menu')">Договор на переезд</button>
-					<ul id="contract-moving-menu" class="contract-menu">
-						<li><a href="contracts/contract-moving-hy.pdf" download>Հայերեն</a></li>
-						<li><a href="contracts/contract-moving-en.pdf" download>English</a></li>
-						<li><a href="contracts/contract-moving-ru.pdf" download>Русский</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="service service-storage">
-				<h3>Безопасное хранение вещей в Ереване</h3>
-				<h4>Нет места? HayBox спасет!</h4>
-				<p>Охраняемые склады в Ереване для долгосрочного хранения, мебели, техники. Гибкие тарифы и надежная защита вашего имущества.</p>
-				<div class="advantages">
-					<div class="advantage">
-						<img src="assets/icons/storehouse.png" alt="Склад" class="advantage-icon">
-						<h5>Охраняемый склад</h5>
-						<p>Камеры, сигнализация, доступ только по пропуску.</p>
-					</div>
-
-					<div class="advantage">
-						<img src="assets/icons/delivery.png" alt="Доставка" class="advantage-icon">
-						<h5>Доставка туда и обратно</h5>
-						<p>Заберем вещи у вас – привезем обратно, по первому зову.</p>
-					</div>
-
-					<div class="advantage">
-						<img src="assets/icons/pricing.png" alt="Тарифы" class="advantage-icon">
-						<h5>Гибкие тарифы</h5>
-						<p>Вы платите только за нужное место и срок.</p>
-					</div>
-				</div>
-				<div class="contract-wrapper">
-					<button class="btn contract-btn" onclick="toggleMenu('contract-storage-menu')">Договор на хранение</button>
-					<ul id="contract-storage-menu" class="contract-menu">
-						<li><a href="contracts/contract-storage-hy.pdf" download>Հայերեն</a></li>
-						<li><a href="contracts/contract-storage-en.pdf" download>English</a></li>
-						<li><a href="contracts/contract-storage-ru.pdf" download>Русский</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="why-haybox">
-		<div class="container">
-			<h2>Почему HayBox?</h2>
-		
-			<div class="feature-grid">
-				<div class="feature-item">
-					<picture class="lifted-img">
-						<source srcset="assets/images/safe.webp" type="image/webp">
-						<img src="assets/images/safe.jpg" alt="Безопасно" class="feature-img">
-					</picture>
-					<div class="feature-text">
-						<h3>Безопасно <img src="assets/icons/safely.png" alt="Безопасность" class="feature-icon"></h3>
-						<ul class="feature-list">
-							<li><span class="checkmark">✔</span> Камеры и охрана – всё под контролем.</li>
-							<li><span class="checkmark">✔</span> Аккуратная упаковка, надежные машины, профессиональные грузчики.</li>
+					<div class="contract-wrapper">
+						<button class="btn contract-btn" onclick="toggleMenu('contract-moving-menu')">Договор на переезд</button>
+						<ul id="contract-moving-menu" class="contract-menu">
+							<li>
+								<a href="contracts/contract-moving-hy.pdf" download>Հայերեն</a>
+							</li>
+							<li>
+								<a href="contracts/contract-moving-en.pdf" download>English</a>
+							</li>
+							<li>
+								<a href="contracts/contract-moving-ru.pdf" download>Русский</a>
+							</li>
 						</ul>
 					</div>
 				</div>
-			
-			<div class="feature-item">
-				<picture>
-					<source srcset="assets/images/clean.webp" type="image/webp">
-					<img src="assets/images/clean.jpg" alt="Безопасно" class="feature-img">
-				</picture>
-				<div class="feature-text">
-					<h3>Чисто и сухо <img src="assets/icons/clear.png" alt="Чисто" class="feature-icon"></h3>
-					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Без сырости, плесени и запаха бабушкиного чулана.</li>
-						<li><span class="checkmark">✔</span> Чистые машины без грязи и пыли, упаковка для защиты от влаги.</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="feature-item">
-				<picture>
-					<source srcset="assets/images/flexible.webp" type="image/webp">
-					<img src="assets/images/flexible.jpg" alt="Безопасно" class="feature-img">
-				</picture>
-				<div class="feature-text">
-					<h3>Гибкие тарифы <img src="assets/icons/price.png" alt="Тарифы" class="feature-icon"></h3>
-					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> От месяца до нескольких лет – платите только за нужный срок.</li>
-						<li><span class="checkmark">✔</span> Мы подберем оптимальный тариф: от небольших перевозок до комплексного переезда с упаковкой, разборкой мебели и сборкой на новом месте.</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="feature-item">
-				<picture>
-					<source srcset="assets/images/delivery.webp" type="image/webp">
-					<img src="assets/images/delivery.jpg" alt="Безопасно" class="feature-img">
-				</picture>
-				<div class="feature-text">
-					<h3>Доставка туда и обратно <img src="assets/icons/delivery.png" alt="Доставка" class="feature-icon"></h3>
-					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Не надо никуда ехать – мы всё заберем и вернем.</li>
-						<li><span class="checkmark">✔</span> Переезд без хлопот: погрузка, перевозка, разгрузка – всё сделаем за вас.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section id="for-whom">
-	<div class="container">
-		<h2>Услуги для жителей Еревана и бизнеса: переезд и длительное хранение.</h2>
-		<div class="feature-grid">
-			<div class="feature-item">
-				<div class="feature-text">
-					<div class="feature-title">
-						<h3>Для тех, кто затеял ремонт</h3>
-						<img src="assets/icons/repair.png" alt="Ремонт" class="feature-icon">
+				<div class="service service-storage">
+					<h3>Безопасное хранение вещей в Ереване</h3>
+					<h4>Нет места? HayBox спасет!</h4>
+					<p>Охраняемые склады в Ереване для долгосрочного хранения, мебели, техники. Гибкие тарифы и надежная защита вашего имущества.</p>
+					<div class="advantages">
+						<div class="advantage">
+							<img src="assets/icons/storehouse.png" alt="Склад" class="advantage-icon">
+							<h5>Охраняемый склад</h5>
+							<p>Камеры, сигнализация, доступ только по пропуску.</p>
+						</div>
+						<div class="advantage">
+							<img src="assets/icons/delivery.png" alt="Доставка" class="advantage-icon">
+							<h5>Доставка туда и обратно</h5>
+							<p>Заберем вещи у вас – привезем обратно, по первому зову.</p>
+						</div>
+						<div class="advantage">
+							<img src="assets/icons/pricing.png" alt="Тарифы" class="advantage-icon">
+							<h5>Гибкие тарифы</h5>
+							<p>Вы платите только за нужное место и срок.</p>
+						</div>
 					</div>
-					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Чтобы не спать на диване, обложившись коробками.</li>
-						<li><span class="checkmark">✔</span> Чтобы не переживать, что краска капнет на диван или полки испачкаются пылью.</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="feature-item">
-				<div class="feature-text">
-					<div class="feature-title">
-						<h3>Для тех, кто переезжает</h3>
-						<img src="assets/icons/star.png" alt="Переезд" class="feature-icon">
-					</div>
-					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Если старая квартира уже сдана, а в новую пока не въехать.</li>
-						<li><span class="checkmark">✔</span> Если не хотите самостоятельно разбирать, перевозить и собирать мебель.</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="feature-item">
-				<div class="feature-text">
-					<div class="feature-title">
-						<h3>Для тех, кто хочет освободить место</h3>
-						<img src="assets/icons/space.png" alt="Освобождение места" class="feature-icon">
-					</div>
-					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Балкон должен быть балконом, а не филиалом склада.</li>
-						<li><span class="checkmark">✔</span> Сезонные вещи можно сдавать на хранение, а не перетаскивать из шкафа в шкаф.</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="feature-item">
-				<div class="feature-text">
-					<div class="feature-title">
-						<h3>Для компаний и бизнесов</h3>
-						<img src="assets/icons/company.png" alt="Компании" class="feature-icon">
-					</div>
-					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Архивы, сезонное оборудование, мебель – храним всё, кроме бухгалтерских долгов.</li>
-						<li><span class="checkmark">✔</span> Если важно, чтобы технику, документы и мебель перевезли аккуратно и быстро.</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-	
-<section id="reviews">
-	<div class="container">
-		<h2>Отзывы клиентов об услугах хранения и переезда</h2>
-		<div class="review-slider">
-			<button class="prev-btn">
-				<img src="assets/images/left.png" alt="Назад">
-			</button>
-			<div class="review-container">
-				<img src="assets/reviews/review_1.png" alt="Отзыв 1" class="review-image active">
-				<img src="assets/reviews/review_2.png" alt="Отзыв 2" class="review-image">
-				<img src="assets/reviews/review_3.png" alt="Отзыв 3" class="review-image">
-				<img src="assets/reviews/review_4.png" alt="Отзыв 4" class="review-image">
-				<img src="assets/reviews/review_5.png" alt="Отзыв 5" class="review-image">
-				<img src="assets/reviews/review_6.png" alt="Отзыв 6" class="review-image">
-				<img src="assets/reviews/review_7.png" alt="Отзыв 7" class="review-image">
-				<img src="assets/reviews/review_8.png" alt="Отзыв 8" class="review-image">
-			</div>
-			<button class="next-btn">
-				<img src="assets/images/right.png" alt="Вперед">
-			</button>
-		</div>
-	</div>
-</section>
-
-<section id="pricing">
-	<div class="container">
-		<h2>Тарифы</h2>
-		<div class="tabs">
-			<button class="tab-link active" onclick="openTab(event, 'moving')">Переезды под ключ</button>
-			<button class="tab-link" onclick="openTab(event, 'storage')">Услуги хранения</button>
-			<button class="tab-link" onclick="openTab(event, 'discounts')">Акции</button>
-		</div><div id="moving" class="tab-content active">
-			<div class="pricing-wrapper">
-				<h3><img src="assets/icons/transportation.png" alt="Иконка транспорта" class="icon"> Переезд</h3><br>
-				<div class="pricing-grid">
-					<div class="pricing-item">
-						<h4>Услуги упаковки <img src="assets/icons/packaging_2.png" alt="Иконка упаковки" class="pricing-icon"></h4><br>
-						
-						<p><span>Упаковщик (2 часа)</span> <b>8000 ֏</b></p>
-						<p><span>Каждый следующий час</span> <b>3500 ֏</b></p>
-						<p><span>Бригада (3 человека, 2 часа)</span> <b>21000 ֏</b></p>
-						<p><span>Каждый следующий час</span> <b>9000 ֏</b></p><br>
-						
-						<p><b>Упаковочные материалы</b><br></p>
-						<p><span>Коробки 60×40×40</span> <b>Новые: 1400 ֏, / б.у. 1100 ֏</b></p>
-						<p><span>Пупырчатая пленка</span> <b>1000 ֏ (за метр)</b></p>
-						<p><span>Стрейч-пленка</span> <b>3000 ֏ (за рулон)</b></p>
-						<p><span>Маркировка коробок</span> <b>бесплатно</b></p><br>
-						<p><b>Разборка и сборка мебели</b><br></p>
-						<p><span>За предмет</span> <b>от 7000 - 10 000 ֏</b></p>
-					</div>
-					
-					<div class="pricing-item">
-						<h4>Услуги грузчиков <img src="assets/icons/movers.png" alt="Иконка грузчики" class="pricing-icon"></h4><br>
-						
-						<p><span>Грузчик</span> <b>11 000 ֏ (за смену)</b></p>
-						<p><span>Бригада (4 человека)</span> <b>40 000 ֏</b></p>
-						<p><span>Вызов грузового авто</span> <b>от 4500 ֏</b></p>
-						<p><span>Вывоз мусора</span> <b>от 8000 ֏</b></p>
-						<p><span>Подъем/спуск без лифта</span> <b>1000 ֏ (этаж)</b></p>
+					<div class="contract-wrapper">
+						<button class="btn contract-btn" onclick="toggleMenu('contract-storage-menu')">Договор на хранение</button>
+						<ul id="contract-storage-menu" class="contract-menu">
+							<li>
+								<a href="contracts/contract-storage-hy.pdf" download>Հայերեն</a>
+							</li>
+							<li>
+								<a href="contracts/contract-storage-en.pdf" download>English</a>
+							</li>
+							<li>
+								<a href="contracts/contract-storage-ru.pdf" download>Русский</a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<a href="tel:+37477229918" class="btn">
-					<img src="assets/icons/phone_icon.png" alt="Трубка"> Позвонить
-				</a>
 			</div>
-		</div>
-
-		<div id="storage" class="tab-content">
-			<div class="pricing-wrapper">
-				<h3><img src="assets/icons/storehouse.png" alt="Иконка хранения" class="icon"> Хранение</h3><br>
-				<div class="pricing-grid">
-					<div class="pricing-item">
-						<h4>Анаит<br>базовое хранение<br><img src="assets/icons/basic.png" alt="Иконка Анаит" class="pricing-icon"></h4><br>
-						<p>Мини (до 2 коробок)<br><b>8000 ֏/мес</b></p>
-						<p>Оптимум (до 5 коробок)<br><b>20000 ֏/мес</b></p>
-						<p>Макси (до 10 коробок)<br><b>38000 ֏/мес</b></p>
-						<p>Гранд (до 15 коробок)<br><b>58000 ֏/мес</b></p>
+		</section>
+		<section id="why-haybox">
+			<div class="container">
+				<h2>Почему HayBox?</h2>
+				<div class="feature-grid">
+					<div class="feature-item">
+						<picture class="lifted-img">
+							<source srcset="assets/images/safe.webp" type="image/webp">
+							<img src="assets/images/safe.jpg" alt="Безопасно" class="feature-img">
+						</picture>
+						<div class="feature-text">
+							<h3>Безопасно <img src="assets/icons/safely.png" alt="Безопасность" class="feature-icon">
+							</h3>
+							<ul class="feature-list">
+								<li>
+									<span class="checkmark">✔</span> Камеры и охрана – всё под контролем.
+								</li>
+								<li>
+									<span class="checkmark">✔</span> Аккуратная упаковка, надежные машины, профессиональные грузчики.
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="pricing-item">
-						<h4>Астхик<br>хранение мебели и техники<br><img src="assets/icons/furniture.png" alt="Иконка мебель" class="pricing-icon"></h4><br>
-						<p>От 3 м²<br><b>от 65 000 ֏/мес</b></p>
+					<div class="feature-item">
+						<picture>
+							<source srcset="assets/images/clean.webp" type="image/webp">
+							<img src="assets/images/clean.jpg" alt="Безопасно" class="feature-img">
+						</picture>
+						<div class="feature-text">
+							<h3>Чисто и сухо <img src="assets/icons/clear.png" alt="Чисто" class="feature-icon">
+							</h3>
+							<ul class="feature-list">
+								<li>
+									<span class="checkmark">✔</span> Без сырости, плесени и запаха бабушкиного чулана.
+								</li>
+								<li>
+									<span class="checkmark">✔</span> Чистые машины без грязи и пыли, упаковка для защиты от влаги.
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="pricing-item">
-						<h4>Вахагн<br>хранение ценностей<br><img src="assets/icons/values.png" alt="Иконка ценность" class="pricing-icon"></h4><br>
-						<p>От 5 м²<br><b>от 80 000 ֏/мес</b></p>
+					<div class="feature-item">
+						<picture>
+							<source srcset="assets/images/flexible.webp" type="image/webp">
+							<img src="assets/images/flexible.jpg" alt="Безопасно" class="feature-img">
+						</picture>
+						<div class="feature-text">
+							<h3>Гибкие тарифы <img src="assets/icons/price.png" alt="Тарифы" class="feature-icon">
+							</h3>
+							<ul class="feature-list">
+								<li>
+									<span class="checkmark">✔</span> От месяца до нескольких лет – платите только за нужный срок.
+								</li>
+								<li>
+									<span class="checkmark">✔</span> Мы подберем оптимальный тариф: от небольших перевозок до комплексного переезда с упаковкой, разборкой мебели и сборкой на новом месте.
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="pricing-item">
-						<h4>Арамазд<br>индивидуальные комнаты<br><img src="assets/icons/rooms.png" alt="Иконка комнаты" class="pricing-icon"></h4><br>
-						<p>Климат-контроль, охрана<br><b>Цена договорная</b></p>
+					<div class="feature-item">
+						<picture>
+							<source srcset="assets/images/delivery.webp" type="image/webp">
+							<img src="assets/images/delivery.jpg" alt="Безопасно" class="feature-img">
+						</picture>
+						<div class="feature-text">
+							<h3>Доставка туда и обратно <img src="assets/icons/delivery.png" alt="Доставка" class="feature-icon">
+							</h3>
+							<ul class="feature-list">
+								<li>
+									<span class="checkmark">✔</span> Не надо никуда ехать – мы всё заберем и вернем.
+								</li>
+								<li>
+									<span class="checkmark">✔</span> Переезд без хлопот: погрузка, перевозка, разгрузка – всё сделаем за вас.
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<a href="tel:+37477229918" class="btn">
-					<img src="assets/icons/phone_icon.png" alt="Трубка"> Позвонить
-				</a>
 			</div>
-		</div>
-
-		<div id="discounts" class="tab-content">
-			<div class="pricing-wrapper">
-				<h3><img src="assets/icons/pricing.png" alt="Иконка акции" class="icon"> Скидки и акции</h3><br>
-				<div class="pricing-grid">
-					<div class="pricing-item">
-						<h4>Дар Астхик<br><img src="assets/icons/astghik.png" alt="Иконка дар" class="pricing-icon"></h4><br>
-						<p>20% на первый месяц хранения при оплате 3-х месяцев.</p>
+		</section>
+		<section id="for-whom">
+			<div class="container">
+				<h2>Услуги для жителей Еревана и бизнеса: переезд и длительное хранение.</h2>
+				<div class="feature-grid">
+					<div class="feature-item">
+						<div class="feature-text">
+							<div class="feature-title">
+								<h3>Для тех, кто затеял ремонт</h3>
+								<img src="assets/icons/repair.png" alt="Ремонт" class="feature-icon">
+							</div>
+							<ul class="feature-list">
+								<li>
+									<span class="checkmark">✔</span> Чтобы не спать на диване, обложившись коробками.
+								</li>
+								<li>
+									<span class="checkmark">✔</span> Чтобы не переживать, что краска капнет на диван или полки испачкаются пылью.
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="pricing-item">
-						<h4>Путь Вахагна<br><img src="assets/icons/way.png" alt="Иконка путь" class="pricing-icon"></h4><br>
-						<p>при хранении от 6 мес – скидка 10%, от 12 мес – скидка 15%</p><br>
-						<p>Бесплатная упаковка при хранении от 6 месяцев.</p><br>
-						<p>Бесплатная доставка при оплате за 12 месяцев.</p>
+					<div class="feature-item">
+						<div class="feature-text">
+							<div class="feature-title">
+								<h3>Для тех, кто переезжает</h3>
+								<img src="assets/icons/star.png" alt="Переезд" class="feature-icon">
+							</div>
+							<ul class="feature-list">
+								<li>
+									<span class="checkmark">✔</span> Если старая квартира уже сдана, а в новую пока не въехать.
+								</li>
+								<li>
+									<span class="checkmark">✔</span> Если не хотите самостоятельно разбирать, перевозить и собирать мебель.
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="pricing-item">
-						<h4>Щедрость Арамазда<br><img src="assets/icons/generosity.png" alt="Иконка щедрость" class="pricing-icon"></h4><br>
-						<p>Приведи друга и получи:<br>50% скидку на следующий месяц хранения ИЛИ 10% на переезд!</p>
+					<div class="feature-item">
+						<div class="feature-text">
+							<div class="feature-title">
+								<h3>Для тех, кто хочет освободить место</h3>
+								<img src="assets/icons/space.png" alt="Освобождение места" class="feature-icon">
+							</div>
+							<ul class="feature-list">
+								<li>
+									<span class="checkmark">✔</span> Балкон должен быть балконом, а не филиалом склада.
+								</li>
+								<li>
+									<span class="checkmark">✔</span> Сезонные вещи можно сдавать на хранение, а не перетаскивать из шкафа в шкаф.
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="pricing-item">
-						<h4>Сезонная защита Анаит<br><img src="assets/icons/season.png" alt="Иконка защита" class="pricing-icon"></h4><br>
-						<p>Летняя скидка 15% на хранение лыж, сноубордов и зимней одежды.</p>
-						<p>Зимняя скидка 15% на хранение велосипедов, скейтов и летнего инвентаря.</p>
-					</div>
-					<div class="pricing-item">
-						<h4>Семейный Ванан<br><img src="assets/icons/family.png" alt="Иконка семья" class="pricing-icon"></h4><br>
-						<p>Если несколько членов семьи хранят вещи в HayBox, они получают 15% скидку на хранение.</p>
+					<div class="feature-item">
+						<div class="feature-text">
+							<div class="feature-title">
+								<h3>Для компаний и бизнесов</h3>
+								<img src="assets/icons/company.png" alt="Компании" class="feature-icon">
+							</div>
+							<ul class="feature-list">
+								<li>
+									<span class="checkmark">✔</span> Архивы, сезонное оборудование, мебель – храним всё, кроме бухгалтерских долгов.
+								</li>
+								<li>
+									<span class="checkmark">✔</span> Если важно, чтобы технику, документы и мебель перевезли аккуратно и быстро.
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
-				<a href="tel:+37477229918" class="btn">
-					<img src="assets/icons/phone_icon.png" alt="Трубка"> Позвонить
-				</a>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section id="contact">
-	<div class="container">
-		<h2>Оставить заявку</h2>
-		<form id="contact-form" class="contact-form" method="POST" data-netlify="true">
-			<div class="contact-row">
-				<label for="name">Имя:</label>
-				<input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-			</div>
-			<div class="contact-row">
-				<label for="contact-method">Предпочтительный способ связи:</label>
-				<select id="contact-method" name="contact-method" required>
-					<option value="">Выберите способ связи</option>
-					<option value="telegram">Telegram</option>
-					<option value="whatsapp">WhatsApp</option>
-					<option value="phone">Телефон</option>
-				</select>
-			</div>
-			<div id="telegram-field" class="contact-extra">
-				<label for="telegram">Ваш ник в Telegram:</label>
-				<input type="text" id="telegram" name="telegram" placeholder="@username">
-				<div class="no-call-group">
-					<input type="checkbox" id="no-call-telegram">
-					<label for="no-call-telegram">Не звонить</label>
+		</section>
+		<section id="reviews">
+			<div class="container">
+				<h2>Отзывы клиентов об услугах хранения и переезда</h2>
+				<div class="review-slider">
+					<button class="prev-btn">
+						<img src="assets/images/left.png" alt="Назад">
+					</button>
+					<div class="review-container">
+						<img src="assets/reviews/review_1.png" alt="Отзыв 1" class="review-image active">
+						<img src="assets/reviews/review_2.png" alt="Отзыв 2" class="review-image">
+						<img src="assets/reviews/review_3.png" alt="Отзыв 3" class="review-image">
+						<img src="assets/reviews/review_4.png" alt="Отзыв 4" class="review-image">
+						<img src="assets/reviews/review_5.png" alt="Отзыв 5" class="review-image">
+						<img src="assets/reviews/review_6.png" alt="Отзыв 6" class="review-image">
+						<img src="assets/reviews/review_7.png" alt="Отзыв 7" class="review-image">
+						<img src="assets/reviews/review_8.png" alt="Отзыв 8" class="review-image">
+					</div>
+					<button class="next-btn">
+						<img src="assets/images/right.png" alt="Вперед">
+					</button>
 				</div>
 			</div>
-			<div id="whatsapp-field" class="contact-extra">
-				<label for="whatsapp">Ваш ник в WhatsApp:</label>
-				<input type="text" id="whatsapp" name="whatsapp" placeholder="@username">
-				<div class="no-call-group">
-					<input type="checkbox" id="no-call-whatsapp">
-					<label for="no-call-whatsapp">Не звонить</label>
+		</section>
+		<section id="pricing">
+			<div class="container">
+				<h2>Тарифы</h2>
+				<div class="tabs">
+					<button class="tab-link active" onclick="openTab(event, 'moving')">Переезды под ключ</button>
+					<button class="tab-link" onclick="openTab(event, 'storage')">Услуги хранения</button>
+					<button class="tab-link" onclick="openTab(event, 'discounts')">Акции</button>
 				</div>
-			</div>
-			<div id="phone-field" class="contact-extra">
-				<label for="phone">Ваш номер телефона:</label>
-				<input type="tel" id="phone" name="phone" placeholder="+374 (__) ___-____">
-			</div>
-			<div class="contact-row">
-				<label for="service">Переезд или Хранение:</label>
-				<select id="service" name="service" required>
-					<option value="">Выберите услугу</option>
-					<option value="moving">Переезд</option>
-					<option value="storage">Хранение</option>
-				</select>
-			</div>
-			<label id="service-label">Выберите необходимые услуги:</label>
-			<div id="moving-options" class="service-extra checkbox-group">
-				<label><input type="checkbox" id="packing" name="packing"> Упаковка</label>
-				<label><input type="checkbox" id="packing-materials" name="packing-materials"> Упаковочные материалы</label>
-				<label><input type="checkbox" id="assembly" name="assembly"> Разборка и сборка мебели</label>
-				<label><input type="checkbox" id="labeling" name="labeling"> Маркировка коробок</label>
-				<label><input type="checkbox" id="movers" name="movers"> Грузчики</label>
-				<label><input type="checkbox" id="truck" name="truck"> Грузовое авто</label>
-				<label><input type="checkbox" id="garbage" name="garbage"> Вывоз мусора</label>
-				<label><input type="checkbox" id="stairs" name="stairs"> Подъем/спуск без лифта</label>
-			</div>
-			<div id="storage-options" class="service-extra checkbox-group">
-				<label><input type="checkbox" id="storage-packing" name="storage-packing"> Упаковка</label>
-				<label><input type="checkbox" id="storage-materials" name="storage-materials"> Упаковочные материалы</label>
-				<label><input type="checkbox" id="storage-assembly" name="storage-assembly"> Разборка и сборка мебели</label>
-				<label><input type="checkbox" id="storage-labeling" name="storage-labeling"> Маркировка коробок</label>
-				<label><input type="checkbox" id="storage-delivery" name="storage-delivery"> Доставка</label>
-				<div class="tariff-group">
-					<label for="storage-tariff">Выбрать тариф:</label>
-					<select id="storage-tariff" name="storage-tariff">
-						<option value="">Выберите тариф</option>
-						<option value="anahit-mini">Анаит Мини (до 2 коробок)</option>
-						<option value="anahit-optimum">Анаит Оптимум (до 5 коробок)</option>
-						<option value="anahit-maxi">Анаит Макси (до 10 коробок)</option>
-						<option value="anahit-grand">Анаит Гранд (до 15 коробок)</option>
-						<option value="asthik">Астхик (хранение мебели и техники)</option>
-						<option value="vahagn">Вахагн (хранение ценностей)</option>
-						<option value="aramazd">Арамазд (индивидуальные комнаты)</option>
-					</select>
+				<div id="moving" class="tab-content active">
+					<div class="pricing-wrapper">
+						<h3>
+							<img src="assets/icons/transportation.png" alt="Иконка транспорта" class="icon"> Переезд
+						</h3>
+						<br>
+						<div class="pricing-grid">
+							<div class="pricing-item">
+								<h4>Услуги упаковки <img src="assets/icons/packaging_2.png" alt="Иконка упаковки" class="pricing-icon">
+								</h4>
+								<br>
+								<p>
+									<span>Упаковщик (2 часа)</span>
+									<b>8000 ֏</b>
+								</p>
+								<p>
+									<span>Каждый следующий час</span>
+									<b>3500 ֏</b>
+								</p>
+								<p>
+									<span>Бригада (3 человека, 2 часа)</span>
+									<b>21000 ֏</b>
+								</p>
+								<p>
+									<span>Каждый следующий час</span>
+									<b>9000 ֏</b>
+								</p>
+								<br>
+								<p>
+									<b>Упаковочные материалы</b>
+									<br>
+								</p>
+								<p>
+									<span>Коробки 60×40×40</span>
+									<b>Новые: 1400 ֏, / б.у. 1100 ֏</b>
+								</p>
+								<p>
+									<span>Пупырчатая пленка</span>
+									<b>1000 ֏ (за метр)</b>
+								</p>
+								<p>
+									<span>Стрейч-пленка</span>
+									<b>3000 ֏ (за рулон)</b>
+								</p>
+								<p>
+									<span>Маркировка коробок</span>
+									<b>бесплатно</b>
+								</p>
+								<br>
+								<p>
+									<b>Разборка и сборка мебели</b>
+									<br>
+								</p>
+								<p>
+									<span>За предмет</span>
+									<b>от 7000 - 10 000 ֏</b>
+								</p>
+							</div>
+							<div class="pricing-item">
+								<h4>Услуги грузчиков <img src="assets/icons/movers.png" alt="Иконка грузчики" class="pricing-icon">
+								</h4>
+								<br>
+								<p>
+									<span>Грузчик</span>
+									<b>11 000 ֏ (за смену)</b>
+								</p>
+								<p>
+									<span>Бригада (4 человека)</span>
+									<b>40 000 ֏</b>
+								</p>
+								<p>
+									<span>Вызов грузового авто</span>
+									<b>от 4500 ֏</b>
+								</p>
+								<p>
+									<span>Вывоз мусора</span>
+									<b>от 8000 ֏</b>
+								</p>
+								<p>
+									<span>Подъем/спуск без лифта</span>
+									<b>1000 ֏ (этаж)</b>
+								</p>
+							</div>
+						</div>
+						<a href="tel:+37477229918" class="btn">
+							<img src="assets/icons/phone_icon.png" alt="Трубка"> Позвонить </a>
+					</div>
 				</div>
-			</div>
-			<button type="submit">Отправить заявку</button>
-		</form>
-	</div>
-</section>
-
-<footer>
-	<div class="container">
-		<div class="footer-contacts">
-			<div class="footer-links">
-				<a href="https://wa.me/37477229918" target="_blank">
-					<img src="assets/icons/whatsapp.png" alt="WhatsApp"> WhatsApp
-				</a>
-				<a href="https://t.me/HayBox_am" target="_blank">
-					<img src="assets/icons/telegram.png" alt="Telegram"> Telegram
-				</a>
-				<a href="https://www.instagram.com/haybox.am?igsh=cGk5ODIxMnBkYjU0&utm_source=qr" target="_blank">
-					<img src="assets/icons/instagram.png" alt="Instagram"> Instagram
-				</a>
-			</div>
-			<p>Email: <a href="mailto:haybox.am@gmail.com">haybox.am@gmail.com</a></p>
-			<p>Телефон: <a href="tel:+37477229918">077 22 99 18</a></p>
-		</div>
-		<div class="footer-address">
-			<p>улица Даниела Варужана, 35, Ереван, Армения</p>
-		</div>
-		<!--
-		<p class="footer-credits">
-			<a href="https://github.com/AGolz" target="_blank">Разработка и оформление</a>
-		</p>
-		-->
-	</div>
-</footer>
-<div class="floating-buttons">
-	<a href="tel:+37477229918" class="floating-button call">
-		<img src="assets/icons/call_main.png" alt="Позвонить"> Позвонить
-	</a>
-    <div class="floating-button chat">
-		<img src="assets/icons/messge_main.png" alt="Написать"> Написать
-		<div class="chat-menu">
-			<a href="https://wa.me/37477229918" target="_blank">WhatsApp</a>
-			<a href="https://t.me/HayBox_am" target="_blank">Telegram</a>
-		</div>
-	</div>
-</div>
-
-</body>
+				<div id="storage" class="tab-content">
+					<div class="pricing-wrapper">
+						<h3>
+							<img src="assets/icons/storehouse.png" alt="Иконка хранения" class="icon"> Хранение
+						</h3>
+						<br>
+						<div class="pricing-grid">
+							<div class="pricing-item">
+								<h4>Анаит <br>базовое хранение <br>
+									<img src="assets/icons/basic.png" alt="Иконка Анаит" class="pricing-icon">
+								</h4>
+								<br>
+								<p>Мини (до 2 коробок) <br>
+									<b>8000 ֏/мес</b>
+								</p>
+								<p>Оптимум (до 5 коробок) <br>
+									<b>20000 ֏/мес</b>
+								</p>
+								<p>Макси (до 10 коробок) <br>
+									<b>38000 ֏/мес</b>
+								</p>
+								<p>Гранд (до 15 коробок) <br>
+									<b>58000 ֏/мес</b>
+								</p>
+							</div>
+							<div class="pricing-item">
+								<h4>Астхик <br>хранение мебели и техники <br>
+									<img src="assets/icons/furniture.png" alt="Иконка мебель" class="pricing-icon">
+								</h4>
+								<br>
+								<p>От 3 м² <br>
+									<b>от 65 000 ֏/мес</b>
+								</p>
+							</div>
+							<div class="pricing-item">
+								<h4>Вахагн <br>хранение ценностей <br>
+									<img src="assets/icons/values.png" alt="Иконка ценность" class="pricing-icon">
+								</h4>
+								<br>
+								<p>От 5 м² <br>undefined<b>от 80 000 ֏/мес</b>
+								</p>
+							</div>
+							<div class="pricing-item">
+								<h4>Арамаздundefined<br>индивидуальные комнатыundefined<br>undefined<img src="assets/icons/rooms.png" alt="Иконка комнаты" class="pricing-icon">undefined</h4>undefined<br>undefined<p>Климат-контроль, охранаundefined<br>undefined<b>Цена договорная</b>undefined</p>undefined
+							</div>undefined
+						</div>undefined<a href="tel:+37477229918" class="btn">undefined<img src="assets/icons/phone_icon.png" alt="Трубка"> Позвонить undefined</a>undefined
+					</div>undefined
+				</div>undefined<div id="discounts" class="tab-content">undefined<div class="pricing-wrapper">undefined<h3>undefined<img src="assets/icons/pricing.png" alt="Иконка акции" class="icon"> Скидки и акцииundefined</h3>undefined<br>undefined<div class="pricing-grid">undefined<div class="pricing-item">undefined<h4>Дар Астхикundefined<br>undefined<img src="assets/icons/astghik.png" alt="Иконка дар" class="pricing-icon">undefined</h4>undefined<br>undefined<p>20% на первый месяц хранения при оплате 3-х месяцев.</p>undefined</div>undefined<div class="pricing-item">undefined<h4>Путь Вахагнаundefined<br>undefined<img src="assets/icons/way.png" alt="Иконка путь" class="pricing-icon">undefined</h4>undefined<br>undefined<p>при хранении от 6 мес – скидка 10%, от 12 мес – скидка 15%</p>undefined<br>undefined<p>Бесплатная упаковка при хранении от 6 месяцев.</p>undefined<br>undefined<p>Бесплатная доставка при оплате за 12 месяцев.</p>undefined</div>undefined<div class="pricing-item">undefined<h4>Щедрость Арамаздаundefined<br>undefined<img src="assets/icons/generosity.png" alt="Иконка щедрость" class="pricing-icon">undefined</h4>undefined<br>undefined<p>Приведи друга и получи:undefined<br>50% скидку на следующий месяц хранения ИЛИ 10% на переезд!undefined</p>undefined</div>undefined<div class="pricing-item">undefined<h4>Сезонная защита Анаитundefined<br>undefined<img src="assets/icons/season.png" alt="Иконка защита" class="pricing-icon">undefined</h4>undefined<br>undefined<p>Летняя скидка 15% на хранение лыж, сноубордов и зимней одежды.</p>undefined<p>Зимняя скидка 15% на хранение велосипедов, скейтов и летнего инвентаря.</p>undefined</div>undefined<div class="pricing-item">undefined<h4>Семейный Вананundefined<br>undefined<img src="assets/icons/family.png" alt="Иконка семья" class="pricing-icon">undefined</h4>undefined<br>undefined<p>Если несколько членов семьи хранят вещи в HayBox, они получают 15% скидку на хранение.</p>undefined</div>undefined</div>undefined<a href="tel:+37477229918" class="btn">undefined<img src="assets/icons/phone_icon.png" alt="Трубка"> Позвонить undefined</a>undefined</div>undefined</div>undefined
+			</div>undefined
+		</section>undefined<section id="contact">undefined<div class="container">undefined<h2>Оставить заявку</h2>undefined<form id="contact-form" class="contact-form" method="POST" data-netlify="true">undefined<div class="contact-row">undefined<label for="name">Имя:</label>undefined<input type="text" id="name" name="name" placeholder="Введите ваше имя" required>undefined</div>undefined<div class="contact-row">undefined<label for="contact-method">Предпочтительный способ связи:</label>undefined<select id="contact-method" name="contact-method" required>undefined<option value="">Выберите способ связи</option>undefined<option value="telegram">Telegram</option>undefined<option value="whatsapp">WhatsApp</option>undefined<option value="phone">Телефон</option>undefined</select>undefined</div>undefined<div id="telegram-field" class="contact-extra">undefined<label for="telegram">Ваш ник в Telegram:</label>undefined<input type="text" id="telegram" name="telegram" placeholder="@username">undefined<div class="no-call-group">undefined<input type="checkbox" id="no-call-telegram">undefined<label for="no-call-telegram">Не звонить</label>undefined</div>undefined</div>undefined<div id="whatsapp-field" class="contact-extra">undefined<label for="whatsapp">Ваш ник в WhatsApp:</label>undefined<input type="text" id="whatsapp" name="whatsapp" placeholder="@username">undefined<div class="no-call-group">undefined<input type="checkbox" id="no-call-whatsapp">undefined<label for="no-call-whatsapp">Не звонить</label>undefined</div>undefined</div>undefined<div id="phone-field" class="contact-extra">undefined<label for="phone">Ваш номер телефона:</label>undefined<input type="tel" id="phone" name="phone" placeholder="+374 (__) ___-____">undefined</div>undefined<div class="contact-row">undefined<label for="service">Переезд или Хранение:</label>undefined<select id="service" name="service" required>undefined<option value="">Выберите услугу</option>undefined<option value="moving">Переезд</option>undefined<option value="storage">Хранение</option>undefined</select>undefined</div>undefined<label id="service-label">Выберите необходимые услуги:</label>undefined<div id="moving-options" class="service-extra checkbox-group">undefined<label>undefined<input type="checkbox" id="packing" name="packing"> Упаковкаundefined</label>undefined<label>undefined<input type="checkbox" id="packing-materials" name="packing-materials"> Упаковочные материалыundefined</label>undefined<label>undefined<input type="checkbox" id="assembly" name="assembly"> Разборка и сборка мебелиundefined</label>undefined<label>undefined<input type="checkbox" id="labeling" name="labeling"> Маркировка коробокundefined</label>undefined<label>undefined<input type="checkbox" id="movers" name="movers"> Грузчикиundefined</label>undefined<label>undefined<input type="checkbox" id="truck" name="truck"> Грузовое автоundefined</label>undefined<label>undefined<input type="checkbox" id="garbage" name="garbage"> Вывоз мусораundefined</label>undefined<label>undefined<input type="checkbox" id="stairs" name="stairs"> Подъем/спуск без лифтаundefined</label>undefined</div>undefined<div id="storage-options" class="service-extra checkbox-group">undefined<label>undefined<input type="checkbox" id="storage-packing" name="storage-packing"> Упаковкаundefined</label>undefined<label>undefined<input type="checkbox" id="storage-materials" name="storage-materials"> Упаковочные материалыundefined</label>undefined<label>undefined<input type="checkbox" id="storage-assembly" name="storage-assembly"> Разборка и сборка мебелиundefined</label>undefined<label>undefined<input type="checkbox" id="storage-labeling" name="storage-labeling"> Маркировка коробокundefined</label>undefined<label>undefined<input type="checkbox" id="storage-delivery" name="storage-delivery"> Доставкаundefined</label>undefined<div class="tariff-group">undefined<label for="storage-tariff">Выбрать тариф:</label>undefined<select id="storage-tariff" name="storage-tariff">undefined<option value="">Выберите тариф</option>undefined<option value="anahit-mini">Анаит Мини (до 2 коробок)</option>undefined<option value="anahit-optimum">Анаит Оптимум (до 5 коробок)</option>undefined<option value="anahit-maxi">Анаит Макси (до 10 коробок)</option>undefined<option value="anahit-grand">Анаит Гранд (до 15 коробок)</option>undefined<option value="asthik">Астхик (хранение мебели и техники)</option>undefined<option value="vahagn">Вахагн (хранение ценностей)</option>undefined<option value="aramazd">Арамазд (индивидуальные комнаты)</option>undefined</select>undefined</div>undefined</div>undefined<button type="submit">Отправить заявку</button>undefined</form>undefined</div>undefined</section>undefined<footer>undefined<div class="container">undefined<div class="footer-contacts">undefined<div class="footer-links">undefined<a href="https://wa.me/37477229918" target="_blank">undefined<img src="assets/icons/whatsapp.png" alt="WhatsApp"> WhatsApp undefined</a>undefined<a href="https://t.me/HayBox_am" target="_blank">undefined<img src="assets/icons/telegram.png" alt="Telegram"> Telegram undefined</a>undefined<a href="https://www.instagram.com/haybox.am?igsh=cGk5ODIxMnBkYjU0&utm_source=qr" target="_blank">undefined<img src="assets/icons/instagram.png" alt="Instagram"> Instagram undefined</a>undefined</div>undefined<p>Email: undefined<a href="mailto:haybox.am@gmail.com">haybox.am@gmail.com</a>undefined</p>undefined<p>Телефон: undefined<a href="tel:+37477229918">077 22 99 18</a>undefined</p>undefined</div>undefined<div class="footer-address">undefined<p>улица Даниела Варужана, 35, Ереван, Армения</p>undefined</div>undefined
+				<!--
+		<p class="footer-credits"><a href="https://github.com/AGolz" target="_blank">Разработка и оформление</a></p>
+		-->undefined
+			</div>undefined</footer>undefined<div class="floating-buttons">undefined<a href="tel:+37477229918" class="floating-button call">undefined<img src="assets/icons/call_main.png" alt="Позвонить"> Позвонить undefined</a>undefined<div class="floating-button chat">undefined<img src="assets/icons/messge_main.png" alt="Написать"> Написать undefined<div class="chat-menu">undefined<a href="https://wa.me/37477229918" target="_blank">WhatsApp</a>undefined<a href="https://t.me/HayBox_am" target="_blank">Telegram</a>undefined</div>undefined</div>undefined</div>undefined
+	</body>undefined
 </html>

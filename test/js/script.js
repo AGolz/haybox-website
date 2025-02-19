@@ -205,14 +205,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-	const phoneButton = document.querySelector(".btn");
+    	const phoneButton = document.querySelector(".btn");
     	const phoneIcon = phoneButton.querySelector("img");
 
+    	const defaultSrc = phoneIcon.src;
+    	const hoverSrc = "test/assets/icons/phone_icon_hover.png";
+
     	phoneButton.addEventListener("mouseenter", function () {
-        	phoneIcon.src = "assets/icons/phone_icon_hover.png";
+        	phoneIcon.src = hoverSrc;
     	});
-	
-	phoneButton.addEventListener("mouseleave", function () {
-		phoneIcon.src = "assets/icons/phone_icon.png";
-    });
+
+    	phoneButton.addEventListener("mouseleave", function () {
+        	phoneIcon.src = defaultSrc;
+    	});
 });

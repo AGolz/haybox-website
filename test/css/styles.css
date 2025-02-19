@@ -979,7 +979,7 @@ h3 .icon {
 }
 
 .pricing-wrapper .btn:hover img {
-    content: url("assets/icons/phone_icon_hover.png");
+    content: url("test/assets/icons/phone_icon_hover.png");
 }
 
 @media (max-width: 768px) {

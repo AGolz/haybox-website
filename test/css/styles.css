@@ -1095,6 +1095,13 @@ h3 .icon {
     color: #3d3d3f;
 }
 
+.pricing-wrapper .btn img {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
 @media (max-width: 768px) {
 	.contact-form {
 		width: 100%;

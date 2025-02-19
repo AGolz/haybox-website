@@ -1364,6 +1364,7 @@ footer {
     	display: flex;
     	flex-direction: column;
     	gap: 12px;
+	pointer-events: none;
     	z-index: 999;
 }
 
@@ -1382,6 +1383,7 @@ footer {
     	text-align: center;
     	cursor: pointer;
     	position: relative;
+	pointer-events: auto;
     	gap: 8px;
 }
 

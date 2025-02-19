@@ -879,7 +879,7 @@ body {
 
 .pricing-wrapper {
 	background: #fff;
-	padding: 5px;
+	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 	width: 100%;
@@ -900,6 +900,7 @@ h3 .icon {
     	flex-wrap: wrap;
     	justify-content: center;
     	gap: 15px;
+	align-items: stretch;
 }
 
 .pricing-item {

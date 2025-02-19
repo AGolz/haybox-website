@@ -113,7 +113,14 @@
 						<p>Наши грузчики не исчезнут в день переезда!</p>
 					</div>
 				</div>
-				<a href="contract-moving.pdf" class="btn contract-btn">Договор на переезд</a>
+				<div class="contract-wrapper">
+					<button class="btn contract-btn" onclick="toggleMenu('contract-moving-menu')">Договор на переезд</button>
+					<ul id="contract-moving-menu" class="contract-menu">
+						<li><a href="contract-moving-hy.pdf">Հայերեն</a></li>
+						<li><a href="contract-moving-en.pdf">English</a></li>
+						<li><a href="contract-moving-ru.pdf">Русский</a></li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="service service-storage">
@@ -139,38 +146,35 @@
 						<p>Вы платите только за нужное место и срок.</p>
 					</div>
 				</div>
-				<a href="contract-storage.pdf" class="btn contract-btn">Договор на хранение</a>
-			</div>
-		</div>
-		<div class="language-selector">
-			<button class="language-btn">Выбрать язык</button>
-			<ul class="language-menu">
-				<li><a href="?lang=hy">Հայերեն</a></li>
-				<li><a href="?lang=en">English</a></li>
-				<li><a href="?lang=ru">Русский</a></li>
-			</ul>
-		</div>
-	</div>
-</section>
-
-<section id="why-haybox">
-	<div class="container">
-		<h2>Почему HayBox?</h2>
-		
-		<div class="feature-grid">
-			<div class="feature-item">
-				<picture class="lifted-img">
-					<source srcset="assets/images/safe.webp" type="image/webp">
-					<img src="assets/images/safe.jpg" alt="Безопасно" class="feature-img">
-				</picture>
-				<div class="feature-text">
-					<h3>Безопасно <img src="assets/icons/safely.png" alt="Безопасность" class="feature-icon"></h3>
-					<ul class="feature-list">
-						<li><span class="checkmark">✔</span> Камеры и охрана – всё под контролем.</li>
-						<li><span class="checkmark">✔</span> Аккуратная упаковка, надежные машины, профессиональные грузчики.</li>
+				<div class="contract-wrapper">
+					<button class="btn contract-btn" onclick="toggleMenu('contract-storage-menu')">Договор на хранение</button>
+					<ul id="contract-storage-menu" class="contract-menu">
+						<li><a href="contract-storage-hy.pdf">Հայերեն</a></li>
+						<li><a href="contract-storage-en.pdf">English</a></li>
+						<li><a href="contract-storage-ru.pdf">Русский</a></li>
 					</ul>
 				</div>
 			</div>
+		</div>
+	</section>
+	<section id="why-haybox">
+		<div class="container">
+			<h2>Почему HayBox?</h2>
+		
+			<div class="feature-grid">
+				<div class="feature-item">
+					<picture class="lifted-img">
+						<source srcset="assets/images/safe.webp" type="image/webp">
+						<img src="assets/images/safe.jpg" alt="Безопасно" class="feature-img">
+					</picture>
+					<div class="feature-text">
+						<h3>Безопасно <img src="assets/icons/safely.png" alt="Безопасность" class="feature-icon"></h3>
+						<ul class="feature-list">
+							<li><span class="checkmark">✔</span> Камеры и охрана – всё под контролем.</li>
+							<li><span class="checkmark">✔</span> Аккуратная упаковка, надежные машины, профессиональные грузчики.</li>
+						</ul>
+					</div>
+				</div>
 			
 			<div class="feature-item">
 				<picture>

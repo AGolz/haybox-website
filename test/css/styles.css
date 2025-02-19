@@ -970,7 +970,7 @@ h3 .icon {
 
 .tab-content {
 	display: none;
-	adding: 20px;
+	padding: 10px;
 }
 
 .tab-content.active {

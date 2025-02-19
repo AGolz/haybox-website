@@ -853,13 +853,11 @@ body {
 .pricing-wrapper {
 	background: #fff;
 	padding: 30px;
-	justify-content: center;
 	border-radius: 10px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
 	width: 100%;
 	max-width: 900px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .pricing-wrapper .btn {
@@ -907,18 +905,14 @@ h3 .icon {
 	background: #f4ba2b;
 	padding: 20px;
 	border-radius: 8px;
-	gap: 15px;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-	flex: 1 1 280px;
-	min-width: 300px;
-	max-width: 400px;
-	min-height: 250px;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: flex-start;
-	text-align: left;
+	text-align: center;
 	height: 100%;
+	min-height: 280px;
 }
 
 #discounts .pricing-grid .pricing-item:last-child {
@@ -926,7 +920,6 @@ h3 .icon {
     	justify-self: center;
     	width: 50%;
     	max-width: 400px;
-	min-height: 250px;
 }
 
 .pricing-image {
@@ -938,26 +931,26 @@ h3 .icon {
 	width: 28px;
 	height: 28px;
 	margin-right: 10%;
-	vertical-align: middle;
-	object-fit: contain;
-	flex-shrink: 0;
+	text-align: center;
 }
 
 .pricing-item h4 {
-	white-space: normal;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
+	margin: 0 0 10px 0;
+	font-size: 1.2rem;
+	text-align: center;
 }
 
 .pricing-item p {
+	width: 100%;
+	text-align: left;
     	display: flex;
     	justify-content: space-between;
 	color: #3d3d3f;
     	align-items: center;
     	font-size: 0.9rem;
+	line-height: 1.4;
     	margin-bottom: 5px;
-	width: 100%;
-	text-align: left;
+	flex-grow: 1;
 }
 
 .pricing-item p span {
@@ -1010,9 +1003,6 @@ h3 .icon {
 	}
 
 	.pricing-item p {
-		text-indent: 0;
-		margin-top: 0;
-		padding-left: 0;
 		text-align: left;
 	}
 }

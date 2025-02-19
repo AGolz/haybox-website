@@ -903,7 +903,7 @@ h3 .icon {
 
 .pricing-item {
 	background: #f4ba2b;
-	padding: 20px;
+	padding: 30px;
 	border-radius: 8px;
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
@@ -930,7 +930,7 @@ h3 .icon {
 .pricing-icon {
 	width: 28px;
 	height: 28px;
-	margin: 5px auto 10px auto;
+	margin: 5px auto 15px auto;
 	display: block;
 	object-fit: contain;
 }
@@ -938,6 +938,7 @@ h3 .icon {
 .pricing-item h4 {
 	text-align: center;
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 .pricing-item p {

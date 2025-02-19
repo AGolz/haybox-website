@@ -966,22 +966,22 @@ h3 .icon {
     	cursor: pointer;
     	transition: background 0.3s ease;
     	gap: 10px;
+	margin-top: 20px; 
 }
 
 .pricing-wrapper .btn img {
     	width: 20px;
     	height: 20px;
-    	margin-right: 8px;
     	transition: opacity 0.2s ease-in-out;
 }
 
-.pricing-wrapper .btn:hover {
-    	background: #f4ba2b;
-    	color: #3d3d3f;
+.pricing-wrapper .btn:hover .phone-icon {
+    content: url("test/assets/icons/phone_icon_hover.png");
 }
 
-.pricing-wrapper .btn:hover img {
-    	content: url("test/assets/icons/phone_icon_hover.png");
+.pricing-wrapper .btn:hover {
+    background: #f4ba2b;
+    color: #3d3d3f;
 }
 
 @media (max-width: 768px) {

@@ -876,7 +876,7 @@ body {
     justify-content: center;
     text-align: center;
     min-height: 90px;
-    gap: 2px;
+    gap: 8px;
     
 }
 
@@ -886,6 +886,7 @@ body {
     position: absolute;
     left: 15px;
     align-self: center;
+    display: inline-flex;
     transform: translateY(-50%);
     flex-shrink: 0;
 }
@@ -966,8 +967,7 @@ body {
     }
 }
 
-.pricing-icon, 
-.pricing-image {
+.pricing-icon {
 	width: 28px;
 	height: 28px;
 	margin: 5px auto 15px auto;

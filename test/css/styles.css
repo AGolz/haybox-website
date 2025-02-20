@@ -899,11 +899,6 @@ body {
     line-height: 1;
 }
 
-.pricing-item.active {
-    box-shadow: 0 0 20px rgba(244, 186, 43, 0.7);
-    transform: translateY(-5px);
-}
-
 .pricing-content {
     padding: 10px 20px;
     text-align: left;

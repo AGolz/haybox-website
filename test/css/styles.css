@@ -849,7 +849,7 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
-    min-height: 900px;
+    min-height: 1500px;
 }
 
 .pricing-item {

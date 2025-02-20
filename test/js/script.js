@@ -221,15 +221,3 @@ document.addEventListener("click", function(event) {
 		});
 	}
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("HayBox сайт загружен!");
-
-    let pricingItems = document.querySelectorAll(".pricing-item");
-
-    if (pricingItems.length > 1) {
-        pricingItems.forEach(item => item.classList.remove("active"));
-        pricingItems[1].classList.add("active");
-        console.log("Активный блок установлен:", pricingItems[1]);
-    }
-});

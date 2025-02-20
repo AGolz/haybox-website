@@ -880,9 +880,19 @@ body {
     
 }
 
+.pricing-header img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .pricing-header span {
-    flex-grow: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
+    white-space: nowrap;
 }
 
 .pricing-item.active {
@@ -959,15 +969,8 @@ body {
     }
 }
 
+.pricing-icon, 
 .pricing-image {
-	width: 30px;
-	height: 30px;
-	margin: 5px auto 15px auto;
-	display: block;
-	object-fit: contain;
-}
-
-.pricing-icon {
 	width: 28px;
 	height: 28px;
 	margin: 5px auto 15px auto;

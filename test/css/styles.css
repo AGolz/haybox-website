@@ -883,12 +883,11 @@ body {
 .pricing-header img {
     width: 24px;
     height: 24px;
-    position: absolute;
-    left: 15px;
     align-self: center;
-    display: inline-flex;
     transform: translateY(-50%);
     flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .pricing-header span {

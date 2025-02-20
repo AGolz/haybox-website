@@ -877,7 +877,7 @@ body {
     text-align: center;
     min-height: 90px;
     gap: 8px;
-    
+    line-height: 1;
 }
 
 .pricing-header img {
@@ -896,6 +896,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
     white-space: nowrap;
+    align-items: center;
 }
 
 .pricing-item.active {

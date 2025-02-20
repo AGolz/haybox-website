@@ -1052,6 +1052,11 @@ body {
 }
 
 @media (max-width: 768px) {
+    #shipping-partners {
+        width: 95%;
+        padding: 30px 15px;
+				}
+				
     .partner-logos {
         flex-direction: column;
         gap: 20px;

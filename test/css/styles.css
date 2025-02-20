@@ -879,6 +879,11 @@ body {
     
 }
 
+.pricing-header span {
+    flex-grow: 1;
+    text-align: center;
+}
+
 .pricing-item.active {
     box-shadow: 0 0 20px rgba(244, 186, 43, 0.7);
     transform: translateY(-5px);

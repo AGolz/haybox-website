@@ -884,13 +884,6 @@ body {
     text-align: left;
 }
 
-.pricing-content h4 {
-    text-align: left;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-
 .small-icon {
     width: 20px;
     height: 20px;

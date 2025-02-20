@@ -730,7 +730,7 @@ body {
 .review-container {
     	width: 500px;
     	height: 330px;
-	min-height: 330px;
+	    min-height: 330px;
     	display: flex;
     	align-items: center;
     	justify-content: center;
@@ -1049,6 +1049,17 @@ body {
     font-weight: bold;
     color: #f4ba2b;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .partner-logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .partner-logo {
+        max-width: 60%;
+    }
 }
 
 #contact h2 {

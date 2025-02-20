@@ -839,110 +839,90 @@ body {
     	}
 }
 
-#pricing h2 {
-	margin-bottom: 50px;
+#pricing {
+    text-align: center;
 }
 
-.tabs {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-	margin-bottom: 20px;
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-.tab-link {
-	background: transparent;
-	color: #3d3d3f;
-	text-decoration: none;
-	font-size: 1rem;
-	font-weight: bold;
-	white-space: nowrap;
-	transition: background 0.3s ease;
-	border: none;
-	cursor: pointer;
-	pointer-events: auto; 
+.pricing-item {
+    background: #f4ba2b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+    flex: 1 1 30%;
+    transition: transform 0.3s ease;
 }
 
-.tab-link.active,
-.tab-link:hover {
-	background: #3d3d3f;
-	color: #fff;
+.pricing-item:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.pricing-item h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+.call-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #3d3d3f;
+    color: #f4ba2b;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.call-btn img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.call-btn:hover {
+    background: #f4ba2b;
+    color: #3d3d3f;
 }
 
 @media (max-width: 768px) {
-	.tabs {
-		justify-content: center;
-		gap: 5px;
-		flex-wrap: wrap;
-		margin-bottom: 10px;
-	}
-
-	.tab-link {
-		padding: 6px 10px;
-		font-size: 0.85rem;
-		min-width: auto;
-		cursor: pointer;
-	}
-	
-	.tab-content {
-		display: none;
-	}
-
-	.tab-content.active {
-		display: block;
-	}
-	
+    .pricing-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-item {
+        max-width: 90%;
+    }
 }
-
-.pricing-wrapper {
-    	background: #fff;
-    	padding: 30px;
-    	border-radius: 10px;
-    	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    	width: 100%;
-    	max-width: 900px;
-    	margin: 0 auto;
-}
-
 h3 .icon {
 	width: 24px;
 	height: 24px;
 	margin-right: 10px;
 	vertical-align: middle;
 	object-fit: contain;
-}
-
-.pricing-grid {
-    	display: grid;
-    	grid-template-columns: repeat(2, 1fr);
-    	gap: 15px;
-    	min-width: 200px;
-    	justify-content: center;
-    	align-items: start;
-    	max-width: 850px;
-    	margin: 0 auto;
-}
-
-
-.pricing-item {
-    	background: #f4ba2b;
-    	padding: 30px;
-    	border-radius: 8px;
-    	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    	display: flex;
-    	flex-direction: column;
-    	align-items: flex-start;
-    	justify-content: flex-start;
-    	text-align: center;
-    	min-height: 280px;
-    	height: 100%;
-}
-
-#discounts .pricing-grid .pricing-item:last-child {
-    	grid-column: 1 / -1;
-    	justify-self: center;
-    	width: 50%;
-    	max-width: 400px;
 }
 
 .pricing-image {
@@ -986,84 +966,6 @@ h3 .icon {
     	min-width: 100px;
     	text-align: right;
     	font-weight: bold;
-}
-
-.tab-content {
-	display: none;
-	padding: 10px;
-}
-
-.tab-content.active {
-	display: block;
-}
-
-.pricing-wrapper .btn {
-    	display: inline-flex;
-    	align-items: center;
-    	justify-content: center;
-    	background: #3d3d3f;
-    	color: #f4ba2b;
-    	text-decoration: none;
-    	font-size: 1rem;
-    	font-weight: bold;
-    	border: none;
-    	cursor: pointer;
-    	transition: background 0.3s ease;
-    	gap: 10px;
-	margin-top: 20px; 
-}
-
-.pricing-wrapper .btn img {
-    	width: 20px;
-    	height: 20px;
-    	transition: opacity 0.2s ease-in-out;
-}
-
-.pricing-wrapper .btn:hover .phone-icon {
-    content: url("test/assets/icons/phone_icon_hover.png");
-}
-
-.pricing-wrapper .btn:hover {
-    background: #f4ba2b;
-    color: #3d3d3f;
-}
-
-@media (max-width: 768px) {
-	.pricing-grid {
-		grid-template-columns: 1fr;
-		gap: 10px;
-		max-width: 100%;
-		padding: 0 10px;
-	}
-	
-	.container {
-		width: 95%;
-		max-width: 100%;
-		padding: 20px 10px;
-	}
-
-	.pricing-wrapper {
-		width: 100%;
-		max-width: 420px;
-		padding: 10px;
-		margin: 0 auto;
-	}
-
-	#discounts .pricing-grid .pricing-item:last-child {
-		width: 100%;
-		max-width: 90%;
-		margin: 0 auto;
-		text-align: center;
-	}
-
-	.pricing-item {
-		font-size: 0.9rem;
-		padding: 10px;
-	}
-
-	.pricing-item p {
-		text-align: left;
-	}
 }
 
 #contact h2 {

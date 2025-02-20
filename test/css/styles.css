@@ -853,6 +853,10 @@ body {
 
 .pricing-item {
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
     padding: 0px;
     border-radius: 8px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -900,6 +904,9 @@ body {
 }
 
 .pricing-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
     padding: 10px 20px;
     text-align: left;
 }
@@ -938,7 +945,7 @@ body {
     transition: background 0.3s ease;
     padding: 12px 20px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: auto;
 }
 
 .call-btn img {

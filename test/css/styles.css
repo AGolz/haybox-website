@@ -891,6 +891,11 @@ body {
     margin-right: 8px;
 }
 
+.pricing-content h4 {
+    margin-top: 20px;
+    gap: 6px;
+}
+
 .pricing-item:hover {
     transform: translateY(-10px);
     filter: brightness(1.1);

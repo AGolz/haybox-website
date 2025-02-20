@@ -221,3 +221,13 @@ document.addEventListener("click", function(event) {
 		});
 	}
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let pricingItems = document.querySelectorAll(".pricing-item");
+    
+    pricingItems.forEach(item => item.classList.remove("active"));
+    
+    if (pricingItems.length > 1) {
+        pricingItems[1].classList.add("active");
+    }
+});

@@ -885,7 +885,9 @@ body {
     height: 24px;
     position: absolute;
     left: 15px;
+    align-self: center;
     transform: translateY(-50%);
+    flex-shrink: 0;
 }
 
 .pricing-header span {

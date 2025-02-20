@@ -203,3 +203,21 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("storage-options").style.display = "none";
 	document.getElementById("service-label").style.display = "none";
 });
+
+function toggleMenu(menuId) {
+    document.querySelectorAll('.contract-menu').forEach(menu => {
+        if (menu.id !== menuId) {
+            menu.classList.remove('visible');
+	}
+    });
+	const menu = document.getElementById(menuId);
+	menu.classList.toggle('visible');
+}
+
+document.addEventListener("click", function(event) {
+	if (!event.target.closest(".contract-wrapper")) {
+		document.querySelectorAll(".contract-menu").forEach(menu => {
+			menu.classList.remove("visible");
+		});
+	}
+});

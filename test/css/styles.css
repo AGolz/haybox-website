@@ -868,20 +868,18 @@ body {
     font-weight: bold;
     font-size: 1.2rem;
     width: 100%;
-    padding: 15px 0;
+    padding: 20px 20px;
     margin: 0;
     border-radius: 8px 8px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
+    min-height: 70px;
     gap: 2px;
     
 }
 
 .pricing-item.active {
-    filter: brightness(1.2);
     box-shadow: 0 0 20px rgba(244, 186, 43, 0.7);
     transform: translateY(-5px);
 }

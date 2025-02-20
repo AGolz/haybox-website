@@ -921,15 +921,13 @@ body {
 
 .pricing-content h4 {
     margin-top: 20px;
+    font-size: 1rem;
 }
 
 .pricing-item:hover {
     transform: translateY(-10px);
 }
 
-.pricing-item:not(:hover) {
-    filter: brightness(0.9);
-}
 
 .call-btn {
     display: flex;

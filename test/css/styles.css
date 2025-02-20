@@ -850,6 +850,7 @@ body {
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
+    min-height: 600px;
 }
 
 .pricing-item {
@@ -946,7 +947,7 @@ body {
     transition: background 0.3s ease;
     padding: 12px 20px;
     border-radius: 8px;
-    margin: auto auto 20px auto; 
+    margin: 20px 20px 20px 20px; 
     width: auto;
     max-width: 250px;
 }

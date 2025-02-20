@@ -882,8 +882,8 @@ body {
 
 .pricing-header img {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    left: 15px;
+    top: 50%;
     transform: translateY(-50%);
 }
 
@@ -923,12 +923,6 @@ body {
 
 .pricing-item:not(:hover) {
     filter: brightness(0.9);
-}
-
-.pricing-icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 10px;
 }
 
 .call-btn {

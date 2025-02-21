@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 	console.log("HayBox сайт загружен!");
 
 	function toggleContactFields() {
@@ -179,8 +179,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		try {
 			const response = await fetch("/.netlify/functions/telegram", {
 				method: "POST",
-				headers: { "Content-Type": "application/json" },
-				body: JSON.stringify({ text: message })
+				headers: {
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({
+					text: message
+				})
 			});
 
 			if (response.ok) {
@@ -205,16 +209,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function toggleMenu(menuId) {
-    document.querySelectorAll('.contract-menu').forEach(menu => {
-        if (menu.id !== menuId) {
-            menu.classList.remove('visible');
-	}
-    });
+	document.querySelectorAll('.contract-menu').forEach(menu => {
+		if (menu.id !== menuId) {
+			menu.classList.remove('visible');
+		}
+	});
 	const menu = document.getElementById(menuId);
 	menu.classList.toggle('visible');
 }
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
 	if (!event.target.closest(".contract-wrapper")) {
 		document.querySelectorAll(".contract-menu").forEach(menu => {
 			menu.classList.remove("visible");

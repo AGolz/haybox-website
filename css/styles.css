@@ -1335,10 +1335,6 @@ footer {
     	background: #f4ba2b;
     	color: #3d3d3f;
 }
-.footer-credits a:hover {
-	text-decoration: underline;
-	margin-top: 3px;
-}
 
 @media (max-width: 768px) {
 	.footer-links {
@@ -1409,6 +1405,8 @@ footer {
     	transform: scale(1.05);
 }
 
+
+
 .footer-maps {
     font-size: 14px;
     line-height: 1.5;
@@ -1416,13 +1414,10 @@ footer {
 }
 
 .maps-links a {
-    display: block;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.maps-links a:hover {
     color: #f4ba2b;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 15px;
 }
 
 .chat-menu {

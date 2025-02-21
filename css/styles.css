@@ -1262,7 +1262,6 @@ footer {
 }
 
 .footer-maps {
-    font-size: 10px;
     line-height: 1.5;
     margin-top: 10px;
     text-align: center;
@@ -1276,7 +1275,7 @@ footer {
 .maps-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 12px;
     display: block;
 }
@@ -1284,6 +1283,18 @@ footer {
 .maps-links a:hover {
     text-decoration: underline;
     color: #f4ba2b;
+}
+
+@media (max-width: 768px) {
+    .maps-links {
+        display: block;
+        gap: 10px;
+    }
+
+    .maps-links a {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
 }
 
 /*

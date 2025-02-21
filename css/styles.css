@@ -1261,6 +1261,26 @@ footer {
 	margin-top: 10px;
 }
 
+.footer-maps {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.maps-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.maps-links a:hover {
+    text-decoration: underline;
+    color: #f4ba2b;
+}
+
 /*
 .footer-credits {
 	font-size: 12px;
@@ -1403,21 +1423,6 @@ footer {
 
 .floating-button:hover {
     	transform: scale(1.05);
-}
-
-
-
-.footer-maps {
-    font-size: 14px;
-    line-height: 1.5;
-    margin-top: 10px;
-}
-
-.maps-links a {
-    color: #f4ba2b;
-    text-decoration: none;
-    font-size: 12px;
-    margin-bottom: 15px;
 }
 
 .chat-menu {

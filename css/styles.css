@@ -1262,10 +1262,15 @@ footer {
 }
 
 .footer-maps {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     margin-top: 10px;
     text-align: center;
+}
+
+.maps-links {
+    display: inline-flex;
+    gap: 20px;
 }
 
 .maps-links a {

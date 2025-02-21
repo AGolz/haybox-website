@@ -9,7 +9,9 @@ exports.handler = async function (event) {
 		if (!TELEGRAM_BOT_TOKEN || !CHAT_ID) {
 			return {
 				statusCode: 500,
-				body: JSON.stringify({ error: "Missing Telegram Bot Token or Chat ID" })
+				body: JSON.stringify({
+					error: "Missing Telegram Bot Token or Chat ID"
+				})
 			};
 		}
 
@@ -18,7 +20,9 @@ exports.handler = async function (event) {
 
 		const response = await fetch(TELEGRAM_API_URL, {
 			method: "POST",
-			headers: { "Content-Type": "application/json" },
+			headers: {
+				"Content-Type": "application/json"
+			},
 			body: JSON.stringify({
 				chat_id: CHAT_ID,
 				text: messageText,
@@ -32,13 +36,17 @@ exports.handler = async function (event) {
 
 		return {
 			statusCode: 200,
-			body: JSON.stringify({ success: true })
+			body: JSON.stringify({
+				success: true
+			})
 		};
 	} catch (error) {
 		console.error("Ошибка при отправке в Telegram:", error);
 		return {
 			statusCode: 500,
-			body: JSON.stringify({ error: error.message })
+			body: JSON.stringify({
+				error: error.message
+			})
 		};
 	}
 }

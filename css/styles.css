@@ -1417,12 +1417,12 @@ footer {
 
 .maps-links a {
     display: block;
-    color: #3d3d3f
-    margin-bottom: 8px;
+    color: #fff;
+    margin-bottom: 15px;
 }
 
 .maps-links a:hover {
-    color: #f4ba2b; /* Цвет текста при наведении */
+    color: #f4ba2b;
 }
 
 .chat-menu {

@@ -1413,6 +1413,7 @@ footer {
 	flex-direction: column;
 	gap: 12px;
 	pointer-events: none;
+	margin-bottom: 15px;
 	z-index: 999;
 }
 

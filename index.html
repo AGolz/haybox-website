@@ -23,7 +23,6 @@
 		<script src="js/tabs.js" defer></script>
 		<script src="js/floating-buttons.js" defer></script>
 		<script src="js/reviews.js" defer></script>
-		<script src="js/amo_chat.js"></script>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16870326579"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -539,5 +538,29 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			(function (a, m, o, c, r, m) {
+				a[m] = {
+					id: "423601",
+					hash: "5e1245c59b2c7e42feddd8d1304e9c638a091105b38dac4610c8270c27c1ee32",
+					locale: "ru",
+					inline: true,
+					setMeta: function (p) {
+						this.params = (this.params || []).concat([p])
+					}
+				};
+				a[o] = a[o] || function () {
+					(a[o].q = a[o].q || []).push(arguments)
+				};
+				a[o + 'Config'] = a[o + 'Config'] || {};
+				a[o + 'Config'].hidden = false;
+				var d = a.document,
+					s = d.createElement('script');
+				s.async = true;
+				s.id = m + '_script';
+				s.src = 'https://gso.amocrm.ru/js/button.js';
+				d.head && d.head.appendChild(s);
+			}(window, 0, 'amoSocialButton', 0, 0, 'amo_social_button'));
+		</script>
 	</body>
 </html>

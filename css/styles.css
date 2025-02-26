@@ -1016,6 +1016,50 @@ body {
 	font-weight: bold;
 }
 
+#packing-sets {
+	text-align: center;
+	margin-top: 60px;
+}
+
+#packing-sets h2 {
+	margin-bottom: 40px;
+}
+
+.packing-sets {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.packing-set {
+	width: 45%;
+	max-width: 500px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	text-align: left;
+}
+
+.packing-set h3 {
+	font-size: 1.5rem;
+	color: #3d3d3f;
+	margin-bottom: 20px;
+}
+
+.packing-set-img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	margin-bottom: 20px;
+}
+
+.packing-set p {
+	font-size: 1rem;
+	color: #3d3d3f;
+}
+
 #shipping-partners {
 	text-align: center;
 	padding: 20px 20px;

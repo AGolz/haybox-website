@@ -1060,6 +1060,22 @@ body {
 	color: #3d3d3f;
 }
 
+@media (max-width: 768px) {
+	.packing-set {
+		width: 80%;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	.packing-set h3 {
+		font-size: 1.3rem;
+	}
+
+	.packing-set p {
+		font-size: 1.1rem;
+	}
+}
+
 #shipping-partners {
 	text-align: center;
 	padding: 20px 20px;

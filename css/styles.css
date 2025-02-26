@@ -1062,9 +1062,10 @@ body {
 
 @media (max-width: 768px) {
 	.packing-set {
-		width: 80%;
+		width: auto;
 		padding: 20px;
 		margin-bottom: 20px;
+		white-space: nowrap;
 	}
 
 	.packing-set h3 {
@@ -1073,6 +1074,7 @@ body {
 
 	.packing-set p {
 		font-size: 1.1rem;
+		white-space: nowrap;
 	}
 }
 

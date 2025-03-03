@@ -1101,6 +1101,29 @@ body {
 	margin-bottom: 15px;
 }
 
+#ethos {
+	text-align: center;
+	padding: 20px 20px;
+	background: #fff;
+	border-radius: 8px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+	margin: 50px auto;
+	max-width: 900px;
+}
+
+#ethos h2 {
+	font-size: 1.8rem;
+	margin-bottom: 20px;
+	color: #3d3d3f;
+}
+
+#ethos p {
+	font-size: 1rem;
+	color: #3d3d3f;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+
 .partner-logos {
 	display: flex;
 	justify-content: center;
@@ -1134,6 +1157,13 @@ body {
 
 	.partner-logo {
 		max-width: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	#ethos {
+		width: 95%;
+		padding: 30px 15px;
 	}
 }
 

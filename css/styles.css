@@ -31,7 +31,6 @@ html[lang="hy"] body {
 }
 
 @media (max-width: 768px) {
-
 	html[lang="hy"] .hero h1,
 	html[lang="hy"] .hero p,
 	html[lang="hy"] .pricing-content p,
@@ -42,24 +41,38 @@ html[lang="hy"] body {
 		white-space: normal;
 	}
 
+	html[lang="hy"] .hero {
+		padding: 100px 20px 50px;
+	}
+
 	html[lang="hy"] .pricing-grid {
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
 		gap: 20px;
 	}
 
 	html[lang="hy"] .pricing-item {
 		width: 90%;
-		max-width: 600px;
+		max-width: 500px;
 		padding: 20px;
 	}
 
 	html[lang="hy"] #packing-sets .packing-sets {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		gap: 20px;
-		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
 	}
+
+	html[lang="hy"] .services {
+		padding: 40px 20px;
+		gap: 30px;
+	}
+
+	
 
 	html[lang="hy"] #shipping-partners h2 {
 		font-size: 1.5rem;
@@ -155,9 +168,8 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .packing-set {
-		width: 45%;
+		width: 90%;
 		max-width: 500px;
-		margin: 10px 0;
 		padding: 20px;
 		text-align: center;
 		box-sizing: border-box;
@@ -173,17 +185,30 @@ html[lang="hy"] body {
 
 	html[lang="hy"] .contact-form {
 		width: 90%;
-		max-width: 700px;
+		max-width: 750px;
 		padding: 40px 30px;
 	}
 
 	html[lang="hy"] .contact-form input,
 	html[lang="hy"] .contact-form select {
 		width: 100%;
+		font-size: 16px;
+		padding: 12px 15px;
 	}
 
 	html[lang="hy"] .contact-form button {
 		max-width: 400px;
+		width: auto;
+		margin: 20px auto 0;
+		padding: 12px 30px;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+	html[lang="hy"] .contact-form input,
+	html[lang="hy"] .contact-form select,
+	html[lang="hy"] .contact-form button {
+		box-sizing: border-box;
 	}
 }
 

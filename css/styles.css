@@ -977,6 +977,7 @@ html[lang="hy"] body {
     display: inline-block;
 }
 
+
 @media (max-width: 768px) {
 	.pricing-grid {
 		flex-direction: column;
@@ -1029,6 +1030,12 @@ html[lang="hy"] body {
 
 .pricing-item p b:last-child {
 	margin-right: 0;
+}
+
+.pricing-content p:nth-child(9) {
+	text-align: left !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 #packing-sets {

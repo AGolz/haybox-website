@@ -420,8 +420,9 @@ html[lang="hy"] .service {
 }
 
 html[lang="hy"] .advantage {
-	flex: 1 1 calc(33.333% - 20px);
-	min-height: 400px;
+	flex: 1 1 0;
+	min-width: 350px;
+	min-height: 500px;
 }
 
 .advantage img {

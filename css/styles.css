@@ -958,9 +958,7 @@ html[lang="hy"] .pricing-item {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 100%;
-	max-width: 800px;
-	min-width: 320px;
+	min-width: 350px;
 	min-height: 950px;
 	background: white;
 	border-radius: 8px;

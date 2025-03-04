@@ -923,13 +923,6 @@ html[lang="hy"] body {
 	padding-bottom: 20px;
 }
 
-.pricing-content p:nth-of-type(5) {
-	text-align: left !important;
-	margin-left: 0 !important;
-	padding-left: 0 !important;
-	display: block !important;
-}
-
 .small-icon {
 	width: 20px;
 	height: 20px;

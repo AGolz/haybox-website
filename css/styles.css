@@ -30,6 +30,128 @@ html[lang="hy"] body {
 	font-family: 'Noto Sans Armenian', sans-serif;
 }
 
+@media (max-width: 768px) {
+
+	html[lang="hy"] .hero h1,
+	html[lang="hy"] .hero p,
+	html[lang="hy"] .pricing-content p,
+	html[lang="hy"] .packing-set p,
+	html[lang="hy"] #shipping-partners p {
+		word-wrap: normal;
+		word-break: normal;
+		white-space: normal;
+	}
+
+	html[lang="hy"] .pricing-grid {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	html[lang="hy"] .pricing-item {
+		width: 100%;
+		max-width: 90%;
+		min-width: 300px;
+	}
+
+	html[lang="hy"] #packing-sets .packing-sets {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	html[lang="hy"] .packing-set {
+		width: 100%;
+		max-width: 90%;
+	}
+
+	html[lang="hy"] .packing-set p {
+		font-size: 0.9rem;
+	}
+
+	html[lang="hy"] #shipping-partners h2 {
+		font-size: 1.5rem;
+	}
+
+	html[lang="hy"] #shipping-partners p {
+		font-size: 0.9rem;
+	}
+
+	html[lang="hy"] .service h3,
+	html[lang="hy"] .service h4 {
+		font-size: 1.2rem;
+	}
+
+	html[lang="hy"] .service h3,
+	html[lang="hy"] .service h4 {
+		font-size: 1rem;
+	}
+
+	html[lang="hy"] .hero h1 {
+		font-size: 1.2rem;
+	}
+
+	html[lang="hy"] .hero p {
+		font-size: 1rem;
+	}
+
+	html[lang="hy"] .hero-contacts {
+		font-size: 12px;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	html[lang="hy"] .hero-links a {
+		font-size: 12px;
+	}
+
+	html[lang="hy"] .hero-contacts a {
+		font-size: 12px;
+	}
+
+	html[lang="hy"] .floating-buttons {
+		bottom: 30px;
+		right: 30px;
+		gap: 20px;
+	}
+
+	html[lang="hy"] .floating-button {
+		padding: 15px 25px;
+		font-size: 16px;
+		width: 180px;
+		text-align: center;
+	}
+
+	html[lang="hy"] .floating-button img {
+		width: 22px;
+		height: 22px;
+	}
+
+	html[lang="hy"] .floating-button.call,
+	html[lang="hy"] .floating-button.chat {
+		background: #f4ba2b;
+	}
+
+	html[lang="hy"] .contact-form button {
+		width: auto;
+		max-width: 300px;
+		margin: 20px auto 0;
+		padding: 12px 30px;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+	html[lang="hy"] .process-steps .step {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+		font-size: 14px;
+	}
+
+	html[lang="hy"] footer {
+		padding-bottom: 80px;
+	}
+}
+
 .container {
 	width: 90%;
 	max-width: 1000px;

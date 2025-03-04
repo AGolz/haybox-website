@@ -442,47 +442,6 @@ html[lang="hy"] .service {
 	min-height: 60px;
 }
 
-html[lang="hy"] .advantages {
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	flex-wrap: nowrap;
-}
-
-html[lang="hy"] .advantage {
-	flex: 1 1 calc(33.333% - 20px);
-	min-height: 300px;
-	background: #f4ba2b;
-	border-radius: 5px;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	text-align: center;
-	box-sizing: border-box;
-}
-
-html[lang="hy"] .advantage img {
-	width: 40px;
-	height: 40px;
-	margin-bottom: 10px;
-	object-fit: contain;
-}
-
-html[lang="hy"] .advantage h5 {
-	margin-top: 10px;
-	margin-bottom: 5px;
-	min-height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-html[lang="hy"] .advantages .advantage {
-	align-items: stretch;
-}
-
 .contract-wrapper {
 	position: relative;
 	display: inline-block;

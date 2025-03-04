@@ -971,6 +971,11 @@ html[lang="hy"] body {
 	color: #3d3d3f;
 }
 
+.pricing-item p span,
+.pricing-item p b {
+    display: inline-block;
+}
+
 @media (max-width: 768px) {
 	.pricing-grid {
 		flex-direction: column;
@@ -1000,13 +1005,13 @@ html[lang="hy"] body {
 	width: 100%;
 	text-align: left;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	color: #3d3d3f;
 	align-items: center;
 	font-size: 0.9rem;
 	line-height: 1.4;
 	margin-bottom: 5px;
-	flex-grow: 1;
+	flex-grow: 0;
 }
 
 .pricing-item p span {
@@ -1018,6 +1023,10 @@ html[lang="hy"] body {
 	min-width: 100px;
 	text-align: right;
 	font-weight: bold;
+}
+
+.pricing-item p b:last-child {
+	margin-right: 0;
 }
 
 #packing-sets {

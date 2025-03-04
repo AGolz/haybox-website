@@ -421,8 +421,8 @@ html[lang="hy"] .service {
 
 html[lang="hy"] .advantage {
 	flex: 1 1 0;
-	min-width: 350px;
-	min-height: 400px;
+	min-width: 150px;
+	min-height: 350px;
 }
 
 .advantage img {
@@ -960,7 +960,7 @@ html[lang="hy"] .pricing-item {
 	justify-content: space-between;
 	width: 100%;
 	max-width: 700px;
-	min-height: 750px;
+	min-height: 950px;
 	background: white;
 	border-radius: 8px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);

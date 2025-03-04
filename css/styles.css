@@ -42,7 +42,7 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .hero {
-		padding: 100px 20px 50px;
+		padding: 120px 20px 50px;
 	}
 
 	html[lang="hy"] .pricing-grid {
@@ -54,7 +54,7 @@ html[lang="hy"] body {
 
 	html[lang="hy"] .pricing-item {
 		width: 90%;
-		max-width: 450px;
+		max-width: 300px;
 		padding: 20px;
 		box-sizing: border-box;
 	}
@@ -116,9 +116,9 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .floating-buttons {
-		bottom: 30px;
-		right: 30px;
-		gap: 20px;
+		bottom: 20px;
+		right: 20px;
+		gap: 12px;
 	}
 
 	html[lang="hy"] .floating-button {
@@ -155,7 +155,7 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] footer {
-		padding-bottom: 80px;
+		padding-top: 40px;
 	}
 
 		html[lang="hy"] .service {
@@ -196,6 +196,7 @@ html[lang="hy"] body {
 		font-size: 16px;
 		padding: 12px 15px;
 		box-sizing: border-box;
+		word-wrap: break-word;
 	}
 
 	html[lang="hy"] .contact-form button {

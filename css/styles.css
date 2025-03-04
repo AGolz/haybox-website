@@ -54,8 +54,9 @@ html[lang="hy"] body {
 
 	html[lang="hy"] .pricing-item {
 		width: 90%;
-		max-width: 500px;
+		max-width: 450px;
 		padding: 20px;
+		box-sizing: border-box;
 	}
 
 	html[lang="hy"] #packing-sets .packing-sets {
@@ -103,7 +104,7 @@ html[lang="hy"] body {
 	html[lang="hy"] .hero-contacts {
 		font-size: 12px;
 		flex-direction: column;
-		gap: 10px;
+		gap: 15px;
 	}
 
 	html[lang="hy"] .hero-links a {
@@ -194,6 +195,7 @@ html[lang="hy"] body {
 		width: 100%;
 		font-size: 16px;
 		padding: 12px 15px;
+		box-sizing: border-box;
 	}
 
 	html[lang="hy"] .contact-form button {
@@ -208,7 +210,12 @@ html[lang="hy"] body {
 	html[lang="hy"] .contact-form input,
 	html[lang="hy"] .contact-form select,
 	html[lang="hy"] .contact-form button {
+		word-wrap: break-word;
 		box-sizing: border-box;
+	}
+
+	html[lang="hy"] footer {
+		padding-top: 40px;
 	}
 }
 

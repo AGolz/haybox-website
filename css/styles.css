@@ -1004,20 +1004,18 @@ html[lang="hy"] body {
 .pricing-item p {
 	width: 100%;
 	text-align: left;
-	display: flex;
+	display: block;
 	justify-content: flex-start;
 	color: #3d3d3f;
 	align-items: center;
 	font-size: 0.9rem;
 	line-height: 1.4;
 	margin-bottom: 5px;
-	flex-grow: 0;
-	clear: both;
+	padding-right: 0;
 }
 
 .pricing-item p span {
-	flex-grow: 1;
-	text-align: left;
+	flex-grow: 0;
 }
 
 .pricing-item p b {

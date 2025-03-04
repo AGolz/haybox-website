@@ -940,6 +940,9 @@ html[lang="hy"] body {
 	transform: translateY(-10px);
 }
 
+body[lang="hy"] .pricing-content p {
+    direction: ltr;
+}
 
 .call-btn {
 	display: flex;

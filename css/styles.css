@@ -923,6 +923,12 @@ html[lang="hy"] body {
 	padding-bottom: 20px;
 }
 
+.pricing-content p:nth-child(5) {
+    text-align: left !important;
+    margin-left: 0;
+    padding-left: 0;
+}
+
 .small-icon {
 	width: 20px;
 	height: 20px;
@@ -939,6 +945,7 @@ html[lang="hy"] body {
 .pricing-item:hover {
 	transform: translateY(-10px);
 }
+
 
 
 .call-btn {
@@ -1004,18 +1011,20 @@ html[lang="hy"] body {
 .pricing-item p {
 	width: 100%;
 	text-align: left;
-	display: block;
+	display: flex;
 	justify-content: flex-start;
 	color: #3d3d3f;
 	align-items: center;
 	font-size: 0.9rem;
 	line-height: 1.4;
 	margin-bottom: 5px;
-	padding-right: 0;
+	flex-grow: 0;
+	clear: both;
 }
 
 .pricing-item p span {
-	flex-grow: 0;
+	flex-grow: 1;
+	text-align: left;
 }
 
 .pricing-item p b {

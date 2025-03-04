@@ -1032,12 +1032,6 @@ html[lang="hy"] body {
 	margin-right: 0;
 }
 
-.pricing-content p:nth-child(9) {
-	text-align: left !important;
-	margin: 0 !important;
-	padding: 0 !important;
-}
-
 #packing-sets {
 	text-align: center;
 	margin-top: 10px;

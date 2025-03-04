@@ -1012,6 +1012,7 @@ html[lang="hy"] body {
 	line-height: 1.4;
 	margin-bottom: 5px;
 	flex-grow: 0;
+	clear: both;
 }
 
 .pricing-item p span {

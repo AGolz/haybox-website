@@ -916,11 +916,15 @@ html[lang="hy"] body {
 }
 
 .pricing-content {
-	display: flex;
+	display: block;
 	flex-direction: column;
 	padding: 10px 20px;
 	text-align: left;
 	padding-bottom: 20px;
+}
+
+.pricing-content p {
+	text-align: left !important;
 }
 
 .small-icon {
@@ -941,7 +945,7 @@ html[lang="hy"] body {
 }
 
 body[lang="hy"] .pricing-content p {
-    direction: ltr;
+	direction: ltr;
 }
 
 .call-btn {

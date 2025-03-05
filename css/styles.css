@@ -50,12 +50,12 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .pricing-grid {
-		width: 100%;
+		width: 70%;
 	}
 
 	html[lang="hy"] .pricing-item {
-		min-width: 210px;
-		min-height: 400px;
+		min-width: 110px;
+		min-height: 300px;
 	}
 
 

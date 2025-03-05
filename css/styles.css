@@ -44,7 +44,7 @@ html[lang="hy"] body {
 	html[lang="hy"] .pricing-grid {
 		flex-direction: column;
 		align-items: center;
-		width: 100%;
+		width: 250px;
 		gap: 20px;
 	}
 
@@ -109,38 +109,6 @@ html[lang="hy"] body {
 		font-size: 12px;
 	}
 
-	html[lang="hy"] .floating-buttons {
-		bottom: 20px;
-		right: 20px;
-		gap: 12px;
-	}
-
-	html[lang="hy"] .floating-button {
-		padding: 15px 25px;
-		font-size: 16px;
-		width: 180px;
-		text-align: center;
-	}
-
-	html[lang="hy"] .floating-button img {
-		width: 22px;
-		height: 22px;
-	}
-
-	html[lang="hy"] .floating-button.call,
-	html[lang="hy"] .floating-button.chat {
-		background: #f4ba2b;
-	}
-
-	html[lang="hy"] .contact-form button {
-		width: auto;
-		max-width: 300px;
-		margin: 20px auto 0;
-		padding: 12px 30px;
-		font-size: 1rem;
-		font-weight: bold;
-	}
-
 	html[lang="hy"] .process-steps .step {
 		flex-direction: column;
 		align-items: center;
@@ -148,11 +116,7 @@ html[lang="hy"] body {
 		font-size: 14px;
 	}
 
-	html[lang="hy"] footer {
-		padding-top: 40px;
-	}
-
-		html[lang="hy"] .service {
+	html[lang="hy"] .service {
 		min-height: 350px;
 		max-width: 90%;
 		padding: 20px;
@@ -172,10 +136,6 @@ html[lang="hy"] body {
 
 	html[lang="hy"] .packing-set h3 {
 		font-size: 1.2rem;
-	}
-
-	
-		font-size: 0.9rem;
 	}
 
 	html[lang="hy"] .contact-form {
@@ -209,7 +169,6 @@ html[lang="hy"] body {
 		box-sizing: border-box;
 	}
 
-	html[lang="hy"] .hero,
 	html[lang="hy"] .service,
 	html[lang="hy"] .pricing-item,
 	html[lang="hy"] .packing-set,

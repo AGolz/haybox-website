@@ -48,15 +48,13 @@ html[lang="hy"] body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		width: 150px;
-		gap: 20px;
+		width: 100%;
 	}
 
 	html[lang="hy"] .pricing-item {
-		width: 100%;
+		width: 90%;
 		padding: 0;
 		box-sizing: border-box;
-		margin-bottom: 25px;
 	}
 
 	html[lang="hy"] #packing-sets .packing-sets {

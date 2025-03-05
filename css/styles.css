@@ -45,13 +45,12 @@ html[lang="hy"] body {
 	}
 	
 	html[lang="hy"] .pricing-grid {
-		max-width: 20px;
-		flex-wrap: wrap;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	html[lang="hy"] .pricing-grid {
-		max-width: 20px;
+		width: 90%;
 	}
 
 

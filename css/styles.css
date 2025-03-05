@@ -51,6 +51,7 @@ html[lang="hy"] body {
 
 	html[lang="hy"] .pricing-grid {
 		width: 70%;
+		align-items: center;
 	}
 
 	html[lang="hy"] .pricing-item {

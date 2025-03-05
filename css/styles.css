@@ -45,14 +45,9 @@ html[lang="hy"] body {
 	}
 	
 	html[lang="hy"] .pricing-grid {
-		display: flex;
-		flex-wrap: wrap;
 		width: 80%;
 	}
 
-	html[lang="hy"] .pricing-item {
-		box-sizing: content-box;
-	}
 
 	html[lang="hy"] #packing-sets .packing-sets {
 		display: flex;

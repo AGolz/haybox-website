@@ -53,13 +53,13 @@ html[lang="hy"] body {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 30%;
+		width: 100%;
 		align-items: center;
 	}
 
 	html[lang="hy"] .pricing-item {
 		max-width: 90px;
-		max-height: 400px;
+		max-height: 500px;
 	}
 
 

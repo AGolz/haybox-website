@@ -95,17 +95,17 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .hero-contacts {
-		font-size: 12px;
+		font-size: 13px;
 		flex-direction: column;
 		gap: 15px;
 	}
 
 	html[lang="hy"] .hero-links a {
-		font-size: 12px;
+		font-size: 13px;
 	}
 
 	html[lang="hy"] .hero-contacts a {
-		font-size: 12px;
+		font-size: 13px;
 	}
 
 	html[lang="hy"] .process-steps .step {
@@ -144,6 +144,10 @@ html[lang="hy"] body {
 	html[lang="hy"] .contact-form,
 	html[lang="hy"] footer {
 		margin-bottom: 25px;
+	}
+	
+	html[lang="hy"] .contact-form {
+		white-space: pre-line;
 	}
 }
 

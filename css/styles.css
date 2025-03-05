@@ -47,13 +47,11 @@ html[lang="hy"] body {
 	html[lang="hy"] .pricing-grid {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		width: 90%;
+		width: 80%;
 	}
 
 	html[lang="hy"] .pricing-item {
-		padding: 0;
-		box-sizing: border-box;
+		box-sizing: content-box;
 	}
 
 	html[lang="hy"] #packing-sets .packing-sets {

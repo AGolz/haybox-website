@@ -33,7 +33,7 @@ html[lang="hy"] body {
 @media (max-width: 768px) {
 	html[lang="hy"] .hero h1,
 	html[lang="hy"] .hero p,
-	html[lang="hy"] .pricing-content p,
+	html[lang="hy"] .pricing-content,
 	html[lang="hy"] .packing-set p,
 	html[lang="hy"] #shipping-partners p
 	html[lang="hy"] .checkbox-group,

@@ -31,16 +31,6 @@ html[lang="hy"] body {
 }
 
 @media (max-width: 768px) {
-	html[lang="hy"] .hero h1,
-	html[lang="hy"] .hero p,
-	html[lang="hy"] .pricing-content p,
-	html[lang="hy"] .packing-set p,
-	html[lang="hy"] #shipping-partners p {
-		word-wrap: normal;
-		word-break: normal;
-		white-space: normal;
-	}
-
 	html[lang="hy"] .pricing-grid {
 		display: flex;
 		flex-direction: column;
@@ -144,6 +134,11 @@ html[lang="hy"] body {
 	html[lang="hy"] .contact-form,
 	html[lang="hy"] footer {
 		margin-bottom: 25px;
+	}
+
+	html[lang="hy"] .contact-form {
+		width: 100%;
+		padding: 20px;
 	}
 	
 	html[lang="hy"] .checkbox-group input[type="checkbox"],

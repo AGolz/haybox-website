@@ -37,7 +37,8 @@ html[lang="hy"] body {
 	html[lang="hy"] .packing-set p,
 	html[lang="hy"] #shipping-partners p
 	html[lang="hy"] .checkbox-group,
-	html[lang="hy"] .checkbox-group label {
+	html[lang="hy"] .checkbox-group label 
+	html[lang="hy"] .contact-row {
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;

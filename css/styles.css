@@ -37,8 +37,8 @@ html[lang="hy"] body {
 	html[lang="hy"] .packing-set p,
 	html[lang="hy"] #shipping-partners p
 	html[lang="hy"] .checkbox-group,
-	html[lang="hy"] .checkbox-group label 
-	html[lang="hy"] .contact-row {
+	html[lang="hy"] .checkbox-group label,
+	html[lang="hy"] .contact-row label {
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;
@@ -48,13 +48,12 @@ html[lang="hy"] body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		width: 200px;
+		width: 150px;
 		gap: 20px;
 	}
 
 	html[lang="hy"] .pricing-item {
 		width: 100%;
-		max-width: 150px;
 		padding: 0;
 		box-sizing: border-box;
 		margin-bottom: 25px;

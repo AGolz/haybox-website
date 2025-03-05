@@ -31,10 +31,6 @@ html[lang="hy"] body {
 }
 
 @media (max-width: 768px) {
-	html[lang="hy"] body {
-		padding: 20px;
-	}
-	
 	html[lang="hy"] .hero h1,
 	html[lang="hy"] .hero p,
 	html[lang="hy"] .pricing-content p,
@@ -43,10 +39,6 @@ html[lang="hy"] body {
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;
-	}
-
-	html[lang="hy"] .hero {
-		padding: 120px 20px 50px;
 	}
 
 	html[lang="hy"] .pricing-grid {
@@ -217,8 +209,14 @@ html[lang="hy"] body {
 		box-sizing: border-box;
 	}
 
+	html[lang="hy"] .hero,
+	html[lang="hy"] .service,
+	html[lang="hy"] .pricing-item,
+	html[lang="hy"] .packing-set,
+	html[lang="hy"] .advantages,
+	html[lang="hy"] .contact-form,
 	html[lang="hy"] footer {
-		padding-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 

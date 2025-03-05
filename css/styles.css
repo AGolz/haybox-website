@@ -50,7 +50,6 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .pricing-grid {
-		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;

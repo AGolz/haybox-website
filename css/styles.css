@@ -45,16 +45,13 @@ html[lang="hy"] body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 20px;
 		align-items: center;
-		width: 250px;
+		width: 200px;
 	}
 
 	html[lang="hy"] .pricing-item {
 		width: 90%;
-		max-width: 200px;
-		padding: 20px;
-		box-sizing: border-box;
+		max-width: 150px;
 	}
 
 	html[lang="hy"] #packing-sets .packing-sets {

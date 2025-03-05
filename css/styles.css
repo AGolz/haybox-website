@@ -44,12 +44,19 @@ html[lang="hy"] body {
 	}
 	
 	html[lang="hy"] .pricing-grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		width: 200px;
+		gap: 20px;
 	}
 
 	html[lang="hy"] .pricing-item {
-		width: 90%;
+		width: 100%;
 		max-width: 150px;
+		padding: 0;
+		box-sizing: border-box;
+		margin-bottom: 25px;
 	}
 
 	html[lang="hy"] #packing-sets .packing-sets {
@@ -146,7 +153,8 @@ html[lang="hy"] body {
 
 	html[lang="hy"] .contact-form {
 		width: 100%;
-		padding: 20px;
+		padding: 30px;
+		margin: 0 auto;
 	}
 }
 

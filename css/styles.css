@@ -45,7 +45,7 @@ html[lang="hy"] body {
 	}
 	
 	html[lang="hy"] .pricing-grid {
-		width: 40%;
+		width: 50px;
 		flex-wrap: wrap;
 	}
 

@@ -33,7 +33,6 @@ html[lang="hy"] body {
 @media (max-width: 768px) {
 	html[lang="hy"] .hero h1,
 	html[lang="hy"] .hero p,
-	html[lang="hy"] .pricing-content,
 	html[lang="hy"] .packing-set p,
 	html[lang="hy"] #shipping-partners p
 	html[lang="hy"] .checkbox-group,
@@ -60,6 +59,9 @@ html[lang="hy"] body {
 	html[lang="hy"] .pricing-item {
 		max-width: 90px;
 		max-height: 500px;
+		word-wrap: normal;
+		word-break: normal;
+		white-space: normal;
 	}
 
 
@@ -81,12 +83,14 @@ html[lang="hy"] body {
 		font-size: 1.5rem;
 	}
 
-	html[lang="hy"] #shipping-partners p {
+	html[lang="hy"] #shipping-partners p,
+	html[lang="hy"] #pricing  p {
 		font-size: 0.9rem;
 	}
 
 	html[lang="hy"] .service h3,
-	html[lang="hy"] .service h4 {
+	html[lang="hy"] .service h4,
+	html[lang="hy"] #pricing h4 {
 		font-size: 1.2rem;
 	}
 

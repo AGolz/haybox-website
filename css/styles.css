@@ -42,10 +42,12 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .pricing-grid {
+		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		gap: 20px;
 		align-items: center;
 		width: 250px;
-		gap: 20px;
 	}
 
 	html[lang="hy"] .pricing-item {
@@ -138,44 +140,13 @@ html[lang="hy"] body {
 		font-size: 1.2rem;
 	}
 
-	html[lang="hy"] .contact-form {
-		width: 90%;
-		max-width: 750px;
-		padding: 40px 30px;
-	}
-
-	html[lang="hy"] .contact-form input,
-	html[lang="hy"] .contact-form select {
-		width: 100%;
-		font-size: 16px;
-		padding: 12px 15px;
-		box-sizing: border-box;
-		word-wrap: break-word;
-	}
-
-	html[lang="hy"] .contact-form button {
-		max-width: 400px;
-		width: auto;
-		margin: 20px auto 0;
-		padding: 12px 30px;
-		font-size: 1rem;
-		font-weight: bold;
-	}
-
-	html[lang="hy"] .contact-form input,
-	html[lang="hy"] .contact-form select,
-	html[lang="hy"] .contact-form button {
-		word-wrap: break-word;
-		box-sizing: border-box;
-	}
-
 	html[lang="hy"] .service,
 	html[lang="hy"] .pricing-item,
 	html[lang="hy"] .packing-set,
 	html[lang="hy"] .advantages,
 	html[lang="hy"] .contact-form,
 	html[lang="hy"] footer {
-		margin-bottom: 40px;
+		margin-bottom: 25px;
 	}
 }
 

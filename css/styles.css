@@ -57,8 +57,8 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .pricing-item {
-		max-width: 90px;
-		max-height: 500px;
+		max-width: 40px;
+		max-height: 700px;
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;

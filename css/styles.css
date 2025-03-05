@@ -49,15 +49,17 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .pricing-grid {
+		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		gap: 20px;
 		width: 100%;
-		align-items: center;
 	}
 
 	html[lang="hy"] .pricing-item {
-		max-width: 20ch;
+		max-width: stretch;
+		width: 100%;
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;

@@ -59,11 +59,11 @@ html[lang="hy"] body {
 		display: flex;
 		flex-direction: column;
 		margin: 5% 0;
-		width: 100%;
-		max-width: 100%;
-		height: auto;
+		min-width: 300px !important;
+		max-width: 100% !important; 
+		height: auto !important;
 		box-sizing: border-box;
-		flex-shrink: 1;
+		flex-shrink: 0;
 	}
 
 	html[lang="hy"] .pricing-item img {

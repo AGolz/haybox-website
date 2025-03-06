@@ -26,9 +26,6 @@ body {
 	background: #f7e7c6;
 }
 
-html[lang="hy"] body {
-	font-family: 'Noto Sans Armenian', sans-serif;
-}
 
 @media (max-width: 768px) {
 	html[lang="hy"] .hero h1,

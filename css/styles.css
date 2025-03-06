@@ -34,7 +34,7 @@ html[lang="hy"] body {
 	html[lang="hy"] .hero h1,
 	html[lang="hy"] .hero p,
 	html[lang="hy"] .packing-set p,
-	html[lang="hy"] #shipping-partners p
+	html[lang="hy"] #shipping-partners p,
 	html[lang="hy"] .checkbox-group,
 	html[lang="hy"] .checkbox-group label,
 	html[lang="hy"] .contact-row label {
@@ -107,11 +107,6 @@ html[lang="hy"] body {
 
 	html[lang="hy"] #shipping-partners p {
 		font-size: 0.9rem;
-	}
-
-	html[lang="hy"] .service h3,
-	html[lang="hy"] .service h4 {
-		font-size: 1.2rem;
 	}
 
 	html[lang="hy"] .service h3,

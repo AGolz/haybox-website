@@ -35,6 +35,7 @@ html[lang="hy"] body {
 	html[lang="hy"] .hero p,
 	html[lang="hy"] .packing-set p,
 	html[lang="hy"] #shipping-partners p
+	html[lang="hy"] .pricing-header,
 	html[lang="hy"] .checkbox-group,
 	html[lang="hy"] .checkbox-group label,
 	html[lang="hy"] .contact-row label {
@@ -78,6 +79,7 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .pricing-item h4,
+	html[lang="hy"] .pricing-header,
 	html[lang="hy"] .pricing-item p {
 		font-size: 1rem;
 		margin-bottom: 10px;

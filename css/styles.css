@@ -91,13 +91,12 @@ html[lang="hy"] body {
 	html[lang="hy"] .pricing-item h4,
 	html[lang="hy"] .pricing-header,
 	html[lang="hy"] .pricing-item p {
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 		margin: 0 5px;
-		line-height: 1.4;
 	}
 
 	html[lang="hy"] .pricing-content {
-		font-size: 0.85rem;
+		font-size: 0.9rem;
 		box-sizing: border-box;
 		width: 100%;
 		flex-grow: 1;

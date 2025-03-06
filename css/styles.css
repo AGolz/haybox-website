@@ -57,7 +57,7 @@ html[lang="hy"] body {
 		width: 100%;
 		max-width: 100%;
 		box-sizing: border-box;
-		margin: 0 auto;
+		margin: 0;
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;
@@ -78,18 +78,22 @@ html[lang="hy"] body {
 		gap: 30px;
 	}
 
+	html[lang="hy"] .pricing-item h4,
+	html[lang="hy"] .pricing-item p {
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+
 	html[lang="hy"] #shipping-partners h2 {
 		font-size: 1.5rem;
 	}
 
-	html[lang="hy"] #shipping-partners p,
-	html[lang="hy"] #pricing  p {
+	html[lang="hy"] #shipping-partners p {
 		font-size: 0.9rem;
 	}
 
 	html[lang="hy"] .service h3,
-	html[lang="hy"] .service h4,
-	html[lang="hy"] #pricing h4 {
+	html[lang="hy"] .service h4 {
 		font-size: 1.2rem;
 	}
 

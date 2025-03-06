@@ -94,12 +94,13 @@ html[lang="hy"] body {
 	html[lang="hy"] .pricing-item p {
 		font-size: 0.8rem;
 		margin-bottom: 10px;
-		padding: 0 10px;
+		line-height: 1.4;
 	}
 
 	html[lang="hy"] .pricing-content {
+		font-size: 0.85rem;
 		box-sizing: border-box;
-		font-size: 0.9rem;
+		width: 100%;
 	}
 
 	html[lang="hy"] #shipping-partners h2 {

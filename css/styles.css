@@ -57,7 +57,7 @@ html[lang="hy"] body {
 
 	html[lang="hy"] .pricing-item {
 		width: 90%;
-		max-width: 550px;
+		max-width: 350px;
 		box-sizing: border-box;
 		margin: 5% 0;
 		word-wrap: break-word;

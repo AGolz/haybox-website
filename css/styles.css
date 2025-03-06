@@ -56,10 +56,11 @@ html[lang="hy"] body {
 	}
 
 	html[lang="hy"] .pricing-item {
-		width: 90%;
-		max-width: 60px;
+		width: 100%;
+		max-width: 100%;
 		box-sizing: border-box;
 		margin: 5% 0;
+		flex-grow: 1;
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;

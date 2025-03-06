@@ -49,15 +49,14 @@ html[lang="hy"] body {
 		gap: 20px;
 		width: 100%;
 		padding: 0 10px;
-		max-width: 100%;
+		flex-wrap: wrap;
 		margin: 0 auto; 
 	}
 
 	html[lang="hy"] .pricing-item {
 		width: 100%;
-		max-width: 100%;
 		box-sizing: border-box;
-		margin: 20px 160px 20px;
+		margin: 0;
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;

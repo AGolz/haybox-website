@@ -26,6 +26,9 @@ body {
 	background: #f7e7c6;
 }
 
+html[lang="hy"] body {
+    font-family: 'Tazeh', sans-serif;
+}
 
 @media (max-width: 768px) {
 	html[lang="hy"] .hero h1,

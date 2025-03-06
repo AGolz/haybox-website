@@ -46,20 +46,16 @@ html[lang="hy"] body {
 	html[lang="hy"] .pricing-grid {
 		flex-direction: column;
 		align-items: center;
-	}
-
-	html[lang="hy"] .pricing-grid {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
 		gap: 20px;
 		width: 100%;
+		padding: 0 10px;
+		max-width: 100%;
+		overflow-x: hidden; 
 	}
 
 	html[lang="hy"] .pricing-item {
-		max-width: stretch;
-		width: 100%;
+		width: 900%;
+		max-width: 100%;
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;

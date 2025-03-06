@@ -575,6 +575,12 @@ html[lang="hy"] .advantage {
 	min-height: 320px;
 }
 
+html[lang="en"] .advantage {
+	flex: 1 1 0;
+	min-width: 150px;
+	min-height: 320px;
+}
+
 .advantage img {
 	width: 40px;
 	height: 40px;
@@ -1036,6 +1042,10 @@ html[lang="hy"] .advantage {
 	width: 550px;
 	flex: 1 1 30%;
 	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+html[lang="en"].pricing-item {
+	min-height: 850px;
 }
 
 .pricing-header {

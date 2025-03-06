@@ -57,7 +57,7 @@ html[lang="hy"] body {
 	html[lang="hy"] .pricing-item {
 		width: 90%;
 		box-sizing: border-box;
-		margin: 5%;
+		margin: 5% 0;
 		word-wrap: normal;
 		word-wrap: break-word;
 		white-space: normal;

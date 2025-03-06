@@ -53,7 +53,7 @@ html[lang="hy"] body {
 		flex-wrap: wrap;
 		margin: 0 auto;
 		box-sizing: border-box;
-		overflow-x: auto;
+		overflow-x: hidden;
 	}
 
 	html[lang="hy"] .pricing-item {
@@ -66,7 +66,7 @@ html[lang="hy"] body {
 		word-break: normal;
 		white-space: normal;
 		height: auto;
-		overflow: hidden;
+		overflow: visible;
 	}
 
 

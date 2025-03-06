@@ -27,7 +27,7 @@ body {
 }
 
 html[lang="hy"] body {
-    font-family: 'Tazeh', sans-serif;
+    font-family: 'Noto Sans Armenian', sans-serif;
 }
 
 @media (max-width: 768px) {

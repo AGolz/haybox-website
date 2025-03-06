@@ -58,8 +58,7 @@ html[lang="hy"] body {
 
 	html[lang="hy"] .pricing-item {
 		width: 100%;
-		max-width: 90%;
-		min-width: 270px;
+		max-width: 100%;
 		box-sizing: border-box;
 		margin: 5% 0;
 		flex-grow: 0;
@@ -67,7 +66,7 @@ html[lang="hy"] body {
 		word-break: normal;
 		white-space: normal;
 		height: auto;
-		overflow: hidden;
+		overflow-x: auto;
 	}
 
 	html[lang="hy"] .pricing-item img {
@@ -93,12 +92,14 @@ html[lang="hy"] body {
 	html[lang="hy"] .pricing-item h4,
 	html[lang="hy"] .pricing-header,
 	html[lang="hy"] .pricing-item p {
-		font-size: 0.9rem;
+		font-size: 0.8rem;
 		margin-bottom: 10px;
+		padding: 0 10px;
 	}
 
 	html[lang="hy"] .pricing-content {
 		box-sizing: border-box;
+		font-size: 0.9rem;
 	}
 
 	html[lang="hy"] #shipping-partners h2 {

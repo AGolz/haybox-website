@@ -65,6 +65,8 @@ html[lang="hy"] body {
 		word-wrap: normal;
 		word-break: normal;
 		white-space: normal;
+		height: auto;
+		overflow: hidden;
 	}
 
 

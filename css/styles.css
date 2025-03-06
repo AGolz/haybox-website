@@ -51,15 +51,17 @@ html[lang="hy"] body {
 		width: 100%;
 		padding: 0;
 		flex-wrap: wrap;
-		margin: 0 auto; 
+		margin: 0 auto;
+		box-sizing: border-box;
 	}
 
 	html[lang="hy"] .pricing-item {
 		width: 90%;
+		max-width: 550px;
 		box-sizing: border-box;
 		margin: 5% 0;
-		word-wrap: normal;
 		word-wrap: break-word;
+		word-break: break-word;
 		white-space: normal;
 	}
 

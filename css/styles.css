@@ -501,6 +501,7 @@ html[lang="hy"] body {
 	object-fit: contain;
 }
 
+
 @media (max-width: 768px) {
 	.process-steps {
 		flex-direction: column;
@@ -510,6 +511,14 @@ html[lang="hy"] body {
 
 	.process-steps .arrow {
 		display: none;
+	}
+
+	html[lang="en"] .process-steps .step {
+		flex-direction: column;
+		align-items: center;
+		word-wrap: normal;
+		word-break: normal;
+		white-space: normal;
 	}
 }
 
@@ -1201,6 +1210,17 @@ html[lang="hy"] .pricing-content {
 	min-width: 100px;
 	text-align: right;
 	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.pricing-grid {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pricing-item {
+		width: 90%;
+	}
 }
 
 #packing-sets {

@@ -1034,7 +1034,7 @@ html[lang="en"] .advantage {
 	flex-direction: column;
 	justify-content: flex-start;
 	height: 100%;
-	min-height: 950px;
+	min-height: 1050px;
 	padding: 0px;
 	border-radius: 8px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -1045,7 +1045,7 @@ html[lang="en"] .advantage {
 }
 
 html[lang="en"].pricing-item {
-	min-height: 1850px;
+	min-height: 1650px;
 }
 
 .pricing-header {

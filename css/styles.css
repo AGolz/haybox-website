@@ -264,12 +264,27 @@ html[lang="hy"] body {
 .flag-icon {
 	width: 24px;
 	height: 24px;
+	border: 2px solid #fff;
+	padding: 3px;
 	object-fit: contain;
 	transition: transform 0.3s ease;
 }
 
 .language-link:hover .flag-icon {
 	transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+	.language-switcher {
+		left: 20px;
+		right: auto;
+		top: 20px;
+		gap: 10px;
+	}
+	
+	.flag-icon {
+		border: none;
+	}
 }
 
 @media (max-width: 768px) {

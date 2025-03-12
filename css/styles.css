@@ -1265,6 +1265,11 @@ html[lang="hy"] .pricing-content {
 	color: #f8a61c;
 }
 
+.storage-benefits p {
+	font-size: 0.8rem;
+}
+	
+
 @media (max-width: 768px) {
 	.pricing-grid {
 		flex-direction: column;

@@ -1248,8 +1248,10 @@ html[lang="hy"] .pricing-content {
 
 .storage-benefits {
 	list-style: none;
+	text-align: left; 
 	padding: 0;
 	margin-top: 15px;
+	font-size: 1rem;
 }
 
 .storage-benefits li {
@@ -1265,7 +1267,6 @@ html[lang="hy"] .pricing-content {
 	font-weight: bold;
 	margin-right: 8px;
 	color: #f8a61c;
-	font-size: 18px;
 }
 
 @media (max-width: 768px) {

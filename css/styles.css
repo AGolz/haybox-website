@@ -1077,7 +1077,7 @@ html[lang="en"] .advantage {
 	flex-direction: column;
 	justify-content: flex-start;
 	height: 100%;
-	min-height: 850px;
+	min-height: 950px;
 	padding: 0px;
 	border-radius: 8px;
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -1250,7 +1250,6 @@ html[lang="hy"] .pricing-content {
 	margin-top: 20%;
 	list-style: none;
 	padding: 0;
-	margin-top: 15px;
 }
 
 .storage-benefits li {

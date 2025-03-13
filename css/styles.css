@@ -1279,13 +1279,21 @@ ul {
 	display: block;
 	text-align: center;
 	font-weight: bold;
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	margin-bottom: 5px;
 }
 
 .description {
 	text-align: center;
 	margin-bottom: 15px;
+	font-size: 0.9rem;
+}
+
+.centered-title::before {
+	content: "✔";
+	color: #f4ba2b;
+	font-size: 0.9rem;
+	margin-right: 5px;
 }
 
 .space-organization .call-btn,

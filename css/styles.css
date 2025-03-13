@@ -1298,8 +1298,7 @@ html[lang="hy"] .pricing-content {
 	justify-content: center;
 }
 
-.space-organization ul li strong,
-.business-services ul li strong {
+.pricing-content ul li strong {
 	font-weight: bold;
 }
 

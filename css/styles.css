@@ -1298,11 +1298,6 @@ html[lang="hy"] .pricing-content {
     justify-content: center;
 }
 
-.pricing-content ul li span {
-    font-weight: bold;
-}
-	
-
 @media (max-width: 768px) {
 	.pricing-grid {
 		flex-direction: column;

@@ -1181,6 +1181,7 @@ html[lang="hy"] .pricing-content {
 .call-btn {
 	display: flex;
 	align-items: center;
+	align-self: center;
 	justify-content: center;
 	background: #3d3d3f;
 	color: #f4ba2b;
@@ -1269,22 +1270,6 @@ html[lang="hy"] .pricing-content {
 	font-size: 0.8rem;
 }
 
-.before-after {
-	display: flex;
-	justify-content: center;
-	gap: 15px;
-	flex-wrap: wrap;
-	margin: 20px 0;
-}
-
-.before-after img {
-	width: 45%;
-	max-width: 250px;
-	height: auto;
-	border-radius: 5px;
-	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-}
-
 .pricing-content ul {
 	list-style: none;
 	padding-left: 0;
@@ -1302,6 +1287,15 @@ html[lang="hy"] .pricing-content {
 .pricing-content ul li::before {
 	font-weight: bold;
 	margin-right: 8px;
+}
+
+.pricing-item.space-organization .call-btn,
+.pricing-item.business-services .call-btn {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 	
 

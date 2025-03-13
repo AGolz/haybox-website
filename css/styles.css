@@ -1297,6 +1297,10 @@ html[lang="hy"] .pricing-content {
     align-items: center;
     justify-content: center;
 }
+
+.pricing-content ul li span {
+    font-weight: bold;
+}
 	
 
 @media (max-width: 768px) {

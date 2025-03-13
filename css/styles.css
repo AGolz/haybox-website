@@ -1291,7 +1291,6 @@ ul {
 
 .centered-title::before {
 	content: "✔";
-	color: #f4ba2b;
 	font-size: 0.9rem;
 	margin-right: 5px;
 }

@@ -1290,9 +1290,9 @@ html[lang="hy"] .pricing-content {
 
 .space-organization .call-btn,
 .business-services .call-btn {
-	width: auto;
-	max-width: 250px;
-	margin: auto auto 40px auto;
+	width: fit-content;
+	padding: 12px 20px;
+	margin: 20px auto 40px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1300,7 +1300,8 @@ html[lang="hy"] .pricing-content {
 
 .space-organization ul li span,
 .business-services ul li span {
-    font-weight: bold;
+	font-weight: bold;
+	display: inline;
 }
 
 @media (max-width: 768px) {

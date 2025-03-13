@@ -1271,10 +1271,11 @@ html[lang="hy"] .pricing-content {
 
 
 .centered-title {
+	list-style: none;
 	display: block;
 	text-align: center;
 	font-weight: bold;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	margin-bottom: 5px;
 }
 

@@ -1279,14 +1279,14 @@ ul {
 	display: block;
 	text-align: center;
 	font-weight: bold;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	margin-bottom: 5px;
 }
 
 .description {
 	text-align: center;
 	margin-bottom: 15px;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 }
 
 .centered-title::before {

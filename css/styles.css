@@ -1295,11 +1295,19 @@ ul {
 	margin-right: 5px;
 }
 
-.space-organization .call-btn,
-.business-services .call-btn {
+.space-organization .call-btn {
 	width: fit-content;
 	padding: 12px 20px;
 	margin: 20px auto 40px auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.business-services .call-btn {
+	width: fit-content;
+	padding: 12px 20px;
+	margin: 15px auto 40px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;

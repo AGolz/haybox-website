@@ -1288,15 +1288,19 @@ html[lang="hy"] .pricing-content {
 	margin-right: 8px;
 }
 
-.pricing-content ul li span {
-	font-weight: bold;
-}
-
-.pricing-item.space-organization .call-btn,
-.pricing-item.business-services .call-btn {
+.space-organization .call-btn,
+.business-services .call-btn {
+	width: auto;
+	max-width: 250px;
 	margin: auto auto 40px auto;
+	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.space-organization ul li span,
+.business-services ul li span {
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {

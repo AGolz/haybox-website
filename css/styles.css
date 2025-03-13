@@ -1289,13 +1289,8 @@ html[lang="hy"] .pricing-content {
 	margin-right: 8px;
 }
 
-.pricing-item.space-organization .call-btn,
-.pricing-item.business-services .call-btn {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.pricing-content ul li span {
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {

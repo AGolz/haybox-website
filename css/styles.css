@@ -1280,12 +1280,20 @@ html[lang="hy"] .pricing-content {
 	display: flex;
 	font-size: 0.95rem;
 	line-height: 1.4;
+	align-items: flex-start;
+	text-align: left;
 	margin-bottom: 10px;
 }
 
 .pricing-content ul li::before {
 	font-weight: bold;
 	margin-right: 8px;
+}
+
+.pricing-content ul li strong {
+	font-weight: bold;
+	display: inline;
+	white-space: nowrap;
 }
 
 .space-organization .call-btn,
@@ -1296,10 +1304,6 @@ html[lang="hy"] .pricing-content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.pricing-content ul li strong {
-	font-weight: bold;
 }
 
 @media (max-width: 768px) {

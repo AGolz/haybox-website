@@ -1269,13 +1269,17 @@ html[lang="hy"] .pricing-content {
 	font-size: 0.8rem;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 
 .centered-title {
-	list-style: none;
 	display: block;
 	text-align: center;
 	font-weight: bold;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	margin-bottom: 5px;
 }
 

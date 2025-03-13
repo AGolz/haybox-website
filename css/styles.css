@@ -1268,6 +1268,44 @@ html[lang="hy"] .pricing-content {
 .storage-benefits p {
 	font-size: 0.8rem;
 }
+
+.before-after {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	flex-wrap: wrap;
+	margin: 20px 0;
+}
+
+.before-after img {
+	width: 45%;
+	max-width: 250px;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-content ul {
+	list-style: none;
+	padding-left: 0;
+	text-align: left;
+	margin-left: 0;
+}
+
+.pricing-content ul li {
+	display: flex;
+	align-items: center;
+	font-size: 0.95rem;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.pricing-content ul li::before {
+	content: "✔";
+	font-weight: bold;
+	color: #f4ba2b;
+	margin-right: 8px;
+}
 	
 
 @media (max-width: 768px) {

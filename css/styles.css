@@ -1298,10 +1298,9 @@ html[lang="hy"] .pricing-content {
 	justify-content: center;
 }
 
-.space-organization ul li span,
-.business-services ul li span {
+.space-organization ul li strong,
+.business-services ul li strong {
 	font-weight: bold;
-	display: inline;
 }
 
 @media (max-width: 768px) {

@@ -1294,16 +1294,13 @@ html[lang="hy"] .pricing-content {
 
 .pricing-content ul li {
 	display: flex;
-	align-items: center;
 	font-size: 0.95rem;
 	line-height: 1.4;
 	margin-bottom: 10px;
 }
 
 .pricing-content ul li::before {
-	content: "✔";
 	font-weight: bold;
-	color: #f4ba2b;
 	margin-right: 8px;
 }
 	

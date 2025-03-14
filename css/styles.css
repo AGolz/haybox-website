@@ -1277,8 +1277,14 @@ ul {
 .space-organization,
 .business-services {
 	display: flex;
-	min-height: 950px;
+	min-height: 1050px;
 	position: relative;
+}
+
+.space-organization .pricing-content,
+.business-services .pricing-content {
+    position: relative;
+    padding-bottom: 70px;
 }
 
 
@@ -1305,9 +1311,12 @@ ul {
 
 .space-organization .call-btn,
 .business-services .call-btn {
+	position: absolute;
 	width: fit-content;
 	padding: 12px 20px;
-	margin-top: auto;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
 	display: flex;
 	align-items: center;
 	justify-content: center;

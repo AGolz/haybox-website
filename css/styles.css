@@ -1312,7 +1312,9 @@ ul {
 .space-organization .call-btn,
 .business-services .call-btn {
 	position: absolute;
-	margin: auto auto 40px auto;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
 	width: fit-content;
 	padding: 12px 20px;
 	display: flex;

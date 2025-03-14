@@ -1303,13 +1303,6 @@ ul {
 }
 
 
-.space-organization .pricing-content,
-.business-services .pricing-content {
-    display: flex;
-    flex-grow: 1;
-}
-
-
 .space-organization .call-btn,
 .business-services .call-btn {
 	width: fit-content;

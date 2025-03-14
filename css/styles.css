@@ -1274,9 +1274,9 @@ ul {
     padding-left: 0;
 }
 
-.space-organization .pricing-item,
-.business-services .pricing-item  {
-	min-height: 2460px;
+.space-organization,
+.business-services {
+	min-height: 1060px;
 }
 
 .centered-title {

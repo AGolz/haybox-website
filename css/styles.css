@@ -1276,7 +1276,9 @@ ul {
 
 .space-organization,
 .business-services {
-	min-height: 1160px;
+	display: flex;
+	min-height: 1100px;
+	position: relative;
 }
 
 .centered-title {
@@ -1304,10 +1306,11 @@ ul {
 .business-services .call-btn {
 	width: fit-content;
 	padding: 12px 20px;
-	margin: 20px auto 40px auto;
+	margin: auto auto 40px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: auto;
 }
 
 @media (max-width: 768px) {

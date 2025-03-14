@@ -1281,11 +1281,6 @@ ul {
 	position: relative;
 }
 
-.space-organization .pricing-item,
-.business-services .pricing-item {
-    position: relative;
-    padding-bottom: 80px;
-}
 
 .centered-title {
 	display: block;
@@ -1312,11 +1307,12 @@ ul {
 .business-services .call-btn {
 	width: fit-content;
 	padding: 12px 20px;
-	margin: auto auto 40px auto;
+	margin-top: auto;
+	margin-bottom: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	bottom: 20px;
+
 }
 
 @media (max-width: 768px) {

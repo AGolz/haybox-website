@@ -1283,7 +1283,8 @@ ul {
 
 .space-organization .pricing-content,
 .business-services .pricing-content {
-    flex-grow: 1;
+	height: 100%;
+    	flex-grow: 1;
 }
 
 

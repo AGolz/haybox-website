@@ -1302,13 +1302,25 @@ ul {
 	margin-right: 5px;
 }
 
+.space-organization .pricing-item,
+.business-services .pricing-item {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.space-organization .pricing-content,
+.business-services .pricing-content {
+    display: flex;
+    flex-grow: 1;
+}
+
 
 .space-organization .call-btn,
 .business-services .call-btn {
 	width: fit-content;
 	padding: 12px 20px;
 	margin-top: auto;
-	margin-bottom: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;

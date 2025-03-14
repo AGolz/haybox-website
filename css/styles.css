@@ -1278,7 +1278,6 @@ ul {
 .business-services {
 	display: flex;
 	min-height: 1100px;
-	position: relative;
 }
 
 .space-organization .pricing-content,

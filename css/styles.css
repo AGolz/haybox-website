@@ -1281,6 +1281,13 @@ ul {
 	position: relative; 
 }
 
+html[lang="hy"] .space-organization,
+html[lang="hy"] .business-services {
+	display: flex;
+	min-height: 1250px;
+	position: relative; 
+}
+
 .space-organization .pricing-content,
 .business-services .pricing-content {
 	height: 100%;

@@ -1343,7 +1343,8 @@ html[lang="hy"] .business-services {
 
 	.space-organization,
 	.business-services {
-		min-height: 1400px;
+		height: auto !important;
+		min-height: unset !important;
 	}
 	
 	.space-organization .service,

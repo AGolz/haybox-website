@@ -714,7 +714,7 @@ html[lang="en"] .advantage {
 
 	.service {
 		width: 100%;
-		min-height: 600px;
+		min-height: 400px;
 		max-width: 90%;
 	}
 
@@ -1343,9 +1343,32 @@ html[lang="hy"] .business-services {
 
 	.space-organization,
 	.business-services {
-		min-height: 1300px;
+		min-height: 1400px;
+	}
+	
+	.space-organization .service,
+	.business-services .service {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+	
+	html[lang="hy"] .space-organization .service,
+	html[lang="en"] .space-organization .service,
+	html[lang="hy"] .business-services .service,
+	html[lang="en"] .business-services .service {
+		min-height: 100%; /
+		height: auto;
 	}
 
+	html[lang="hy"] .space-organization .pricing-content,
+	html[lang="hy"] .business-services .pricing-content {
+		white-space: normal;
+		word-break: normal;
+		overflow-wrap: anywhere;
+		max-width: 100%;
+	}
+}
 
 #packing-sets {
 	text-align: center;

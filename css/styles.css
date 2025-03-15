@@ -1343,7 +1343,14 @@ html[lang="hy"] .business-services {
 	.space-organization,
 	.business-services {
 		min-height: 1300px;
+		align-items: stretch;
 	}
+
+	.space-organization .pricing-content,
+	.business-services .pricing-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 #packing-sets {

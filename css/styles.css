@@ -1375,8 +1375,20 @@ html[lang="hy"] .business-services {
 
 	.business-services .advantage,
 	.space-organization .advantage {
+		min-height: auto !important;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 		width: 100%;
 		text-align: center;
+	}
+
+	.business-services .advantage p,
+	.space-organization .advantage p {
+		flex-grow: 1;
+		text-align: center;
+		white-space: normal;
 	}
 
 	.business-services h4,

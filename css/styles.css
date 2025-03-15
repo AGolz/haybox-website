@@ -1339,6 +1339,11 @@ html[lang="hy"] .business-services {
 	.pricing-item {
 		width: 90%;
 	}
+
+	.space-organization,
+	.business-services {
+		min-height: 1300px;
+	}
 }
 
 #packing-sets {

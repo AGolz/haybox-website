@@ -1343,33 +1343,38 @@ html[lang="hy"] .business-services {
 }
 
 @media (max-width: 768px) {
-    /* Исправляем бизнес-услуги (Fulfillment) */
+    /* Общие стили для бизнес-блока и блока оптимизации */
+    #pricing .business-services .pricing-content,
+    #pricing .space-organization .pricing-content {
+        font-size: 1rem;
+        text-align: center;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+
+    /* Исправляем отступы, чтобы текст не наезжал друг на друга */
     #pricing .business-services .advantages,
     #pricing .space-organization .advantages {
+        display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        width: 100%;
     }
 
+    /* Гибкое поведение карточек преимуществ */
     #pricing .business-services .advantage,
     #pricing .space-organization .advantage {
         width: 100%;
         text-align: center;
     }
 
-    #pricing .business-services .advantage h4,
-    #pricing .business-services .advantage p,
-    #pricing .space-organization .advantage h4,
-    #pricing .space-organization .advantage p {
-        white-space: normal;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
-    /* Исправляем текст внутри блоков, чтобы не разрывался */
-    #pricing .business-services .pricing-content,
-    #pricing .space-organization .pricing-content {
-        font-size: 0.9rem;
+    /* Исправляем "Service cost", чтобы не наезжал на текст */
+    #pricing .business-services h4,
+    #pricing .space-organization h4 {
+        margin-top: 20px;
+        display: block;
         text-align: center;
     }
 }

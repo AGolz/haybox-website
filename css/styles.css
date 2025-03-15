@@ -1340,30 +1340,38 @@ html[lang="hy"] .business-services {
 	.pricing-item {
 		width: 90%;
 	}
- 
-	.space-organization .service,
- .business-services .service {
-		display: flex;
-		flex-direction: column;
-		align-items: stretch;
-		height: auto !important;
-		min-height: unset !important;
-		padding: 20px;
-	}
-	
-	.space-organization .service p,
-	.business-services .service p {
-		flex-grow: 1;
-		white-space: normal;
-		word-wrap: normal;
-		overflow-wrap: normal;
-		max-width: 100%;
-	}
-	
-	.space-organization .service:last-child,
-	.business-services .service:last-child {
-		margin-bottom: 30px;
-	}
+}
+
+@media (max-width: 768px) {
+    /* Исправляем бизнес-услуги (Fulfillment) */
+    #pricing .business-services .advantages,
+    #pricing .space-organization .advantages {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #pricing .business-services .advantage,
+    #pricing .space-organization .advantage {
+        width: 100%;
+        text-align: center;
+    }
+
+    #pricing .business-services .advantage h4,
+    #pricing .business-services .advantage p,
+    #pricing .space-organization .advantage h4,
+    #pricing .space-organization .advantage p {
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Исправляем текст внутри блоков, чтобы не разрывался */
+    #pricing .business-services .pricing-content,
+    #pricing .space-organization .pricing-content {
+        font-size: 0.9rem;
+        text-align: center;
+    }
 }
 
 #packing-sets {

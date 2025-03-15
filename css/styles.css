@@ -1343,40 +1343,56 @@ html[lang="hy"] .business-services {
 }
 
 @media (max-width: 768px) {
-    /* Общие стили для бизнес-блока и блока оптимизации */
-    #pricing .business-services .pricing-content,
-    #pricing .space-organization .pricing-content {
-        font-size: 1rem;
-        text-align: center;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        white-space: normal;
-    }
+	.business-services,
+	.space-organization {
+		min-height: 1250px;
+	}
 
-    /* Исправляем отступы, чтобы текст не наезжал друг на друга */
-    #pricing .business-services .advantages,
-    #pricing .space-organization .advantages {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        width: 100%;
-    }
+	.business-services .pricing-content,
+	.space-organization .pricing-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
 
-    /* Гибкое поведение карточек преимуществ */
-    #pricing .business-services .advantage,
-    #pricing .space-organization .advantage {
-        width: 100%;
-        text-align: center;
-    }
+	.business-services .call-btn,
+	.space-organization .call-btn {
+        	position: relative;
+        	bottom: auto;
+        	left: auto;
+        	transform: none;
+        	margin-top: 30px;
+	}
 
-    /* Исправляем "Service cost", чтобы не наезжал на текст */
-    #pricing .business-services h4,
-    #pricing .space-organization h4 {
-        margin-top: 20px;
-        display: block;
-        text-align: center;
-    }
+	.business-services .advantages,
+	.space-organization .advantages {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
+	}
+
+	.business-services .advantage,
+	.space-organization .advantage {
+		width: 100%;
+		text-align: center;
+	}
+
+	.business-services h4,
+	.space-organization h4 {
+		font-size: 1.2rem;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.business-services .pricing-content p,
+	.space-organization .pricing-content p {
+		font-size: 1rem;
+		line-height: 1.4;
+		word-wrap: break-word;
+		white-space: normal;
+	}
 }
 
 #packing-sets {

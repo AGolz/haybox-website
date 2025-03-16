@@ -6,6 +6,21 @@ functions = "netlify/functions"
 node_bundler = "esbuild"
 
 [[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/en/*.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/hy/*.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
   for = "/assets/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
@@ -34,8 +49,3 @@ node_bundler = "esbuild"
   for = "/*.css"
   [headers.values]
     Cache-Control = "public, max-age=2592000"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Cache-Control = "no-cache"

@@ -6,7 +6,22 @@ functions = "netlify/functions"
 node_bundler = "esbuild"
 
 [[headers]]
-  for = "/assets/*"
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/icons/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/reviews/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 

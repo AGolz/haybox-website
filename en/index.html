@@ -15,6 +15,7 @@
 		<meta name="twitter:description" content="Moving and storage in Yerevan. Reliable, fast, convenient!">
 		<meta name="twitter:image" content="https://haybox-am.com/assets/images/preview.jpg">
 		<title>HayBox – Moving and Storage | No stress, no worries</title>
+		<link rel="preload" as="image" href="/assets/images/header-overlay.webp" type="image/webp">
 		<style>
 		.hero {
 			height: 500px;
@@ -24,22 +25,14 @@
 			align-items: center;
 			padding-top: 100px;
 			background-color: rgba(244, 186, 43, 0.7);
+			background-image: url('/assets/images/header-overlay.webp');
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			background-blend-mode: overlay;
 			color: #fff;
 			position: relative;
 			overflow: hidden;
-		}
-		
-		.hero.fade-in {
-			animation: fadeInBackground 1s ease-in-out forwards;
-		}
-		
-		@keyframes fadeInBackground {
-			from {
-				opacity: 0.7;
-			}
-			to {
-				opacity: 1;
-			}
 		}
 
 		.hero h1 {
@@ -734,20 +727,5 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			requestIdleCallback(() => {
-				const hero = document.querySelector('.hero');
-				const bg = new Image();
-				bg.src = '/assets/images/header-overlay.webp';
-				bg.onload = () => {
-					hero.style.backgroundImage = "url('/assets/images/header-overlay.webp')";
-					hero.style.backgroundRepeat = "no-repeat";
-					hero.style.backgroundPosition = "center center";
-					hero.style.backgroundSize = "cover";
-					hero.style.backgroundBlendMode = "overlay";
-					hero.classList.add('fade-in');
-				};
-			});
-		</script>
 	</body>
 </html>

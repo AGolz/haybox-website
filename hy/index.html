@@ -23,16 +23,23 @@
 			justify-content: center;
 			align-items: center;
 			padding-top: 100px;
-			background: rgba(244, 186, 43, 0.7) url('/assets/images/header-overlay.png') no-repeat center center/cover;
-			background-blend-mode: overlay;
+			background-color: rgba(244, 186, 43, 0.7);
 			color: #fff;
 			position: relative;
 			overflow: hidden;
+			transition: background-image 0.5s ease-in-out, background-color 0.5s ease-in-out;
 		}
-		@supports (background-image: url("image.webp")) {
-			.hero {
-				background: rgba(244, 186, 43, 0.7) url('/assets/images/header-overlay.webp') no-repeat center center/cover;
-				background-blend-mode: overlay;
+		
+		.hero.fade-in {
+			animation: fadeInBackground 1s ease-in-out forwards;
+		}
+		
+		@keyframes fadeInBackground {
+			from {
+				opacity: 0.7;
+			}
+			to {
+				opacity: 1;
 			}
 		}
 			
@@ -117,8 +124,6 @@
 				</div>
 			</nav>
 		</div>
-		<img src="/assets/images/header-overlay.webp" type="image/webp" fetchpriority="low" alt="" style="display:none;">
-		<img src="/assets/images/header-overlay.png" type="image/png" fetchpriority="low" alt="" style="display:none;">
 		<header class="hero">
 			<div class="hero-overlay">
 				<div class="container">
@@ -726,5 +731,20 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			requestIdleCallback(() => {
+				const hero = document.querySelector('.hero');
+				const bg = new Image();
+				bg.src = '/assets/images/header-overlay.webp';
+				bg.onload = () => {
+					hero.style.backgroundImage = "url('/assets/images/header-overlay.webp')";
+					hero.style.backgroundRepeat = "no-repeat";
+					hero.style.backgroundPosition = "center center";
+					hero.style.backgroundSize = "cover";
+					hero.style.backgroundBlendMode = "overlay";
+					hero.classList.add('fade-in');
+				};
+			});
+		</script>
 	</body>
 </html>
